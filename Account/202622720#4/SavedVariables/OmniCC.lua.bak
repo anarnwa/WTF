@@ -1,0 +1,42 @@
+
+OmniCC4Config = {
+	["groupSettings"] = {
+		["base"] = {
+			["styles"] = {
+				["seconds"] = {
+					["scale"] = 1,
+				},
+				["minutes"] = {
+					["scale"] = 1,
+				},
+				["soon"] = {
+					["scale"] = 1.5,
+				},
+				["hours"] = {
+					["scale"] = 0.75,
+				},
+				["charging"] = {
+					["scale"] = 0.75,
+				},
+				["controlled"] = {
+					["scale"] = 1.5,
+				},
+			},
+			["effect"] = "pulse",
+			["fontSize"] = 25,
+			["mmSSDuration"] = 0,
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.55,
+			["minEffectDuration"] = 0,
+			["scaleText"] = true,
+			["minDuration"] = 2,
+		},
+	},
+	["groups"] = {
+	},
+	["version"] = "8.2.5",
+}

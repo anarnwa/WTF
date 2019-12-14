@@ -1,0 +1,8 @@
+VER 3 0100000000000002 "  " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [stance:1]痛击;[]熊形态(变形)
+END
+VER 3 0100000000000001 "月火" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead,nohelp][]月火术
+END

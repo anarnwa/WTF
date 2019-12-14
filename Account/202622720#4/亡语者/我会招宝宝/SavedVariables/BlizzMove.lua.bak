@@ -1,0 +1,168 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 93.6209335327149,
+		["xOfs"] = 78.6798400878906,
+		["point"] = "LEFT",
+	},
+	["RaidParentFrame"] = {
+	},
+	["ClassTrainerFrame"] = {
+	},
+	["VideoOptionsFrame"] = {
+	},
+	["CharacterFrame"] = {
+	},
+	["MailFrame"] = {
+	},
+	["MacroFrame"] = {
+	},
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["BlackMarketFrame"] = {
+	},
+	["PlayerTalentFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -90.3529663085938,
+		["xOfs"] = 37.6470680236816,
+		["point"] = "TOPLEFT",
+	},
+	["GuildBankFrame"] = {
+		["save"] = true,
+	},
+	["SpellBookFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -83.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 46.4935417175293,
+		["xOfs"] = 0,
+		["point"] = "LEFT",
+	},
+	["version"] = "201109013",
+	["QuestFrame"] = {
+	},
+	["TradeFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 918.000061035156,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = -95.9215774536133,
+		["xOfs"] = 230.81037902832,
+		["point"] = "TOP",
+	},
+	["CalendarFrame"] = {
+		["save"] = true,
+	},
+	["InterfaceOptionsFrame"] = {
+	},
+	["InspectFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 56.7110939025879,
+		["xOfs"] = 0,
+		["point"] = "LEFT",
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["LFRParentFrame"] = {
+	},
+	["BankFrame"] = {
+	},
+	["FriendsFrame"] = {
+	},
+	["GossipFrame"] = {
+	},
+	["MerchantFrame"] = {
+	},
+	["DressUpFrame"] = {
+	},
+	["WorldMapFrame"] = {
+		["default"] = {
+			["relativeTo"] = "WorldMapScreenAnchor",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = -8.1110782623291,
+		["xOfs"] = 86.4443969726563,
+		["point"] = "CENTER",
+	},
+	["CommunitiesFrame"] = {
+	},
+	["GuildFrame"] = {
+	},
+	["LootFrame"] = {
+	},
+	["LookingForGuildFrame"] = {
+	},
+	["KeyBindingFrame"] = {
+	},
+	["PVEFrame"] = {
+	},
+	["GameMenuFrame"] = {
+	},
+	["LFDParentFrame"] = {
+	},
+	["EncounterJournal"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 100.313621520996,
+		["xOfs"] = 43.6078605651856,
+		["point"] = "LEFT",
+	},
+	["ItemSocketingFrame"] = {
+	},
+	["HelpFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 16.3555603027344,
+		["xOfs"] = 0,
+		["point"] = "LEFT",
+	},
+}

@@ -1,0 +1,17 @@
+VER 3 0100000000000002 "1" "INV_MISC_QUESTIONMARK"
+/W 慕容晨-无尽之海 0
+/W 明家七风子-织亡者 0
+/W 丿长空-凤凰之神 0
+/W 湛蓝呵呵-戈提克 0
+/W 想静静-贫瘠之地 0
+/W 月色下的乞丐-辛达苟萨 0
+/W 阿焦大做饭-希尔瓦娜斯 0
+/W 郑矢娜-战歌 0
+/W 郑矢娜-战歌 1.35NX
+/W 九筱妖-布兰卡德 0
+END
+VER 3 0100000000000001 "法阵" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura [btn:2]恶魔法阵
+/cast [btn:1]恶魔法阵
+END

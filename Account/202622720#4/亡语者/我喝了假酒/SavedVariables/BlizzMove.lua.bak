@@ -1,0 +1,120 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+	},
+	["RaidParentFrame"] = {
+	},
+	["VideoOptionsFrame"] = {
+	},
+	["CharacterFrame"] = {
+	},
+	["MailFrame"] = {
+	},
+	["MacroFrame"] = {
+	},
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["BlackMarketFrame"] = {
+	},
+	["PlayerTalentFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -105.960800170898,
+		["xOfs"] = 0,
+		["point"] = "TOPLEFT",
+	},
+	["GuildBankFrame"] = {
+		["save"] = true,
+	},
+	["GuildFrame"] = {
+	},
+	["version"] = "201109013",
+	["QuestFrame"] = {
+	},
+	["TradeFrame"] = {
+	},
+	["CalendarFrame"] = {
+		["save"] = true,
+	},
+	["InterfaceOptionsFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -14.2221641540527,
+		["xOfs"] = 113.117721557617,
+		["point"] = "TOPLEFT",
+	},
+	["InspectFrame"] = {
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["LFRParentFrame"] = {
+	},
+	["BankFrame"] = {
+	},
+	["KeyBindingFrame"] = {
+	},
+	["GossipFrame"] = {
+	},
+	["LFDParentFrame"] = {
+	},
+	["DressUpFrame"] = {
+	},
+	["WorldMapFrame"] = {
+	},
+	["CommunitiesFrame"] = {
+	},
+	["LootFrame"] = {
+	},
+	["LookingForGuildFrame"] = {
+	},
+	["MerchantFrame"] = {
+	},
+	["PVEFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -36.522819519043,
+		["xOfs"] = 75.398681640625,
+		["point"] = "TOPLEFT",
+	},
+	["SpellBookFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 386,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 62.3888664245606,
+		["xOfs"] = 0,
+		["point"] = "LEFT",
+	},
+	["FriendsFrame"] = {
+	},
+	["EncounterJournal"] = {
+	},
+	["GameMenuFrame"] = {
+	},
+	["HelpFrame"] = {
+	},
+}

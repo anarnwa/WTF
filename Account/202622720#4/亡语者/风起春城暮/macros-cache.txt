@@ -1,0 +1,56 @@
+VER 3 0100000000000001 "保护" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]保护祝福
+END
+VER 3 0100000000000002 "信仰" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]赋予信仰
+END
+VER 3 0100000000000003 "光" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]守护之光
+END
+VER 3 0100000000000004 "制裁" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,nodead,nohelp][]制裁之锤
+END
+VER 3 0100000000000005 "圣光" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]圣光术
+END
+VER 3 0100000000000006 "圣疗" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]圣疗术
+END
+VER 3 0100000000000007 "圣闪" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]圣光闪现
+END
+VER 3 0100000000000009 "牺牲" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]牺牲祝福
+END
+VER 3 010000000000000A "美德" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]美德道标
+END
+VER 3 010000000000000B "自杀光" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]殉道者之光
+END
+VER 3 010000000000000C "自由" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]自由祝福
+END
+VER 3 010000000000000D "震击" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]神圣震击
+END
+VER 3 010000000000000E "驱散" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][]清毒术
+END
+VER 3 010000000000000F "驱散" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][]清洁术
+END

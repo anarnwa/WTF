@@ -1,0 +1,13 @@
+
+WATCHDOG_DB = {
+	["players"] = {
+	},
+	["versionMessageRead"] = true,
+	["shareLimit"] = 500,
+	["versionMessageToggle"] = true,
+	["version"] = 7,
+	["ignoreTimeLimit"] = 259200,
+	["shareGuildToggle"] = true,
+	["defaultFilterToggle"] = true,
+	["shareToggle"] = true,
+}

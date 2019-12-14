@@ -1,0 +1,12 @@
+VER 3 0100000000000002 "月火" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp][]月火术
+END
+VER 3 0100000000000003 "阳炎" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp][]阳炎术
+END
+VER 3 0100000000000004 "驱散" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,nodead][] 自然之愈
+END

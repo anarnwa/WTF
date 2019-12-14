@@ -1,0 +1,7 @@
+VER 3 0100000000000002 "单拉" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover,exists,nohelp][@target][] 死亡之握
+END
+VER 3 0100000000000001 "群握" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][@target][]血魔之握
+END

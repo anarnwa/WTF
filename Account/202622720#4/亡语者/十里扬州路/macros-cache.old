@@ -1,0 +1,33 @@
+VER 3 0100000000000006 "悲苦" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]悲苦咒符
+END
+VER 3 0100000000000003 "打断" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm,nodead][]瓦解
+END
+VER 3 0100000000000005 "沉默" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]沉默咒符
+END
+VER 3 0100000000000004 "烈焰" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]烈焰咒符
+END
+VER 3 0100000000000008 "盾" "INV_MISC_QUESTIONMARK"
+#showtooltip 灵魂壁障
+/use 14
+/cast 灵魂壁障
+END
+VER 3 0100000000000002 "禁锢" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm,nodead][]禁锢
+END
+VER 3 0100000000000007 "锁链" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]锁链咒符
+END
+VER 3 0100000000000001 "驱散" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm,nodead][]吞噬魔法
+END

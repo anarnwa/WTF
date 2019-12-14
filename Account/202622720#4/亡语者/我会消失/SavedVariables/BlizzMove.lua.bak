@@ -1,0 +1,310 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 85.2549667358399,
+		["xOfs"] = 77.6077117919922,
+		["point"] = "CENTER",
+	},
+	["RaidParentFrame"] = {
+	},
+	["ClassTrainerFrame"] = {
+	},
+	["VideoOptionsFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 17.5686779022217,
+		["xOfs"] = 30.1177101135254,
+		["point"] = "CENTER",
+	},
+	["CharacterFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -7.91107702255249,
+		["xOfs"] = 166.04443359375,
+		["point"] = "TOPLEFT",
+	},
+	["MailFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = -69.7777404785156,
+		["xOfs"] = -117.933326721191,
+		["point"] = "TOP",
+	},
+	["MacroFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -65.8039245605469,
+		["xOfs"] = 0,
+		["point"] = "TOPLEFT",
+	},
+	["BarberShopFrame"] = {
+	},
+	["CollectionsJournal"] = {
+	},
+	["AchievementFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 96,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 11.6418466567993,
+		["xOfs"] = -77.5112686157227,
+		["point"] = "CENTER",
+		["save"] = true,
+	},
+	["ArchaeologyFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -103,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = -29.7555446624756,
+		["xOfs"] = 59.1777076721192,
+		["point"] = "TOP",
+	},
+	["GarrisonLandingPage"] = {
+	},
+	["GarrisonRecruitSelectFrame"] = {
+	},
+	["PlayerTalentFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -29.2444305419922,
+		["xOfs"] = 151.822204589844,
+		["point"] = "TOPLEFT",
+	},
+	["GuildBankFrame"] = {
+		["save"] = true,
+	},
+	["SpellBookFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -83.0000076293945,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 81.630729675293,
+		["xOfs"] = 0,
+		["point"] = "LEFT",
+	},
+	["version"] = "201109013",
+	["QuestFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+	},
+	["TradeFrame"] = {
+	},
+	["CalendarFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -96,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 59.6601104736328,
+		["xOfs"] = 130.493606567383,
+		["point"] = "CENTER",
+		["save"] = true,
+	},
+	["InterfaceOptionsFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = -54.3790817260742,
+		["xOfs"] = 33.6404724121094,
+		["point"] = "LEFT",
+	},
+	["InspectFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 61.0196571350098,
+		["xOfs"] = 0,
+		["point"] = "LEFT",
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["LFRParentFrame"] = {
+	},
+	["BankFrame"] = {
+	},
+	["KeyBindingFrame"] = {
+	},
+	["GossipFrame"] = {
+	},
+	["CommunitiesFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = -45.3921966552734,
+		["xOfs"] = 0,
+		["point"] = "LEFT",
+	},
+	["ItemSocketingFrame"] = {
+	},
+	["MerchantFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 19.5424938201904,
+		["xOfs"] = 62.0130577087402,
+		["point"] = "LEFT",
+	},
+	["BlackMarketFrame"] = {
+	},
+	["DressUpFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = 0,
+		["xOfs"] = 126.933395385742,
+		["point"] = "TOP",
+	},
+	["WorldMapFrame"] = {
+		["default"] = {
+			["relativeTo"] = "WorldMapScreenAnchor",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = -16.7698497772217,
+		["xOfs"] = 124.077705383301,
+		["point"] = "TOP",
+	},
+	["GarrisonBuildingFrame"] = {
+	},
+	["GarrisonMissionFrame"] = {
+	},
+	["LootFrame"] = {
+	},
+	["LookingForGuildFrame"] = {
+	},
+	["FriendsFrame"] = {
+	},
+	["PVEFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 386,
+		},
+		["relativePoint"] = "TOP",
+		["yOfs"] = -97.5947952270508,
+		["xOfs"] = -2.6176393032074,
+		["point"] = "TOP",
+	},
+	["GuildFrame"] = {
+	},
+	["GameMenuFrame"] = {
+	},
+	["EncounterJournal"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 52.0000839233398,
+		["xOfs"] = 81.7777786254883,
+		["point"] = "CENTER",
+	},
+	["LFDParentFrame"] = {
+	},
+	["HelpFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 59.3986701965332,
+		["xOfs"] = 12.5490036010742,
+		["point"] = "CENTER",
+	},
+}

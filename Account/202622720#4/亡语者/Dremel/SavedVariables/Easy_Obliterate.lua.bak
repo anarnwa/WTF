@@ -1,0 +1,2 @@
+
+EasyObliterate_IgnoreList = nil

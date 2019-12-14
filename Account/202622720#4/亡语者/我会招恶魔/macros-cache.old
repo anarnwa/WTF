@@ -1,0 +1,5 @@
+VER 3 0100000000000001 "法阵" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura [btn:2]恶魔法阵
+/cast [btn:1]恶魔法阵
+END

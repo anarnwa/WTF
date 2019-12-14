@@ -1,0 +1,5029 @@
+
+_detalhes_database = {
+	["savedbuffs"] = {
+	},
+	["mythic_dungeon_id"] = 0,
+	["tabela_historico"] = {
+		["tabelas"] = {
+			{
+				{
+					["combatId"] = 3,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00717,
+							["damage_from"] = {
+								["达萨利安追猎者"] = true,
+							},
+							["targets"] = {
+								["达萨利安追猎者"] = 33860,
+							},
+							["spec"] = 73,
+							["pets"] = {
+							},
+							["isTank"] = true,
+							["end_time"] = 1554727188,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 33860.00717,
+							["colocacao"] = 1,
+							["avoidance"] = {
+								["overall"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 3209,
+									["BLOCKED_HITS"] = 11,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 15,
+									["PARTIAL_ABSORBED"] = 1,
+									["PARRY"] = 3,
+									["PARTIAL_ABSORB_AMT"] = 1348,
+									["ABSORB"] = 1,
+									["ABSORB_AMT"] = 1348,
+									["FULL_HIT"] = 14,
+									["HITS"] = 11,
+									["FULL_HIT_AMT"] = 41202,
+								},
+								["达萨利安追猎者"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 3209,
+									["BLOCKED_HITS"] = 11,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 15,
+									["PARTIAL_ABSORBED"] = 1,
+									["PARRY"] = 3,
+									["PARTIAL_ABSORB_AMT"] = 1348,
+									["ABSORB"] = 1,
+									["ABSORB_AMT"] = 1348,
+									["FULL_HIT"] = 14,
+									["HITS"] = 11,
+									["FULL_HIT_AMT"] = 41202,
+								},
+							},
+							["dps_started"] = false,
+							["total"] = 33860.00717,
+							["classe"] = "WARRIOR",
+							["friendlyfire"] = {
+							},
+							["nome"] = "我会大跳你呢",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1443,
+										["g_amt"] = 0,
+										["n_max"] = 729,
+										["targets"] = {
+											["达萨利安追猎者"] = 10109,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8666,
+										["n_min"] = 713,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 10109,
+										["c_max"] = 1443,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 12,
+										["r_amt"] = 0,
+										["c_min"] = 1443,
+									}, -- [1]
+									[107570] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 572,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["达萨利安追猎者"] = 572,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 572,
+										["c_max"] = 572,
+										["id"] = 107570,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 572,
+									},
+									[115767] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 699,
+										["g_amt"] = 0,
+										["n_max"] = 350,
+										["targets"] = {
+											["达萨利安追猎者"] = 3495,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2796,
+										["n_min"] = 349,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 3495,
+										["c_max"] = 699,
+										["id"] = 115767,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 699,
+									},
+									[52174] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 215,
+										["targets"] = {
+											["达萨利安追猎者"] = 215,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 215,
+										["n_min"] = 215,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 215,
+										["c_max"] = 0,
+										["id"] = 52174,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[23922] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2821,
+										["g_amt"] = 0,
+										["n_max"] = 1834,
+										["targets"] = {
+											["达萨利安追猎者"] = 8888,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 6067,
+										["n_min"] = 1411,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 8888,
+										["c_max"] = 2821,
+										["id"] = 23922,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 2821,
+									},
+									[6343] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 3494,
+										["g_amt"] = 0,
+										["n_max"] = 874,
+										["targets"] = {
+											["达萨利安追猎者"] = 5242,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1748,
+										["n_min"] = 874,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 5242,
+										["c_max"] = 1747,
+										["id"] = 6343,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 1747,
+									},
+									[34428] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 629,
+										["targets"] = {
+											["达萨利安追猎者"] = 629,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 629,
+										["n_min"] = 629,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 629,
+										["c_max"] = 0,
+										["id"] = 34428,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[20243] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1153,
+										["g_amt"] = 0,
+										["n_max"] = 576,
+										["targets"] = {
+											["达萨利安追猎者"] = 2305,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1152,
+										["n_min"] = 576,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2305,
+										["c_max"] = 1153,
+										["id"] = 20243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 1153,
+									},
+									[6572] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 802,
+										["targets"] = {
+											["达萨利安追猎者"] = 2405,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2405,
+										["n_min"] = 801,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2405,
+										["c_max"] = 0,
+										["id"] = 6572,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["serial"] = "Player-2124-08385BD2",
+							["last_dps"] = 1085.74383280954,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 43899.00717,
+							["start_time"] = 1554727157,
+							["delay"] = 0,
+							["last_event"] = 1554727187,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002716,
+							["monster"] = true,
+							["damage_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["targets"] = {
+								["我会大跳你呢"] = 43899,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 43899.002716,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 43899.002716,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-3932-1642-4187-137829-00002B40EF",
+							["nome"] = "达萨利安追猎者",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 8,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3346,
+										["targets"] = {
+											["我会大跳你呢"] = 28048,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 28048,
+										["n_min"] = 2079,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 28048,
+										["c_max"] = 0,
+										["a_amt"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 2697,
+										["m_crit"] = 0,
+										["PARRY"] = 3,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 19499,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[273892] = {
+										["c_amt"] = 0,
+										["b_amt"] = 3,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4370,
+										["targets"] = {
+											["我会大跳你呢"] = 15851,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15851,
+										["n_min"] = 3247,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 15851,
+										["c_max"] = 0,
+										["id"] = 273892,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 4,
+										["b_dmg"] = 11604,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1554727188,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 33860.002716,
+							["start_time"] = 1554727157,
+							["delay"] = 0,
+							["last_event"] = 1554727188,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 3,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.006828,
+							["total_without_pet"] = 31022.006828,
+							["total"] = 31022.006828,
+							["targets_absorbs"] = {
+								["我会大跳你呢"] = 1348,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["totalabsorb"] = 1348.006828,
+							["last_hps"] = 0,
+							["targets"] = {
+								["我会大跳你呢"] = 31022,
+							},
+							["totalover_without_pet"] = 0.006828,
+							["healing_taken"] = 31022.006828,
+							["fight_component"] = true,
+							["end_time"] = 1554727188,
+							["healing_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["nome"] = "我会大跳你呢",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[12975] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 18842,
+										["targets"] = {
+											["我会大跳你呢"] = 18842,
+										},
+										["n_min"] = 18842,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 18842,
+										["c_max"] = 0,
+										["id"] = 12975,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 18842,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									[190456] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 1348,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1348,
+										["targets"] = {
+											["我会大跳你呢"] = 1348,
+										},
+										["n_min"] = 1348,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 1348,
+										["c_max"] = 0,
+										["id"] = 190456,
+										["targets_absorbs"] = {
+											["我会大跳你呢"] = 1348,
+										},
+										["m_healed"] = 0,
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 1348,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+									[118779] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 10832,
+										["targets"] = {
+											["我会大跳你呢"] = 10832,
+										},
+										["n_min"] = 10832,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 10832,
+										["c_max"] = 0,
+										["id"] = 118779,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 10832,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1554727180,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["spec"] = 73,
+							["totaldenied"] = 0.006828,
+							["delay"] = 1554727165,
+							["last_event"] = 1554727188,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 3,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 64.006522,
+							["resource"] = 10.006522,
+							["targets"] = {
+								["我会大跳你呢"] = 64,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "WARRIOR",
+							["fight_component"] = true,
+							["total"] = 64.006522,
+							["nome"] = "我会大跳你呢",
+							["spec"] = 73,
+							["grupo"] = true,
+							["resource_type"] = 5,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[6343] = {
+										["id"] = 6343,
+										["total"] = 10,
+										["targets"] = {
+											["我会大跳你呢"] = 10,
+										},
+										["counter"] = 2,
+									},
+									[23922] = {
+										["id"] = 23922,
+										["total"] = 30,
+										["targets"] = {
+											["我会大跳你呢"] = 30,
+										},
+										["counter"] = 2,
+									},
+									[195707] = {
+										["id"] = 195707,
+										["total"] = 24,
+										["targets"] = {
+											["我会大跳你呢"] = 24,
+										},
+										["counter"] = 12,
+									},
+								},
+							},
+							["flag_original"] = 1297,
+							["last_event"] = 1554727188,
+							["alternatepower"] = 0.006522,
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 3,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[6343] = {
+										["activedamt"] = 1,
+										["id"] = 6343,
+										["targets"] = {
+										},
+										["uptime"] = 21,
+										["appliedamt"] = 1,
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[132169] = {
+										["activedamt"] = 0,
+										["id"] = 132169,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[115767] = {
+										["activedamt"] = 1,
+										["id"] = 115767,
+										["targets"] = {
+										},
+										["uptime"] = 25,
+										["appliedamt"] = 1,
+										["refreshamt"] = 5,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["cooldowns_defensive"] = 2.00422,
+							["buff_uptime"] = 118,
+							["last_cooldown"] = {
+								1554727165.784, -- [1]
+								12975, -- [2]
+							},
+							["cc_done_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[132169] = {
+										["id"] = 132169,
+										["targets"] = {
+											["达萨利安追猎者"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["classe"] = "WARRIOR",
+							["cooldowns_defensive_targets"] = {
+								["我会大跳你呢"] = 1,
+								["[*] 团队CD"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[32216] = {
+										["activedamt"] = 1,
+										["id"] = 32216,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[18499] = {
+										["activedamt"] = 1,
+										["id"] = 18499,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5302] = {
+										["activedamt"] = 3,
+										["id"] = 5302,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 3,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[190456] = {
+										["activedamt"] = 1,
+										["id"] = 190456,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[12975] = {
+										["activedamt"] = 1,
+										["id"] = 12975,
+										["targets"] = {
+										},
+										["uptime"] = 15,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[202602] = {
+										["activedamt"] = 1,
+										["id"] = 202602,
+										["targets"] = {
+										},
+										["uptime"] = 31,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[132404] = {
+										["activedamt"] = 2,
+										["id"] = 132404,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[107574] = {
+										["activedamt"] = 1,
+										["id"] = 107574,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[97463] = {
+										["activedamt"] = 1,
+										["id"] = 97463,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[118779] = {
+										["activedamt"] = 1,
+										["id"] = 118779,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[186406] = {
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["targets"] = {
+										},
+										["uptime"] = 31,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["cc_done_targets"] = {
+								["达萨利安追猎者"] = 1,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 50,
+							["cooldowns_defensive_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[97462] = {
+										["id"] = 97462,
+										["targets"] = {
+											["[*] 团队CD"] = 1,
+										},
+										["counter"] = 1,
+									},
+									[12975] = {
+										["id"] = 12975,
+										["targets"] = {
+											["我会大跳你呢"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["cc_done"] = 1.007721,
+							["nome"] = "我会大跳你呢",
+							["spec"] = 73,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[12975] = 1,
+								[6572] = 3,
+								[18499] = 1,
+								[20243] = 3,
+								[23922] = 5,
+								[34428] = 1,
+								[97462] = 1,
+								[6343] = 4,
+								[2565] = 2,
+								[190456] = 1,
+								[107570] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1554727188,
+							["pets"] = {
+							},
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "达萨利安追猎者",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[273892] = 4,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3932-1642-4187-137829-00002B40EF",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 3,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["我会大跳你呢"] = true,
+				},
+				["CombatStartedAt"] = 26190.769,
+				["overall_added"] = true,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "达萨利安追猎者",
+				["combat_counter"] = 10,
+				["playing_solo"] = true,
+				["totals"] = {
+					77758.997585, -- [1]
+					31022, -- [2]
+					{
+						0, -- [1]
+						[0] = 64,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 2,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					33860, -- [1]
+					31022, -- [2]
+					{
+						0, -- [1]
+						[0] = 64,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 2,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+					{
+						{
+							{
+								true, -- [1]
+								1, -- [2]
+								3346, -- [3]
+								1554727157.926, -- [4]
+								18052, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								false, -- [1]
+								118779, -- [2]
+								10832, -- [3]
+								1554727159.028, -- [4]
+								25538, -- [5]
+								"我会大跳你呢", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [2]
+							{
+								true, -- [1]
+								1, -- [2]
+								2506, -- [3]
+								1554727159.948, -- [4]
+								25538, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [3]
+							{
+								true, -- [1]
+								273892, -- [2]
+								3987, -- [3]
+								1554727163.408, -- [4]
+								19045, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								true, -- [1]
+								1, -- [2]
+								2079, -- [3]
+								1554727163.949, -- [4]
+								19045, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [5]
+							{
+								false, -- [1]
+								12975, -- [2]
+								18842, -- [3]
+								1554727165.784, -- [4]
+								43932, -- [5]
+								"我会大跳你呢", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [6]
+							{
+								1, -- [1]
+								12975, -- [2]
+								1, -- [3]
+								1554727165.784, -- [4]
+								43932, -- [5]
+								"我会大跳你呢", -- [6]
+							}, -- [7]
+							{
+								true, -- [1]
+								1, -- [2]
+								2352, -- [3]
+								1554727165.952, -- [4]
+								43931, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [8]
+							{
+								true, -- [1]
+								1, -- [2]
+								2256, -- [3]
+								1554727167.981, -- [4]
+								41579, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [9]
+							{
+								true, -- [1]
+								273892, -- [2]
+								3247, -- [3]
+								1554727171.991, -- [4]
+								36076, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [10]
+							{
+								true, -- [1]
+								1, -- [2]
+								2120, -- [3]
+								1554727171.991, -- [4]
+								36076, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [11]
+							{
+								true, -- [1]
+								1, -- [2]
+								2556, -- [3]
+								1554727173.98, -- [4]
+								33956, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [12]
+							{
+								true, -- [1]
+								1, -- [2]
+								2123, -- [3]
+								1554727180.457, -- [4]
+								20839, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [13]
+							{
+								true, -- [1]
+								273892, -- [2]
+								4370, -- [3]
+								1554727180.457, -- [4]
+								16469, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [14]
+							{
+								true, -- [1]
+								1, -- [2]
+								3077, -- [3]
+								1554727182.509, -- [4]
+								11035, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [15]
+							{
+								true, -- [1]
+								1, -- [2]
+								2936, -- [3]
+								1554727184.535, -- [4]
+								7958, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [16]
+							{
+								true, -- [1]
+								273892, -- [2]
+								4247, -- [3]
+								1554727186.548, -- [4]
+								775, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [17]
+							{
+								true, -- [1]
+								1, -- [2]
+								2697, -- [3]
+								1554727188.616, -- [4]
+								775, -- [5]
+								"达萨利安追猎者", -- [6]
+								1348, -- [7]
+								1, -- [8]
+								false, -- [9]
+								574, -- [10]
+							}, -- [18]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1348, -- [3]
+								1554727188.616, -- [4]
+								775, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [19]
+							{
+								3, -- [1]
+								12975, -- [2]
+								1, -- [3]
+								1554727165.784, -- [4]
+								0, -- [5]
+								"我会大跳你呢", -- [6]
+							}, -- [20]
+						}, -- [1]
+						1554727188.616, -- [2]
+						"我会大跳你呢", -- [3]
+						"WARRIOR", -- [4]
+						52300, -- [5]
+						"0m 31s", -- [6]
+						["last_cooldown"] = {
+							1554727165.784, -- [1]
+							12975, -- [2]
+						},
+						["dead_at"] = 31.1860000000015,
+						["dead"] = true,
+					}, -- [1]
+				},
+				["CombatEndedAt"] = 26221.955,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["我会大跳你呢"] = 31022.006828,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["我会大跳你呢"] = 33860.00717,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 26221.955,
+				["instance_type"] = "none",
+				["combat_id"] = 3,
+				["player_last_events"] = {
+				},
+				["TotalElapsedCombatTime"] = 31.1860000000015,
+				["frags_need_refresh"] = false,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "20:39:48",
+				["data_inicio"] = "20:39:17",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+				},
+				["start_time"] = 26190.769,
+				["TimeData"] = {
+				},
+				["contra"] = "达萨利安追猎者",
+			}, -- [1]
+			{
+				{
+					["combatId"] = 2,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006723,
+							["damage_from"] = {
+								["达萨利安追猎者"] = true,
+							},
+							["targets"] = {
+								["达萨利安追猎者"] = 43654,
+							},
+							["spec"] = 73,
+							["pets"] = {
+							},
+							["isTank"] = true,
+							["end_time"] = 1554727151,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 43654.006723,
+							["colocacao"] = 1,
+							["avoidance"] = {
+								["overall"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 2140,
+									["BLOCKED_HITS"] = 9,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 18,
+									["PARTIAL_ABSORBED"] = 11,
+									["PARRY"] = 3,
+									["PARTIAL_ABSORB_AMT"] = 14932,
+									["ABSORB"] = 11,
+									["ABSORB_AMT"] = 14932,
+									["FULL_HIT"] = 7,
+									["HITS"] = 15,
+									["FULL_HIT_AMT"] = 18691,
+								},
+								["达萨利安追猎者"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 2140,
+									["BLOCKED_HITS"] = 9,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 18,
+									["PARTIAL_ABSORBED"] = 11,
+									["PARRY"] = 3,
+									["PARTIAL_ABSORB_AMT"] = 14932,
+									["ABSORB"] = 11,
+									["ABSORB_AMT"] = 14932,
+									["FULL_HIT"] = 7,
+									["HITS"] = 15,
+									["FULL_HIT_AMT"] = 18691,
+								},
+							},
+							["dps_started"] = false,
+							["total"] = 43654.006723,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "我会大跳你呢",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 874,
+										["targets"] = {
+											["达萨利安追猎者"] = 12008,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12008,
+										["n_min"] = 713,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 12008,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[6572] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 962,
+										["targets"] = {
+											["达萨利安追猎者"] = 2686,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2686,
+										["n_min"] = 802,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2686,
+										["c_max"] = 0,
+										["id"] = 6572,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[115767] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 2202,
+										["g_amt"] = 0,
+										["n_max"] = 402,
+										["targets"] = {
+											["达萨利安追猎者"] = 5102,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2900,
+										["n_min"] = 349,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 5102,
+										["c_max"] = 804,
+										["id"] = 115767,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 699,
+									},
+									[6343] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1748,
+										["g_amt"] = 0,
+										["n_max"] = 2098,
+										["targets"] = {
+											["达萨利安追猎者"] = 9919,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8171,
+										["n_min"] = 874,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 9919,
+										["c_max"] = 1748,
+										["id"] = 6343,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 1748,
+									},
+									[20243] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2307,
+										["g_amt"] = 0,
+										["n_max"] = 692,
+										["targets"] = {
+											["达萨利安追猎者"] = 5623,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3316,
+										["n_min"] = 577,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 5623,
+										["c_max"] = 1154,
+										["id"] = 20243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 1153,
+									},
+									[23922] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2109,
+										["targets"] = {
+											["达萨利安追猎者"] = 8316,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8316,
+										["n_min"] = 1411,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 8316,
+										["c_max"] = 0,
+										["id"] = 23922,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["serial"] = "Player-2124-08385BD2",
+							["last_dps"] = 1311.75836782962,
+							["custom"] = 0,
+							["last_event"] = 1554727150,
+							["damage_taken"] = 48561.006723,
+							["start_time"] = 1554727117,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006814,
+							["damage_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["targets"] = {
+								["我会大跳你呢"] = 48561,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 48561.006814,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1554727151,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "达萨利安追猎者",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 7,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3339,
+										["targets"] = {
+											["我会大跳你呢"] = 38317,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 38317,
+										["n_min"] = 2031,
+										["g_dmg"] = 0,
+										["counter"] = 17,
+										["total"] = 38317,
+										["c_max"] = 0,
+										["a_amt"] = 10,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 26666,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 16055,
+										["n_amt"] = 15,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[273892] = {
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3756,
+										["targets"] = {
+											["我会大跳你呢"] = 10244,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 10244,
+										["n_min"] = 3204,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 10244,
+										["c_max"] = 0,
+										["a_amt"] = 1,
+										["id"] = 273892,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["a_dmg"] = 3204,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 5,
+										["b_dmg"] = 6488,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 48561.006814,
+							["serial"] = "Creature-0-3932-1642-4187-137829-00002B40C7",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1554727150,
+							["damage_taken"] = 43654.006814,
+							["start_time"] = 1554727117,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 2,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.006748,
+							["total_without_pet"] = 16025.006748,
+							["total"] = 16025.006748,
+							["targets_absorbs"] = {
+								["我会大跳你呢"] = 14932,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["totalabsorb"] = 14932.006748,
+							["last_hps"] = 0,
+							["targets"] = {
+								["我会大跳你呢"] = 16025,
+							},
+							["totalover_without_pet"] = 0.006748,
+							["healing_taken"] = 16025.006748,
+							["fight_component"] = true,
+							["end_time"] = 1554727151,
+							["healing_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["nome"] = "我会大跳你呢",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[190456] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 14932,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1669,
+										["targets"] = {
+											["我会大跳你呢"] = 14932,
+										},
+										["n_min"] = 1015,
+										["counter"] = 11,
+										["overheal"] = 0,
+										["total"] = 14932,
+										["c_max"] = 0,
+										["id"] = 190456,
+										["targets_absorbs"] = {
+											["我会大跳你呢"] = 14932,
+										},
+										["m_healed"] = 0,
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 14932,
+										["n_amt"] = 11,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+									[59913] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1093,
+										["targets"] = {
+											["我会大跳你呢"] = 1093,
+										},
+										["n_min"] = 1093,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 1093,
+										["c_max"] = 0,
+										["id"] = 59913,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 1093,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1554727125,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["spec"] = 73,
+							["totaldenied"] = 0.006748,
+							["delay"] = 0,
+							["last_event"] = 1554727150,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 2,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 180.003267,
+							["resource"] = 0.003267,
+							["targets"] = {
+								["我会大跳你呢"] = 180,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "WARRIOR",
+							["fight_component"] = true,
+							["total"] = 180.003267,
+							["nome"] = "我会大跳你呢",
+							["spec"] = 73,
+							["grupo"] = true,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[1160] = {
+										["id"] = 1160,
+										["total"] = 40,
+										["targets"] = {
+											["我会大跳你呢"] = 40,
+										},
+										["counter"] = 1,
+									},
+									[23922] = {
+										["id"] = 23922,
+										["total"] = 45,
+										["targets"] = {
+											["我会大跳你呢"] = 45,
+										},
+										["counter"] = 3,
+									},
+									[107574] = {
+										["id"] = 107574,
+										["total"] = 20,
+										["targets"] = {
+											["我会大跳你呢"] = 20,
+										},
+										["counter"] = 1,
+									},
+									[195707] = {
+										["id"] = 195707,
+										["total"] = 45,
+										["targets"] = {
+											["我会大跳你呢"] = 45,
+										},
+										["counter"] = 16,
+									},
+									[6343] = {
+										["id"] = 6343,
+										["total"] = 30,
+										["targets"] = {
+											["我会大跳你呢"] = 30,
+										},
+										["counter"] = 6,
+									},
+								},
+							},
+							["flag_original"] = 1297,
+							["last_event"] = 1554727149,
+							["alternatepower"] = 0.003267,
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 2,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[115767] = {
+										["activedamt"] = 0,
+										["id"] = 115767,
+										["targets"] = {
+										},
+										["uptime"] = 32,
+										["appliedamt"] = 1,
+										["refreshamt"] = 8,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1160] = {
+										["activedamt"] = 0,
+										["id"] = 1160,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[6343] = {
+										["activedamt"] = 0,
+										["id"] = 6343,
+										["targets"] = {
+										},
+										["uptime"] = 28,
+										["appliedamt"] = 1,
+										["refreshamt"] = 5,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 122,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[186406] = {
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["targets"] = {
+										},
+										["uptime"] = 34,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[32216] = {
+										["activedamt"] = 1,
+										["id"] = 32216,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[107574] = {
+										["activedamt"] = 1,
+										["id"] = 107574,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5302] = {
+										["activedamt"] = 3,
+										["id"] = 5302,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 3,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[190456] = {
+										["activedamt"] = 2,
+										["id"] = 190456,
+										["targets"] = {
+										},
+										["uptime"] = 24,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[202602] = {
+										["activedamt"] = 1,
+										["id"] = 202602,
+										["targets"] = {
+										},
+										["uptime"] = 33,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[132404] = {
+										["activedamt"] = 2,
+										["id"] = 132404,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 67,
+							["nome"] = "我会大跳你呢",
+							["spec"] = 73,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[23922] = 4,
+								[1160] = 1,
+								[6572] = 3,
+								[6343] = 6,
+								[107574] = 1,
+								[190456] = 2,
+								[20243] = 7,
+								[2565] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1554727151,
+							["pets"] = {
+							},
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "达萨利安追猎者",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[273892] = 5,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3932-1642-4187-137829-00002B40C7",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 2,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["我会大跳你呢"] = true,
+				},
+				["CombatStartedAt"] = 26150.94,
+				["overall_added"] = true,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "达萨利安追猎者",
+				["combat_counter"] = 9,
+				["playing_solo"] = true,
+				["totals"] = {
+					92214.995767, -- [1]
+					16025, -- [2]
+					{
+						0, -- [1]
+						[0] = 180,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					43654, -- [1]
+					16025, -- [2]
+					{
+						0, -- [1]
+						[0] = 180,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["CombatEndedAt"] = 26184.88,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["我会大跳你呢"] = 16025.006748,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["我会大跳你呢"] = 43654.006723,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 26184.88,
+				["instance_type"] = "none",
+				["combat_id"] = 2,
+				["player_last_events"] = {
+				},
+				["TotalElapsedCombatTime"] = 33.9399999999987,
+				["frags_need_refresh"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "20:39:11",
+				["data_inicio"] = "20:38:37",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["达萨利安追猎者"] = 1,
+				},
+				["start_time"] = 26150.94,
+				["TimeData"] = {
+				},
+				["contra"] = "达萨利安追猎者",
+			}, -- [2]
+			{
+				{
+					["combatId"] = 1,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008598,
+							["damage_from"] = {
+								["达萨利安追猎者"] = true,
+								["剜齿虎"] = true,
+							},
+							["targets"] = {
+								["蓝色蝴蝶"] = 1362,
+								["达萨利安追猎者"] = 40676,
+								["剜齿虎"] = 25687,
+							},
+							["spec"] = 73,
+							["pets"] = {
+							},
+							["isTank"] = true,
+							["end_time"] = 1554727008,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 67725.008598,
+							["colocacao"] = 1,
+							["avoidance"] = {
+								["达萨利安追猎者"] = {
+									["DODGE"] = 1,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 2677,
+									["BLOCKED_HITS"] = 8,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 13,
+									["PARTIAL_ABSORBED"] = 5,
+									["PARRY"] = 3,
+									["PARTIAL_ABSORB_AMT"] = 6537,
+									["ABSORB"] = 5,
+									["ABSORB_AMT"] = 6537,
+									["FULL_HIT"] = 8,
+									["HITS"] = 9,
+									["FULL_HIT_AMT"] = 22508,
+								},
+								["overall"] = {
+									["DODGE"] = 4,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 5740,
+									["BLOCKED_HITS"] = 18,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 30,
+									["PARTIAL_ABSORBED"] = 12,
+									["PARRY"] = 6,
+									["PARTIAL_ABSORB_AMT"] = 18308,
+									["ABSORB"] = 12,
+									["ABSORB_AMT"] = 18308,
+									["FULL_HIT"] = 18,
+									["HITS"] = 23,
+									["FULL_HIT_AMT"] = 53759,
+								},
+								["剜齿虎"] = {
+									["DODGE"] = 3,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 3063,
+									["BLOCKED_HITS"] = 10,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 17,
+									["PARTIAL_ABSORBED"] = 7,
+									["PARRY"] = 3,
+									["PARTIAL_ABSORB_AMT"] = 11771,
+									["ABSORB"] = 7,
+									["ABSORB_AMT"] = 11771,
+									["FULL_HIT"] = 10,
+									["HITS"] = 14,
+									["FULL_HIT_AMT"] = 31251,
+								},
+							},
+							["dps_started"] = false,
+							["total"] = 67725.008598,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "我会大跳你呢",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 6373,
+										["g_amt"] = 0,
+										["n_max"] = 800,
+										["targets"] = {
+											["达萨利安追猎者"] = 12723,
+											["剜齿虎"] = 3970,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 10320,
+										["n_min"] = 789,
+										["g_dmg"] = 0,
+										["counter"] = 17,
+										["total"] = 16693,
+										["c_max"] = 1599,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["r_amt"] = 0,
+										["c_min"] = 1579,
+									}, -- [1]
+									[6572] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 882,
+										["targets"] = {
+											["达萨利安追猎者"] = 4409,
+											["剜齿虎"] = 5291,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 9700,
+										["n_min"] = 881,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 9700,
+										["c_max"] = 0,
+										["id"] = 6572,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[6343] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1922,
+										["g_amt"] = 0,
+										["n_max"] = 1362,
+										["targets"] = {
+											["剜齿虎"] = 5768,
+											["达萨利安追猎者"] = 5766,
+											["蓝色蝴蝶"] = 1362,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 10974,
+										["n_min"] = 961,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 12896,
+										["c_max"] = 1922,
+										["id"] = 6343,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 1922,
+									},
+									[46968] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 135,
+										["targets"] = {
+											["达萨利安追猎者"] = 135,
+											["剜齿虎"] = 135,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 270,
+										["n_min"] = 135,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 270,
+										["c_max"] = 0,
+										["id"] = 46968,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									[23922] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 3104,
+										["g_amt"] = 0,
+										["n_max"] = 2018,
+										["targets"] = {
+											["达萨利安追猎者"] = 10243,
+											["剜齿虎"] = 3104,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 10243,
+										["n_min"] = 1552,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 13347,
+										["c_max"] = 3104,
+										["id"] = 23922,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 3104,
+									},
+									[20243] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1268,
+										["g_amt"] = 0,
+										["n_max"] = 634,
+										["targets"] = {
+											["达萨利安追猎者"] = 3170,
+											["剜齿虎"] = 1268,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3170,
+										["n_min"] = 634,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 4438,
+										["c_max"] = 1268,
+										["id"] = 20243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 1268,
+									},
+									[115767] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 2307,
+										["g_amt"] = 0,
+										["n_max"] = 385,
+										["targets"] = {
+											["达萨利安追猎者"] = 4230,
+											["剜齿虎"] = 6151,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8074,
+										["n_min"] = 384,
+										["g_dmg"] = 0,
+										["counter"] = 24,
+										["total"] = 10381,
+										["c_max"] = 769,
+										["id"] = 115767,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 21,
+										["r_amt"] = 0,
+										["c_min"] = 769,
+									},
+								},
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["serial"] = "Player-2124-08385BD2",
+							["last_dps"] = 1676.48609050189,
+							["custom"] = 0,
+							["last_event"] = 1554727008,
+							["damage_taken"] = 91944.008598,
+							["start_time"] = 1554726968,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00573,
+							["damage_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["targets"] = {
+								["我会大跳你呢"] = 54942,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 54942.00573,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1554727008,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "剜齿虎",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 7,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3591,
+										["targets"] = {
+											["我会大跳你呢"] = 41604,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 41604,
+										["a_amt"] = 5,
+										["n_min"] = 2352,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["DODGE"] = 1,
+										["total"] = 41604,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 15289,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 18962,
+										["n_amt"] = 14,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[273892] = {
+										["c_amt"] = 0,
+										["b_amt"] = 3,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4936,
+										["targets"] = {
+											["我会大跳你呢"] = 13338,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13338,
+										["n_min"] = 3755,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 13338,
+										["c_max"] = 0,
+										["a_amt"] = 2,
+										["id"] = 273892,
+										["r_dmg"] = 0,
+										["DODGE"] = 2,
+										["a_dmg"] = 8402,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 6,
+										["b_dmg"] = 13338,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 54942.00573,
+							["serial"] = "Creature-0-3932-1642-4187-129337-00002B0683",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1554727008,
+							["damage_taken"] = 25687.00573,
+							["start_time"] = 1554726970,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004339,
+							["damage_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["targets"] = {
+								["我会大跳你呢"] = 37002,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 37002.004339,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1554727008,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "达萨利安追猎者",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 5,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3130,
+										["targets"] = {
+											["我会大跳你呢"] = 23562,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 23562,
+										["n_min"] = 2069,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["DODGE"] = 1,
+										["total"] = 23562,
+										["c_max"] = 0,
+										["a_amt"] = 4,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 11452,
+										["m_crit"] = 0,
+										["PARRY"] = 3,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 12031,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[273892] = {
+										["c_amt"] = 0,
+										["b_amt"] = 3,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3563,
+										["targets"] = {
+											["我会大跳你呢"] = 13440,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13440,
+										["n_min"] = 3042,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 13440,
+										["c_max"] = 0,
+										["id"] = 273892,
+										["r_dmg"] = 0,
+										["a_dmg"] = 3042,
+										["m_crit"] = 0,
+										["a_amt"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 4,
+										["b_dmg"] = 10004,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 37002.004339,
+							["serial"] = "Creature-0-3932-1642-4187-137829-00002B403B",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1554727006,
+							["damage_taken"] = 40676.004339,
+							["start_time"] = 1554726979,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 2600,
+							["totalabsorbed"] = 0.005776,
+							["damage_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.005776,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 0.005776,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-3932-1642-4187-130447-00002AAD58",
+							["nome"] = "蓝色蝴蝶",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1554727008,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 1362.005776,
+							["start_time"] = 1554727008,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 1,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.006875,
+							["total_without_pet"] = 34905.006875,
+							["total"] = 34905.006875,
+							["targets_absorbs"] = {
+								["我会大跳你呢"] = 18308,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["totalabsorb"] = 18308.006875,
+							["last_hps"] = 0,
+							["targets"] = {
+								["我会大跳你呢"] = 34905,
+							},
+							["totalover_without_pet"] = 0.006875,
+							["healing_taken"] = 34905.006875,
+							["fight_component"] = true,
+							["end_time"] = 1554727008,
+							["healing_from"] = {
+								["我会大跳你呢"] = true,
+							},
+							["nome"] = "我会大跳你呢",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[190456] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 18308,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 2250,
+										["targets"] = {
+											["我会大跳你呢"] = 18308,
+										},
+										["n_min"] = 733,
+										["counter"] = 12,
+										["overheal"] = 0,
+										["total"] = 18308,
+										["c_max"] = 0,
+										["id"] = 190456,
+										["targets_absorbs"] = {
+											["我会大跳你呢"] = 18308,
+										},
+										["m_healed"] = 0,
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 18308,
+										["n_amt"] = 12,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+									[12975] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 16597,
+										["targets"] = {
+											["我会大跳你呢"] = 16597,
+										},
+										["n_min"] = 16597,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 16597,
+										["c_max"] = 0,
+										["id"] = 12975,
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 16597,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1554726984,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["spec"] = 73,
+							["totaldenied"] = 0.006875,
+							["delay"] = 0,
+							["last_event"] = 1554727008,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 1,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 210.004687,
+							["resource"] = 0.004687,
+							["targets"] = {
+								["我会大跳你呢"] = 210,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "WARRIOR",
+							["fight_component"] = true,
+							["total"] = 210.004687,
+							["nome"] = "我会大跳你呢",
+							["spec"] = 73,
+							["grupo"] = true,
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[6343] = {
+										["id"] = 6343,
+										["total"] = 30,
+										["targets"] = {
+											["我会大跳你呢"] = 30,
+										},
+										["counter"] = 6,
+									},
+									[23922] = {
+										["id"] = 23922,
+										["total"] = 105,
+										["targets"] = {
+											["我会大跳你呢"] = 105,
+										},
+										["counter"] = 7,
+									},
+									[195707] = {
+										["id"] = 195707,
+										["total"] = 75,
+										["targets"] = {
+											["我会大跳你呢"] = 75,
+										},
+										["counter"] = 25,
+									},
+								},
+							},
+							["flag_original"] = 1297,
+							["last_event"] = 1554727117,
+							["alternatepower"] = 0.004687,
+							["isTank"] = true,
+							["serial"] = "Player-2124-08385BD2",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 1,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[6343] = {
+										["activedamt"] = 2,
+										["id"] = 6343,
+										["targets"] = {
+										},
+										["uptime"] = 37,
+										["appliedamt"] = 2,
+										["refreshamt"] = 9,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[132168] = {
+										["activedamt"] = 0,
+										["id"] = 132168,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[115767] = {
+										["activedamt"] = 2,
+										["id"] = 115767,
+										["targets"] = {
+										},
+										["uptime"] = 38,
+										["appliedamt"] = 2,
+										["refreshamt"] = 13,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["cooldowns_defensive"] = 1.006544,
+							["buff_uptime"] = 187,
+							["last_cooldown"] = {
+								1554726994.561, -- [1]
+								12975, -- [2]
+							},
+							["cc_done_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[132168] = {
+										["id"] = 132168,
+										["targets"] = {
+											["达萨利安追猎者"] = 1,
+											["剜齿虎"] = 1,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["classe"] = "WARRIOR",
+							["cooldowns_defensive_targets"] = {
+								["我会大跳你呢"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[12975] = {
+										["activedamt"] = 1,
+										["id"] = 12975,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[18499] = {
+										["activedamt"] = 1,
+										["id"] = 18499,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5302] = {
+										["activedamt"] = 5,
+										["id"] = 5302,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 5,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[202602] = {
+										["activedamt"] = 1,
+										["id"] = 202602,
+										["targets"] = {
+										},
+										["uptime"] = 40,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[132404] = {
+										["activedamt"] = 2,
+										["id"] = 132404,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[190456] = {
+										["activedamt"] = 2,
+										["id"] = 190456,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[6673] = {
+										["activedamt"] = 1,
+										["id"] = 6673,
+										["targets"] = {
+										},
+										["uptime"] = 40,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[186406] = {
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["targets"] = {
+										},
+										["uptime"] = 40,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[23920] = {
+										["activedamt"] = 1,
+										["id"] = 23920,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 77,
+							["cc_done_targets"] = {
+								["达萨利安追猎者"] = 1,
+								["剜齿虎"] = 1,
+							},
+							["cc_done"] = 2.006049,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 73,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[12975] = 1,
+								[6572] = 6,
+								[18499] = 1,
+								[20243] = 6,
+								[23922] = 6,
+								[46968] = 1,
+								[23920] = 1,
+								[6343] = 6,
+								[2565] = 2,
+								[190456] = 2,
+							},
+							["cooldowns_defensive_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[12975] = {
+										["id"] = 12975,
+										["targets"] = {
+											["我会大跳你呢"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1554727008,
+							["nome"] = "我会大跳你呢",
+							["pets"] = {
+							},
+							["serial"] = "Player-2124-08385BD2",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "剜齿虎",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[273892] = 6,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3932-1642-4187-129337-00002B0683",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "达萨利安追猎者",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[273892] = 4,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-3932-1642-4187-137829-00002B403B",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 1,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["我会大跳你呢"] = true,
+				},
+				["CombatStartedAt"] = 26002.171,
+				["overall_added"] = true,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "剜齿虎",
+				["combat_counter"] = 8,
+				["playing_solo"] = true,
+				["totals"] = {
+					159668.992716, -- [1]
+					34905, -- [2]
+					{
+						0, -- [1]
+						[0] = 210,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 1,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					67725, -- [1]
+					34905, -- [2]
+					{
+						0, -- [1]
+						[0] = 210,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 1,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+					{
+						{
+							{
+								false, -- [1]
+								190456, -- [2]
+								1418, -- [3]
+								1554726985.919, -- [4]
+								25625, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [1]
+							{
+								true, -- [1]
+								1, -- [2]
+								3586, -- [3]
+								1554726987.181, -- [4]
+								24207, -- [5]
+								"剜齿虎", -- [6]
+								1793, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1793, -- [3]
+								1554726987.181, -- [4]
+								24207, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [3]
+							{
+								true, -- [1]
+								1, -- [2]
+								3130, -- [3]
+								1554726987.941, -- [4]
+								22414, -- [5]
+								"达萨利安追猎者", -- [6]
+								1565, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1565, -- [3]
+								1554726987.941, -- [4]
+								22414, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [5]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1877, -- [3]
+								1554726988.4, -- [4]
+								20849, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [6]
+							{
+								true, -- [1]
+								273892, -- [2]
+								3755, -- [3]
+								1554726988.4, -- [4]
+								18971, -- [5]
+								"剜齿虎", -- [6]
+								1877, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [7]
+							{
+								true, -- [1]
+								1, -- [2]
+								2886, -- [3]
+								1554726990.054, -- [4]
+								18971, -- [5]
+								"达萨利安追猎者", -- [6]
+								733, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [8]
+							{
+								false, -- [1]
+								190456, -- [2]
+								733, -- [3]
+								1554726990.054, -- [4]
+								18971, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [9]
+							{
+								true, -- [1]
+								273892, -- [2]
+								3399, -- [3]
+								1554726990.902, -- [4]
+								13419, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [10]
+							{
+								true, -- [1]
+								1, -- [2]
+								2352, -- [3]
+								1554726993.219, -- [4]
+								13419, -- [5]
+								"剜齿虎", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [11]
+							{
+								true, -- [1]
+								1, -- [2]
+								2457, -- [3]
+								1554726994.097, -- [4]
+								11067, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [12]
+							{
+								false, -- [1]
+								12975, -- [2]
+								16597, -- [3]
+								1554726994.561, -- [4]
+								25207, -- [5]
+								"我会大跳你呢", -- [6]
+								nil, -- [7]
+								0, -- [8]
+							}, -- [13]
+							{
+								1, -- [1]
+								12975, -- [2]
+								1, -- [3]
+								1554726994.561, -- [4]
+								25207, -- [5]
+								"我会大跳你呢", -- [6]
+							}, -- [14]
+							{
+								true, -- [1]
+								1, -- [2]
+								2755, -- [3]
+								1554726995.307, -- [4]
+								25206, -- [5]
+								"剜齿虎", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [15]
+							{
+								true, -- [1]
+								273892, -- [2]
+								4936, -- [3]
+								1554726995.832, -- [4]
+								17515, -- [5]
+								"剜齿虎", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [16]
+							{
+								true, -- [1]
+								1, -- [2]
+								2374, -- [3]
+								1554726996.16, -- [4]
+								17515, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [17]
+							{
+								true, -- [1]
+								1, -- [2]
+								2387, -- [3]
+								1554726997.308, -- [4]
+								15141, -- [5]
+								"剜齿虎", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [18]
+							{
+								true, -- [1]
+								1, -- [2]
+								2069, -- [3]
+								1554726998.173, -- [4]
+								12754, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [19]
+							{
+								true, -- [1]
+								273892, -- [2]
+								3563, -- [3]
+								1554726998.267, -- [4]
+								7122, -- [5]
+								"达萨利安追猎者", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [20]
+							{
+								true, -- [1]
+								1, -- [2]
+								2636, -- [3]
+								1554726999.311, -- [4]
+								7122, -- [5]
+								"剜齿虎", -- [6]
+								1318, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [21]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1318, -- [3]
+								1554726999.311, -- [4]
+								7122, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [22]
+							{
+								true, -- [1]
+								1, -- [2]
+								2600, -- [3]
+								1554727000.19, -- [4]
+								5804, -- [5]
+								"达萨利安追猎者", -- [6]
+								1300, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [23]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1300, -- [3]
+								1554727000.19, -- [4]
+								5804, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [24]
+							{
+								true, -- [1]
+								1, -- [2]
+								3006, -- [3]
+								1554727001.324, -- [4]
+								4504, -- [5]
+								"剜齿虎", -- [6]
+								1503, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [25]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1503, -- [3]
+								1554727001.324, -- [4]
+								4504, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [26]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1521, -- [3]
+								1554727006.775, -- [4]
+								3001, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [27]
+							{
+								true, -- [1]
+								273892, -- [2]
+								3042, -- [3]
+								1554727006.775, -- [4]
+								1480, -- [5]
+								"达萨利安追猎者", -- [6]
+								1521, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [28]
+							{
+								true, -- [1]
+								1, -- [2]
+								2525, -- [3]
+								1554727007.325, -- [4]
+								1480, -- [5]
+								"剜齿虎", -- [6]
+								1262, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [29]
+							{
+								false, -- [1]
+								190456, -- [2]
+								1262, -- [3]
+								1554727007.325, -- [4]
+								1480, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [30]
+							{
+								false, -- [1]
+								190456, -- [2]
+								2250, -- [3]
+								1554727009.229, -- [4]
+								217, -- [5]
+								"我会大跳你呢", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [31]
+							{
+								true, -- [1]
+								273892, -- [2]
+								4647, -- [3]
+								1554727009.229, -- [4]
+								1, -- [5]
+								"剜齿虎", -- [6]
+								2250, -- [7]
+								1, -- [8]
+								false, -- [9]
+								2180, -- [10]
+							}, -- [32]
+							{
+								3, -- [1]
+								12975, -- [2]
+								1, -- [3]
+								1554726994.561, -- [4]
+								0, -- [5]
+								"我会大跳你呢", -- [6]
+							}, -- [33]
+						}, -- [1]
+						1554727009.229, -- [2]
+						"我会大跳你呢", -- [3]
+						"WARRIOR", -- [4]
+						54160, -- [5]
+						"0m 40s", -- [6]
+						["last_cooldown"] = {
+							1554726994.561, -- [1]
+							12975, -- [2]
+						},
+						["dead_at"] = 40.3969999999972,
+						["dead"] = true,
+					}, -- [1]
+				},
+				["CombatEndedAt"] = 26042.568,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["我会大跳你呢"] = 34905.006875,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["我会大跳你呢"] = 67725.008598,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 26042.568,
+				["instance_type"] = "none",
+				["combat_id"] = 1,
+				["player_last_events"] = {
+				},
+				["TotalElapsedCombatTime"] = 40.3969999999972,
+				["frags_need_refresh"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "20:36:49",
+				["data_inicio"] = "20:36:09",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["蓝色蝴蝶"] = 1,
+				},
+				["start_time"] = 26002.171,
+				["TimeData"] = {
+				},
+				["contra"] = "剜齿虎",
+			}, -- [3]
+		},
+	},
+	["last_version"] = "v8.1.5.7053",
+	["SoloTablesSaved"] = {
+		["Mode"] = 1,
+	},
+	["tabela_instancias"] = {
+	},
+	["on_death_menu"] = true,
+	["nick_tag_cache"] = {
+		["nextreset"] = 1555239082,
+		["last_version"] = 11,
+	},
+	["last_instance_id"] = 0,
+	["announce_interrupts"] = {
+		["enabled"] = false,
+		["whisper"] = "",
+		["channel"] = "SAY",
+		["custom"] = "",
+		["next"] = "",
+	},
+	["last_instance_time"] = 0,
+	["active_profile"] = "我会消失-亡语者",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["ignore_nicktag"] = false,
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["updatespeed"] = 1,
+			["showamount"] = false,
+			["animate"] = false,
+			["useplayercolor"] = false,
+			["useclasscolors"] = false,
+			["author"] = "Details! Team",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["enabled"] = true,
+		},
+		["DETAILS_PLUGIN_RAIDCHECK"] = {
+			["enabled"] = true,
+			["food_tier1"] = true,
+			["mythic_1_4"] = true,
+			["food_tier2"] = true,
+			["author"] = "Details! Team",
+			["use_report_panel"] = true,
+			["pre_pot_healers"] = false,
+			["pre_pot_tanks"] = false,
+			["food_tier3"] = true,
+		},
+		["DETAILS_PLUGIN_VANGUARD"] = {
+			["enabled"] = true,
+			["tank_block_texture"] = "Details Serenity",
+			["tank_block_color"] = {
+				0.24705882, -- [1]
+				0.0039215, -- [2]
+				0, -- [3]
+				0.8, -- [4]
+			},
+			["show_inc_bars"] = false,
+			["author"] = "Details! Team",
+			["first_run"] = false,
+			["tank_block_size"] = 150,
+		},
+		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+			["enabled"] = true,
+			["encounter_timers_bw"] = {
+			},
+			["max_emote_segments"] = 3,
+			["author"] = "Details! Team",
+			["window_scale"] = 1,
+			["hide_on_combat"] = false,
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["encounter_timers_dbm"] = {
+			},
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["is_first_run"] = false,
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["main_frame_size"] = {
+				300, -- [1]
+				500.000030517578, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["arrow_anchor_x"] = 0,
+			["row_texture"] = "Details Serenity",
+			["scale"] = 1,
+			["row_height"] = 20,
+			["main_frame_strata"] = "LOW",
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["point"] = "CENTER",
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.2, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = 0,
+				["x"] = 3.05175781250e-05,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
+			["font_size"] = 10,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["y"] = 7.629394531250e-06,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = false,
+			["use_spark"] = true,
+		},
+	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["last_day"] = "08",
+	["cached_talents"] = {
+		["Player-2124-08385BD2"] = {
+			22373, -- [1]
+			15760, -- [2]
+			21204, -- [3]
+			22488, -- [4]
+			22395, -- [5]
+			22800, -- [6]
+			22626, -- [7]
+		},
+	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_realversion"] = 138,
+	["combat_id"] = 3,
+	["savedStyles"] = {
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["combat_counter"] = 10,
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.024673,
+					["damage_from"] = {
+						["达萨利安追猎者"] = true,
+						["剜齿虎"] = true,
+					},
+					["targets"] = {
+						["剜齿虎"] = 25687,
+						["达萨利安追猎者"] = 118190,
+						["蓝色蝴蝶"] = 1362,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["last_event"] = 0,
+					["classe"] = "WARRIOR",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 145239.024673,
+					["end_time"] = 1554727009,
+					["isTank"] = true,
+					["dps_started"] = false,
+					["total"] = 145239.024673,
+					["friendlyfire_total"] = 0,
+					["avoidance"] = {
+						["overall"] = {
+							["DODGE"] = 0,
+							["FULL_ABSORB_AMT"] = 0,
+							["BLOCKED_AMT"] = 0,
+							["BLOCKED_HITS"] = 0,
+							["FULL_ABSORBED"] = 0,
+							["ALL"] = 0,
+							["PARTIAL_ABSORBED"] = 0,
+							["PARRY"] = 0,
+							["PARTIAL_ABSORB_AMT"] = 0,
+							["ABSORB"] = 0,
+							["ABSORB_AMT"] = 0,
+							["FULL_HIT"] = 0,
+							["HITS"] = 0,
+							["FULL_HIT_AMT"] = 0,
+						},
+					},
+					["nome"] = "我会大跳你呢",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 5,
+								["b_amt"] = 0,
+								["c_dmg"] = 7816,
+								["g_amt"] = 0,
+								["n_max"] = 874,
+								["targets"] = {
+									["达萨利安追猎者"] = 34840,
+									["剜齿虎"] = 3970,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 30994,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 45,
+								["total"] = 38810,
+								["c_max"] = 1599,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 40,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[115767] = {
+								["c_amt"] = 7,
+								["b_amt"] = 0,
+								["c_dmg"] = 5208,
+								["g_amt"] = 0,
+								["n_max"] = 402,
+								["targets"] = {
+									["达萨利安追猎者"] = 12827,
+									["剜齿虎"] = 6151,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 13770,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 44,
+								["total"] = 18978,
+								["c_max"] = 804,
+								["id"] = 115767,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 37,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[6572] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 962,
+								["targets"] = {
+									["达萨利安追猎者"] = 9500,
+									["剜齿虎"] = 5291,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 14791,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 17,
+								["total"] = 14791,
+								["c_max"] = 0,
+								["id"] = 6572,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 17,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[20243] = {
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 4728,
+								["g_amt"] = 0,
+								["n_max"] = 692,
+								["targets"] = {
+									["达萨利安追猎者"] = 11098,
+									["剜齿虎"] = 1268,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 7638,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 16,
+								["total"] = 12366,
+								["c_max"] = 1268,
+								["id"] = 20243,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 12,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[23922] = {
+								["c_amt"] = 2,
+								["b_amt"] = 0,
+								["c_dmg"] = 5925,
+								["g_amt"] = 0,
+								["n_max"] = 2109,
+								["targets"] = {
+									["达萨利安追猎者"] = 27447,
+									["剜齿虎"] = 3104,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 24626,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 17,
+								["total"] = 30551,
+								["c_max"] = 3104,
+								["id"] = 23922,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 15,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[46968] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 135,
+								["targets"] = {
+									["达萨利安追猎者"] = 135,
+									["剜齿虎"] = 135,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 270,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 270,
+								["c_max"] = 0,
+								["id"] = 46968,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 2,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[52174] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 215,
+								["targets"] = {
+									["达萨利安追猎者"] = 215,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 215,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 215,
+								["c_max"] = 0,
+								["id"] = 52174,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[6343] = {
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 7164,
+								["g_amt"] = 0,
+								["n_max"] = 2098,
+								["targets"] = {
+									["蓝色蝴蝶"] = 1362,
+									["达萨利安追猎者"] = 20927,
+									["剜齿虎"] = 5768,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 20893,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 22,
+								["total"] = 28057,
+								["c_max"] = 1922,
+								["id"] = 6343,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 18,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[34428] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 629,
+								["targets"] = {
+									["达萨利安追猎者"] = 629,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 629,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 629,
+								["c_max"] = 0,
+								["id"] = 34428,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							[107570] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 572,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["达萨利安追猎者"] = 572,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 572,
+								["c_max"] = 572,
+								["id"] = 107570,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["grupo"] = true,
+					["friendlyfire"] = {
+					},
+					["spec"] = 73,
+					["serial"] = "Player-2124-08385BD2",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 184404.024673,
+					["start_time"] = 1554726901,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [1]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.01314,
+					["on_hold"] = false,
+					["damage_from"] = {
+						["我会大跳你呢"] = true,
+					},
+					["targets"] = {
+						["我会大跳你呢"] = 54942,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 54942.01314,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1554727009,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["nome"] = "剜齿虎",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 7,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 3591,
+								["targets"] = {
+									["我会大跳你呢"] = 41604,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 41604,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 19,
+								["a_amt"] = 5,
+								["total"] = 41604,
+								["c_max"] = 0,
+								["MISS"] = 2,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 1,
+								["a_dmg"] = 15289,
+								["m_crit"] = 0,
+								["PARRY"] = 2,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 18962,
+								["n_amt"] = 14,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[273892] = {
+								["c_amt"] = 0,
+								["b_amt"] = 3,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 4936,
+								["targets"] = {
+									["我会大跳你呢"] = 13338,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 13338,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 6,
+								["total"] = 13338,
+								["c_max"] = 0,
+								["a_amt"] = 2,
+								["id"] = 273892,
+								["r_dmg"] = 0,
+								["DODGE"] = 2,
+								["a_dmg"] = 8402,
+								["m_crit"] = 0,
+								["PARRY"] = 1,
+								["m_amt"] = 0,
+								["successful_casted"] = 6,
+								["b_dmg"] = 13338,
+								["n_amt"] = 3,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["monster"] = true,
+					["total"] = 54942.01314,
+					["serial"] = "Creature-0-3932-1642-4187-129337-00002B0683",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 25687.01314,
+					["start_time"] = 1554726968,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [2]
+				{
+					["flag_original"] = 2600,
+					["totalabsorbed"] = 0.014304,
+					["damage_from"] = {
+						["我会大跳你呢"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.014304,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1554727009,
+					["friendlyfire"] = {
+					},
+					["last_event"] = 0,
+					["nome"] = "蓝色蝴蝶",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+						},
+					},
+					["friendlyfire_total"] = 0,
+					["total"] = 0.014304,
+					["serial"] = "Creature-0-3932-1642-4187-130447-00002AAD58",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 1362.014304,
+					["start_time"] = 1554727006,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [3]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.019599,
+					["damage_from"] = {
+						["我会大跳你呢"] = true,
+					},
+					["targets"] = {
+						["我会大跳你呢"] = 129462,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 129462.019599,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["monster"] = true,
+					["total"] = 129462.019599,
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "达萨利安追猎者",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 20,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 3346,
+								["targets"] = {
+									["我会大跳你呢"] = 89927,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 89927,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 44,
+								["total"] = 89927,
+								["c_max"] = 0,
+								["a_amt"] = 15,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 1,
+								["a_dmg"] = 40815,
+								["m_crit"] = 0,
+								["PARRY"] = 8,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 47585,
+								["n_amt"] = 35,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							}, -- [1]
+							[273892] = {
+								["c_amt"] = 0,
+								["b_amt"] = 8,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 4370,
+								["targets"] = {
+									["我会大跳你呢"] = 39535,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 39535,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 13,
+								["total"] = 39535,
+								["c_max"] = 0,
+								["a_amt"] = 2,
+								["id"] = 273892,
+								["r_dmg"] = 0,
+								["MISS"] = 1,
+								["a_dmg"] = 6246,
+								["m_crit"] = 0,
+								["PARRY"] = 1,
+								["m_amt"] = 0,
+								["successful_casted"] = 13,
+								["b_dmg"] = 28096,
+								["n_amt"] = 11,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["end_time"] = 1554727009,
+					["serial"] = "Creature-0-3932-1642-4187-137829-00002B403B",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1554726912,
+					["delay"] = 0,
+					["damage_taken"] = 118190.019599,
+				}, -- [4]
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["healing_from"] = {
+						["我会大跳你呢"] = true,
+					},
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["classe"] = "WARRIOR",
+					["totalover"] = 0.029233,
+					["total_without_pet"] = 81952.029233,
+					["total"] = 81952.029233,
+					["targets_absorbs"] = {
+						["我会大跳你呢"] = 34588,
+					},
+					["heal_enemy"] = {
+					},
+					["on_hold"] = false,
+					["isTank"] = true,
+					["serial"] = "Player-2124-08385BD2",
+					["totalabsorb"] = 34588.029233,
+					["last_hps"] = 0,
+					["targets"] = {
+						["我会大跳你呢"] = 81952,
+					},
+					["totalover_without_pet"] = 0.029233,
+					["healing_taken"] = 81952.029233,
+					["fight_component"] = true,
+					["end_time"] = 1554727009,
+					["start_time"] = 1554726948,
+					["nome"] = "我会大跳你呢",
+					["spells"] = {
+						["tipo"] = 3,
+						["_ActorTable"] = {
+							[12975] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 18842,
+								["targets"] = {
+									["我会大跳你呢"] = 35439,
+								},
+								["n_min"] = 0,
+								["counter"] = 2,
+								["overheal"] = 0,
+								["total"] = 35439,
+								["c_max"] = 0,
+								["id"] = 12975,
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["n_curado"] = 35439,
+								["n_amt"] = 2,
+								["totaldenied"] = 0,
+								["m_healed"] = 0,
+								["absorbed"] = 0,
+							},
+							[118779] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 10832,
+								["targets"] = {
+									["我会大跳你呢"] = 10832,
+								},
+								["n_min"] = 0,
+								["counter"] = 1,
+								["overheal"] = 0,
+								["total"] = 10832,
+								["c_max"] = 0,
+								["id"] = 118779,
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["n_curado"] = 10832,
+								["n_amt"] = 1,
+								["totaldenied"] = 0,
+								["m_healed"] = 0,
+								["absorbed"] = 0,
+							},
+							[59913] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 1093,
+								["targets"] = {
+									["我会大跳你呢"] = 1093,
+								},
+								["n_min"] = 0,
+								["counter"] = 1,
+								["overheal"] = 0,
+								["total"] = 1093,
+								["c_max"] = 0,
+								["id"] = 59913,
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["n_curado"] = 1093,
+								["n_amt"] = 1,
+								["totaldenied"] = 0,
+								["m_healed"] = 0,
+								["absorbed"] = 0,
+							},
+							[190456] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 34588,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 2250,
+								["targets"] = {
+									["我会大跳你呢"] = 34588,
+								},
+								["n_min"] = 0,
+								["counter"] = 24,
+								["overheal"] = 0,
+								["total"] = 34588,
+								["c_max"] = 0,
+								["id"] = 190456,
+								["targets_absorbs"] = {
+									["我会大跳你呢"] = 34588,
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["n_curado"] = 34588,
+								["n_amt"] = 24,
+								["totaldenied"] = 0,
+								["m_healed"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+					},
+					["grupo"] = true,
+					["targets_overheal"] = {
+					},
+					["heal_enemy_amt"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["spec"] = 73,
+					["totaldenied"] = 0.029233,
+					["delay"] = 0,
+					["tipo"] = 2,
+				}, -- [1]
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+				{
+					["received"] = 439.019805,
+					["resource"] = 10.019805,
+					["targets"] = {
+						["我会大跳你呢"] = 439,
+					},
+					["pets"] = {
+					},
+					["powertype"] = 0,
+					["resource_type"] = 5,
+					["classe"] = "WARRIOR",
+					["fight_component"] = true,
+					["total"] = 439.019805,
+					["nome"] = "我会大跳你呢",
+					["spec"] = 73,
+					["grupo"] = true,
+					["tipo"] = 3,
+					["spells"] = {
+						["tipo"] = 7,
+						["_ActorTable"] = {
+							[1160] = {
+								["id"] = 1160,
+								["total"] = 40,
+								["targets"] = {
+									["我会大跳你呢"] = 40,
+								},
+								["counter"] = 1,
+							},
+							[23922] = {
+								["id"] = 23922,
+								["total"] = 165,
+								["targets"] = {
+									["我会大跳你呢"] = 165,
+								},
+								["counter"] = 11,
+							},
+							[107574] = {
+								["id"] = 107574,
+								["total"] = 20,
+								["targets"] = {
+									["我会大跳你呢"] = 20,
+								},
+								["counter"] = 1,
+							},
+							[195707] = {
+								["id"] = 195707,
+								["total"] = 144,
+								["targets"] = {
+									["我会大跳你呢"] = 144,
+								},
+								["counter"] = 53,
+							},
+							[6343] = {
+								["id"] = 6343,
+								["total"] = 70,
+								["targets"] = {
+									["我会大跳你呢"] = 70,
+								},
+								["counter"] = 14,
+							},
+						},
+					},
+					["flag_original"] = 1297,
+					["last_event"] = 0,
+					["alternatepower"] = 0.019805,
+					["isTank"] = true,
+					["serial"] = "Player-2124-08385BD2",
+				}, -- [1]
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1047,
+					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[132169] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 1,
+								["id"] = 132169,
+								["uptime"] = 4,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[1160] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 1,
+								["id"] = 1160,
+								["uptime"] = 7,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[115767] = {
+								["refreshamt"] = 26,
+								["activedamt"] = 3,
+								["appliedamt"] = 4,
+								["id"] = 115767,
+								["uptime"] = 95,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[132168] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 2,
+								["id"] = 132168,
+								["uptime"] = 2,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[6343] = {
+								["refreshamt"] = 17,
+								["activedamt"] = 3,
+								["appliedamt"] = 4,
+								["id"] = 6343,
+								["uptime"] = 86,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["cooldowns_defensive"] = 3.012413,
+					["pets"] = {
+					},
+					["cc_done_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[132168] = {
+								["id"] = 132168,
+								["targets"] = {
+									["达萨利安追猎者"] = 1,
+									["剜齿虎"] = 1,
+								},
+								["counter"] = 2,
+							},
+							[132169] = {
+								["id"] = 132169,
+								["targets"] = {
+									["达萨利安追猎者"] = 1,
+								},
+								["counter"] = 1,
+							},
+						},
+					},
+					["classe"] = "WARRIOR",
+					["cooldowns_defensive_targets"] = {
+						["我会大跳你呢"] = 2,
+						["[*] 团队CD"] = 1,
+					},
+					["buff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[12975] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 12975,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[18499] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 18499,
+								["uptime"] = 12,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[118779] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 118779,
+								["uptime"] = 6,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[5302] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 11,
+								["appliedamt"] = 11,
+								["id"] = 5302,
+								["uptime"] = 23,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[97463] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 97463,
+								["uptime"] = 10,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[107574] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 107574,
+								["uptime"] = 14,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[32216] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 32216,
+								["uptime"] = 2,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[202602] = {
+								["refreshamt"] = 2,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
+								["id"] = 202602,
+								["uptime"] = 104,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[132404] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 6,
+								["appliedamt"] = 6,
+								["id"] = 132404,
+								["uptime"] = 35,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[190456] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 5,
+								["appliedamt"] = 5,
+								["id"] = 190456,
+								["uptime"] = 42,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[23920] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 23920,
+								["uptime"] = 5,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[6673] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 6673,
+								["uptime"] = 40,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[186406] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
+								["id"] = 186406,
+								["uptime"] = 105,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 194,
+					["debuff_uptime_targets"] = {
+					},
+					["cc_done"] = 3.01984,
+					["nome"] = "我会大跳你呢",
+					["spec"] = 73,
+					["grupo"] = true,
+					["spell_cast"] = {
+						[12975] = 2,
+						[6572] = 12,
+						[18499] = 2,
+						[20243] = 16,
+						[23922] = 15,
+						[107570] = 1,
+						[107574] = 1,
+						[46968] = 1,
+						[34428] = 1,
+						[97462] = 1,
+						[23920] = 1,
+						[6343] = 16,
+						[2565] = 6,
+						[1160] = 1,
+						[190456] = 5,
+					},
+					["buff_uptime_targets"] = {
+					},
+					["buff_uptime"] = 427,
+					["tipo"] = 4,
+					["cooldowns_defensive_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[12975] = {
+								["id"] = 12975,
+								["targets"] = {
+									["我会大跳你呢"] = 2,
+								},
+								["counter"] = 2,
+							},
+							[97462] = {
+								["id"] = 97462,
+								["targets"] = {
+									["[*] 团队CD"] = 1,
+								},
+								["counter"] = 1,
+							},
+						},
+					},
+					["cc_done_targets"] = {
+						["达萨利安追猎者"] = 2,
+						["剜齿虎"] = 1,
+					},
+					["serial"] = "Player-2124-08385BD2",
+					["last_event"] = 0,
+				}, -- [1]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "剜齿虎",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[273892] = 6,
+					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-3932-1642-4187-129337-00002B0683",
+					["classe"] = "UNKNOW",
+				}, -- [2]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "达萨利安追猎者",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[273892] = 13,
+					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-3932-1642-4187-137829-00002B403B",
+					["classe"] = "UNKNOW",
+				}, -- [3]
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 7,
+		["totals"] = {
+			329643.042403, -- [1]
+			81952.020451, -- [2]
+			{
+				0, -- [1]
+				[0] = 439.014476,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 3.010764,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "20:36:09",
+		["end_time"] = 26221.955,
+		["totals_grupo"] = {
+			145239.022491, -- [1]
+			81952.020451, -- [2]
+			{
+				0, -- [1]
+				[0] = 439.014476,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 3.010764,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+		},
+		["spells_cast_timeline"] = {
+		},
+		["segments_added"] = {
+			{
+				["elapsed"] = 31.1860000000015,
+				["type"] = 0,
+				["name"] = "达萨利安追猎者",
+				["clock"] = "20:39:17",
+			}, -- [1]
+			{
+				["elapsed"] = 33.9399999999987,
+				["type"] = 0,
+				["name"] = "达萨利安追猎者",
+				["clock"] = "20:38:37",
+			}, -- [2]
+			{
+				["elapsed"] = 40.3969999999972,
+				["type"] = 0,
+				["name"] = "剜齿虎",
+				["clock"] = "20:36:09",
+			}, -- [3]
+		},
+		["frags"] = {
+		},
+		["data_fim"] = "20:39:48",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 26116.432,
+		["TimeData"] = {
+			["Raid Damage Done"] = {
+			},
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+			["damage"] = {
+			},
+		},
+	},
+	["force_font_outline"] = "",
+	["local_instances_config"] = {
+		{
+			["segment"] = 0,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["is_open"] = true,
+			["isLocked"] = false,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+			},
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -219.606155395508,
+					["x"] = 573.446228027344,
+					["w"] = 285.738494873047,
+					["h"] = 118.679832458496,
+				},
+				["solo"] = {
+					["y"] = -233.08479309082,
+					["x"] = 570.726501464844,
+					["w"] = 299.999847412109,
+					["h"] = 300,
+				},
+			},
+		}, -- [1]
+	},
+	["character_data"] = {
+		["logons"] = 3,
+	},
+	["announce_cooldowns"] = {
+		["enabled"] = false,
+		["ignored_cooldowns"] = {
+		},
+		["custom"] = "",
+		["channel"] = "RAID",
+	},
+	["rank_window"] = {
+		["last_difficulty"] = 15,
+		["last_raid"] = "",
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["cached_specs"] = {
+		["Player-2124-08385BD2"] = 73,
+	},
+}

@@ -1,0 +1,37 @@
+BINDINGMODE 0
+bind UP TOGGLEAUTORUN
+bind DOWN TOGGLERUN
+bind X CLICK BindPadKey:SPELL 乌索尔旋风
+bind Z CLICK BindPadKey:SPELL 树皮术
+bind NUMLOCK NONE
+bind BUTTON4 NONE
+bind NUMPADDIVIDE NONE
+bind PAGEUP CAMERAZOOMIN
+bind PAGEDOWN CAMERAZOOMOUT
+bind R CLICK BindPadMacro:激活
+bind 9 CLICK BindPadMacro:旅行形态
+bind F CLICK BindPadKey:SPELL 台风
+bind Y NONE
+bind SHIFT-Y TOGGLEACHIEVEMENT
+bind ALT-Z CLICK BindPadMacro:铁木树皮
+bind MOUSEWHEELUP CLICK BindPadMacro:野性冲锋
+bind MOUSEWHEELDOWN CLICK BindPadMacro:回春术
+bind NUMPAD1 TOGGLEAUTORUN
+bind CTRL-D NONE
+bind SHIFT-W CLICK BindPadKey:SPELL 恶魔传送门
+bind ALT-S NONE
+bind ALT-MOUSEWHEELDOWN CLICK BindPadMacro:生命绽放
+bind ALT-2 CLICK BindPadMacro:迅捷治愈
+bind ALT-5 NONE
+bind ALT-3 CLICK BindPadMacro:复生
+bind ALT-1 CLICK BindPadKey:SPELL 百花齐放
+bind ALT-4 NONE
+bind ALT-MOUSEWHEELUP CLICK BindPadKey:SPELL 唤醒
+bind F6 NONE
+bind F7 NONE
+bind NUMPAD6 NONE
+bind ALT-A NONE
+bind ALT-Q CLICK BindPadMacro:愈合
+bind ALT-X CLICK BindPadMacro:纠缠根须
+bind ALT-E CLICK BindPadMacro:野性成长
+bind NUMPAD9 NONE

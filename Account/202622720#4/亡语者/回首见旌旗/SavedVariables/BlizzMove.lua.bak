@@ -1,0 +1,79 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+	},
+	["RaidParentFrame"] = {
+	},
+	["InterfaceOptionsFrame"] = {
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["LFRParentFrame"] = {
+	},
+	["GameMenuFrame"] = {
+	},
+	["CommunitiesFrame"] = {
+	},
+	["CharacterFrame"] = {
+	},
+	["MailFrame"] = {
+	},
+	["EncounterJournal"] = {
+	},
+	["MacroFrame"] = {
+	},
+	["FriendsFrame"] = {
+	},
+	["KeyBindingFrame"] = {
+	},
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["GossipFrame"] = {
+	},
+	["PVEFrame"] = {
+	},
+	["MerchantFrame"] = {
+	},
+	["VideoOptionsFrame"] = {
+	},
+	["DressUpFrame"] = {
+	},
+	["WorldMapFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -38.2497596740723,
+			["xOfs"] = 39.5002899169922,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = -9.48812866210938,
+		["xOfs"] = 94.8523559570313,
+		["point"] = "LEFT",
+	},
+	["GuildBankFrame"] = {
+		["save"] = true,
+	},
+	["PlayerTalentFrame"] = {
+	},
+	["LootFrame"] = {
+	},
+	["SpellBookFrame"] = {
+	},
+	["BankFrame"] = {
+	},
+	["version"] = "201109013",
+	["LFDParentFrame"] = {
+	},
+	["QuestFrame"] = {
+	},
+	["TradeFrame"] = {
+	},
+	["CalendarFrame"] = {
+		["save"] = true,
+	},
+	["HelpFrame"] = {
+	},
+}

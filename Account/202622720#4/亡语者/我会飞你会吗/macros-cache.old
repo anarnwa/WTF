@@ -1,0 +1,65 @@
+VER 3 0100000000000012 "hot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,nodead,nohelp,exists]月火术(月光);[mod:alt,@mouseover,nodead,nohelp,exists]阳炎术(日光);[@mouseover,noharm,nodead,nomod,exists]回春术;[@mouseover,noharm,nodead,mod:alt,exists]生命绽放;[nohelp,nomod]月火术(月光);[nohelp,mod:alt]阳炎术(日光);
+END
+VER 3 0100000000000011 "休眠" "INV_MISC_QUESTIONMARK"
+#showtooltip 休眠
+/cast [@mouseover,exists,nohelp,nodead][]休眠
+END
+VER 3 0100000000000017 "伤害" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomod,@mouseover,exists,nodead,nohelp]阳炎之怒(日光);[mod:alt,@mouseover,exists,nodead,nohelp]明月打击;[nomod]阳炎之怒(日光);[mod:alt]明月打击
+END
+VER 3 010000000000000F "冲锋" "INV_MISC_QUESTIONMARK"
+#showtooltip 野性冲锋
+/cast [@mouseover,exists][]野性冲锋
+END
+VER 3 0100000000000019 "变" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:3/1] 枭兽形态;[talent:3/2] 猎豹形态;[talent:3/3]熊形态
+END
+VER 3 0100000000000018 "变形" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:3]猎豹形态(变形);[swimming]旅行形态(变形);[indoors]猎豹形态(变形);[combat]旅行形态(变形); [flyable]旅行形态(变形); [noflyable]旅行形态(变形);
+END
+VER 3 0100000000000009 "愈" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][]愈合
+END
+VER 3 0100000000000008 "树皮" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,noharm]铁木树皮
+END
+VER 3 010000000000000B "激活" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@player][]激活
+END
+VER 3 010000000000001B "百花" "INV_MISC_QUESTIONMARK"
+#showtooltip 百花齐放
+/cast [@cursor]百花齐放
+END
+VER 3 010000000000001D "结界" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][] 塞纳里奥结界
+END
+VER 3 0100000000000010 "缠绕" "INV_MISC_QUESTIONMARK"
+#showtooltip 纠缠根须
+/cast [@mouseover,exists,nohelp,nodead][]纠缠根须
+END
+VER 3 0100000000000013 "群缠" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,exists,nohelp,nodead][]群体缠绕
+/cast 台风
+END
+VER 3 010000000000000C "迅捷" "INV_MISC_QUESTIONMARK"
+#showtooltip 迅捷治愈
+/cast [@mouseover,help,exists][]迅捷治愈
+END
+VER 3 010000000000001C "饰品" "INV_MISC_QUESTIONMARK"
+#showtooltip 14
+/use [@mouseover,help,exists][]14
+END
+VER 3 010000000000000D "驱" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 安抚; [@mouseover,help] []自然之愈
+/cast [@mouseover,harm,nodead]安抚;[@mouseover,help,nodead]自然之愈;[mod:alt,@player]自然之愈;[harm]安抚;[help][]自然之愈
+END

@@ -1,0 +1,75 @@
+VER 3 0100000000000013 "冰冻" "INV_MISC_QUESTIONMARK"
+/施放 [@cursor] 冰冻术
+END
+VER 3 0100000000000002 "冰箱" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura 寒冰屏障
+/cast 寒冰屏障
+END
+VER 3 0100000000000003 "冰脉" "INV_MISC_QUESTIONMARK"
+/showtooltip
+/cast 冰冷血脉
+/use 13
+END
+VER 3 0100000000000010 "减速" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp][]减速
+END
+VER 3 0100000000000007 "变形" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castrandom [@mouseover,exists,nohelp,nodead][@target]变形术(绵羊),变形术(黑猫),变形术(猪),变形术(兔子),变形术(北极熊宝宝),变形术(小猴),变形术(恐角龙)
+END
+VER 3 0100000000000004 "奥强" "INV_MISC_QUESTIONMARK"
+#showtooltip 奥术强化
+/cast 奥术强化
+/use 13
+END
+VER 3 010000000000000F "宝宝" "INV_MISC_QUESTIONMARK"
+/cancelaura 奥术魔宠
+/cast 奥术魔宠
+END
+VER 3 0100000000000016 "弹幕" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm,nodead][]奥术弹幕
+END
+VER 3 0100000000000017 "彗星" "INV_MISC_QUESTIONMARK"
+#showtooltip 彗星风暴
+/cast 彗星风暴
+/use 13
+END
+VER 3 0100000000000011 "打断" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]法术反制
+END
+VER 3 0100000000000009 "气定" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 气定神闲
+/cast 奥术冲击
+END
+VER 3 0100000000000005 "燃烧" "INV_MISC_QUESTIONMARK"
+/showtooltip
+/cast 燃烧
+/use 12
+/use 13
+END
+VER 3 0100000000000006 "缓落" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [nomod,@player][]缓落术;
+END
+VER 3 010000000000000D "诅咒" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 法术吸取; [@mouseover,help] []解除诅咒
+/cast [@mouseover,harm,nodead]法术吸取;[@mouseover,help,nodead]解除诅咒;[mod:alt,@player]解除诅咒;[harm]法术吸取;[help][]解除诅咒
+END
+VER 3 010000000000000E "风暴" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/focus [@mouseover,exists,harm][]
+/cast [@focus]虚空风暴
+END
+VER 3 0100000000000018 "飞弹" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,harm,nodead][]奥术飞弹
+END
+VER 3 0100000000000008 "食物" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [button:1]魔法汉堡;[button:2]造餐术
+END

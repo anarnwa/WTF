@@ -1,0 +1,33 @@
+VER 3 0100000000000001 "保护" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]保护祝福
+END
+VER 3 0100000000000003 "圣疗" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]圣疗术
+END
+VER 3 0100000000000004 "圣闪" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]圣光闪现
+END
+VER 3 0100000000000005 "无敌" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura 圣盾术
+/cast 圣盾术
+END
+VER 3 0100000000000002 "晕" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]制裁之锤
+END
+VER 3 0100000000000006 "牺牲" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]牺牲祝福
+END
+VER 3 0100000000000007 "自由" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]自由祝福
+END
+VER 3 0100000000000008 "驱散" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]清毒术
+END

@@ -1,0 +1,42 @@
+VER 3 0100000000000003 "偷窃" "INV_MISC_QUESTIONMARK"
+/cast [nostealth]潜行
+/targetenemy [harm][nodead]
+/targetenemy [noharm][dead]
+/cast 搜索
+END
+VER 3 0100000000000008 "嫁祸" "INV_MISC_QUESTIONMARK"
+#showtooltip 嫁祸诀窍
+/click AutoTankMisdirect
+END
+VER 3 010000000000000A "影袭" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]影袭
+END
+VER 3 010000000000000C "手枪" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]手枪射击
+END
+VER 3 010000000000000B "斩击" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]斩击
+END
+VER 3 0100000000000007 "暗步" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]暗影步
+END
+VER 3 0100000000000001 "潜行" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !潜行
+END
+VER 3 010000000000000D "眉心" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]正中眉心
+END
+VER 3 0100000000000006 "致盲" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]致盲
+END
+VER 3 0100000000000009 "闷棍" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]闷棍
+END

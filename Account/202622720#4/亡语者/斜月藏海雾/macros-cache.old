@@ -1,0 +1,29 @@
+VER 3 0100000000000003 "愈合" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][]愈合
+END
+VER 3 0100000000000007 "战复" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][]复生
+END
+VER 3 0100000000000006 "潜行" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [nostance:2]猎豹形态
+/cast !潜行
+END
+VER 3 0100000000000005 "猫驱" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 安抚; [@mouseover,help] []清除腐蚀
+/cast [@mouseover,harm,nodead]安抚;[@mouseover,help,nodead]清除腐蚀;[harm]安抚;[help][]清除腐蚀
+END
+VER 3 0100000000000004 "缠绕" "INV_MISC_QUESTIONMARK"
+#showtooltip 纠缠根须
+/cast [@mouseover,exists,nohelp,nodead][]纠缠根须
+END
+VER 3 0100000000000002 "赶路" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:3]猎豹形态(变形);[swimming]旅行形态(变形);[indoors]猎豹形态(变形);[combat]旅行形态(变形); [flyable]旅行形态(变形); [noflyable]旅行形态(变形);
+END
+VER 3 0100000000000001 "驱散" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@
+END

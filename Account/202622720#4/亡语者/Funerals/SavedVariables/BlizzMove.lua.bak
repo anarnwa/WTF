@@ -1,0 +1,117 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+	},
+	["RaidParentFrame"] = {
+	},
+	["ClassTrainerFrame"] = {
+	},
+	["VideoOptionsFrame"] = {
+	},
+	["CharacterFrame"] = {
+	},
+	["MailFrame"] = {
+	},
+	["MacroFrame"] = {
+	},
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["ArchaeologyFrame"] = {
+	},
+	["BlackMarketFrame"] = {
+	},
+	["PlayerTalentFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -33.0370254516602,
+		["xOfs"] = 110.814788818359,
+		["point"] = "TOPLEFT",
+	},
+	["GuildBankFrame"] = {
+		["save"] = true,
+	},
+	["GuildFrame"] = {
+	},
+	["version"] = "201109013",
+	["QuestFrame"] = {
+	},
+	["TradeFrame"] = {
+	},
+	["CalendarFrame"] = {
+		["save"] = true,
+	},
+	["InterfaceOptionsFrame"] = {
+	},
+	["InspectFrame"] = {
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["LFRParentFrame"] = {
+	},
+	["BankFrame"] = {
+	},
+	["FriendsFrame"] = {
+	},
+	["GossipFrame"] = {
+	},
+	["LFDParentFrame"] = {
+	},
+	["DressUpFrame"] = {
+	},
+	["WorldMapFrame"] = {
+	},
+	["LootFrame"] = {
+		["default"] = {
+			["yOfs"] = 482.160522460938,
+			["xOfs"] = 739.061645507813,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "BOTTOMLEFT",
+		},
+	},
+	["KeyBindingFrame"] = {
+	},
+	["CommunitiesFrame"] = {
+	},
+	["PVEFrame"] = {
+	},
+	["MerchantFrame"] = {
+	},
+	["SpellBookFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
+			["yOfs"] = -116.000007629395,
+			["xOfs"] = 16,
+		},
+		["relativePoint"] = "LEFT",
+		["yOfs"] = -47.4381866455078,
+		["xOfs"] = 57.0864639282227,
+		["point"] = "LEFT",
+	},
+	["EncounterJournal"] = {
+	},
+	["GameMenuFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "CENTER",
+		["yOfs"] = -24.4938316345215,
+		["xOfs"] = 7.90124225616455,
+		["point"] = "CENTER",
+	},
+	["HelpFrame"] = {
+	},
+}

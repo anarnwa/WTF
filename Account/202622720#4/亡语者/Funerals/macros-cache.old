@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "群握" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover][@target][]血魔之握
+END

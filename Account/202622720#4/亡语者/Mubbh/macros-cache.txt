@@ -1,0 +1,28 @@
+VER 3 0100000000000006 "打断" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]沉默
+END
+VER 3 0100000000000005 "灼烧" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][]精神灼烧
+END
+VER 3 0100000000000003 "痛" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]暗言术：痛
+END
+VER 3 0100000000000001 "盾" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,help,nodead][]真言术：盾
+END
+VER 3 0100000000000004 "触" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nohelp,nodead][]吸血鬼之触
+END
+VER 3 0100000000000007 "飞跃" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,help,nodead][]信仰飞跃
+END
+VER 3 0100000000000002 "驱散" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 驱散魔法; [@mouseover,help] []净化疾病
+/cast [@mouseover,harm,nodead]驱散魔法;[@mouseover,help,nodead]净化疾病;[mod:alt,@player]纯净术;[harm]驱散魔法;[help][]净化疾病
+END

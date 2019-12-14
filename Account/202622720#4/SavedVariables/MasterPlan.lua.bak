@@ -1,0 +1,406 @@
+
+MasterPlanAG = {
+	["死亡之翼"] = {
+		["生灵俱灭"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Horde",
+		},
+		["啊虽然天花板"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["弄妆梳洗迟"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Horde",
+		},
+	},
+	["亚雷戈斯"] = {
+		["在哪"] = {
+			["faction"] = "Alliance",
+			["class"] = "PRIEST",
+		},
+	},
+	["安苏"] = {
+		["十里扬州路"] = {
+			["class"] = "MAGE",
+			["faction"] = "Horde",
+		},
+	},
+	["亡语者"] = {
+		["未付费付付"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["为热土额"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["我会招恶魔"] = {
+			["summary"] = {
+				["inProgress"] = {
+					[177] = 1472488535,
+					[174] = 1472489436,
+					[199] = 1472491236,
+					[665] = 1472500235,
+				},
+			},
+			["curOil"] = 1620,
+			["lastCacheTime"] = 1517805770,
+			["class"] = "WARLOCK",
+			["curRes"] = 1492,
+			["faction"] = "Horde",
+		},
+		["威尔与"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Alliance",
+		},
+		["我会飞你会吗"] = {
+			["summary"] = {
+				["inProgress"] = {
+					[127] = 1484763248,
+					[175] = 1484751548,
+					[190] = 1484751545,
+					[174] = 1484752449,
+					[212] = 1484755592,
+					[463] = 1484770448,
+					[192] = 1484752449,
+					[132] = 1484759639,
+				},
+			},
+			["faction"] = "Horde",
+			["curOil"] = 1830,
+			["lastCacheTime"] = 1512872009,
+			["curRes"] = 3761,
+			["class"] = "DRUID",
+		},
+		["我看不见你啊"] = {
+			["curOil"] = 17965,
+			["summary"] = {
+				["ti1"] = 118529,
+				["tt1"] = true,
+				["tt3"] = true,
+				["ti3"] = 127853,
+			},
+			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "PRIEST",
+			["curRes"] = 3317,
+			["lastCacheTime"] = 1479219366,
+		},
+		["维维尔"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Alliance",
+		},
+		["我看见你了哦"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Horde",
+		},
+		["弄妆梳洗迟"] = {
+			["faction"] = "Horde",
+			["summary"] = {
+				["lastOilTime"] = 1553005858,
+				["ti2"] = 122486,
+				["inProgress"] = {
+					[668] = 1551798283,
+					[381] = 1551819887,
+					[184] = 1551785684,
+					[315] = 1551812685,
+					[519] = 1546167479,
+					[269] = 1551798284,
+					[218] = 1551785686,
+					[675] = 1551812685,
+					[685] = 1551827083,
+					[125] = 1551798286,
+					[726] = 1546167483,
+					[397] = 1551819887,
+				},
+				["ti3"] = 127855,
+				["ti1"] = 118529,
+				["tt1"] = true,
+				["tt3"] = true,
+				["tt2"] = true,
+			},
+			["curOil"] = 22725,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1552738906,
+			["curRes"] = 9183,
+			["class"] = "MAGE",
+		},
+		["玩儿推"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["我会招宝宝"] = {
+			["summary"] = {
+				["tt3"] = true,
+				["ti3"] = 127855,
+			},
+			["curOil"] = 3030,
+			["lastCacheTime"] = 1546085014,
+			["class"] = "HUNTER",
+			["curRes"] = 1311,
+			["faction"] = "Horde",
+		},
+		["我会滚你会吗"] = {
+			["faction"] = "Horde",
+			["curOil"] = 300,
+			["lastCacheTime"] = 1479301672,
+			["curRes"] = 2504,
+			["class"] = "MONK",
+		},
+		["向我撒花"] = {
+			["faction"] = "Horde",
+			["class"] = "ROGUE",
+		},
+		["我看不见我"] = {
+			["summary"] = {
+				["lastOilTime"] = 1482466499,
+				["ti2"] = 122484,
+				["inProgress"] = {
+					[380] = 1482308014,
+					[428] = 1482322415,
+					[399] = 1482329615,
+					[265] = 1482322416,
+					[663] = 1482308018,
+					[728] = 1482294524,
+					[188] = 1482296316,
+					[391] = 1482322419,
+					[287] = 1482315217,
+					[739] = 1482295426,
+					[376] = 1482329616,
+					[445] = 1482322417,
+				},
+				["ti3"] = 127854,
+				["tt1"] = 1481604207,
+				["ti1"] = 118529,
+				["tt3"] = 1481760882,
+				["tt2"] = 1481864576,
+			},
+			["faction"] = "Horde",
+			["class"] = "MAGE",
+			["lastCacheTime"] = 1482293631,
+			["curRes"] = 4195,
+			["curOil"] = 21010,
+		},
+		["朝飞暮卷"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Wasegd"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["Funerals"] = {
+			["class"] = "DEATHKNIGHT",
+			["lastCacheTime"] = 1511605713,
+			["curRes"] = 304,
+			["faction"] = "Horde",
+		},
+		["我会大跳你呢"] = {
+			["lastCacheTime"] = 1522477821,
+			["class"] = "WARRIOR",
+			["curRes"] = 2484,
+			["faction"] = "Horde",
+		},
+		["王企鹅为"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["我的小胖狗"] = {
+			["faction"] = "Horde",
+			["class"] = "HUNTER",
+		},
+		["我会消失"] = {
+			["lastCacheTime"] = 1552745086,
+			["summary"] = {
+				["lastOilTime"] = 1552996393,
+				["inProgress"] = {
+					[176] = 1471672347,
+					[214] = 1471676847,
+					[503] = 1471691248,
+					[736] = 1471593152,
+					[665] = 1471684048,
+					[519] = 1471593157,
+					[189] = 1471672350,
+					[332] = 1471673249,
+					[664] = 1471673250,
+					[159] = 1471675051,
+					[129] = 1471698449,
+				},
+				["ti3"] = 127854,
+				["ti2"] = 122484,
+				["tt1"] = 1551328454,
+				["ti1"] = 118529,
+				["tt3"] = true,
+				["tt2"] = 1551491962,
+			},
+			["curOil"] = 2235,
+			["class"] = "ROGUE",
+			["curRes"] = 2299,
+			["faction"] = "Horde",
+		},
+		["我会变成狼"] = {
+			["summary"] = {
+				["inProgress"] = {
+					[360] = 1468417043,
+					[403] = 1468424044,
+					[176] = 1468383744,
+					[550] = 1463911637,
+					[624] = 1463922441,
+					[192] = 1468384643,
+					[534] = 1463915244,
+				},
+			},
+			["faction"] = "Horde",
+			["class"] = "SHAMAN",
+			["lastCacheTime"] = 1519968278,
+			["curRes"] = 4661,
+			["curOil"] = 955,
+		},
+		["我找不到了"] = {
+			["faction"] = "Horde",
+			["curOil"] = 250,
+			["class"] = "PALADIN",
+			["curRes"] = 5955,
+			["lastCacheTime"] = 1550583357,
+		},
+		["Wqerert"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["吾问无为"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["十里扬州路"] = {
+			["faction"] = "Horde",
+			["class"] = "DEMONHUNTER",
+		},
+		["玩儿体育与"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["坎坎坷坷"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARLOCK",
+		},
+		["千万人特意让"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["娃儿若"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["风起春城暮"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["回首见旌旗"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+		["我喝了假酒"] = {
+			["class"] = "MONK",
+			["faction"] = "Horde",
+		},
+		["去玩儿我"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["Nect"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["高楼鼓角悲"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Horde",
+		},
+		["Sdfgwer"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Alliance",
+		},
+	},
+	["古尔丹"] = {
+		["白白净净啥"] = {
+			["class"] = "MONK",
+			["faction"] = "Horde",
+		},
+		["呜呜哇哇"] = {
+			["class"] = "MAGE",
+			["faction"] = "Horde",
+		},
+		["十里扬州路"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Horde",
+		},
+		["呜呜人人"] = {
+			["faction"] = "Alliance",
+			["class"] = "PRIEST",
+		},
+		["唧唧叫"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["球我玩"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARLOCK",
+		},
+		["懒起画蛾眉"] = {
+			["curOil"] = 17965,
+			["summary"] = {
+				["ti1"] = 118529,
+				["tt1"] = true,
+				["tt3"] = true,
+				["ti3"] = 127853,
+			},
+			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "PRIEST",
+			["curRes"] = 10000,
+			["lastCacheTime"] = 1531141674,
+		},
+		["不不尾王"] = {
+			["faction"] = "Horde",
+			["class"] = "MAGE",
+		},
+		["Believer"] = {
+			["lastCacheTime"] = 1503386882,
+			["class"] = "DRUID",
+			["curRes"] = 2051,
+			["faction"] = "Horde",
+		},
+		["弄妆梳洗迟"] = {
+			["lastCacheTime"] = 1537370089,
+			["summary"] = {
+				["ti2"] = 122484,
+				["ti3"] = 127855,
+				["tt1"] = true,
+				["ti1"] = 118529,
+				["tt3"] = true,
+				["tt2"] = true,
+			},
+			["curOil"] = 22865,
+			["cacheSize"] = 1000,
+			["class"] = "MAGE",
+			["curRes"] = 10000,
+			["faction"] = "Horde",
+		},
+		["玩儿体育"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Alliance",
+		},
+		["Nonbeliever"] = {
+			["faction"] = "Horde",
+			["class"] = "MONK",
+		},
+		["Believe"] = {
+			["class"] = "DRUID",
+			["faction"] = "Alliance",
+		},
+	},
+	["IgnoreRewards"] = {
+	},
+}
+SV_GarrisonMissionManager = {
+}

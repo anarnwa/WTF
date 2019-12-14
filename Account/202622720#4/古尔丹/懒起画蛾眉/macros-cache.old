@@ -1,0 +1,72 @@
+VER 3 010000000000001A "压制" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]痛苦压制
+END
+VER 3 0100000000000016 "取消" "INV_MISC_QUESTIONMARK"
+/cancelaura 救赎之魂
+END
+VER 3 0100000000000003 "守护" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover][]守护之魂
+END
+VER 3 0100000000000005 "恢复" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]恢复
+END
+VER 3 0100000000000009 "愈合" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover][]愈合祷言
+END
+VER 3 0100000000000002 "慰" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nohelp,exists][]真言术：慰
+END
+VER 3 010000000000000A "治疗" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]治疗术
+END
+VER 3 010000000000001C "痛" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nohelp,exists][]暗言术：痛
+END
+VER 3 010000000000000B "盾" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]真言术：盾
+END
+VER 3 010000000000000D "祷言" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]治疗祷言
+END
+VER 3 0100000000000015 "羽毛" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@player]天堂之羽
+END
+VER 3 0100000000000017 "耀" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]真言术：耀
+END
+VER 3 010000000000000F "苦修" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][]苦修
+END
+VER 3 0100000000000018 "链接" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]联结治疗;
+/cast [@mouseover,exists][]意志洞悉;
+END
+VER 3 0100000000000010 "静" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][]圣言术：静
+END
+VER 3 0100000000000011 "飞跃" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][]信仰飞跃
+END
+VER 3 010000000000001B "饰品" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,exists][]13
+END
+VER 3 0100000000000012 "驱散" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 驱散魔法; [@mouseover,help] []纯净术
+/cast [@mouseover,harm,nodead]驱散魔法;[@mouseover,help,nodead]纯净术;[mod:alt,@player]纯净术;[harm]驱散魔法;[help][]纯净术
+END

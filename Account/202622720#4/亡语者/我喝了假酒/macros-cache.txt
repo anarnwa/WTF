@@ -1,0 +1,40 @@
+VER 3 0100000000000002 "复苏" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]复苏之雾
+END
+VER 3 010000000000000A "抚慰" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]抚慰之雾
+END
+VER 3 0100000000000004 "氤氲" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]氤氲之雾
+END
+VER 3 0100000000000007 "活血" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]活血术
+END
+VER 3 0100000000000006 "真气" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]真气波
+END
+VER 3 0100000000000009 "神器" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]神龙之赐(神器)
+END
+VER 3 0100000000000001 "茧" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]作茧缚命
+END
+VER 3 0100000000000005 "贯通" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]真气贯通
+END
+VER 3 0100000000000003 "驱散" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]清创生血
+END
+VER 3 0100000000000008 "魂体" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [nomod,button:1]魂体双分;[nomod,button:2]魂体双分：转移
+END

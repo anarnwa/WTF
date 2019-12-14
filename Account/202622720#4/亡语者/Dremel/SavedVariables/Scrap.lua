@@ -1,0 +1,44 @@
+
+Scrap_Junk = {
+	[157649] = true,
+	[1205] = true,
+	[3683] = true,
+	[3189] = true,
+	[14174] = true,
+	[157022] = true,
+	[2701] = true,
+	[3385] = true,
+	[3666] = true,
+	[131564] = true,
+	[157674] = true,
+	[157678] = false,
+	[1127] = true,
+	[2781] = true,
+	[22644] = true,
+	[5465] = true,
+	[6948] = true,
+	[2251] = true,
+	[1288] = true,
+	[1017] = true,
+	[157675] = true,
+	[1210] = true,
+	[157680] = true,
+	[1179] = true,
+}
+Scrap_AI = {
+	[151072] = 1,
+	[1015] = 0.05,
+	[157676] = 1,
+	[160607] = 1,
+	[6337] = 1,
+	[2592] = 0.035,
+	[131712] = 1,
+	[9742] = 1,
+	[2589] = 0.035,
+	[1206] = 0.005,
+	[6556] = 1,
+}
+Scrap_LowEquip = nil
+Scrap_LowConsume = nil
+Scrap_Unusable = nil
+Scrap_ShareList = nil

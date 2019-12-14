@@ -1,0 +1,4 @@
+VER 3 0100000000000002 "驱" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 净化术; [@mouseover,help] []净化灵魂
+/cast [@mouseover,harm,nodead]净化术;[@mouseover,help,nodead]净化灵魂;[mod:alt,@player]纯净术;[harm]净化术;[help][]净化灵魂
+END

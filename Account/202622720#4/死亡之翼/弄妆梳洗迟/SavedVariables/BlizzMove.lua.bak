@@ -1,0 +1,66 @@
+
+BlizzMoveDB = {
+	["TradeSkillFrame"] = {
+	},
+	["RaidParentFrame"] = {
+	},
+	["AuctionFrame"] = {
+		["save"] = true,
+	},
+	["LFRParentFrame"] = {
+	},
+	["GameMenuFrame"] = {
+	},
+	["HelpFrame"] = {
+	},
+	["CharacterFrame"] = {
+	},
+	["MailFrame"] = {
+	},
+	["CommunitiesFrame"] = {
+	},
+	["MacroFrame"] = {
+	},
+	["GossipFrame"] = {
+	},
+	["FriendsFrame"] = {
+	},
+	["AchievementFrame"] = {
+		["save"] = true,
+	},
+	["BankFrame"] = {
+	},
+	["LootFrame"] = {
+	},
+	["LFDParentFrame"] = {
+	},
+	["version"] = "201109013",
+	["DressUpFrame"] = {
+	},
+	["WorldMapFrame"] = {
+	},
+	["SpellBookFrame"] = {
+	},
+	["PlayerTalentFrame"] = {
+	},
+	["GuildBankFrame"] = {
+		["save"] = true,
+	},
+	["GuildFrame"] = {
+	},
+	["VideoOptionsFrame"] = {
+	},
+	["PVEFrame"] = {
+	},
+	["MerchantFrame"] = {
+	},
+	["QuestFrame"] = {
+	},
+	["TradeFrame"] = {
+	},
+	["CalendarFrame"] = {
+		["save"] = true,
+	},
+	["InterfaceOptionsFrame"] = {
+	},
+}

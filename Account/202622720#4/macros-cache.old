@@ -1,0 +1,48 @@
+VER 3 0000000000000027 "假成就" "INV_MISC_QUESTIONMARK"
+/run local i,d=980,'00:00:00' print(('\124cffffff00\124Hachievement:%s:%s:1:%s:4294967295:4294967295:4294967295:4294967295\124h[%s]\124h\124r'):format(i,UnitGUID('player'),d,select(2, GetAchievementInfo(i))))
+END
+VER 3 000000000000001A "几率喊话" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 魔爆术
+/script text ={"666"};
+/script SendChatMessage(text[math.random(5)],"yell");
+END
+VER 3 0000000000000001 "坐骑" "INV_MISC_QUESTIONMARK"
+#show
+/cast [nomod,button:1]雄壮远足牦牛;[nomod,button:2]黑曜夜之翼;[mod:alt,btn:1]天蓝水黾;[mod:alt,btn:2]奥的灰烬
+END
+VER 3 000000000000003B "复活" "INV_MISC_QUESTIONMARK"
+/script T,F=T or 0,F or CreateFrame("frame")if X then X=nil else X=function()local t=GetTime()if t-T>1 then RepopMe() AcceptResurrect() AcceptXPLoss():Click()T=t end end end F:SetScript ("OnUpdate",X)
+END
+VER 3 000000000000002E "尾锚" "INV_MISC_QUESTIONMARK"
+/click ALPTButtonWM 
+/click ALPTButtonAll
+END
+VER 3 000000000000003A "按钮名" "INV_MISC_QUESTIONMARK"
+/run local f=GetMouseFocus(); if f then DEFAULT_CHAT_FRAME:AddMessage(f:GetName()) end
+END
+VER 3 000000000000003D "测试" "INV_MISC_QUESTIONMARK"
+/cancelaura 旅行形态
+/run PlayerTalentFrameSpecializationSpecButton1:Click() PlayerTalentFrameSpecializationLearnButton:Click()
+END
+VER 3 000000000000002C "目标" "INV_MISC_QUESTIONMARK"
+/target 深渊潜鱼
+/target 食腐蟹
+/target 食渣蠕虫
+/target 深渊蚌
+END
+VER 3 000000000000003E "粘液位置" "INV_MISC_QUESTIONMARK"
+/way 32.76 39.53
+/way 45.7 24.11
+/way 54.9 48.7
+/way 71.71 25.7
+END
+VER 3 000000000000003C "精华" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nodead,exists][]艾泽拉斯之心精华
+END
+VER 3 0000000000000019 "鼠标指向" "INV_MISC_QUESTIONMARK"
+@cursor     鼠标位置 
+@player    自身为中心
+/castsequence
+END

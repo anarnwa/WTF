@@ -1,0 +1,4015 @@
+
+Blizzard_Console_SavedVars = {
+	["version"] = 3,
+	["height"] = 299.9999694824219,
+	["messageHistory"] = {
+		{
+			"Proficiency in item class 2 set to 0x000010c470", -- [1]
+			0, -- [2]
+		}, -- [1]
+		{
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			0, -- [2]
+		}, -- [2]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [3]
+		{
+			"Proficiency in item class 2 set to 0x000010e470", -- [1]
+			0, -- [2]
+		}, -- [4]
+		{
+			"Proficiency in item class 2 set to 0x000010e470", -- [1]
+			0, -- [2]
+		}, -- [5]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [6]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [7]
+		{
+			"Time set to 12/12/2019 (Thu) 12:43", -- [1]
+			0, -- [2]
+		}, -- [8]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [9]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [10]
+		{
+			"Total: 43d 3h 22m 38s", -- [1]
+			0, -- [2]
+		}, -- [11]
+		{
+			"Level: 27d 18h 11m 20s", -- [1]
+			0, -- [2]
+		}, -- [12]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [13]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [14]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [15]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [16]
+		{
+			"Weather changed to 2, intensity 1.000000\n", -- [1]
+			0, -- [2]
+		}, -- [17]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [18]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [19]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [20]
+		{
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			0, -- [2]
+		}, -- [21]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [22]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [23]
+		{
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
+			0, -- [2]
+		}, -- [24]
+		{
+			"Proficiency in item class 2 set to 0x0000000430", -- [1]
+			0, -- [2]
+		}, -- [25]
+		{
+			"Proficiency in item class 2 set to 0x0000008430", -- [1]
+			0, -- [2]
+		}, -- [26]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [27]
+		{
+			"Proficiency in item class 2 set to 0x000000c430", -- [1]
+			0, -- [2]
+		}, -- [28]
+		{
+			"Proficiency in item class 2 set to 0x000000c470", -- [1]
+			0, -- [2]
+		}, -- [29]
+		{
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			0, -- [2]
+		}, -- [30]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [31]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [32]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [33]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [34]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [35]
+		{
+			"Time set to 12/12/2019 (Thu) 12:49", -- [1]
+			0, -- [2]
+		}, -- [36]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [37]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [38]
+		{
+			"Total: 0d 8h 25m 14s", -- [1]
+			0, -- [2]
+		}, -- [39]
+		{
+			"Level: 0d 0h 14m 41s", -- [1]
+			0, -- [2]
+		}, -- [40]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [41]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [42]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [43]
+		{
+			"Skill 126 increased from 235 to 240", -- [1]
+			0, -- [2]
+		}, -- [44]
+		{
+			"Skill 183 increased from 235 to 240", -- [1]
+			0, -- [2]
+		}, -- [45]
+		{
+			"Skill 798 increased from 235 to 240", -- [1]
+			0, -- [2]
+		}, -- [46]
+		{
+			"Skill 126 increased from 240 to 245", -- [1]
+			0, -- [2]
+		}, -- [47]
+		{
+			"Skill 183 increased from 240 to 245", -- [1]
+			0, -- [2]
+		}, -- [48]
+		{
+			"Skill 798 increased from 240 to 245", -- [1]
+			0, -- [2]
+		}, -- [49]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [50]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [51]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [52]
+		{
+			"Skill 126 increased from 245 to 250", -- [1]
+			0, -- [2]
+		}, -- [53]
+		{
+			"Skill 183 increased from 245 to 250", -- [1]
+			0, -- [2]
+		}, -- [54]
+		{
+			"Skill 798 increased from 245 to 250", -- [1]
+			0, -- [2]
+		}, -- [55]
+		{
+			"Skill 126 increased from 250 to 255", -- [1]
+			0, -- [2]
+		}, -- [56]
+		{
+			"Skill 183 increased from 250 to 255", -- [1]
+			0, -- [2]
+		}, -- [57]
+		{
+			"Skill 798 increased from 250 to 255", -- [1]
+			0, -- [2]
+		}, -- [58]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [59]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [60]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [61]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [62]
+		{
+			"NetClient::HandleDisconnect()\n", -- [1]
+			0, -- [2]
+		}, -- [63]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [64]
+		{
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"true\"", -- [1]
+			0, -- [2]
+		}, -- [65]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [66]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [67]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [68]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [69]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [70]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [71]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [72]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [73]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [74]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [75]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [76]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [77]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [78]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [79]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [80]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [81]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [82]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [83]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [84]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [85]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [86]
+		{
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [87]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [88]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [89]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [90]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [91]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [92]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [93]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [94]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [95]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [96]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [97]
+		{
+			"Resample quality changed to 0", -- [1]
+			0, -- [2]
+		}, -- [98]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [99]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [100]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [101]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [102]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [103]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [104]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [105]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [106]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [107]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [108]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [109]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [110]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [111]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [112]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [113]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [114]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [115]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [116]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [117]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [118]
+		{
+			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [119]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [120]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [121]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [122]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [123]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [124]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [125]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [126]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [127]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [128]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"3\"", -- [1]
+			0, -- [2]
+		}, -- [129]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [130]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"5-101-89\" realmAddress=\"5-11-7\"", -- [1]
+			0, -- [2]
+		}, -- [131]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [132]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [133]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [134]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [135]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [136]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [137]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [138]
+		{
+			"[WowEntitlements] Initialized with 27 entitlements.", -- [1]
+			0, -- [2]
+		}, -- [139]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [140]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [141]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [142]
+		{
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [143]
+		{
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [144]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [145]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [146]
+		{
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
+			0, -- [2]
+		}, -- [147]
+		{
+			"Proficiency in item class 2 set to 0x0000000430", -- [1]
+			0, -- [2]
+		}, -- [148]
+		{
+			"Proficiency in item class 2 set to 0x0000008430", -- [1]
+			0, -- [2]
+		}, -- [149]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [150]
+		{
+			"Proficiency in item class 2 set to 0x000000c430", -- [1]
+			0, -- [2]
+		}, -- [151]
+		{
+			"Proficiency in item class 2 set to 0x000000c470", -- [1]
+			0, -- [2]
+		}, -- [152]
+		{
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			0, -- [2]
+		}, -- [153]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [154]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [155]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [156]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [157]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [158]
+		{
+			"Time set to 12/12/2019 (Thu) 18:03", -- [1]
+			0, -- [2]
+		}, -- [159]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [160]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [161]
+		{
+			"Total: 0d 9h 41m 0s", -- [1]
+			0, -- [2]
+		}, -- [162]
+		{
+			"Level: 0d 0h 23m 4s", -- [1]
+			0, -- [2]
+		}, -- [163]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [164]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [165]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [166]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [167]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [168]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [169]
+		{
+			"Skill 126 increased from 255 to 260", -- [1]
+			0, -- [2]
+		}, -- [170]
+		{
+			"Skill 183 increased from 255 to 260", -- [1]
+			0, -- [2]
+		}, -- [171]
+		{
+			"Skill 798 increased from 255 to 260", -- [1]
+			0, -- [2]
+		}, -- [172]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [173]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [174]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [175]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [176]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [177]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [178]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [179]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [180]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [181]
+		{
+			"Skill 126 increased from 260 to 265", -- [1]
+			0, -- [2]
+		}, -- [182]
+		{
+			"Skill 183 increased from 260 to 265", -- [1]
+			0, -- [2]
+		}, -- [183]
+		{
+			"Skill 798 increased from 260 to 265", -- [1]
+			0, -- [2]
+		}, -- [184]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [185]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [186]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [187]
+		{
+			"Skill 126 increased from 265 to 270", -- [1]
+			0, -- [2]
+		}, -- [188]
+		{
+			"Skill 183 increased from 265 to 270", -- [1]
+			0, -- [2]
+		}, -- [189]
+		{
+			"Skill 798 increased from 265 to 270", -- [1]
+			0, -- [2]
+		}, -- [190]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [191]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [192]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [193]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [194]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [195]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [196]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [197]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [198]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [199]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [200]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [201]
+		{
+			"Skill 126 increased from 270 to 275", -- [1]
+			0, -- [2]
+		}, -- [202]
+		{
+			"Skill 183 increased from 270 to 275", -- [1]
+			0, -- [2]
+		}, -- [203]
+		{
+			"Skill 798 increased from 270 to 275", -- [1]
+			0, -- [2]
+		}, -- [204]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [205]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [206]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [207]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [208]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [209]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [210]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [211]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [212]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [213]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [214]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [215]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [216]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [217]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [218]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [219]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [220]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [221]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [222]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [223]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [224]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [225]
+		{
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [226]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [227]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [228]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [229]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [230]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [231]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [232]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [233]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [234]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [235]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [236]
+		{
+			"Resample quality changed to 0", -- [1]
+			0, -- [2]
+		}, -- [237]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [238]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [239]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [240]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [241]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [242]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [243]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [244]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [245]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [246]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [247]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [248]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [249]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [250]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [251]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [252]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [253]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [254]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [255]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [256]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [257]
+		{
+			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [258]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [259]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [260]
+		{
+			"[GlueLogin] Fatal error while logging inresult=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [261]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [262]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [263]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [264]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [265]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [266]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [267]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [268]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [269]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [270]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [271]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [272]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [273]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [274]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [275]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [276]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [277]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [278]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [279]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [280]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [281]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [282]
+		{
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [283]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [284]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [285]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [286]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [287]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [288]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [289]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [290]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [291]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [292]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [293]
+		{
+			"Resample quality changed to 0", -- [1]
+			0, -- [2]
+		}, -- [294]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [295]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [296]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [297]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [298]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [299]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [300]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [301]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [302]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [303]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [304]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [305]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [306]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [307]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [308]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [309]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [310]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [311]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [312]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [313]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [314]
+		{
+			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [315]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [316]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [317]
+		{
+			"[GlueLogin] Fatal error while logging inresult=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [318]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [319]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [320]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [321]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [322]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [323]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [324]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [325]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [326]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [327]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [328]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [329]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [330]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [331]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [332]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [333]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [334]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [335]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [336]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [337]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [338]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [339]
+		{
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [340]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [341]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [342]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [343]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [344]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [345]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [346]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [347]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [348]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [349]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [350]
+		{
+			"Resample quality changed to 0", -- [1]
+			0, -- [2]
+		}, -- [351]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [352]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [353]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [354]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [355]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [356]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [357]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [358]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [359]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [360]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [361]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [362]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [363]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [364]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [365]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [366]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [367]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [368]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [369]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [370]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [371]
+		{
+			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [372]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [373]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [374]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [375]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [376]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [377]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [378]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [379]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [380]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [381]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"3\"", -- [1]
+			0, -- [2]
+		}, -- [382]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [383]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"5-101-89\" realmAddress=\"5-11-7\"", -- [1]
+			0, -- [2]
+		}, -- [384]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [385]
+		{
+			"NetClient::HandleCantConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [386]
+		{
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
+			0, -- [2]
+		}, -- [387]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [388]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [389]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [390]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [391]
+		{
+			"[IBN_Login] DestroyingisInitialized=\"true\"", -- [1]
+			0, -- [2]
+		}, -- [392]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [393]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [394]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [395]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [396]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [397]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [398]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [399]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [400]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [401]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [402]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [403]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [404]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [405]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [406]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [407]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [408]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [409]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [410]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [411]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [412]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [413]
+		{
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [414]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [415]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [416]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [417]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [418]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [419]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [420]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [421]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [422]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [423]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [424]
+		{
+			"Resample quality changed to 0", -- [1]
+			0, -- [2]
+		}, -- [425]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [426]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [427]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [428]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [429]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [430]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [431]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [432]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [433]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [434]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [435]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [436]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [437]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [438]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [439]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [440]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [441]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [442]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [443]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [444]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [445]
+		{
+			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [446]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [447]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [448]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [449]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [450]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [451]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [452]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [453]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [454]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [455]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"3\"", -- [1]
+			0, -- [2]
+		}, -- [456]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [457]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"5-101-89\" realmAddress=\"5-11-7\"", -- [1]
+			0, -- [2]
+		}, -- [458]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [459]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [460]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [461]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [462]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [463]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [464]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [465]
+		{
+			"[WowEntitlements] Initialized with 27 entitlements.", -- [1]
+			0, -- [2]
+		}, -- [466]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [467]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [468]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [469]
+		{
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [470]
+		{
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [471]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [472]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [473]
+		{
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
+			0, -- [2]
+		}, -- [474]
+		{
+			"Proficiency in item class 2 set to 0x0000000430", -- [1]
+			0, -- [2]
+		}, -- [475]
+		{
+			"Proficiency in item class 2 set to 0x0000008430", -- [1]
+			0, -- [2]
+		}, -- [476]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [477]
+		{
+			"Proficiency in item class 2 set to 0x000000c430", -- [1]
+			0, -- [2]
+		}, -- [478]
+		{
+			"Proficiency in item class 2 set to 0x000000c470", -- [1]
+			0, -- [2]
+		}, -- [479]
+		{
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			0, -- [2]
+		}, -- [480]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [481]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [482]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [483]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [484]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [485]
+		{
+			"Time set to 12/13/2019 (Fri) 20:12", -- [1]
+			0, -- [2]
+		}, -- [486]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [487]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [488]
+		{
+			"Total: 0d 10h 54m 8s", -- [1]
+			0, -- [2]
+		}, -- [489]
+		{
+			"Level: 0d 0h 5m 54s", -- [1]
+			0, -- [2]
+		}, -- [490]
+		{
+			"Skill 126 increased from 275 to 280", -- [1]
+			0, -- [2]
+		}, -- [491]
+		{
+			"Skill 183 increased from 275 to 280", -- [1]
+			0, -- [2]
+		}, -- [492]
+		{
+			"Skill 798 increased from 275 to 280", -- [1]
+			0, -- [2]
+		}, -- [493]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [494]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [495]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [496]
+		{
+			"GameTimeSync: delta=0, differential=1, HoursAndMinutes=1257", -- [1]
+			0, -- [2]
+		}, -- [497]
+		{
+			"Skill 126 increased from 280 to 285", -- [1]
+			0, -- [2]
+		}, -- [498]
+		{
+			"Skill 183 increased from 280 to 285", -- [1]
+			0, -- [2]
+		}, -- [499]
+		{
+			"Skill 798 increased from 280 to 285", -- [1]
+			0, -- [2]
+		}, -- [500]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [501]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [502]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [503]
+		{
+			"Skill 126 increased from 285 to 290", -- [1]
+			0, -- [2]
+		}, -- [504]
+		{
+			"Skill 183 increased from 285 to 290", -- [1]
+			0, -- [2]
+		}, -- [505]
+		{
+			"Skill 762 increased from 150 to 225", -- [1]
+			0, -- [2]
+		}, -- [506]
+		{
+			"Skill 798 increased from 285 to 290", -- [1]
+			0, -- [2]
+		}, -- [507]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [508]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [509]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [510]
+		{
+			"Skill 126 increased from 290 to 295", -- [1]
+			0, -- [2]
+		}, -- [511]
+		{
+			"Skill 183 increased from 290 to 295", -- [1]
+			0, -- [2]
+		}, -- [512]
+		{
+			"Skill 798 increased from 290 to 295", -- [1]
+			0, -- [2]
+		}, -- [513]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [514]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [515]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [516]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [517]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [518]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [519]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [520]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [521]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [522]
+		{
+			"Skill 126 increased from 295 to 300", -- [1]
+			0, -- [2]
+		}, -- [523]
+		{
+			"Skill 183 increased from 295 to 300", -- [1]
+			0, -- [2]
+		}, -- [524]
+		{
+			"Skill 798 increased from 295 to 300", -- [1]
+			0, -- [2]
+		}, -- [525]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [526]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [527]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [528]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [529]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [530]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [531]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [532]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [533]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [534]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [535]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [536]
+		{
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			0, -- [2]
+		}, -- [537]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [538]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [539]
+		{
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
+			0, -- [2]
+		}, -- [540]
+		{
+			"Proficiency in item class 2 set to 0x0000000430", -- [1]
+			0, -- [2]
+		}, -- [541]
+		{
+			"Proficiency in item class 2 set to 0x0000008430", -- [1]
+			0, -- [2]
+		}, -- [542]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [543]
+		{
+			"Proficiency in item class 2 set to 0x000000c430", -- [1]
+			0, -- [2]
+		}, -- [544]
+		{
+			"Proficiency in item class 2 set to 0x000000c470", -- [1]
+			0, -- [2]
+		}, -- [545]
+		{
+			"Proficiency in item class 2 set to 0x000010c470", -- [1]
+			0, -- [2]
+		}, -- [546]
+		{
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			0, -- [2]
+		}, -- [547]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [548]
+		{
+			"Proficiency in item class 2 set to 0x000010e470", -- [1]
+			0, -- [2]
+		}, -- [549]
+		{
+			"Proficiency in item class 2 set to 0x000010e470", -- [1]
+			0, -- [2]
+		}, -- [550]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [551]
+		{
+			"Weather changed to 2, intensity 1.000000\n", -- [1]
+			0, -- [2]
+		}, -- [552]
+		{
+			"Time set to 12/13/2019 (Fri) 22:04", -- [1]
+			0, -- [2]
+		}, -- [553]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [554]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [555]
+		{
+			"Total: 43d 3h 26m 56s", -- [1]
+			0, -- [2]
+		}, -- [556]
+		{
+			"Level: 27d 18h 15m 38s", -- [1]
+			0, -- [2]
+		}, -- [557]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [558]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [559]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [560]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [561]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [562]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [563]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [564]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [565]
+		{
+			"[IBN_Login] Requesting change realm list", -- [1]
+			0, -- [2]
+		}, -- [566]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [567]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [568]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [569]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [570]
+		{
+			"[IBN_Login] Requesting realm listsnumSubRegions=\"3\"", -- [1]
+			0, -- [2]
+		}, -- [571]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [572]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"5-101-89\" realmAddress=\"5-4-14\"", -- [1]
+			0, -- [2]
+		}, -- [573]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [574]
+		{
+			"Disconnecting for reason 12", -- [1]
+			0, -- [2]
+		}, -- [575]
+		{
+			"NetClient::HandleDisconnect()\n", -- [1]
+			0, -- [2]
+		}, -- [576]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [577]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [578]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [579]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [580]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [581]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [582]
+		{
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			0, -- [2]
+		}, -- [583]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [584]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [585]
+		{
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
+			0, -- [2]
+		}, -- [586]
+		{
+			"Proficiency in item class 2 set to 0x0000000430", -- [1]
+			0, -- [2]
+		}, -- [587]
+		{
+			"Proficiency in item class 2 set to 0x0000008430", -- [1]
+			0, -- [2]
+		}, -- [588]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [589]
+		{
+			"Proficiency in item class 2 set to 0x000000c430", -- [1]
+			0, -- [2]
+		}, -- [590]
+		{
+			"Proficiency in item class 2 set to 0x000000c470", -- [1]
+			0, -- [2]
+		}, -- [591]
+		{
+			"Proficiency in item class 2 set to 0x000010c470", -- [1]
+			0, -- [2]
+		}, -- [592]
+		{
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			0, -- [2]
+		}, -- [593]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [594]
+		{
+			"Proficiency in item class 2 set to 0x000010e470", -- [1]
+			0, -- [2]
+		}, -- [595]
+		{
+			"Proficiency in item class 2 set to 0x000010e470", -- [1]
+			0, -- [2]
+		}, -- [596]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [597]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [598]
+		{
+			"Time set to 12/13/2019 (Fri) 22:09", -- [1]
+			0, -- [2]
+		}, -- [599]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [600]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [601]
+		{
+			"Total: 7d 20h 5m 25s", -- [1]
+			0, -- [2]
+		}, -- [602]
+		{
+			"Level: 6d 11h 25m 7s", -- [1]
+			0, -- [2]
+		}, -- [603]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [604]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [605]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [606]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [607]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [608]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [609]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [610]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [611]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [612]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [613]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [614]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [615]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [616]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [617]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [618]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [619]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [620]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [621]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [622]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [623]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [624]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [625]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [626]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [627]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [628]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [629]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [630]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [631]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [632]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [633]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [634]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [635]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [636]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [637]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [638]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [639]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [640]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [641]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [642]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [643]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [644]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [645]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [646]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [647]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [648]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [649]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [650]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [651]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [652]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [653]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [654]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [655]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [656]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [657]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [658]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [659]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [660]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [661]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [662]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [663]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [664]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [665]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [666]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [667]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [668]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [669]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [670]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [671]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [672]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [673]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [674]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [675]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [676]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [677]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [678]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [679]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [680]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [681]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [682]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [683]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [684]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [685]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [686]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [687]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [688]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [689]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [690]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [691]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [692]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [693]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [694]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [695]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [696]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [697]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [698]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [699]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [700]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [701]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [702]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [703]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [704]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [705]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [706]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [707]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [708]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [709]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [710]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [711]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [712]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [713]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [714]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [715]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [716]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [717]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [718]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [719]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [720]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [721]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [722]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [723]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [724]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [725]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [726]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [727]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [728]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [729]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [730]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [731]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [732]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [733]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [734]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [735]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [736]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [737]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [738]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [739]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [740]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [741]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [742]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [743]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [744]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [745]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [746]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [747]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [748]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [749]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [750]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [751]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [752]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [753]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [754]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [755]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [756]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [757]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [758]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [759]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [760]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [761]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [762]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [763]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [764]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [765]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [766]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [767]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [768]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [769]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [770]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [771]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [772]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [773]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [774]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [775]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [776]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [777]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [778]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [779]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [780]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [781]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [782]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [783]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [784]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [785]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [786]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [787]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [788]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [789]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [790]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [791]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [792]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [793]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [794]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [795]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [796]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [797]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [798]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [799]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [800]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [801]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [802]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [803]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [804]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [805]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [806]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [807]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [808]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [809]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [810]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [811]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [812]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [813]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [814]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [815]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [816]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [817]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [818]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [819]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [820]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [821]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [822]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [823]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [824]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [825]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [826]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [827]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [828]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [829]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [830]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [831]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [832]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [833]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [834]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [835]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [836]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [837]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [838]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [839]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [840]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [841]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [842]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [843]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [844]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [845]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [846]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [847]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [848]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [849]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [850]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [851]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [852]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [853]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [854]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [855]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [856]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [857]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [858]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [859]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [860]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [861]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [862]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [863]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [864]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [865]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [866]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [867]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [868]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [869]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [870]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [871]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [872]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [873]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [874]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [875]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [876]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [877]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [878]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [879]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [880]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [881]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [882]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [883]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [884]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [885]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [886]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [887]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [888]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [889]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [890]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [891]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [892]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [893]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [894]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [895]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [896]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [897]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [898]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [899]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [900]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [901]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [902]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [903]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [904]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [905]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [906]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [907]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [908]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [909]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [910]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [911]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [912]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [913]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [914]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [915]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [916]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [917]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [918]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [919]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [920]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [921]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [922]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [923]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [924]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [925]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [926]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [927]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [928]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [929]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [930]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [931]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [932]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [933]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [934]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [935]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [936]
+		{
+			"Modifier not supported on client (type=174, asset=45902, secondaryAsset=0, tertiaryAsset=0). Put in a task to add this.", -- [1]
+			3, -- [2]
+		}, -- [937]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [938]
+		{
+			"[IBN_Login] Requesting change realm list", -- [1]
+			0, -- [2]
+		}, -- [939]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [940]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [941]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [942]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [943]
+		{
+			"[IBN_Login] Requesting realm listsnumSubRegions=\"3\"", -- [1]
+			0, -- [2]
+		}, -- [944]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [945]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"5-101-89\" realmAddress=\"5-11-7\"", -- [1]
+			0, -- [2]
+		}, -- [946]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [947]
+		{
+			"Disconnecting for reason 12", -- [1]
+			0, -- [2]
+		}, -- [948]
+		{
+			"NetClient::HandleDisconnect()\n", -- [1]
+			0, -- [2]
+		}, -- [949]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [950]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [951]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [952]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [953]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [954]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [955]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [956]
+		{
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			0, -- [2]
+		}, -- [957]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [958]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [959]
+		{
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
+			0, -- [2]
+		}, -- [960]
+		{
+			"Proficiency in item class 2 set to 0x0000000430", -- [1]
+			0, -- [2]
+		}, -- [961]
+		{
+			"Proficiency in item class 2 set to 0x0000008430", -- [1]
+			0, -- [2]
+		}, -- [962]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [963]
+		{
+			"Proficiency in item class 2 set to 0x000000c430", -- [1]
+			0, -- [2]
+		}, -- [964]
+		{
+			"Proficiency in item class 2 set to 0x000000c470", -- [1]
+			0, -- [2]
+		}, -- [965]
+		{
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			0, -- [2]
+		}, -- [966]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [967]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [968]
+		{
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			0, -- [2]
+		}, -- [969]
+		{
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			0, -- [2]
+		}, -- [970]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [971]
+		{
+			"Time set to 12/13/2019 (Fri) 22:16", -- [1]
+			0, -- [2]
+		}, -- [972]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [973]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [974]
+		{
+			"Total: 0d 12h 45m 59s", -- [1]
+			0, -- [2]
+		}, -- [975]
+		{
+			"Level: 0d 0h 14m 28s", -- [1]
+			0, -- [2]
+		}, -- [976]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [977]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [978]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [979]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [980]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [981]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [982]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [983]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [984]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [985]
+		{
+			"Skill 126 increased from 300 to 305", -- [1]
+			0, -- [2]
+		}, -- [986]
+		{
+			"Skill 183 increased from 300 to 305", -- [1]
+			0, -- [2]
+		}, -- [987]
+		{
+			"Skill 798 increased from 300 to 305", -- [1]
+			0, -- [2]
+		}, -- [988]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [989]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [990]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [991]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [992]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [993]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [994]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [995]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [996]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [997]
+		{
+			"Skill 126 increased from 305 to 310", -- [1]
+			0, -- [2]
+		}, -- [998]
+		{
+			"Skill 183 increased from 305 to 310", -- [1]
+			0, -- [2]
+		}, -- [999]
+		{
+			"Skill 798 increased from 305 to 310", -- [1]
+			0, -- [2]
+		}, -- [1000]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [1001]
+	},
+	["isShown"] = false,
+	["fontHeight"] = 14,
+	["commandHistory"] = {
+	},
+}
