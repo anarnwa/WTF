@@ -1,0 +1,32 @@
+VER 3 0100000000000001 "复苏" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]复苏之雾
+END
+VER 3 0100000000000006 "奶驱" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]清创生血
+END
+VER 3 0100000000000002 "抚慰" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]抚慰之雾
+END
+VER 3 0100000000000008 "控" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,nohelp][]分筋错骨
+END
+VER 3 0100000000000003 "氤氲" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]氤氲之雾
+END
+VER 3 0100000000000004 "活血" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]活血术
+END
+VER 3 0100000000000007 "真气" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]真气波
+END
+VER 3 0100000000000005 "茧" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]作茧缚命
+END

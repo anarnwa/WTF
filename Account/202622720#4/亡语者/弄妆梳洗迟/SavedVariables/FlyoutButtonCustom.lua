@@ -23,19 +23,19 @@ FlyoutButtonCustom_Settings = {
 				["command"] = "item",
 			}, -- [4]
 			{
-				["subValue"] = "|cff0070dd|Hitem:165669::::::::120:62::::::|h[春节长者的炉石]|h|r",
-				["value"] = 165669,
 				["command"] = "item",
+				["value"] = 64457,
+				["subValue"] = "|cff0070dd|Hitem:64457::::::::120:62::::::|h[阿古斯的最后一件圣物]|h|r",
 			}, -- [5]
 			{
-				["subValue"] = "|cff0070dd|Hitem:64457::::::::120:62::::::|h[阿古斯的最后一件圣物]|h|r",
-				["value"] = 64457,
-				["command"] = "item",
-			}, -- [6]
-			{
-				["subValue"] = "|cff0070dd|Hitem:140324::::::::120:62::::::|h[移动传送道标]|h|r",
 				["command"] = "item",
 				["value"] = 140324,
+				["subValue"] = "|cff0070dd|Hitem:140324::::::::120:62::::::|h[移动传送道标]|h|r",
+			}, -- [6]
+			{
+				["command"] = "item",
+				["value"] = 110560,
+				["subValue"] = "|cffffffff|Hitem:110560::::::::120:62::::::|h[要塞炉石]|h|r",
 			}, -- [7]
 		}, -- [1]
 	},

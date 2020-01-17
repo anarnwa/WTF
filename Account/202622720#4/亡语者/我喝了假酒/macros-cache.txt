@@ -6,6 +6,10 @@ VER 3 010000000000000A "抚慰" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help][]抚慰之雾
 END
+VER 3 010000000000000B "控" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,nohelp][]分筋错骨
+END
 VER 3 0100000000000004 "氤氲" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help][]氤氲之雾

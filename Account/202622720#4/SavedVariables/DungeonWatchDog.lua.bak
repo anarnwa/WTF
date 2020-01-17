@@ -16,9 +16,9 @@ WATCHDOG_VARS = {
 		},
 		["COLOR_PLANEL_SCROLL_ITEM_TEXT"] = {
 			["A"] = 1,
-			["B"] = 0.777,
-			["G"] = 0.453,
 			["R"] = 0.137,
+			["G"] = 0.453,
+			["B"] = 0.777,
 		},
 		["BACKDROP_PLANEL_SCROLL_ITEM_LAYER"] = {
 			["bgFile"] = "Interface\\DialogFrame\\UI-DialogBox-Background",
@@ -31,5 +31,33 @@ WATCHDOG_VARS = {
 		["DEFAULT_EXPORT_SEP"] = "0Z0",
 	},
 	["LAST_SEARCH_RESULTS"] = {
+		{
+			["name"] = "副站长-加尔",
+			["id"] = 41,
+		}, -- [1]
+		{
+			["name"] = "天剑鈊魔-塞拉摩",
+			["id"] = 40,
+		}, -- [2]
+		{
+			["name"] = "柒蟲-克尔苏加德",
+			["id"] = 34,
+		}, -- [3]
+		{
+			["name"] = "朵朵的饲养员-冰霜之刃",
+			["id"] = 36,
+		}, -- [4]
+		{
+			["name"] = "无奈的骑士-斩魔者",
+			["id"] = 32,
+		}, -- [5]
+		{
+			["name"] = "幼儿圜班长-银月",
+			["id"] = 38,
+		}, -- [6]
+		{
+			["name"] = "走一走瞧一瞧-死亡之翼",
+			["id"] = 33,
+		}, -- [7]
 	},
 }

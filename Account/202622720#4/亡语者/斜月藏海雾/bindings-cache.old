@@ -8,7 +8,7 @@ bind BUTTON4 NONE
 bind PAGEUP CAMERAZOOMIN
 bind PAGEDOWN CAMERAZOOMOUT
 bind R CLICK BindPadKey:SPELL 痛击
-bind CTRL-9 CLICK BindPadKey:MACRO 战复
+bind CTRL-9 NONE
 bind F1 MULTIACTIONBAR1BUTTON1
 bind F2 MULTIACTIONBAR1BUTTON2
 bind F3 MULTIACTIONBAR1BUTTON3
@@ -33,7 +33,7 @@ bind SHIFT-W CLICK BindPadKey:SPELL 恶魔传送门
 bind ALT-S CLICK BindPadKey:SPELL 恶魔法阵
 bind ALT-MOUSEWHEELDOWN CLICK BindPadKey:SPELL 隐形术
 bind ALT-2 CLICK BindPadKey:SPELL 急奔
-bind ALT-5 CLICK BindPadKey:SPELL 牺牲祝福
+bind ALT-5 CLICK BindPadKey:MACRO 战复
 bind ALT-3 CLICK BindPadKey:SPELL 狂奔怒吼
 bind ALT-1 CLICK BindPadKey:SPELL 狂暴
 bind ALT-4 CLICK BindPadKey:SPELL 影遁
@@ -48,4 +48,5 @@ bind ` SCRAP_TOGGLE
 bind ALT-7 CLICK BindPadKey:SPELL 凶猛撕咬
 bind ALT-9 CLICK BindPadKey:MACRO 猫驱
 bind ALT-6 CLICK BindPadKey:SPELL 割裂
+bind ALT-X CLICK BindPadKey:MACRO 群缠
 modifiedclick ALT AUTOLOOTTOGGLE

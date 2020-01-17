@@ -5,13 +5,14 @@ MBFDB = {
 		["风起春城暮 - 亡语者"] = "Default",
 		["Ouse - 亡语者"] = "Default",
 		["我会大跳你呢 - 亡语者"] = "Default",
+		["落月复西斜 - 亡语者"] = "Default",
 		["她的眼眶里 - 古尔丹"] = "Default",
 		["我会变成狼 - 亡语者"] = "Default",
 		["Weeping - 亡语者"] = "Default",
-		["我会飞你会吗 - 亡语者"] = "Default",
+		["我喝了假酒 - 亡语者"] = "Default",
 		["我会招宝宝 - 亡语者"] = "Default",
 		["弄妆梳洗迟 - 亡语者"] = "Default",
-		["我喝了假酒 - 亡语者"] = "Default",
+		["我会飞你会吗 - 亡语者"] = "Default",
 		["十里扬州路 - 亡语者"] = "Default",
 		["我会招恶魔 - 亡语者"] = "Default",
 		["Cleaner - 亡语者"] = "Default",
@@ -30,9 +31,9 @@ MBFDB = {
 			["mbfHidden"] = true,
 			["MBF_FrameLocation"] = {
 				nil, -- [1]
-				nil, -- [2]
-				-320.4657592773438, -- [3]
-				-128.5220947265625, -- [4]
+				"TOP", -- [2]
+				284.5343551635742, -- [3]
+				-71.52153778076172, -- [4]
 			},
 			["customChildren"] = {
 				"MinimapButtonFrameDragButton", -- [1]

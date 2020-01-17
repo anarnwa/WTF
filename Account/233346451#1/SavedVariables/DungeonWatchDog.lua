@@ -1,0 +1,3 @@
+
+WATCHDOG_VARS = {
+}

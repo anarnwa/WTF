@@ -27,40 +27,91 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
+		["date"] = "Friday 12/27",
+		["rows"] = 2,
+	}, -- [1]
+	{
+		["date"] = "Wednesday 12/18",
+		["rows"] = 6,
+	}, -- [2]
+	{
+		["date"] = "Monday 12/16",
+		["rows"] = 2,
+	}, -- [3]
+	{
+		["date"] = "Sunday 12/15",
+		["rows"] = 6,
+	}, -- [4]
+	{
+		["date"] = "Saturday 12/14",
+		["rows"] = 5,
+	}, -- [5]
+	{
 		["date"] = "Friday 12/13",
 		["rows"] = 5,
-	}, -- [1]
+	}, -- [6]
 	{
 		["date"] = "Thursday 12/12",
 		["rows"] = 4,
-	}, -- [2]
+	}, -- [7]
 	{
 		["date"] = "Wednesday 12/11",
 		["rows"] = 6,
-	}, -- [3]
+	}, -- [8]
 	{
 		["date"] = "Tuesday 12/10",
 		["rows"] = 5,
-	}, -- [4]
+	}, -- [9]
 	{
 		["date"] = "Sunday 12/8",
 		["rows"] = 1,
-	}, -- [5]
+	}, -- [10]
 }
 FactionAddictLogEntries = {
+	{
+		["雷矛卫队"] = 240,
+		["黎夕旧梦丶"] = 313,
+	}, -- [1]
+	{
+		["荣耀堡"] = 287,
+		["珠鳍锦鱼人"] = 42000,
+		["黎夕旧梦丶"] = 9344,
+		["雷矛卫队"] = 2529,
+		["联盟先遣军"] = 974,
+		["霍迪尔之子"] = 1495,
+	}, -- [2]
+	{
+		["黎夕旧梦丶"] = 143,
+		["荣耀堡"] = 1150,
+	}, -- [3]
+	{
+		["龙眠联军"] = 2466,
+		["荣耀堡"] = 575,
+		["雷矛卫队"] = 1260,
+		["肯瑞托"] = 1420,
+		["联盟先遣军"] = 859,
+		["黎夕旧梦丶"] = 1869,
+	}, -- [4]
+	{
+		["埃索达"] = 287,
+		["荣耀堡"] = 4180,
+		["雷矛卫队"] = 1048,
+		["铁炉堡"] = 299,
+		["黎夕旧梦丶"] = 3163,
+	}, -- [5]
 	{
 		["暴风城"] = 690,
 		["达纳苏斯"] = 4123,
 		["吉尔尼斯"] = 11,
 		["荣耀堡"] = 3023,
 		["黎夕旧梦丶"] = 6325,
-	}, -- [1]
+	}, -- [6]
 	{
 		["银色北伐军"] = 42,
 		["铁炉堡"] = 86,
 		["达纳苏斯"] = 3749,
 		["黎夕旧梦丶"] = 6468,
-	}, -- [2]
+	}, -- [7]
 	{
 		["暴风城"] = 575,
 		["达纳苏斯"] = 15174,
@@ -68,17 +119,17 @@ FactionAddictLogEntries = {
 		["吉尔尼斯"] = 1150,
 		["铁炉堡"] = 403,
 		["黎夕旧梦丶"] = 14088,
-	}, -- [3]
+	}, -- [8]
 	{
 		["暴风城"] = 1207,
 		["达纳苏斯"] = 9540,
 		["吉尔尼斯"] = 1150,
 		["雷矛卫队"] = 221,
 		["黎夕旧梦丶"] = 287,
-	}, -- [4]
+	}, -- [9]
 	{
 		["达纳苏斯"] = 825,
-	}, -- [5]
+	}, -- [10]
 }
 FactionAddictConfigIsInactive = {
 	[1737] = false,
@@ -150,23 +201,23 @@ FactionAddictConfigIsInactive = {
 	[1515] = false,
 	[1098] = false,
 	[349] = false,
-	[2391] = false,
-	[1015] = false,
 	[68] = false,
+	[1015] = false,
+	[2391] = false,
 	[1134] = false,
 	[54] = false,
-	[72] = false,
+	[2264] = false,
 	[933] = false,
 	[1135] = false,
 	[729] = false,
 	[509] = false,
 	[270] = false,
-	[2264] = false,
+	[72] = false,
 	[76] = false,
-	[889] = false,
+	[2265] = false,
 	[1073] = false,
 	[2101] = false,
-	[92] = false,
+	[730] = false,
 	[1520] = false,
 	[1376] = false,
 	[2099] = false,
@@ -196,38 +247,38 @@ FactionAddictConfigIsInactive = {
 	[1711] = false,
 	[1718] = false,
 	[1272] = false,
-	[2156] = false,
-	[1975] = false,
+	[1847] = false,
+	[2157] = false,
 	[989] = false,
 	[1273] = false,
-	[1337] = false,
-	[2159] = false,
-	[2157] = false,
-	[1850] = false,
-	[1848] = false,
-	[369] = false,
+	[2156] = false,
 	[990] = false,
+	[1975] = false,
+	[2162] = false,
+	[2158] = false,
+	[369] = false,
+	[2159] = false,
 	[1275] = false,
-	[2160] = false,
+	[1849] = false,
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[1085] = false,
-	[2164] = false,
+	[1850] = false,
+	[1341] = false,
 	[2163] = false,
 	[1277] = false,
-	[1341] = false,
+	[2164] = false,
 	[577] = false,
-	[2165] = false,
+	[609] = false,
 	[1278] = false,
 	[1690] = false,
 	[1681] = false,
-	[2045] = false,
+	[1280] = false,
 	[1279] = false,
 	[69] = false,
 	[1091] = false,
 	[1216] = false,
-	[81] = false,
+	[2045] = false,
 	[2170] = false,
 	[1090] = false,
 	[93] = false,
@@ -237,15 +288,15 @@ FactionAddictConfigIsInactive = {
 	[70] = false,
 	[1282] = false,
 	[930] = false,
-	[1280] = false,
+	[81] = false,
 	[1984] = false,
 	[1283] = false,
-	[609] = false,
+	[2165] = false,
 	[1156] = false,
-	[2162] = false,
-	[1849] = false,
-	[2158] = false,
-	[1847] = false,
+	[1085] = false,
+	[2160] = false,
+	[1848] = false,
+	[1337] = false,
 	[1731] = false,
 	[1710] = false,
 	[1094] = false,
@@ -259,9 +310,9 @@ FactionAddictConfigIsInactive = {
 	[1133] = false,
 	[2018] = false,
 	[1989] = false,
-	[730] = false,
+	[92] = false,
 	[1352] = false,
-	[2265] = false,
+	[889] = false,
 	[1735] = false,
 	[1359] = false,
 	[1353] = false,

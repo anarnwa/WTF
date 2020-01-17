@@ -1,0 +1,17 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Rikii|贫瘠之地|Horde|120|DEMONHUNTER", -- [1]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Rikii - 贫瘠之地"] = "Rikii - 贫瘠之地",
+	},
+	["profiles"] = {
+		["Rikii - 贫瘠之地"] = {
+		},
+	},
+}

@@ -14,11 +14,11 @@ WATCHDOG_DB = {
 			["time"] = 1556114026,
 		},
 	},
-	["defaultFilterToggle"] = true,
+	["shareToggle"] = true,
 	["version"] = 7,
 	["ignoreTimeLimit"] = 259200,
 	["shareGuildToggle"] = true,
 	["shareLimit"] = 500,
 	["versionMessageToggle"] = true,
-	["shareToggle"] = true,
+	["defaultFilterToggle"] = true,
 }

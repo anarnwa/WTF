@@ -35,7 +35,7 @@ bind ALT-MOUSEWHEELUP CLICK BindPadKey:SPELL 乌索尔旋风
 bind ALT-E CLICK BindPadMacro:野性成长
 bind ALT-3 CLICK BindPadMacro:复生
 bind ALT-4 CLICK BindPadKey:SPELL 宁静
-bind NUMPAD9 NONE
+bind NUMPAD9 CLICK NOP_QB_1:LeftButton
 bind ALT-9 CLICK BindPadMacro:潜行
 bind SHIFT-5 ACTIONPAGE5
 bind SHIFT-MOUSEWHEELUP PREVIOUSACTIONPAGE
@@ -50,6 +50,6 @@ bind SHIFT-DOWN NEXTACTIONPAGE
 bind ` SCRAP_TOGGLE
 bind ALT-R CLICK BindPadKey:SPELL 振翅
 bind CTRL-Z TOGGLEUI
-bind ALT-D NONE
+bind ALT-D CLICK BindPadKey:SPELL 旋风
 bind ALT-W NONE
 bind ALT-F CLICK BindPadKey:SPELL 熊形态

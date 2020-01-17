@@ -2,6 +2,10 @@ VER 3 0100000000000002 "复苏" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help][]复苏之雾
 END
+VER 3 010000000000000A "抚慰" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]抚慰之雾
+END
 VER 3 0100000000000004 "氤氲" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help][]氤氲之雾
@@ -10,13 +14,13 @@ VER 3 0100000000000007 "活血" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help][]活血术
 END
+VER 3 0100000000000006 "真气" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,help][]真气波
+END
 VER 3 0100000000000009 "神器" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@mouseover,help][]神龙之赐(神器)
-END
-VER 3 0100000000000006 "禅意" "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@mouseover,help][]禅意波
 END
 VER 3 0100000000000001 "茧" "INV_MISC_QUESTIONMARK"
 #showtooltip 

@@ -1,0 +1,21 @@
+
+WQTrackerDB = {
+	["profileKeys"] = {
+		["Rikii - 贫瘠之地"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["quests_tracked"] = {
+				["Player-1950-06855FCC"] = {
+				},
+			},
+			["player_names"] = {
+				["Player-1950-06855FCC"] = {
+					["class"] = "DEMONHUNTER",
+					["name"] = "Rikii",
+					["realm"] = "贫瘠之地",
+				},
+			},
+		},
+	},
+}
