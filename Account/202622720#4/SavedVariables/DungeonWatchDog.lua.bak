@@ -16,9 +16,9 @@ WATCHDOG_VARS = {
 		},
 		["COLOR_PLANEL_SCROLL_ITEM_TEXT"] = {
 			["A"] = 1,
-			["B"] = 0.777,
-			["G"] = 0.453,
 			["R"] = 0.137,
+			["G"] = 0.453,
+			["B"] = 0.777,
 		},
 		["BACKDROP_PLANEL_SCROLL_ITEM_LAYER"] = {
 			["bgFile"] = "Interface\\DialogFrame\\UI-DialogBox-Background",

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 8,
 	["lastSanitation"] = 3,
-	["session"] = 7,
 	["errors"] = {
 		{
 			["message"] = "[string \"--[==[ Error in 'Extraction du mal':'custom...\"]:11: attempt to perform arithmetic on global 'valByOrbs' (a nil value)",

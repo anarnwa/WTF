@@ -22,8 +22,8 @@ ecfDB = {
 	},
 	["totalBlackWordsFiltered"] = 0,
 	["lesserBlackWordThreshold"] = 3,
-	["enableDND"] = true,
 	["blackWordList"] = {
 	},
+	["enableDND"] = true,
 	["advancedConfig"] = false,
 }

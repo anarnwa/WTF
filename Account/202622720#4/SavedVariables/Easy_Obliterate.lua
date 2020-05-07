@@ -5,8 +5,8 @@ EasyObliterate_Data = {
 	["addonVersion"] = 32,
 	["addonSettings"] = {
 		["showAshStats"] = true,
-		["showTooltip"] = true,
-		["ignoreWardrobeItems"] = false,
 		["show0AshMessage"] = true,
+		["ignoreWardrobeItems"] = false,
+		["showTooltip"] = true,
 	},
 }

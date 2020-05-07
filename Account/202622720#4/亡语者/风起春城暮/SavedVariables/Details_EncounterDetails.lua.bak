@@ -1,5 +1,13 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			["boss"] = "米利克萨",
+		}, -- [1]
+		{
+			["boss"] = "阿德里斯和阿斯匹克斯",
+		}, -- [2]
+	},
 	["encounter_spells"] = {
 		[268851] = {
 			["school"] = 8,
@@ -72,26 +80,41 @@ EncounterDetailsDB = {
 			},
 			["source"] = "阿斯匹克斯",
 		},
-		[263257] = {
-			["school"] = 8,
+		[269970] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "米利克萨",
+		},
+		[263914] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "阿斯匹克斯",
-		},
-		[263573] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "阿德里斯",
+			["source"] = "米利克萨",
 		},
 		[264368] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "未知目标",
+		},
+		[264235] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "蛋",
+		},
+		[264239] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "未知目标",
 		},
@@ -101,23 +124,6 @@ EncounterDetailsDB = {
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "米利克萨",
-		},
-		[263371] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "阿斯匹克斯",
-		},
-		[264206] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "米利克萨",
 		},
@@ -137,14 +143,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "米利克萨",
 		},
-		[265912] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "暴怒云气",
-		},
 		[263246] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -153,13 +151,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "阿斯匹克斯",
 		},
-		[263309] = {
+		[265912] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "阿德里斯",
+			["source"] = "暴怒云气",
 		},
 		[267027] = {
 			["school"] = 8,
@@ -171,6 +169,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "喷毒盘蛇",
 		},
+		[263309] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "阿德里斯",
+		},
 		[269129] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -179,44 +185,38 @@ EncounterDetailsDB = {
 			},
 			["source"] = "暴怒云气",
 		},
-		[264239] = {
+		[263371] = {
 			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "未知目标",
-		},
-		[264235] = {
-			["school"] = 1,
-			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "蛋",
+			["source"] = "阿斯匹克斯",
 		},
-		[263914] = {
+		[264206] = {
 			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "米利克萨",
+		},
+		[263573] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "阿德里斯",
+		},
+		[263257] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "米利克萨",
+			["source"] = "阿斯匹克斯",
 		},
-		[269970] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "米利克萨",
-		},
-	},
-	["emotes"] = {
-		{
-			["boss"] = "米利克萨",
-		}, -- [1]
-		{
-			["boss"] = "阿德里斯和阿斯匹克斯",
-		}, -- [2]
 	},
 }

@@ -2,92 +2,92 @@
 ThreatPlatesDB = {
 	["char"] = {
 		["维维尔 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["我找不到了 - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 				false, -- [3]
 			},
-			["welcome"] = true,
 		},
 		["Ouse - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["白白净净啥 - 古尔丹"] = {
+			["welcome"] = true,
 			["spec"] = {
 				true, -- [1]
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["落月复西斜 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				true, -- [1]
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["我会消失 - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["我的小胖狗 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["弄妆梳洗迟 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["我会飞你会吗 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				nil, -- [2]
 				true, -- [3]
 				false, -- [4]
 			},
+			["welcome"] = true,
 		},
 		["Mubbh - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["朝飞暮卷 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["斜月藏海雾 - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				nil, -- [2]
 				true, -- [3]
 				false, -- [4]
 			},
-			["welcome"] = true,
 		},
 		["弄妆梳洗迟 - 古尔丹"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["风起春城暮 - 亡语者"] = {
 			["welcome"] = true,
@@ -97,156 +97,160 @@ ThreatPlatesDB = {
 				false, -- [3]
 			},
 		},
-		["Believe - 古尔丹"] = {
-			["spec"] = {
-				nil, -- [1]
-				nil, -- [2]
-				true, -- [3]
-				false, -- [4]
-			},
+		["Funerals - 亡语者"] = {
 			["welcome"] = true,
+			["spec"] = {
+				true, -- [1]
+				[3] = false,
+			},
 		},
 		["高楼鼓角悲 - 亡语者"] = {
+			["welcome"] = true,
+			["spec"] = {
+				[3] = false,
+			},
+		},
+		["Cleaner - 亡语者"] = {
+			["welcome"] = true,
+			["spec"] = {
+				true, -- [1]
+				[3] = false,
+			},
+		},
+		["呜呜哇哇 - 古尔丹"] = {
 			["spec"] = {
 				[3] = false,
 			},
 			["welcome"] = true,
 		},
+		["她的眼眶里 - 古尔丹"] = {
+			["spec"] = {
+				nil, -- [1]
+				true, -- [2]
+			},
+			["welcome"] = true,
+		},
+		["我会招恶魔 - 亡语者"] = {
+			["welcome"] = true,
+			["spec"] = {
+				[3] = false,
+			},
+		},
 		["Weeping - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 				false, -- [3]
 			},
-			["welcome"] = true,
-		},
-		["呜呜哇哇 - 古尔丹"] = {
-			["welcome"] = true,
-			["spec"] = {
-				[3] = false,
-			},
-		},
-		["她的眼眶里 - 古尔丹"] = {
-			["welcome"] = true,
-			["spec"] = {
-				nil, -- [1]
-				true, -- [2]
-			},
-		},
-		["我会招恶魔 - 亡语者"] = {
-			["spec"] = {
-				[3] = false,
-			},
-			["welcome"] = true,
-		},
-		["Cleaner - 亡语者"] = {
-			["spec"] = {
-				true, -- [1]
-				[3] = false,
-			},
-			["welcome"] = true,
 		},
 		["弄妆梳洗迟 - 死亡之翼"] = {
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["我会招宝宝 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["坎坎坷坷 - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
-			["welcome"] = true,
 		},
 		["我喝了假酒 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				true, -- [1]
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["十里扬州路 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 			},
+			["welcome"] = true,
 		},
 		["我会变成狼 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
+		},
+		["Dremel - 亡语者"] = {
+			["spec"] = {
+				[3] = false,
+			},
+			["welcome"] = true,
+		},
+		["十里扬州路 - 古尔丹"] = {
+			["spec"] = {
+				nil, -- [1]
+				true, -- [2]
+			},
+			["welcome"] = true,
+		},
+		["回首见旌旗 - 亡语者"] = {
+			["spec"] = {
+				nil, -- [1]
+				nil, -- [2]
+				true, -- [3]
+				false, -- [4]
+			},
+			["welcome"] = true,
 		},
 		["我会大跳你呢 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = true,
 			},
-		},
-		["十里扬州路 - 古尔丹"] = {
 			["welcome"] = true,
-			["spec"] = {
-				nil, -- [1]
-				true, -- [2]
-			},
-		},
-		["回首见旌旗 - 亡语者"] = {
-			["welcome"] = true,
-			["spec"] = {
-				nil, -- [1]
-				nil, -- [2]
-				true, -- [3]
-				false, -- [4]
-			},
-		},
-		["Dremel - 亡语者"] = {
-			["welcome"] = true,
-			["spec"] = {
-				[3] = false,
-			},
 		},
 		["Believer - 古尔丹"] = {
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				nil, -- [2]
 				true, -- [3]
 				false, -- [4]
 			},
-			["welcome"] = true,
 		},
 		["不不尾王 - 古尔丹"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["懒起画蛾眉 - 古尔丹"] = {
-			["welcome"] = true,
 			["spec"] = {
 				[3] = false,
 			},
+			["welcome"] = true,
 		},
 		["十里扬州路 - 安苏"] = {
-			["welcome"] = true,
 			["spec"] = {
-				[3] = false,
-			},
-		},
-		["Funerals - 亡语者"] = {
-			["spec"] = {
-				true, -- [1]
 				[3] = false,
 			},
 			["welcome"] = true,
 		},
+		["Believe - 古尔丹"] = {
+			["welcome"] = true,
+			["spec"] = {
+				nil, -- [1]
+				nil, -- [2]
+				true, -- [3]
+				false, -- [4]
+			},
+		},
+	},
+	["global"] = {
+		["CheckNewLookAndFeel"] = true,
+		["version"] = "9.1.20",
 	},
 	["profileKeys"] = {
 		["维维尔 - 亡语者"] = "Default",
@@ -263,32 +267,28 @@ ThreatPlatesDB = {
 		["斜月藏海雾 - 亡语者"] = "Default",
 		["弄妆梳洗迟 - 古尔丹"] = "Default",
 		["风起春城暮 - 亡语者"] = "Default",
-		["Believe - 古尔丹"] = "Default",
+		["Funerals - 亡语者"] = "Default",
 		["高楼鼓角悲 - 亡语者"] = "Default",
-		["Weeping - 亡语者"] = "Default",
+		["Cleaner - 亡语者"] = "Default",
 		["呜呜哇哇 - 古尔丹"] = "Default",
 		["她的眼眶里 - 古尔丹"] = "Default",
 		["我会招恶魔 - 亡语者"] = "Default",
-		["Cleaner - 亡语者"] = "Default",
+		["Weeping - 亡语者"] = "Default",
 		["弄妆梳洗迟 - 死亡之翼"] = "Default",
 		["我会招宝宝 - 亡语者"] = "Default",
 		["坎坎坷坷 - 亡语者"] = "Default",
 		["我喝了假酒 - 亡语者"] = "Default",
 		["十里扬州路 - 亡语者"] = "Default",
 		["我会变成狼 - 亡语者"] = "Default",
-		["我会大跳你呢 - 亡语者"] = "Default",
+		["Dremel - 亡语者"] = "Default",
 		["十里扬州路 - 古尔丹"] = "Default",
 		["回首见旌旗 - 亡语者"] = "Default",
-		["Dremel - 亡语者"] = "Default",
+		["我会大跳你呢 - 亡语者"] = "Default",
 		["Believer - 古尔丹"] = "Default",
 		["不不尾王 - 古尔丹"] = "Default",
 		["懒起画蛾眉 - 古尔丹"] = "Default",
 		["十里扬州路 - 安苏"] = "Default",
-		["Funerals - 亡语者"] = "Default",
-	},
-	["global"] = {
-		["CheckNewLookAndFeel"] = true,
-		["version"] = "9.1.20",
+		["Believe - 古尔丹"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -361,8 +361,8 @@ ThreatPlatesDB = {
 				},
 			},
 			["ComboPoints"] = {
-				["ShowInHeadlineView"] = true,
 				["ON"] = true,
+				["ShowInHeadlineView"] = true,
 			},
 			["CVarsBackup"] = {
 				["showQuestTrackingTooltips"] = "0",

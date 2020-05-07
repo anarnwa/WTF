@@ -5,6 +5,8 @@ MTGDB = {
 	},
 	["buyList"] = {
 	},
+	["buyLists"] = {
+	},
 	["merchantItemList"] = {
 		[167902] = {
 			["NPC"] = 151950,
@@ -227,8 +229,6 @@ MTGDB = {
 			},
 		},
 	},
-	["buyLists"] = {
-	},
 	["NPCNameList"] = {
 		[152084] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_2:26|t 穆勒尔",
 		[151952] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_1:26|t 弗勒格勒",
@@ -256,7 +256,7 @@ MTGsettingDB = {
 	[170152] = true,
 	[168091] = false,
 	[168095] = true,
-	[170161] = true,
-	[170153] = true,
 	[169202] = false,
+	[170153] = true,
+	[170161] = true,
 }
