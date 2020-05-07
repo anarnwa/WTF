@@ -1,56 +1,69 @@
-VER 3 0100000000000001 "保护" "INV_Misc_QuestionMark"
+VER 3 0100000000000014 "dot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists][]保护祝福
+/cast [mod:alt,@mouseover,exists,harm]月火术(月光);[nomod,@mouseover,exists,harm]阳炎术(日光);[mod:alt,@mouseover,exists,help]生命绽放;[nomod,@mouseover,exists,help]回春术;[mod:alt,harm]月火术(月光);[nomod,harm]阳炎术(日光);[mod:alt,help]生命绽放;[nomod,help][]回春术
 END
-VER 3 0100000000000002 "信仰" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists][]赋予信仰
+VER 3 0100000000000001 "ND驱" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 安抚; [@mouseover,help] []自然之愈
+/cast [@mouseover,harm,nodead]安抚;[@mouseover,help,nodead]自然之愈;[harm]安抚;[help][]自然之愈
 END
-VER 3 0100000000000003 "光" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists][]守护之光
+VER 3 0100000000000012 "催眠" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@mouseover,exists,nohelp,nodead][]休眠
 END
-VER 3 0100000000000004 "制裁" "INV_Misc_QuestionMark"
+VER 3 0100000000000011 "冲锋" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists,nodead,nohelp][]制裁之锤
+/cast [@mouseover,exists][]野性冲锋
 END
-VER 3 0100000000000005 "圣光" "INV_Misc_QuestionMark"
+VER 3 010000000000000E "变形" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists][]圣光术
+/cast [talent:3/3]熊形态;[talent:3/2]猎豹形态;[talent:3/1]枭兽形态
 END
-VER 3 0100000000000006 "圣疗" "INV_Misc_QuestionMark"
+VER 3 0100000000000003 "愈合" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists][]圣疗术
+/cast [@mouseover,help,exists][]愈合
 END
-VER 3 0100000000000007 "圣闪" "INV_Misc_QuestionMark"
+VER 3 010000000000000A "成长" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists][]圣光闪现
+/cast [@mouseover,help,exists][]野性成长
 END
-VER 3 0100000000000009 "牺牲" "INV_Misc_QuestionMark"
+VER 3 010000000000000C "春暖" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists][]牺牲祝福
+/cast [@cursor]百花齐放
 END
-VER 3 010000000000000A "美德" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists][]美德道标
+VER 3 0100000000000006 "潜行" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [nostance:2]猎豹形态
+/cast !潜行
 END
-VER 3 010000000000000B "自杀光" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists][]殉道者之光
+VER 3 010000000000000D "激活" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@player] 激活
 END
-VER 3 010000000000000C "自由" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists][]自由祝福
+VER 3 0100000000000005 "猫驱" "INV_MISC_QUESTIONMARK"
+#showtooltips [@mouseover,harm] 安抚; [@mouseover,help] []清除腐蚀
+/cast [@mouseover,harm,nodead]安抚;[@mouseover,help,nodead]清除腐蚀;[harm]安抚;[help][]清除腐蚀
 END
-VER 3 010000000000000D "震击" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists][]神圣震击
+VER 3 0100000000000013 "结界" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [talent:7/3]繁盛;[talent:1/3,@mouseover,exists][talent:1/3]塞纳里奥结界
 END
-VER 3 010000000000000F "驱散" "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists,help][]清洁术
+VER 3 0100000000000004 "缠绕" "INV_MISC_QUESTIONMARK"
+#showtooltip 纠缠根须
+/cast [@mouseover,exists,nohelp,nodead][]纠缠根须
 END
-VER 3 010000000000000E "驱散" "INV_Misc_QuestionMark"
+VER 3 0100000000000008 "群缠" "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [talent:4/3]台风;[talent:4/2,@mouseover,exists][talent:4/2]群体缠绕
+END
+VER 3 0100000000000002 "赶路" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists][]清毒术
+/cast [stance:3]猎豹形态(变形);[swimming]旅行形态(变形);[indoors]猎豹形态(变形);[combat]旅行形态(变形); [flyable]旅行形态(变形); [noflyable]旅行形态(变形);
+END
+VER 3 0100000000000009 "迅捷" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][]迅捷治愈
+END
+VER 3 0100000000000010 "铁木" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][]铁木树皮
 END

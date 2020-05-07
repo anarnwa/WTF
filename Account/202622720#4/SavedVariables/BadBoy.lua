@@ -1,6 +1,6 @@
 
 BADBOY_BLACKLIST = {
-	["dayFromCal"] = 17,
+	["dayFromCal"] = 7,
 }
 BADBOY_OPTIONS = {
 	["tipSpam"] = false,

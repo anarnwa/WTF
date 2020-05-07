@@ -1,3 +1,11 @@
+VER 3 000000000000003C "." "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nodead,exists][]艾泽拉斯之心精华
+END
+VER 3 000000000000003F "sp" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover,exists,nodead][]13
+END
 VER 3 0000000000000027 "假成就" "INV_MISC_QUESTIONMARK"
 /run local i,d=980,'00:00:00' print(('\124cffffff00\124Hachievement:%s:%s:1:%s:4294967295:4294967295:4294967295:4294967295\124h[%s]\124h\124r'):format(i,UnitGUID('player'),d,select(2, GetAchievementInfo(i))))
 END
@@ -36,10 +44,6 @@ VER 3 000000000000003E "粘液位置" "INV_MISC_QUESTIONMARK"
 /way 45.7 24.11
 /way 54.9 48.7
 /way 71.71 25.7
-END
-VER 3 000000000000003C "精华" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,nodead,exists][]艾泽拉斯之心精华
 END
 VER 3 0000000000000019 "鼠标指向" "INV_MISC_QUESTIONMARK"
 @cursor     鼠标位置 

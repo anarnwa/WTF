@@ -370,3 +370,5 @@ Grail-Reputations-_classic_: enabled
 DBM-Nyalotha: enabled
 RaiderNoAddon: enabled
 Scrap_Config: enabled
+!!!Libs: enabled
+WeakAurasArchive: enabled

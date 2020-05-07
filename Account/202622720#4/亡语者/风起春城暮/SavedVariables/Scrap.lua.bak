@@ -1,9 +1,8 @@
 
-Scrap_Junk = {
+Scrap_CharSets = {
+	["ml"] = {
+	},
+	["list"] = {
+		[173484] = false,
+	},
 }
-Scrap_AI = {
-}
-Scrap_LowEquip = nil
-Scrap_LowConsume = nil
-Scrap_Unusable = nil
-Scrap_ShareList = nil

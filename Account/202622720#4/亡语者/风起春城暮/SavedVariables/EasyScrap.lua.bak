@@ -1,6 +1,6 @@
 
 EasyScrap_IgnoreList = {
-	["addonVersion"] = 22,
+	["addonVersion"] = 24,
 	[159666] = {
 		["isAzeriteArmor"] = false,
 		[340] = {

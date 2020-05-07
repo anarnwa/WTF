@@ -2,9 +2,9 @@
 BADBOY_LEVELS = {
 	["allowfriends"] = false,
 	["dklevel"] = 58,
-	["allowgroup"] = false,
+	["dhlevel"] = 100,
 	["allowguild"] = false,
 	["level"] = 3,
 	["blockall"] = false,
-	["dhlevel"] = 100,
+	["allowgroup"] = false,
 }

@@ -6,21 +6,21 @@ MethodDungeonToolsDB = {
 		["我会大跳你呢 - 亡语者"] = "我会大跳你呢 - 亡语者",
 		["Ouse - 亡语者"] = "Ouse - 亡语者",
 		["风起春城暮 - 亡语者"] = "风起春城暮 - 亡语者",
-		["她的眼眶里 - 古尔丹"] = "她的眼眶里 - 古尔丹",
-		["我会招恶魔 - 亡语者"] = "我会招恶魔 - 亡语者",
 		["落月复西斜 - 亡语者"] = "落月复西斜 - 亡语者",
 		["我会变成狼 - 亡语者"] = "我会变成狼 - 亡语者",
+		["她的眼眶里 - 古尔丹"] = "她的眼眶里 - 古尔丹",
+		["我会招恶魔 - 亡语者"] = "我会招恶魔 - 亡语者",
 		["我会消失 - 亡语者"] = "我会消失 - 亡语者",
-		["我喝了假酒 - 亡语者"] = "我喝了假酒 - 亡语者",
+		["我会飞你会吗 - 亡语者"] = "我会飞你会吗 - 亡语者",
 		["Dremel - 亡语者"] = "Dremel - 亡语者",
 		["弄妆梳洗迟 - 亡语者"] = "弄妆梳洗迟 - 亡语者",
-		["我会飞你会吗 - 亡语者"] = "我会飞你会吗 - 亡语者",
+		["我喝了假酒 - 亡语者"] = "我喝了假酒 - 亡语者",
 		["十里扬州路 - 亡语者"] = "十里扬州路 - 亡语者",
 		["我会招宝宝 - 亡语者"] = "我会招宝宝 - 亡语者",
-		["Cleaner - 亡语者"] = "Cleaner - 亡语者",
+		["Weeping - 亡语者"] = "Weeping - 亡语者",
 		["十里扬州路 - 古尔丹"] = "十里扬州路 - 古尔丹",
 		["Mubbh - 亡语者"] = "Mubbh - 亡语者",
-		["Weeping - 亡语者"] = "Weeping - 亡语者",
+		["Cleaner - 亡语者"] = "Cleaner - 亡语者",
 		["Believer - 古尔丹"] = "Believer - 古尔丹",
 		["朝飞暮卷 - 亡语者"] = "朝飞暮卷 - 亡语者",
 		["懒起画蛾眉 - 古尔丹"] = "懒起画蛾眉 - 古尔丹",
@@ -95,8 +95,8 @@ MethodDungeonToolsDB = {
 				{
 					["mdi"] = {
 						["freeholdJoined"] = false,
-						["beguiling"] = 2,
 						["freehold"] = 1,
+						["beguiling"] = 2,
 					},
 					["freeholdCrewSelected"] = true,
 					["value"] = {
@@ -117,27 +117,24 @@ MethodDungeonToolsDB = {
 								[39] = {
 								},
 								["color"] = "228b22",
-								[15] = {
+								[28] = {
+									1, -- [1]
 								},
 								[9] = {
 								},
-								[28] = {
-									1, -- [1]
+								[15] = {
 								},
 							}, -- [1]
 						},
 					},
+					["week"] = 6,
 					["objects"] = {
 					},
-					["week"] = 6,
 				}, -- [1]
 			}, -- [16]
 			{
 				{
-					["mdi"] = {
-						["freeholdJoined"] = false,
-						["freehold"] = 1,
-						["beguiling"] = 1,
+					["objects"] = {
 					},
 					["week"] = 3,
 					["value"] = {
@@ -154,7 +151,10 @@ MethodDungeonToolsDB = {
 							}, -- [1]
 						},
 					},
-					["objects"] = {
+					["mdi"] = {
+						["freeholdJoined"] = false,
+						["beguiling"] = 1,
+						["freehold"] = 1,
 					},
 				}, -- [1]
 			}, -- [17]
@@ -317,15 +317,15 @@ MethodDungeonToolsDB = {
 									7, -- [6]
 								},
 								["color"] = "228b22",
-								[12] = {
-									1, -- [1]
+								[3] = {
+									17, -- [1]
+									18, -- [2]
 								},
 								[5] = {
 									11, -- [1]
 								},
-								[3] = {
-									17, -- [1]
-									18, -- [2]
+								[12] = {
+									1, -- [1]
 								},
 							}, -- [3]
 							{
@@ -432,14 +432,6 @@ MethodDungeonToolsDB = {
 									3, -- [1]
 								},
 								["color"] = "228b22",
-								[30] = {
-									1, -- [1]
-									2, -- [2]
-								},
-								[16] = {
-									3, -- [1]
-									4, -- [2]
-								},
 								[29] = {
 									2, -- [1]
 									3, -- [2]
@@ -447,19 +439,30 @@ MethodDungeonToolsDB = {
 									5, -- [4]
 									1, -- [5]
 								},
+								[16] = {
+									3, -- [1]
+									4, -- [2]
+								},
+								[30] = {
+									1, -- [1]
+									2, -- [2]
+								},
 							}, -- [1]
 						},
 					},
 					["mdi"] = {
 						["freeholdJoined"] = false,
-						["freehold"] = 1,
 						["beguiling"] = 1,
+						["freehold"] = 1,
 					},
 				}, -- [1]
 			}, -- [19]
 			{
 				{
-					["objects"] = {
+					["mdi"] = {
+						["freeholdJoined"] = false,
+						["freehold"] = 1,
+						["beguiling"] = 1,
 					},
 					["week"] = 6,
 					["value"] = {
@@ -523,10 +526,8 @@ MethodDungeonToolsDB = {
 									4, -- [3]
 									3, -- [4]
 								},
-								[17] = {
+								[27] = {
 									1, -- [1]
-									2, -- [2]
-									4, -- [3]
 								},
 								[9] = {
 									1, -- [1]
@@ -571,22 +572,24 @@ MethodDungeonToolsDB = {
 									2, -- [5]
 									1, -- [6]
 								},
-								[27] = {
+								[17] = {
 									1, -- [1]
+									2, -- [2]
+									4, -- [3]
 								},
 							}, -- [1]
 						},
 					},
-					["mdi"] = {
-						["freeholdJoined"] = false,
-						["beguiling"] = 1,
-						["freehold"] = 1,
+					["objects"] = {
 					},
 				}, -- [1]
 			}, -- [20]
 			{
 				{
-					["objects"] = {
+					["mdi"] = {
+						["freeholdJoined"] = false,
+						["freehold"] = 1,
+						["beguiling"] = 1,
 					},
 					["week"] = 5,
 					["value"] = {
@@ -646,19 +649,13 @@ MethodDungeonToolsDB = {
 							}, -- [1]
 						},
 					},
-					["mdi"] = {
-						["freeholdJoined"] = false,
-						["beguiling"] = 1,
-						["freehold"] = 1,
+					["objects"] = {
 					},
 				}, -- [1]
 			}, -- [21]
 			{
 				{
-					["mdi"] = {
-						["freeholdJoined"] = false,
-						["freehold"] = 1,
-						["beguiling"] = 1,
+					["objects"] = {
 					},
 					["week"] = 3,
 					["value"] = {
@@ -675,7 +672,10 @@ MethodDungeonToolsDB = {
 							}, -- [1]
 						},
 					},
-					["objects"] = {
+					["mdi"] = {
+						["freeholdJoined"] = false,
+						["beguiling"] = 1,
+						["freehold"] = 1,
 					},
 				}, -- [1]
 			}, -- [22]
