@@ -1,22 +1,22 @@
 
 OmniCCDB = {
+	["profileKeys"] = {
+		["我会飞你会吗 - 亡语者"] = "默认",
+		["弄妆梳洗迟 - 亡语者"] = "默认",
+		["风起春城暮 - 亡语者"] = "默认",
+	},
 	["global"] = {
 		["addonVersion"] = "8.3.5",
 		["dbVersion"] = 5,
-	},
-	["profileKeys"] = {
-		["我会飞你会吗 - 亡语者"] = "默认",
-		["风起春城暮 - 亡语者"] = "默认",
-		["弄妆梳洗迟 - 亡语者"] = "默认",
 	},
 	["profiles"] = {
 		["默认"] = {
 			["themes"] = {
 				["默认"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -55,17 +55,17 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["minDuration"] = 2,
-			["scaleText"] = true,
+			["fontSize"] = 25,
+			["mmSSDuration"] = 0,
 			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = 0,
+			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.55,
-			["mmSSDuration"] = 0,
 			["minEffectDuration"] = 0,
-			["fontSize"] = 25,
+			["minDuration"] = 2,
+			["yOff"] = 0,
 		},
 	},
 	["groups"] = {

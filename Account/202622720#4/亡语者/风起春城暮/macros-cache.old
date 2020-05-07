@@ -31,13 +31,21 @@ VER 3 010000000000000C "春暖" "INV_MISC_QUESTIONMARK"
 /cast [@cursor]百花齐放
 END
 VER 3 0100000000000006 "潜行" "INV_MISC_QUESTIONMARK"
-#showtooltip 
+#showtooltip 潜行 
 /cast [nostance:2]猎豹形态
 /cast !潜行
 END
 VER 3 010000000000000D "激活" "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@player] 激活
+END
+VER 3 0100000000000015 "猫愈" "INV_MISC_QUESTIONMARK"
+#showtooltip 愈合
+/cast [mod:alt]愈合
+/console autounshift 0
+/施放 [help]愈合; [@targettarget,help,exists]愈合
+/施放 [@player] 愈合
+/console autounshift 1
 END
 VER 3 0100000000000005 "猫驱" "INV_MISC_QUESTIONMARK"
 #showtooltips [@mouseover,harm] 安抚; [@mouseover,help] []清除腐蚀

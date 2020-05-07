@@ -1,6 +1,6 @@
 VER 3 0100000000000014 "dot" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [mod:alt,@mouseover,exists,harm]月火术(月光);[nomod,@mouseover,exists,harm]阳炎术(日光);[mod:alt,@mouseover,exists,help]生命绽放;[nomod,@mouseover,exists,help]回春术;[mod:alt,harm]月火术(月光);[nomod,harm]阳炎术(日光);[mod:alt,help]生命绽放;[nomod,help][]回春术
+/cast [mod:alt,@mouseover,exists,harm]阳炎术(日光);[nomod,@mouseover,exists,harm]月火术(月光;[mod:alt,@mouseover,exists,help]生命绽放;[nomod,@mouseover,exists,help]回春术;[mod:alt,harm]阳炎术(日光);[nomod,harm]月火术(月光);[mod:alt,help]生命绽放;[nomod,help][]回春术
 END
 VER 3 0100000000000001 "ND驱" "INV_MISC_QUESTIONMARK"
 #showtooltips [@mouseover,harm] 安抚; [@mouseover,help] []自然之愈

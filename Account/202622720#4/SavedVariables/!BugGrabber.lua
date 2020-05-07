@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 8,
 	["lastSanitation"] = 3,
+	["session"] = 11,
 	["errors"] = {
 		{
 			["message"] = "[string \"--[==[ Error in 'Extraction du mal':'custom...\"]:11: attempt to perform arithmetic on global 'valByOrbs' (a nil value)",
@@ -17,5 +17,21 @@ BugGrabberDB = {
 			["session"] = 7,
 			["counter"] = 11,
 		}, -- [2]
+		{
+			["message"] = "Interface\\AddOns\\Grail\\Grail-110.lua:3239: attempt to index local 'cosmicMapInfo' (a nil value)",
+			["time"] = "2020/05/07 21:01:09",
+			["locals"] = "self = <table> {\n QuestBreadcrumbsFor = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:9251\n bitMaskClassPriest = 256\n IsBugged = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:7110\n bitMaskGenderMale = 8192\n _RecordArtifactLevels = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:9858\n bitMaskCompleted = 1\n _PrepareWorldQuestSelfNewNPCs = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:3404\n QuestLocationsAccept = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:9409\n IsAvailable = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:7092\n NO_SKILL = -1\n _HandleEventGarrisonBuildingActivated = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:6797\n bitMaskClassAll = 268443644\n _HandleEventLootClosed = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:6825\n bitMaskQuestLegendary = 4096\n _RemoveDelayedNotification = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:5206\n reputationFriends = <table> {\n }\n NPC_TYPE_BY = \"BY\"\n NPC_TYPE_DROP = \"DROP\"\n _PostDelayedNotification = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:8510\n _MarkQuestType = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:5593\n receivedCalendarUpdateEventList = false\n bitMaskClassDeathKnight = 4\n QuestNPCPrerequisiteTurnins = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:9583\n _ProcessServerBackup = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:8940\n bitMaskQuestVariableLevel = 255\n MeetsRequirementGroup = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:8091\n _EvaluateCodeAsPrerequisite = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:6112\n bitMaskInLog = 16\n bitMaskQuestWeekly = 4\n bitMaskHolidayNoble = 256\n MeetsRequirementProfession = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:8176\n DoesNPCExist = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:6077\n npcNames = <table> {\n }\n _AllEvaluateTrueS = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:3775\n bitMaskQuestFailureWithAncestor = 67043200\n verifyTable = <table> {\n }\n _NPCToUse = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:8363\n garrisonBuildingLevelMapping = <table> {\n }\n bitMaskClassHunter = 16\n _LoadContinentData = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:3230\n bitMaskQuestRaid = 128\n _LocationStructure = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:7657\n _HandleEventAchievementEarned = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:6792\n checksReputationRewardsOnAcceptance = true\n classToMapAreaMapping = <table> {\n }\n verifyTableCount = 0\n _ReputationExceeds = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:10046\n bitMaskRaceUnused9 = 4096\n zonesForLootingTreasure = <table> {\n }\n bitMaskQuestMonthly = 8\n mapAreaBaseClass = 200000\n exists73 = true\n LearnObjectName = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:7582\n _ContainsAliasNPC = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:5814\n classToBitMapping = <table> {\n }\n FriendshipReputationNameAndLevelName = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:10145\n QuestBreadcrumbs = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:9245\n NPCName = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:8315\n experimental = false\n bitMaskRaceNightborne = 2\n mapAreaBaseReputation = 400000\n UnregisterObserverQuestStatus = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:10692\n tooltipNPC = com_mithrandir_grailTooltipNPC {\n }\n _FactionsFromQuestGivers = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:7993\n QuestOnAcceptCompletes = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:9595\n bitMaskAncestorLevelTooHigh = 33554432\n bitMaskRaceTroll = 16777216\n bitMaskCanGetUnused2 = 65536\n celebratingHolidayCache = <table> {\n }\n bitMaskQuestMinLevel = 65280\n bitMaskLevelTooHigh = 32768\n IsGroup = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:7144\n bitMaskCanGetUnused8 = 4194304\n bitMaskCanGetUnused15 = 1073741824\n MeetsRequirementGroupPossibleToComplete = <function> defined @Interface\\AddOns\\Grail\\Grail.lua:8119\n questReputations = <table> {\n }\n _AddThreatQuests = <function> defined @Interface\\",
+			["stack"] = "[string \"@Interface\\AddOns\\Grail\\Grail-110.lua\"]:3239: in function `?'\n[string \"@Interface\\AddOns\\Grail\\Grail-110.lua\"]:1366: in function `?'\n[string \"@Interface\\AddOns\\Grail\\Grail-110.lua\"]:10644: in function `_Tooltip_OnEvent'\n[string \"@Interface\\AddOns\\Grail\\Grail-110.lua\"]:11230: in function <Interface\\AddOns\\Grail\\Grail.lua:11230>",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [3]
+		{
+			["message"] = "Interface\\AddOns\\ExplorerCoords\\ExplorerCoords-1.7.11.lua:208: GetAchievementCriteriaInfo(achievementID, criteriaIndex [,countHidden]), criteria not found",
+			["time"] = "2020/05/07 21:06:40",
+			["locals"] = "(*temporary) = 4996\n(*temporary) = 9\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetAchievementCriteriaInfo'\n[string \"@Interface\\AddOns\\ExplorerCoords\\ExplorerCoords-1.7.11.lua\"]:208: in function <Interface\\AddOns\\ExplorerCoords\\ExplorerCoords.lua:203>",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [4]
 	},
 }

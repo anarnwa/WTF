@@ -1,13 +1,13 @@
 
 DraenorTreasuresDB = {
 	["char"] = {
+		["弄妆梳洗迟 - 亡语者"] = {
+			["900004"] = true,
+		},
 		["弄妆梳洗迟 - 古尔丹"] = {
 			["38701"] = true,
 			["38740"] = true,
 			["38334"] = true,
-		},
-		["弄妆梳洗迟 - 亡语者"] = {
-			["900004"] = true,
 		},
 	},
 	["profileKeys"] = {
@@ -52,7 +52,7 @@ DraenorTreasuresDB = {
 		["弄妆梳洗迟 - 古尔丹"] = "Default",
 		["Nect - 亡语者"] = "Default",
 		["我会大跳你呢 - 亡语者"] = "Default",
-		["Believe - 古尔丹"] = "Default",
+		["Funerals - 亡语者"] = "Default",
 		["高楼鼓角悲 - 亡语者"] = "Default",
 		["回首见旌旗 - 亡语者"] = "Default",
 		["白白净净啥 - 古尔丹"] = "Default",
@@ -62,20 +62,20 @@ DraenorTreasuresDB = {
 		["我会变成狼 - 亡语者"] = "Default",
 		["我看不见我 - 亡语者"] = "Default",
 		["弄妆梳洗迟 - 死亡之翼"] = "Default",
-		["Cleaner - 亡语者"] = "Default",
-		["向我撒花 - 亡语者"] = "Default",
-		["Weeping - 亡语者"] = "Default",
-		["我看见你了哦 - 亡语者"] = "Default",
-		["我会招宝宝 - 亡语者"] = "Default",
-		["呜呜人人 - 古尔丹"] = "Default",
-		["娃儿若 - 亡语者"] = "Default",
-		["Dremel - 亡语者"] = "Default",
 		["球我玩 - 古尔丹"] = "Default",
+		["向我撒花 - 亡语者"] = "Default",
+		["Dremel - 亡语者"] = "Default",
+		["我看见你了哦 - 亡语者"] = "Default",
+		["娃儿若 - 亡语者"] = "Default",
+		["呜呜人人 - 古尔丹"] = "Default",
+		["我会招宝宝 - 亡语者"] = "Default",
+		["Weeping - 亡语者"] = "Default",
+		["Cleaner - 亡语者"] = "Default",
 		["Believer - 古尔丹"] = "Default",
 		["不不尾王 - 古尔丹"] = "Default",
 		["懒起画蛾眉 - 古尔丹"] = "Default",
 		["十里扬州路 - 安苏"] = "Default",
-		["Funerals - 亡语者"] = "Default",
+		["Believe - 古尔丹"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
