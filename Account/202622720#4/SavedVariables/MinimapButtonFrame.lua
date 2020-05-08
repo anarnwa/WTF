@@ -32,8 +32,8 @@ MBFDB = {
 			["MBF_FrameLocation"] = {
 				nil, -- [1]
 				"RIGHT", -- [2]
-				-396.4654235839844, -- [3]
-				327.4784622192383, -- [4]
+				-262.4648132324219, -- [3]
+				307.4788284301758, -- [4]
 			},
 			["customChildren"] = {
 				"MinimapButtonFrameDragButton", -- [1]
@@ -69,6 +69,7 @@ MBFDB = {
 				"LibDBIcon10_寻求组队", -- [31]
 				"LibDBIcon10_TeamStats", -- [32]
 				"LibDBIcon10_BugSack", -- [33]
+				"Narci_MinimapButton", -- [34]
 			},
 		},
 	},

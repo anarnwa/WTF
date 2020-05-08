@@ -2143,72 +2143,6 @@ Bartender4DB = {
 						},
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -205,
-								["x"] = -231.499938964844,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["rows"] = 12,
-							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 83,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						[10] = {
-						},
-					},
-				},
 				["风起春城暮 - 亡语者"] = {
 					["actionbars"] = {
 						{
@@ -2263,6 +2197,72 @@ Bartender4DB = {
 							["version"] = 3,
 							["position"] = {
 								["y"] = 94,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
+				["我会大跳你呢 - 亡语者"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -205,
+								["x"] = -231.499938964844,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 83,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
@@ -4117,20 +4117,20 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -203.166664123535,
-						["x"] = -31.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
 				["风起春城暮 - 亡语者"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 223.000030517578,
 						["x"] = -31.4998779296875,
 						["point"] = "BOTTOM",
+					},
+				},
+				["我会大跳你呢 - 亡语者"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -203.166664123535,
+						["x"] = -31.5000610351563,
+						["point"] = "CENTER",
 					},
 				},
 				["Cleaner - 亡语者"] = {
@@ -4577,20 +4577,20 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -203.166664123535,
-						["x"] = -31.5000610351563,
-						["point"] = "CENTER",
-					},
-				},
 				["风起春城暮 - 亡语者"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 223.000045776367,
 						["x"] = -31.4998474121094,
 						["point"] = "BOTTOM",
+					},
+				},
+				["我会大跳你呢 - 亡语者"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -203.166664123535,
+						["x"] = -31.5000610351563,
+						["point"] = "CENTER",
 					},
 				},
 				["Cleaner - 亡语者"] = {
@@ -5099,7 +5099,7 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
+				["风起春城暮 - 亡语者"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
@@ -5109,7 +5109,7 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
-				["风起春城暮 - 亡语者"] = {
+				["我会大跳你呢 - 亡语者"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
@@ -5624,18 +5624,18 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 47.5000152587891,
-						["x"] = 99.5,
-						["point"] = "CENTER",
-					},
-				},
 				["风起春城暮 - 亡语者"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 47.5,
+						["x"] = 99.5,
+						["point"] = "CENTER",
+					},
+				},
+				["我会大跳你呢 - 亡语者"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47.5000152587891,
 						["x"] = 99.5,
 						["point"] = "CENTER",
 					},
@@ -6109,7 +6109,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
+				["风起春城暮 - 亡语者"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -6118,7 +6118,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["风起春城暮 - 亡语者"] = {
+				["我会大跳你呢 - 亡语者"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -6605,7 +6605,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
+				["风起春城暮 - 亡语者"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 38.5,
@@ -6613,7 +6613,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["风起春城暮 - 亡语者"] = {
+				["我会大跳你呢 - 亡语者"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 38.5,
@@ -7071,19 +7071,19 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -15,
-						["x"] = -82.4999389648438,
-						["point"] = "CENTER",
-					},
-				},
 				["风起春城暮 - 亡语者"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = -15.0000076293945,
 						["x"] = -82.4999694824219,
+						["point"] = "CENTER",
+					},
+				},
+				["我会大跳你呢 - 亡语者"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -15,
+						["x"] = -82.4999389648438,
 						["point"] = "CENTER",
 					},
 				},
@@ -7520,18 +7520,18 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["我会大跳你呢 - 亡语者"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 116,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-					},
-				},
 				["风起春城暮 - 亡语者"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 127,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+					},
+				},
+				["我会大跳你呢 - 亡语者"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 116,
 						["x"] = -460,
 						["point"] = "BOTTOM",
 					},
@@ -7768,8 +7768,8 @@ Bartender4DB = {
 		["Wasegd - 亡语者"] = "bf_infobox",
 		["十里扬州路 - 古尔丹"] = "bf_infobox",
 		["生灵俱灭 - 死亡之翼"] = "bf_infobox",
-		["我会大跳你呢 - 亡语者"] = "bf_infobox",
 		["风起春城暮 - 亡语者"] = "bf_infobox",
+		["我会大跳你呢 - 亡语者"] = "bf_infobox",
 		["Cleaner - 亡语者"] = "弄妆梳洗迟 - 亡语者",
 		["我会变成狼 - 亡语者"] = "bf_infobox",
 		["Wqerert - 亡语者"] = "bf_infobox",
@@ -8005,16 +8005,16 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
+		["风起春城暮 - 亡语者"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
 		["我会大跳你呢 - 亡语者"] = {
 			["focuscastmodifier"] = false,
 			["minimapIcon"] = {
 				["minimapPos"] = -1255,
 			},
-			["blizzardVehicle"] = true,
-			["outofrange"] = "hotkey",
-		},
-		["风起春城暮 - 亡语者"] = {
-			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},

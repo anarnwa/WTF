@@ -45,7 +45,7 @@ NewOpenablesProfile = {
 			["questBarID"] = 153524,
 		},
 		["风起春城暮 - 亡语者"] = {
-			["questBarID"] = 163852,
+			["questBarID"] = 136600,
 		},
 		["我会消失 - 亡语者"] = {
 			["itemID"] = 156631,
@@ -118,6 +118,7 @@ NewOpenablesProfile = {
 			["T_BLACKLIST"] = {
 				[0] = true,
 				[152097] = true,
+				[173411] = true,
 				[112087] = true,
 			},
 			["version"] = "|cFFFFFFFF09.08 07.08.2018 使用 |cFFFF00FF/nop|cFFFFFFFF",

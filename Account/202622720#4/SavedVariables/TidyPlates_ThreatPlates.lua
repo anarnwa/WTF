@@ -370,6 +370,38 @@ ThreatPlatesDB = {
 			["cache"] = {
 			},
 			["ShowFriendlyBlizzardNameplates"] = true,
+			["settings"] = {
+				["raidicon"] = {
+					["ShowInHeadlineView"] = true,
+				},
+			},
+			["healerTracker"] = {
+				["ShowInHeadlineView"] = true,
+				["ON"] = true,
+			},
+			["HeadlineView"] = {
+				["ForceNonAttackableUnits"] = true,
+				["useAlpha"] = true,
+				["useScaling"] = true,
+				["UseRaidMarkColoring"] = true,
+			},
+			["Visibility"] = {
+				["FriendlyGuardian"] = {
+					["UseHeadlineView"] = true,
+				},
+				["FriendlyTotem"] = {
+					["UseHeadlineView"] = true,
+				},
+				["FriendlyPet"] = {
+					["UseHeadlineView"] = true,
+				},
+				["FriendlyNPC"] = {
+					["UseHeadlineView"] = true,
+				},
+			},
+			["questWidget"] = {
+				["ShowInHeadlineView"] = true,
+			},
 		},
 	},
 }

@@ -6,19 +6,43 @@ OmniCCDB = {
 	},
 	["profileKeys"] = {
 		["我会飞你会吗 - 亡语者"] = "默认",
+		["十里扬州路 - 亡语者"] = "默认",
 		["风起春城暮 - 亡语者"] = "默认",
 		["弄妆梳洗迟 - 亡语者"] = "默认",
 	},
 	["profiles"] = {
 		["默认"] = {
+			["rules"] = {
+				{
+					["patterns"] = {
+						"PlaterMainAuraIcon", -- [1]
+						"PlaterSecondaryAuraIcon", -- [2]
+						"ExtraIconRowIcon", -- [3]
+					},
+					["id"] = "Plater Nameplates Rule",
+					["priority"] = 1,
+					["theme"] = "Plater Nameplates Theme",
+				}, -- [1]
+			},
 			["themes"] = {
-				["默认"] = {
+				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
+						["minutes"] = {
+						},
 						["seconds"] = {
 						},
 						["soon"] = {
 						},
+					},
+					["enableText"] = false,
+				},
+				["默认"] = {
+					["textStyles"] = {
 						["minutes"] = {
+						},
+						["seconds"] = {
+						},
+						["soon"] = {
 						},
 					},
 					["fontSize"] = 25,
@@ -65,8 +89,8 @@ OmniCC4Config = {
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.55,
-			["mmSSDuration"] = 0,
 			["minEffectDuration"] = 0,
+			["mmSSDuration"] = 0,
 			["fontSize"] = 25,
 		},
 	},

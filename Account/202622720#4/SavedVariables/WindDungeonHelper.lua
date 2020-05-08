@@ -172,6 +172,19 @@ WindDungeonHelperDB = {
 		["我会招宝宝 - 亡语者"] = {
 		},
 		["风起春城暮 - 亡语者"] = {
+			["modules"] = {
+				["LFGGroupInfo"] = {
+					["enable"] = false,
+				},
+				["AvoidableDamage"] = {
+					["notification"] = {
+						["unit"] = "asia",
+					},
+				},
+				["EnemyProgress"] = {
+					["enable"] = true,
+				},
+			},
 		},
 		["十里扬州路 - 古尔丹"] = {
 		},

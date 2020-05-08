@@ -2920,6 +2920,7 @@ RoutesDB = {
 					},
 				},
 				["2"] = {
+					["visible"] = false,
 					["route"] = {
 						18984904, -- [1]
 						19615125, -- [2]
@@ -4604,8 +4605,8 @@ RoutesDB = {
 						["Storm Silver Deposit"] = "雷银矿脉",
 						["Monelite Deposit"] = "镍铜矿脉",
 						["Anchor Weed"] = "锚草",
-						["Siren's Sting"] = "海妖之刺",
 						["Star Moss"] = "星光苔",
+						["Siren's Sting"] = "海妖之刺",
 						["Monelite Seam"] = "镍铜矿层",
 						["Storm Silver Seam"] = "雷银矿层",
 						["Rich Storm Silver Deposit"] = "富雷银矿脉",
@@ -5339,8 +5340,8 @@ RoutesDB = {
 						["Storm Silver Deposit"] = "雷银矿脉",
 						["Monelite Deposit"] = "镍铜矿脉",
 						["Rich Platinum Deposit"] = "富白金矿脉",
-						["Siren's Sting"] = "海妖之刺",
 						["Star Moss"] = "星光苔",
+						["Siren's Sting"] = "海妖之刺",
 						["Anchor Weed"] = "锚草",
 						["Rich Monelite Deposit"] = "富镍铜矿脉",
 						["Rich Storm Silver Deposit"] = "富雷银矿脉",
@@ -8916,10 +8917,10 @@ RoutesDB = {
 				["Treasure"] = "When active",
 				["Archaeology"] = "With Profession",
 				["Note"] = "Never",
-				["Logging"] = "When active",
+				["Fishing"] = "When active",
 				["Mining"] = "When active",
 				["Herbalism"] = "When active",
-				["Fishing"] = "When active",
+				["Logging"] = "When active",
 			},
 			["cluster_dist"] = 57,
 			["use_auto_showhide"] = true,

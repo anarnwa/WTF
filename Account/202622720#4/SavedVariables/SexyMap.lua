@@ -30,24 +30,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["LibDBIcon10_MBB"] = 232.946685523486,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -139,11 +126,24 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["LibDBIcon10_MBB"] = 232.946685523486,
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["不不尾王-古尔丹"] = {
@@ -172,24 +172,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["LibDBIcon10_MBB"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["MinimapZoomOut"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["TimeManagerClockButton"] = "always",
-				["MiniMapMailFrame"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -281,11 +268,24 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["LibDBIcon10_MBB"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["MinimapZoomOut"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["TimeManagerClockButton"] = "always",
+				["MiniMapMailFrame"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["十里扬州路-安苏"] = {
@@ -314,11 +314,24 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["LibDBIcon10_MBB"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["MinimapZoomOut"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["TimeManagerClockButton"] = "always",
+				["MiniMapMailFrame"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+			},
+			["controlVisibility"] = true,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -410,24 +423,11 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["LibDBIcon10_MBB"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["MinimapZoomOut"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["TimeManagerClockButton"] = "always",
-				["MiniMapMailFrame"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 	},
 	["我会飞你会吗-亡语者"] = {
@@ -460,28 +460,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["MiniMapMailFrame"] = -25.86639882606884,
-				["QueueStatusMinimapButton"] = 198.55850032873,
-				["MiniMapTracking"] = 228.664150542887,
-				["GameTimeFrame"] = 42.22251790906051,
-				["LibDBIcon10_MBB"] = 228.349258104253,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -573,11 +556,28 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["MiniMapMailFrame"] = -25.86639882606884,
+				["QueueStatusMinimapButton"] = 198.55850032873,
+				["MiniMapTracking"] = 228.664150542887,
+				["GameTimeFrame"] = 42.22251790906051,
+				["LibDBIcon10_MBB"] = 228.349258104253,
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["懒起画蛾眉-古尔丹"] = {
@@ -606,25 +606,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["MiniMapTracking"] = 169.274658985815,
-				["LibDBIcon10_MBB"] = 234.91809693966,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -716,11 +702,25 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["MiniMapTracking"] = 169.274658985815,
+				["LibDBIcon10_MBB"] = 234.91809693966,
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["我会变成狼-亡语者"] = {
@@ -749,11 +749,25 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["LibDBIcon10_MBB"] = 227.466898317809,
+				["MiniMapTracking"] = 170.895944619259,
+			},
+			["controlVisibility"] = true,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -845,25 +859,11 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["LibDBIcon10_MBB"] = 227.466898317809,
-				["MiniMapTracking"] = 170.895944619259,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 	},
 	["十里扬州路-亡语者"] = {
@@ -888,12 +888,6 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -914,6 +908,12 @@ SexyMap2DB = {
 				["MiniMapTracking"] = 169.086799235839,
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -1032,6 +1032,12 @@ SexyMap2DB = {
 			["updateRate"] = 1,
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -1050,12 +1056,6 @@ SexyMap2DB = {
 				["LibDBIcon10_MBB"] = 247.261676079583,
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -1174,6 +1174,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -1191,12 +1197,6 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -1314,12 +1314,6 @@ SexyMap2DB = {
 			["updateRate"] = 1,
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -1338,6 +1332,12 @@ SexyMap2DB = {
 				["LibDBIcon10_MBB"] = 240.936907111534,
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -1456,6 +1456,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -1474,12 +1480,6 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -1602,11 +1602,23 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+			},
+			["controlVisibility"] = true,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -1697,23 +1709,11 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 	},
 	["呜呜哇哇-古尔丹"] = {
@@ -1738,6 +1738,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -1755,12 +1761,6 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -1883,12 +1883,6 @@ SexyMap2DB = {
 			["updateRate"] = 1,
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -1911,6 +1905,12 @@ SexyMap2DB = {
 				["WIM3MinimapButton"] = 223.895096424757,
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -2029,12 +2029,6 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -2052,6 +2046,12 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -2169,6 +2169,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -2186,12 +2192,6 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -2314,25 +2314,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["LibDBIcon10_MBB"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["MinimapZoomOut"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["TimeManagerClockButton"] = "always",
-				["MiniMapMailFrame"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["QueueStatusMinimapButton"] = 229.078180113517,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -2424,11 +2410,25 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["LibDBIcon10_MBB"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["MinimapZoomOut"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["TimeManagerClockButton"] = "always",
+				["MiniMapMailFrame"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["QueueStatusMinimapButton"] = 229.078180113517,
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["Weeping-亡语者"] = {
@@ -2453,6 +2453,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -2470,12 +2476,6 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -2597,11 +2597,24 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["LibDBIcon10_MBB"] = 222.038088390325,
+			},
+			["controlVisibility"] = true,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -2693,24 +2706,11 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["LibDBIcon10_MBB"] = 222.038088390325,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 	},
 	["维维尔-亡语者"] = {
@@ -2735,6 +2735,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -2753,12 +2759,6 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -2855,149 +2855,7 @@ SexyMap2DB = {
 			["showAt"] = "map",
 		},
 	},
-	["我会招宝宝-亡语者"] = {
-		["core"] = {
-			["clamp"] = true,
-			["lock"] = false,
-			["northTag"] = true,
-			["shape"] = "Interface\\AddOns\\SexyMap\\shapes\\circle.tga",
-			["autoZoom"] = 5,
-			["rightClickToConfig"] = true,
-		},
-		["coordinates"] = {
-			["enabled"] = false,
-			["font"] = "默认",
-			["fontColor"] = {
-			},
-			["borderColor"] = {
-			},
-			["xOffset"] = 0,
-			["updateRate"] = 1,
-			["backgroundColor"] = {
-			},
-			["yOffset"] = 10,
-		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["TimeManagerClockButton"] = "always",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MiniMapMailFrame"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapWorldMapButton"] = "never",
-			},
-			["dragPositions"] = {
-				["LibDBIcon10_MBB"] = 222.431890000915,
-				["MiniMapTracking"] = 176.447974423402,
-				["QueueStatusMinimapButton"] = 203.406084423977,
-			},
-			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
-		["clock"] = {
-			["bgColor"] = {
-				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
-				["r"] = 0,
-			},
-			["font"] = "默认",
-			["fontColor"] = {
-			},
-			["borderColor"] = {
-				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
-				["r"] = 0,
-			},
-			["xOffset"] = 0,
-			["yOffset"] = 0,
-		},
-		["borders"] = {
-			["borderName"] = "Blue Rune Circles",
-			["applyPreset"] = false,
-			["borders"] = {
-				{
-					["name"] = "Rune 1",
-					["r"] = 0.309803921568628,
-					["scale"] = 1.4,
-					["rotSpeed"] = -30,
-					["g"] = 0.47843137254902,
-					["texture"] = 165630,
-				}, -- [1]
-				{
-					["a"] = 0.379999995231628,
-					["rotSpeed"] = 60,
-					["r"] = 0.196078431372549,
-					["scale"] = 2.1,
-					["name"] = "Rune 2",
-					["g"] = 0.290196078431373,
-					["texture"] = 165638,
-				}, -- [2]
-				{
-					["a"] = 0.3,
-					["name"] = "Fade",
-					["r"] = 0,
-					["scale"] = 1.6,
-					["g"] = 0.223529411764706,
-					["texture"] = 167062,
-				}, -- [3]
-			},
-			["backdrop"] = {
-				["show"] = false,
-				["textureColor"] = {
-				},
-				["settings"] = {
-					["bgFile"] = "Interface\\Tooltips\\UI-Tooltip-Background",
-					["edgeFile"] = "Interface\\Tooltips\\UI-Tooltip-Border",
-					["tile"] = false,
-					["edgeSize"] = 16,
-					["insets"] = {
-						["top"] = 4,
-						["right"] = 4,
-						["left"] = 4,
-						["bottom"] = 4,
-					},
-				},
-				["borderColor"] = {
-				},
-				["scale"] = 1,
-			},
-			["hideBlizzard"] = true,
-		},
-		["zonetext"] = {
-			["bgColor"] = {
-				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
-				["r"] = 0,
-			},
-			["font"] = "默认",
-			["fontColor"] = {
-			},
-			["borderColor"] = {
-				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
-				["r"] = 0,
-			},
-			["xOffset"] = 0,
-			["yOffset"] = 0,
-		},
-		["ping"] = {
-			["showPing"] = true,
-			["showAt"] = "map",
-		},
+	["presets"] = {
 	},
 	["风起春城暮-亡语者"] = {
 		["core"] = {
@@ -3021,12 +2879,6 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -3046,6 +2898,12 @@ SexyMap2DB = {
 				["LibDBIcon10_MBB"] = 241.53696669962,
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -3164,12 +3022,6 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -3187,6 +3039,12 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -3282,7 +3140,149 @@ SexyMap2DB = {
 			["showAt"] = "map",
 		},
 	},
-	["presets"] = {
+	["我会招宝宝-亡语者"] = {
+		["core"] = {
+			["clamp"] = true,
+			["lock"] = false,
+			["northTag"] = true,
+			["shape"] = "Interface\\AddOns\\SexyMap\\shapes\\circle.tga",
+			["autoZoom"] = 5,
+			["rightClickToConfig"] = true,
+		},
+		["coordinates"] = {
+			["enabled"] = false,
+			["font"] = "默认",
+			["fontColor"] = {
+			},
+			["borderColor"] = {
+			},
+			["xOffset"] = 0,
+			["updateRate"] = 1,
+			["backgroundColor"] = {
+			},
+			["yOffset"] = 10,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["TimeManagerClockButton"] = "always",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MiniMapMailFrame"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapWorldMapButton"] = "never",
+			},
+			["dragPositions"] = {
+				["LibDBIcon10_MBB"] = 222.431890000915,
+				["MiniMapTracking"] = 176.447974423402,
+				["QueueStatusMinimapButton"] = 203.406084423977,
+			},
+			["controlVisibility"] = true,
+		},
+		["clock"] = {
+			["bgColor"] = {
+				["a"] = 1,
+				["b"] = 0,
+				["g"] = 0,
+				["r"] = 0,
+			},
+			["font"] = "默认",
+			["fontColor"] = {
+			},
+			["borderColor"] = {
+				["a"] = 1,
+				["b"] = 0,
+				["g"] = 0,
+				["r"] = 0,
+			},
+			["xOffset"] = 0,
+			["yOffset"] = 0,
+		},
+		["borders"] = {
+			["borderName"] = "Blue Rune Circles",
+			["applyPreset"] = false,
+			["borders"] = {
+				{
+					["name"] = "Rune 1",
+					["r"] = 0.309803921568628,
+					["scale"] = 1.4,
+					["rotSpeed"] = -30,
+					["g"] = 0.47843137254902,
+					["texture"] = 165630,
+				}, -- [1]
+				{
+					["a"] = 0.379999995231628,
+					["rotSpeed"] = 60,
+					["r"] = 0.196078431372549,
+					["scale"] = 2.1,
+					["name"] = "Rune 2",
+					["g"] = 0.290196078431373,
+					["texture"] = 165638,
+				}, -- [2]
+				{
+					["a"] = 0.3,
+					["name"] = "Fade",
+					["r"] = 0,
+					["scale"] = 1.6,
+					["g"] = 0.223529411764706,
+					["texture"] = 167062,
+				}, -- [3]
+			},
+			["backdrop"] = {
+				["show"] = false,
+				["textureColor"] = {
+				},
+				["settings"] = {
+					["bgFile"] = "Interface\\Tooltips\\UI-Tooltip-Background",
+					["edgeFile"] = "Interface\\Tooltips\\UI-Tooltip-Border",
+					["tile"] = false,
+					["edgeSize"] = 16,
+					["insets"] = {
+						["top"] = 4,
+						["right"] = 4,
+						["left"] = 4,
+						["bottom"] = 4,
+					},
+				},
+				["borderColor"] = {
+				},
+				["scale"] = 1,
+			},
+			["hideBlizzard"] = true,
+		},
+		["zonetext"] = {
+			["bgColor"] = {
+				["a"] = 1,
+				["b"] = 0,
+				["g"] = 0,
+				["r"] = 0,
+			},
+			["font"] = "默认",
+			["fontColor"] = {
+			},
+			["borderColor"] = {
+				["a"] = 1,
+				["b"] = 0,
+				["g"] = 0,
+				["r"] = 0,
+			},
+			["xOffset"] = 0,
+			["yOffset"] = 0,
+		},
+		["ping"] = {
+			["showPing"] = true,
+			["showAt"] = "map",
+		},
 	},
 	["弄妆梳洗迟-亡语者"] = {
 		["core"] = {
@@ -3310,6 +3310,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -3331,12 +3337,6 @@ SexyMap2DB = {
 				["QueueStatusMinimapButton"] = 186.232731884374,
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -3455,12 +3455,6 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -3479,6 +3473,12 @@ SexyMap2DB = {
 				["LibDBIcon10_MBB"] = 227.32929219377,
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -3597,12 +3597,6 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
-		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -3622,6 +3616,12 @@ SexyMap2DB = {
 				["MiniMapTracking"] = 164.284227647583,
 			},
 			["controlVisibility"] = true,
+		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -3752,24 +3752,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["LibDBIcon10_MBB"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["MinimapZoomOut"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["TimeManagerClockButton"] = "always",
-				["MiniMapMailFrame"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -3861,11 +3848,24 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["LibDBIcon10_MBB"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["MinimapZoomOut"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["TimeManagerClockButton"] = "always",
+				["MiniMapMailFrame"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["Believe-古尔丹"] = {
@@ -3890,6 +3890,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -3908,12 +3914,6 @@ SexyMap2DB = {
 				["LibDBIcon10_MBB"] = 176.042692640872,
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4036,11 +4036,23 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+			},
+			["controlVisibility"] = true,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4131,23 +4143,11 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 	},
 	["Mubbh-亡语者"] = {
@@ -4176,23 +4176,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4283,11 +4271,23 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["我的小胖狗-亡语者"] = {
@@ -4312,6 +4312,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -4329,12 +4335,6 @@ SexyMap2DB = {
 			["dragPositions"] = {
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4457,11 +4457,26 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["LibDBIcon10_MBB"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["MinimapZoomOut"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["TimeManagerClockButton"] = "always",
+				["MiniMapMailFrame"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["LibDBIcon10_MBB"] = 197.670216043997,
+				["QueueStatusMinimapButton"] = 173.697326203586,
+			},
+			["controlVisibility"] = true,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4553,26 +4568,11 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["LibDBIcon10_MBB"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["MinimapZoomOut"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["TimeManagerClockButton"] = "always",
-				["MiniMapMailFrame"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["LibDBIcon10_MBB"] = 197.670216043997,
-				["QueueStatusMinimapButton"] = 173.697326203586,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 	},
 	["Funerals-亡语者"] = {
@@ -4597,6 +4597,12 @@ SexyMap2DB = {
 			},
 			["yOffset"] = 10,
 		},
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
+			},
+			["lock"] = false,
+		},
 		["buttons"] = {
 			["radius"] = 10,
 			["lockDragging"] = false,
@@ -4616,12 +4622,6 @@ SexyMap2DB = {
 				["MiniMapTracking"] = 166.444742372061,
 			},
 			["controlVisibility"] = true,
-		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
-			},
-			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4744,26 +4744,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["MiniMapTracking"] = 227.229362472488,
-				["MiniMapMailFrame"] = 218.543677668311,
-				["QueueStatusMinimapButton"] = 188.544868822777,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4854,11 +4839,26 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["MiniMapTracking"] = 227.229362472488,
+				["MiniMapMailFrame"] = 218.543677668311,
+				["QueueStatusMinimapButton"] = 188.544868822777,
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["我找不到了-亡语者"] = {
@@ -4887,25 +4887,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["LibDBIcon10_MBB"] = 226.914420537626,
-				["MiniMapTracking"] = 158.926719535199,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -4997,11 +4983,25 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["LibDBIcon10_MBB"] = 226.914420537626,
+				["MiniMapTracking"] = 158.926719535199,
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["我会消失-亡语者"] = {
@@ -5034,28 +5034,11 @@ SexyMap2DB = {
 			["showPing"] = true,
 			["showAt"] = "map",
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapWorldMapButton"] = "never",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapMailFrame"] = "always",
-				["TimeManagerClockButton"] = "always",
+		["movers"] = {
+			["enabled"] = false,
+			["framePositions"] = {
 			},
-			["dragPositions"] = {
-				["MiniMapMailFrame"] = -34.7477815524003,
-				["QueueStatusMinimapButton"] = 182.25755353937,
-				["LibDBIcon10_MBB"] = 177.190188990314,
-				["GarrisonLandingPageMinimapButton"] = 176.552671955324,
-				["MiniMapTracking"] = 231.254765325521,
-			},
-			["controlVisibility"] = true,
+			["lock"] = false,
 		},
 		["clock"] = {
 			["bgColor"] = {
@@ -5147,11 +5130,28 @@ SexyMap2DB = {
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["movers"] = {
-			["enabled"] = false,
-			["framePositions"] = {
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
 			},
-			["lock"] = false,
+			["dragPositions"] = {
+				["MiniMapMailFrame"] = -34.7477815524003,
+				["QueueStatusMinimapButton"] = 182.25755353937,
+				["LibDBIcon10_MBB"] = 177.190188990314,
+				["GarrisonLandingPageMinimapButton"] = 176.552671955324,
+				["MiniMapTracking"] = 231.254765325521,
+			},
+			["controlVisibility"] = true,
 		},
 	},
 }
@@ -5187,24 +5187,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["LibDBIcon10_MBB"] = 232.946685523486,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -5296,11 +5283,24 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["LibDBIcon10_MBB"] = 232.946685523486,
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["不不尾王-古尔丹"] = {
@@ -5329,24 +5329,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["LibDBIcon10_MBB"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["MinimapZoomOut"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["TimeManagerClockButton"] = "always",
-					["MiniMapMailFrame"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -5438,11 +5425,24 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["LibDBIcon10_MBB"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["MinimapZoomOut"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["TimeManagerClockButton"] = "always",
+					["MiniMapMailFrame"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["十里扬州路-安苏"] = {
@@ -5471,11 +5471,24 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["LibDBIcon10_MBB"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["MinimapZoomOut"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["TimeManagerClockButton"] = "always",
+					["MiniMapMailFrame"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+				},
+				["controlVisibility"] = true,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -5567,24 +5580,11 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["LibDBIcon10_MBB"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["MinimapZoomOut"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["TimeManagerClockButton"] = "always",
-					["MiniMapMailFrame"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 		},
 		["我会飞你会吗-亡语者"] = {
@@ -5613,27 +5613,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["LibDBIcon10_MBB"] = 228.349258104253,
-					["MiniMapMailFrame"] = -2.01886284563303,
-					["MiniMapTracking"] = 228.664150542887,
-					["QueueStatusMinimapButton"] = 188.800534518569,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -5725,11 +5709,27 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["LibDBIcon10_MBB"] = 228.349258104253,
+					["MiniMapMailFrame"] = -2.01886284563303,
+					["MiniMapTracking"] = 228.664150542887,
+					["QueueStatusMinimapButton"] = 188.800534518569,
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["懒起画蛾眉-古尔丹"] = {
@@ -5758,25 +5758,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["MiniMapTracking"] = 169.274658985815,
-					["LibDBIcon10_MBB"] = 234.91809693966,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -5868,11 +5854,25 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["MiniMapTracking"] = 169.274658985815,
+					["LibDBIcon10_MBB"] = 234.91809693966,
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["我会变成狼-亡语者"] = {
@@ -5901,11 +5901,25 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["LibDBIcon10_MBB"] = 227.466898317809,
+					["MiniMapTracking"] = 170.895944619259,
+				},
+				["controlVisibility"] = true,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -5997,25 +6011,11 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["LibDBIcon10_MBB"] = 227.466898317809,
-					["MiniMapTracking"] = 170.895944619259,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 		},
 		["十里扬州路-亡语者"] = {
@@ -6040,12 +6040,6 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
-			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -6066,6 +6060,12 @@ SexyMap82 = {
 					["MiniMapTracking"] = 169.086799235839,
 				},
 				["controlVisibility"] = true,
+			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -6184,6 +6184,12 @@ SexyMap82 = {
 				["updateRate"] = 1,
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -6202,12 +6208,6 @@ SexyMap82 = {
 					["LibDBIcon10_MBB"] = 247.261676079583,
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -6326,6 +6326,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -6343,12 +6349,6 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -6466,12 +6466,6 @@ SexyMap82 = {
 				["updateRate"] = 1,
 				["yOffset"] = 10,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
-			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -6490,6 +6484,12 @@ SexyMap82 = {
 					["LibDBIcon10_MBB"] = 240.936907111534,
 				},
 				["controlVisibility"] = true,
+			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -6608,6 +6608,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -6626,12 +6632,6 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -6750,6 +6750,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -6767,12 +6773,6 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -6895,12 +6895,6 @@ SexyMap82 = {
 				["updateRate"] = 1,
 				["yOffset"] = 10,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
-			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -6923,6 +6917,12 @@ SexyMap82 = {
 					["WIM3MinimapButton"] = 223.895096424757,
 				},
 				["controlVisibility"] = true,
+			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -7041,12 +7041,6 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
-			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -7064,6 +7058,12 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
+			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -7181,6 +7181,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -7198,12 +7204,6 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -7326,25 +7326,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["LibDBIcon10_MBB"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["MinimapZoomOut"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["TimeManagerClockButton"] = "always",
-					["MiniMapMailFrame"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["QueueStatusMinimapButton"] = 229.078180113517,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -7436,11 +7422,25 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["LibDBIcon10_MBB"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["MinimapZoomOut"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["TimeManagerClockButton"] = "always",
+					["MiniMapMailFrame"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["QueueStatusMinimapButton"] = 229.078180113517,
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["Weeping-亡语者"] = {
@@ -7465,6 +7465,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -7482,12 +7488,6 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -7609,11 +7609,24 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["LibDBIcon10_MBB"] = 222.038088390325,
+				},
+				["controlVisibility"] = true,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -7705,24 +7718,11 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["LibDBIcon10_MBB"] = 222.038088390325,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 		},
 		["维维尔-亡语者"] = {
@@ -7747,6 +7747,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -7765,12 +7771,6 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -7889,12 +7889,6 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
-			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -7912,144 +7906,6 @@ SexyMap82 = {
 				},
 				["dragPositions"] = {
 					["LibDBIcon10_MBB"] = 241.53696669962,
-				},
-				["controlVisibility"] = true,
-			},
-			["clock"] = {
-				["bgColor"] = {
-					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["font"] = "默认",
-				["fontColor"] = {
-				},
-				["borderColor"] = {
-					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["xOffset"] = 0,
-				["yOffset"] = 0,
-			},
-			["borders"] = {
-				["borderName"] = "Blue Rune Circles",
-				["applyPreset"] = false,
-				["borders"] = {
-					{
-						["name"] = "Rune 1",
-						["r"] = 0.309803921568628,
-						["scale"] = 1.4,
-						["rotSpeed"] = -30,
-						["g"] = 0.47843137254902,
-						["texture"] = "SPELLS\\AURARUNE256.BLP",
-					}, -- [1]
-					{
-						["a"] = 0.379999995231628,
-						["rotSpeed"] = 60,
-						["r"] = 0.196078431372549,
-						["scale"] = 2.1,
-						["name"] = "Rune 2",
-						["g"] = 0.290196078431373,
-						["texture"] = "SPELLS\\AuraRune_A.blp",
-					}, -- [2]
-					{
-						["a"] = 0.3,
-						["name"] = "Fade",
-						["r"] = 0,
-						["scale"] = 1.6,
-						["g"] = 0.223529411764706,
-						["texture"] = "SPELLS\\T_VFX_HERO_CIRCLE.BLP",
-					}, -- [3]
-				},
-				["backdrop"] = {
-					["show"] = false,
-					["textureColor"] = {
-					},
-					["settings"] = {
-						["bgFile"] = "Interface\\Tooltips\\UI-Tooltip-Background",
-						["edgeFile"] = "Interface\\Tooltips\\UI-Tooltip-Border",
-						["tile"] = false,
-						["edgeSize"] = 16,
-						["insets"] = {
-							["top"] = 4,
-							["right"] = 4,
-							["left"] = 4,
-							["bottom"] = 4,
-						},
-					},
-					["borderColor"] = {
-					},
-					["scale"] = 1,
-				},
-				["hideBlizzard"] = true,
-			},
-			["zonetext"] = {
-				["bgColor"] = {
-					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["font"] = "默认",
-				["fontColor"] = {
-				},
-				["borderColor"] = {
-					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["xOffset"] = 0,
-				["yOffset"] = 0,
-			},
-			["ping"] = {
-				["showPing"] = true,
-				["showAt"] = "map",
-			},
-		},
-		["我会招宝宝-亡语者"] = {
-			["core"] = {
-				["clamp"] = true,
-				["lock"] = false,
-				["northTag"] = true,
-				["shape"] = "Interface\\AddOns\\SexyMap\\shapes\\circle.tga",
-				["autoZoom"] = 5,
-				["rightClickToConfig"] = true,
-			},
-			["coordinates"] = {
-				["enabled"] = false,
-				["font"] = "默认",
-				["fontColor"] = {
-				},
-				["borderColor"] = {
-				},
-				["xOffset"] = 0,
-				["updateRate"] = 1,
-				["backgroundColor"] = {
-				},
-				["yOffset"] = 10,
-			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["TimeManagerClockButton"] = "always",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MiniMapMailFrame"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapWorldMapButton"] = "never",
-				},
-				["dragPositions"] = {
-					["LibDBIcon10_MBB"] = 222.431890000915,
-					["MiniMapTracking"] = 176.447974423402,
-					["QueueStatusMinimapButton"] = 203.406084423977,
 				},
 				["controlVisibility"] = true,
 			},
@@ -8156,7 +8012,7 @@ SexyMap82 = {
 		},
 		["presets"] = {
 		},
-		["Cleaner-亡语者"] = {
+		["我会招宝宝-亡语者"] = {
 			["core"] = {
 				["clamp"] = true,
 				["lock"] = false,
@@ -8199,8 +8055,152 @@ SexyMap82 = {
 					["MiniMapWorldMapButton"] = "never",
 				},
 				["dragPositions"] = {
+					["LibDBIcon10_MBB"] = 222.431890000915,
+					["MiniMapTracking"] = 176.447974423402,
+					["QueueStatusMinimapButton"] = 203.406084423977,
 				},
 				["controlVisibility"] = true,
+			},
+			["clock"] = {
+				["bgColor"] = {
+					["a"] = 1,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["font"] = "默认",
+				["fontColor"] = {
+				},
+				["borderColor"] = {
+					["a"] = 1,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+			},
+			["borders"] = {
+				["borderName"] = "Blue Rune Circles",
+				["applyPreset"] = false,
+				["borders"] = {
+					{
+						["name"] = "Rune 1",
+						["r"] = 0.309803921568628,
+						["scale"] = 1.4,
+						["rotSpeed"] = -30,
+						["g"] = 0.47843137254902,
+						["texture"] = "SPELLS\\AURARUNE256.BLP",
+					}, -- [1]
+					{
+						["a"] = 0.379999995231628,
+						["rotSpeed"] = 60,
+						["r"] = 0.196078431372549,
+						["scale"] = 2.1,
+						["name"] = "Rune 2",
+						["g"] = 0.290196078431373,
+						["texture"] = "SPELLS\\AuraRune_A.blp",
+					}, -- [2]
+					{
+						["a"] = 0.3,
+						["name"] = "Fade",
+						["r"] = 0,
+						["scale"] = 1.6,
+						["g"] = 0.223529411764706,
+						["texture"] = "SPELLS\\T_VFX_HERO_CIRCLE.BLP",
+					}, -- [3]
+				},
+				["backdrop"] = {
+					["show"] = false,
+					["textureColor"] = {
+					},
+					["settings"] = {
+						["bgFile"] = "Interface\\Tooltips\\UI-Tooltip-Background",
+						["edgeFile"] = "Interface\\Tooltips\\UI-Tooltip-Border",
+						["tile"] = false,
+						["edgeSize"] = 16,
+						["insets"] = {
+							["top"] = 4,
+							["right"] = 4,
+							["left"] = 4,
+							["bottom"] = 4,
+						},
+					},
+					["borderColor"] = {
+					},
+					["scale"] = 1,
+				},
+				["hideBlizzard"] = true,
+			},
+			["zonetext"] = {
+				["bgColor"] = {
+					["a"] = 1,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["font"] = "默认",
+				["fontColor"] = {
+				},
+				["borderColor"] = {
+					["a"] = 1,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["xOffset"] = 0,
+				["yOffset"] = 0,
+			},
+			["ping"] = {
+				["showPing"] = true,
+				["showAt"] = "map",
+			},
+		},
+		["Cleaner-亡语者"] = {
+			["core"] = {
+				["clamp"] = true,
+				["lock"] = false,
+				["northTag"] = true,
+				["shape"] = "Interface\\AddOns\\SexyMap\\shapes\\circle.tga",
+				["autoZoom"] = 5,
+				["rightClickToConfig"] = true,
+			},
+			["coordinates"] = {
+				["enabled"] = false,
+				["font"] = "默认",
+				["fontColor"] = {
+				},
+				["borderColor"] = {
+				},
+				["xOffset"] = 0,
+				["updateRate"] = 1,
+				["backgroundColor"] = {
+				},
+				["yOffset"] = 10,
+			},
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["TimeManagerClockButton"] = "always",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MiniMapMailFrame"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapWorldMapButton"] = "never",
+				},
+				["dragPositions"] = {
+				},
+				["controlVisibility"] = true,
+			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -8318,12 +8318,6 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
-			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -8342,6 +8336,12 @@ SexyMap82 = {
 					["LibDBIcon10_MBB"] = 227.32929219377,
 				},
 				["controlVisibility"] = true,
+			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -8460,12 +8460,6 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
-			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -8485,6 +8479,12 @@ SexyMap82 = {
 					["MiniMapTracking"] = 164.284227647583,
 				},
 				["controlVisibility"] = true,
+			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -8615,23 +8615,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -8722,11 +8710,23 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["朝飞暮卷-亡语者"] = {
@@ -8755,24 +8755,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["LibDBIcon10_MBB"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["MinimapZoomOut"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["TimeManagerClockButton"] = "always",
-					["MiniMapMailFrame"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -8864,11 +8851,24 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["LibDBIcon10_MBB"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["MinimapZoomOut"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["TimeManagerClockButton"] = "always",
+					["MiniMapMailFrame"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["我会消失-亡语者"] = {
@@ -8901,28 +8901,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["MiniMapMailFrame"] = -34.7477815524003,
-					["QueueStatusMinimapButton"] = 182.25755353937,
-					["LibDBIcon10_MBB"] = 177.190188990314,
-					["GarrisonLandingPageMinimapButton"] = 176.552671955324,
-					["MiniMapTracking"] = 231.254765325521,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -9014,11 +8997,28 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["MiniMapMailFrame"] = -34.7477815524003,
+					["QueueStatusMinimapButton"] = 182.25755353937,
+					["LibDBIcon10_MBB"] = 177.190188990314,
+					["GarrisonLandingPageMinimapButton"] = 176.552671955324,
+					["MiniMapTracking"] = 231.254765325521,
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["Believe-古尔丹"] = {
@@ -9043,6 +9043,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -9061,12 +9067,6 @@ SexyMap82 = {
 					["LibDBIcon10_MBB"] = 176.042692640872,
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -9185,6 +9185,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -9202,12 +9208,6 @@ SexyMap82 = {
 				["dragPositions"] = {
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -9330,11 +9330,26 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["LibDBIcon10_MBB"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["MinimapZoomOut"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["TimeManagerClockButton"] = "always",
+					["MiniMapMailFrame"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["LibDBIcon10_MBB"] = 197.670216043997,
+					["QueueStatusMinimapButton"] = 173.697326203586,
+				},
+				["controlVisibility"] = true,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -9426,26 +9441,11 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["LibDBIcon10_MBB"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["MinimapZoomOut"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["TimeManagerClockButton"] = "always",
-					["MiniMapMailFrame"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["LibDBIcon10_MBB"] = 197.670216043997,
-					["QueueStatusMinimapButton"] = 173.697326203586,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 		},
 		["弄妆梳洗迟-亡语者"] = {
@@ -9470,6 +9470,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -9491,12 +9497,6 @@ SexyMap82 = {
 					["QueueStatusMinimapButton"] = 186.232731884374,
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -9615,6 +9615,12 @@ SexyMap82 = {
 				},
 				["yOffset"] = 10,
 			},
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
+				},
+				["lock"] = false,
+			},
 			["buttons"] = {
 				["radius"] = 10,
 				["lockDragging"] = false,
@@ -9634,12 +9640,6 @@ SexyMap82 = {
 					["MiniMapTracking"] = 166.444742372061,
 				},
 				["controlVisibility"] = true,
-			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
-				},
-				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -9762,25 +9762,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["LibDBIcon10_MBB"] = 226.914420537626,
-					["MiniMapTracking"] = 158.926719535199,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -9872,11 +9858,25 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["LibDBIcon10_MBB"] = 226.914420537626,
+					["MiniMapTracking"] = 158.926719535199,
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["她的眼眶里-古尔丹"] = {
@@ -9905,26 +9905,11 @@ SexyMap82 = {
 				["showPing"] = true,
 				["showAt"] = "map",
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapWorldMapButton"] = "never",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapMailFrame"] = "always",
-					["TimeManagerClockButton"] = "always",
+			["movers"] = {
+				["enabled"] = false,
+				["framePositions"] = {
 				},
-				["dragPositions"] = {
-					["MiniMapTracking"] = 227.229362472488,
-					["MiniMapMailFrame"] = 218.543677668311,
-					["QueueStatusMinimapButton"] = 188.544868822777,
-				},
-				["controlVisibility"] = true,
+				["lock"] = false,
 			},
 			["clock"] = {
 				["bgColor"] = {
@@ -10015,11 +10000,26 @@ SexyMap82 = {
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["movers"] = {
-				["enabled"] = false,
-				["framePositions"] = {
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
 				},
-				["lock"] = false,
+				["dragPositions"] = {
+					["MiniMapTracking"] = 227.229362472488,
+					["MiniMapMailFrame"] = 218.543677668311,
+					["QueueStatusMinimapButton"] = 188.544868822777,
+				},
+				["controlVisibility"] = true,
 			},
 		},
 	},

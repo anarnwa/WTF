@@ -156,12 +156,12 @@ WindDungeonHelperDB = {
 		["十里扬州路 - 亡语者"] = {
 			["modules"] = {
 				["AvoidableDamage"] = {
-					["rank"] = {
-						["custom_worst"] = "你是猪吧",
-					},
 					["notification"] = {
 						["threshold"] = 70,
 						["unit"] = "asia",
+					},
+					["rank"] = {
+						["custom_worst"] = "你是猪吧",
 					},
 				},
 				["LFGGroupInfo"] = {
@@ -178,6 +178,19 @@ WindDungeonHelperDB = {
 		["我会招恶魔 - 亡语者"] = {
 		},
 		["风起春城暮 - 亡语者"] = {
+			["modules"] = {
+				["EnemyProgress"] = {
+					["enable"] = true,
+				},
+				["AvoidableDamage"] = {
+					["notification"] = {
+						["unit"] = "asia",
+					},
+				},
+				["LFGGroupInfo"] = {
+					["enable"] = false,
+				},
+			},
 		},
 		["Believer - 古尔丹"] = {
 		},

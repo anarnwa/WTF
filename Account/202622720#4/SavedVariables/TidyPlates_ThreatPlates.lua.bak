@@ -90,12 +90,12 @@ ThreatPlatesDB = {
 			["welcome"] = true,
 		},
 		["风起春城暮 - 亡语者"] = {
-			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 				false, -- [3]
 			},
+			["welcome"] = true,
 		},
 		["Funerals - 亡语者"] = {
 			["welcome"] = true,
@@ -171,11 +171,11 @@ ThreatPlatesDB = {
 			["welcome"] = true,
 		},
 		["十里扬州路 - 亡语者"] = {
+			["welcome"] = true,
 			["spec"] = {
 				nil, -- [1]
 				true, -- [2]
 			},
-			["welcome"] = true,
 		},
 		["我会变成狼 - 亡语者"] = {
 			["spec"] = {
@@ -370,6 +370,38 @@ ThreatPlatesDB = {
 			["cache"] = {
 			},
 			["ShowFriendlyBlizzardNameplates"] = true,
+			["settings"] = {
+				["raidicon"] = {
+					["ShowInHeadlineView"] = true,
+				},
+			},
+			["healerTracker"] = {
+				["ShowInHeadlineView"] = true,
+				["ON"] = true,
+			},
+			["HeadlineView"] = {
+				["ForceNonAttackableUnits"] = true,
+				["useAlpha"] = true,
+				["useScaling"] = true,
+				["UseRaidMarkColoring"] = true,
+			},
+			["Visibility"] = {
+				["FriendlyGuardian"] = {
+					["UseHeadlineView"] = true,
+				},
+				["FriendlyTotem"] = {
+					["UseHeadlineView"] = true,
+				},
+				["FriendlyPet"] = {
+					["UseHeadlineView"] = true,
+				},
+				["FriendlyNPC"] = {
+					["UseHeadlineView"] = true,
+				},
+			},
+			["questWidget"] = {
+				["ShowInHeadlineView"] = true,
+			},
 		},
 	},
 }
