@@ -1,16 +1,17 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["十里扬州路 - 亡语者"] = {
+		["风起春城暮 - 亡语者"] = {
 			["collapsed"] = true,
 		},
+	},
+	["profileKeys"] = {
+		["风起春城暮 - 亡语者"] = "Default",
+		["十里扬州路 - 亡语者"] = "Default",
 	},
 	["global"] = {
 		["helpTutorial"] = 11,
 		["version"] = "3.2.2",
-	},
-	["profileKeys"] = {
-		["十里扬州路 - 亡语者"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -21,7 +22,6 @@ KalielsTrackerDB = {
 			["hideEmptyTracker"] = true,
 			["filterAuto"] = {
 				"zone", -- [1]
-				"zone", -- [2]
 			},
 			["tooltipShowID"] = false,
 			["addonTomTom"] = true,

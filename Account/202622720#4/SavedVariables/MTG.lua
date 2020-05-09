@@ -5,6 +5,13 @@ MTGDB = {
 	},
 	["buyList"] = {
 	},
+	["NPCNameList"] = {
+		[152084] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_2:26|t 穆勒尔",
+		[151952] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_1:26|t 弗勒格勒",
+		[151953] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_3:26|t 胡勒格勒",
+		[151950] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_6:26|t 穆勒格勒勒",
+		[151951] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_5:26|t 格姆勒格",
+	},
 	["buyLists"] = {
 	},
 	["merchantItemList"] = {
@@ -229,13 +236,6 @@ MTGDB = {
 			},
 		},
 	},
-	["NPCNameList"] = {
-		[152084] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_2:26|t 穆勒尔",
-		[151952] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_1:26|t 弗勒格勒",
-		[151953] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_3:26|t 胡勒格勒",
-		[151950] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_6:26|t 穆勒格勒勒",
-		[151951] = "|TInterface\\TARGETINGFRAME\\UI-RaidTargetingIcon_5:26|t 格姆勒格",
-	},
 }
 j_BuyRareItemOption = 2
 j_BuyItemOption = 1
@@ -256,7 +256,7 @@ MTGsettingDB = {
 	[170152] = true,
 	[168091] = false,
 	[168095] = true,
-	[169202] = false,
-	[170153] = true,
 	[170161] = true,
+	[170153] = true,
+	[169202] = false,
 }

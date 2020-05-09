@@ -1,6 +1,6 @@
 
 PetTracker_Sets = {
-	["capturedPets"] = false,
+	["capturedPets"] = true,
 	["mapSearch"] = "缺失",
 	["tutorial"] = 7,
 	["trackPets"] = false,

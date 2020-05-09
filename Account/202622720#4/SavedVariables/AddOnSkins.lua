@@ -1,13 +1,13 @@
 
 AddOnSkinsDB = {
 	["profileKeys"] = {
-		["十里扬州路 - 亡语者"] = "Default",
 		["风起春城暮 - 亡语者"] = "Default",
+		["十里扬州路 - 亡语者"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["Blizzard_Communities"] = false,
 			["Blizzard_Collections"] = false,
+			["Blizzard_Communities"] = false,
 			["PremadeGroupsFilter"] = false,
 			["DBMFont"] = "伤害数字",
 			["Scrap"] = false,
@@ -20,6 +20,7 @@ AddOnSkinsDB = {
 			["Blizzard_WarboardUI"] = false,
 			["Blizzard_BindingUI"] = false,
 			["Bartender4"] = false,
+			["Blizzard_Calendar"] = false,
 		},
 	},
 }

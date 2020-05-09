@@ -1,31 +1,31 @@
 
 AutoTurnInCharacterDB = {
 	["completeonly"] = false,
-	["secondary"] = {
+	["weapon"] = {
 	},
 	["questlevel"] = true,
-	["questshare"] = false,
+	["trivial"] = false,
 	["showrewardtext"] = true,
 	["togglekey"] = 4,
 	["watchlevel"] = true,
-	["artifactpowertoggle"] = true,
+	["version"] = "7.0.9",
 	["enabled"] = true,
 	["todarkmoon"] = true,
-	["autoequip"] = false,
+	["debug"] = false,
+	["reviveBattlePet"] = false,
+	["tournament"] = 2,
 	["relictoggle"] = true,
-	["version"] = "7.0.9",
-	["darkmoonautostart"] = true,
 	["darkmoonteleport"] = true,
-	["armor"] = {
-	},
+	["autoequip"] = false,
 	["stat"] = {
 	},
-	["debug"] = false,
-	["tournament"] = 2,
-	["reviveBattlePet"] = false,
+	["armor"] = {
+	},
+	["artifactpowertoggle"] = true,
+	["darkmoonautostart"] = true,
 	["lootreward"] = 1,
 	["all"] = 1,
-	["trivial"] = false,
-	["weapon"] = {
+	["questshare"] = false,
+	["secondary"] = {
 	},
 }

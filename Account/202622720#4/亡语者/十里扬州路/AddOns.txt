@@ -7,7 +7,7 @@ Wholly: enabled
 RaidAlerter: enabled
 SexyMap: enabled
 Bartender4: enabled
-BlizzMove: enabled
+BlizzMove: disabled
 Gladius: enabled
 GladiatorlosSA: enabled
 ErrorFilter: enabled

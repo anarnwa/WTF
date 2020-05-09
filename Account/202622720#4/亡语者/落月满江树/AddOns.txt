@@ -26,7 +26,7 @@ Bartender4: enabled
 BattlePetBreedID: enabled
 Battle Pet Daily Tamer: enabled
 BindPad: enabled
-BlizzMove: enabled
+BlizzMove: disabled
 !BugGrabber: enabled
 BugSack: enabled
 CanIMogIt: enabled

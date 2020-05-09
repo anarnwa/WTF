@@ -46,7 +46,7 @@ BigFootBar: enabled
 BigFootBot: enabled
 BigFootChat: enabled
 BindPad: enabled
-BlizzMove: enabled
+BlizzMove: disabled
 BuffMaster: enabled
 ButtonFacade: disabled
 ChannelFilter: enabled
