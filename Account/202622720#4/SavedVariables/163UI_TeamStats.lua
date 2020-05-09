@@ -94,8 +94,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 27,
+			["inspected"] = 1588944195,
 			["class"] = "MONK",
-			["compared"] = 1588942153,
 			["gs"] = 465,
 			["heath"] = 438260,
 			["c_total"] = 37,
@@ -105,7 +105,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "1级暴击比    (+10)\n1级吸血    (+17)\n1级触须    (+10)",
 			["bad"] = false,
-			["inspected"] = 1588944195,
+			["compared"] = 1588942153,
 		},
 		["斩击-影之哀伤"] = {
 			["gem_info"] = "0",
@@ -200,8 +200,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 20,
+			["inspected"] = 1588943774,
 			["class"] = "WARRIOR",
-			["compared"] = 1588942118,
 			["gs"] = 457.4,
 			["heath"] = 475000,
 			["c_total"] = 25,
@@ -211,7 +211,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "1级仪式    (+15)\n1级急速比    (+10)",
 			["bad"] = false,
-			["inspected"] = 1588943774,
+			["compared"] = 1588942118,
 		},
 		["默宇-国王之谷"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -306,8 +306,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 53,
+			["inspected"] = 1588943973,
 			["class"] = "HUNTER",
-			["compared"] = 1588941749,
 			["gs"] = 468.4,
 			["heath"] = 476460,
 			["c_total"] = 101,
@@ -317,7 +317,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级触须    (+66)\n1级专有    (+25)\n1级全能比    (+10)",
 			["bad"] = false,
-			["inspected"] = 1588943973,
+			["compared"] = 1588941749,
 		},
 		["梅花到处开-军团要塞"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -412,8 +412,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["inspected"] = 1588944208,
 			["class"] = "MAGE",
-			["compared"] = 1588941743,
 			["gs"] = 462.9,
 			["heath"] = 446880,
 			["c_total"] = 145,
@@ -423,7 +423,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级全能    (+35)\n3级回响    (+60)\n2级无尽    (+50)",
 			["bad"] = false,
-			["inspected"] = 1588944208,
+			["compared"] = 1588941743,
 		},
 		["岩熊-亡语者"] = {
 			["gem_info"] = "2/2 (|cff0070dd2|r)",
@@ -518,8 +518,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 71,
+			["class"] = "DRUID",
 			["inspected"] = 1588855080,
-			["compared"] = 1588855079,
 			["name"] = "岩熊",
 			["heath"] = 897871,
 			["re"] = 0,
@@ -529,7 +529,7 @@ TeamStatsDB = {
 			["c_total"] = 105,
 			["c_text"] = "3级暴击比    (+20)\n3级暮光    (+75)\n1级急速比    (+10)",
 			["gs"] = 475.1,
-			["class"] = "DRUID",
+			["compared"] = 1588855079,
 		},
 		["丫丫小猫-血顶"] = {
 			["gem_info"] = "4/4 (|cff0070dd4|r)",
@@ -624,8 +624,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 71,
+			["class"] = "WARLOCK",
 			["inspected"] = 1588951611,
-			["compared"] = 1588855085,
 			["name"] = "丫丫小猫",
 			["heath"] = 568760,
 			["re"] = 0,
@@ -635,7 +635,7 @@ TeamStatsDB = {
 			["c_total"] = 110,
 			["c_text"] = "2级触须    (+35)\n2级急速    (+20)\n3级急速比    (+20)\n3级急速    (+35)",
 			["gs"] = 473.5,
-			["class"] = "WARLOCK",
+			["compared"] = 1588855085,
 		},
 		["万物咸覩-凤凰之神"] = {
 			["gem_info"] = "2/2 (|cff0070dd2|r)",
@@ -730,8 +730,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 50,
+			["class"] = "DEMONHUNTER",
 			["inspected"] = 1588951615,
-			["compared"] = 1588854981,
 			["name"] = "万物咸覩",
 			["heath"] = 484640,
 			["re"] = 0,
@@ -741,7 +741,7 @@ TeamStatsDB = {
 			["c_total"] = 85,
 			["c_text"] = "1级暮光    (+25)\n1级爆伤    (+10)\n1级暮光    (+25)\n1级专有    (+25)",
 			["gs"] = 470.8,
-			["class"] = "DEMONHUNTER",
+			["compared"] = 1588854981,
 		},
 		["冷冷小布丁-凤凰之神"] = {
 			["gem_info"] = "3/3 (|cff0070dd3|r)",
@@ -836,8 +836,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["inspected"] = 1588943955,
 			["class"] = "PALADIN",
-			["compared"] = 1588941737,
 			["gs"] = 456.4,
 			["heath"] = 414060,
 			["c_total"] = 30,
@@ -847,7 +847,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "2级真相    (+30)",
 			["bad"] = false,
-			["inspected"] = 1588943955,
+			["compared"] = 1588941737,
 		},
 		["瓦克-地狱之石"] = {
 			["gem_info"] = "0",
@@ -1047,8 +1047,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 62,
+			["class"] = "HUNTER",
 			["inspected"] = 1588943985,
-			["compared"] = 1588942147,
 			["gs"] = 455.9,
 			["heath"] = 427940,
 			["c_total"] = 95,
@@ -1058,7 +1058,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级暮光    (+75)\n2级暴击    (+20)",
 			["bad"] = false,
-			["class"] = "HUNTER",
+			["compared"] = 1588942147,
 		},
 		["蝶罗迦-凤凰之神"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -1259,8 +1259,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 0,
+			["class"] = "MONK",
 			["inspected"] = 1588944191,
-			["compared"] = 1588941713,
 			["gs"] = 434.1,
 			["heath"] = 425362,
 			["c_total"] = 15,
@@ -1270,7 +1270,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "1级全能    (+15)",
 			["bad"] = false,
-			["class"] = "MONK",
+			["compared"] = 1588941713,
 		},
 		["打不过就跑鸭-阿克蒙德"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -1365,8 +1365,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 42,
+			["inspected"] = 1588943913,
 			["class"] = "HUNTER",
-			["compared"] = 1588941725,
 			["gs"] = 452.3,
 			["heath"] = 401440,
 			["c_total"] = 75,
@@ -1376,7 +1376,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级无尽    (+75)",
 			["bad"] = false,
-			["inspected"] = 1588943913,
+			["compared"] = 1588941725,
 		},
 		["佚名翼-织亡者"] = {
 			["gem_info"] = "6/6 (|cff0070dd6|r)",
@@ -1471,8 +1471,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 68,
+			["inspected"] = 1588943876,
 			["class"] = "ROGUE",
-			["compared"] = 1588942185,
 			["gs"] = 474.9,
 			["heath"] = 513440,
 			["c_total"] = 125,
@@ -1482,7 +1482,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级暮光    (+75)\n1级专有    (+25)\n1级专有    (+25)",
 			["bad"] = false,
-			["inspected"] = 1588943876,
+			["compared"] = 1588942185,
 		},
 		["神隐之血-恐怖图腾"] = {
 			["gem_info"] = "3/3 (|cff0070dd3|r)",
@@ -1577,8 +1577,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 12,
+			["inspected"] = 1588944023,
 			["class"] = "PRIEST",
-			["compared"] = 1588941872,
 			["gs"] = 465.4,
 			["heath"] = 468640,
 			["c_total"] = 32,
@@ -1588,7 +1588,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "1级吸血    (+17)\n2级急速比    (+15)",
 			["bad"] = false,
-			["inspected"] = 1588944023,
+			["compared"] = 1588941872,
 		},
 		["太阳神-伊瑟拉"] = {
 			["gem_info"] = "0",
@@ -1788,8 +1788,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 20,
+			["inspected"] = 1588946882,
 			["compared"] = 1588858218,
-			["class"] = "PRIEST",
 			["name"] = "猫栗子",
 			["heath"] = 531700,
 			["re"] = 0,
@@ -1799,7 +1799,7 @@ TeamStatsDB = {
 			["c_total"] = 55,
 			["c_text"] = "2级急速比    (+15)\n1级暮光    (+25)\n2级爆伤    (+15)",
 			["gs"] = 468.6,
-			["inspected"] = 1588946882,
+			["class"] = "PRIEST",
 		},
 		["清风问樱-死亡之翼"] = {
 			["gem_info"] = "1/2 (|cff0070dd1|r)",
@@ -1894,8 +1894,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["class"] = "DEMONHUNTER",
 			["inspected"] = 1588944205,
-			["compared"] = 1588941719,
 			["gs"] = 467.1,
 			["heath"] = 462160,
 			["c_total"] = 80,
@@ -1905,7 +1905,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "1级专有    (+25)\n3级急速比    (+20)\n2级回响    (+35)",
 			["bad"] = false,
-			["class"] = "DEMONHUNTER",
+			["compared"] = 1588941719,
 		},
 		["樱导演-死亡之翼"] = {
 			["gem_info"] = "0",
@@ -2000,8 +2000,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 20,
+			["class"] = "DEATHKNIGHT",
 			["inspected"] = 1588943739,
-			["compared"] = 1588942261,
 			["gs"] = 434.4,
 			["heath"] = 586260,
 			["c_total"] = 35,
@@ -2011,7 +2011,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级全能    (+35)",
 			["bad"] = false,
-			["class"] = "DEATHKNIGHT",
+			["compared"] = 1588942261,
 		},
 		["沃银酋长-阿克蒙德"] = {
 			["gem_info"] = "3/3 (|cff0070dd3|r)",
@@ -2106,8 +2106,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["inspected"] = 1588944101,
 			["class"] = "WARRIOR",
-			["compared"] = 1588941731,
 			["gs"] = 457.4,
 			["heath"] = 438320,
 			["c_total"] = 75,
@@ -2117,7 +2117,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级暮光    (+75)",
 			["bad"] = false,
-			["inspected"] = 1588944101,
+			["compared"] = 1588941731,
 		},
 		["Xiaodouding-亡语者"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -2212,8 +2212,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 71,
+			["class"] = "PALADIN",
 			["compared"] = 1588946608,
-			["inspected"] = 1588951635,
 			["gs"] = 476.6,
 			["heath"] = 523220,
 			["c_total"] = 110,
@@ -2223,7 +2223,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "2级触须    (+35)\n2级暴击比    (+15)\n2级真相    (+30)\n1级龟裂    (+15)\n2级暴击比    (+15)",
 			["bad"] = false,
-			["class"] = "PALADIN",
+			["inspected"] = 1588951635,
 		},
 		["playerertecg-凤凰之神"] = {
 			["gem_info"] = "3/3 (|cff0070dd3|r)",
@@ -2318,8 +2318,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 20,
+			["class"] = "DRUID",
 			["inspected"] = 1588944161,
-			["compared"] = 1588942192,
 			["gs"] = 454.5,
 			["heath"] = 415040,
 			["c_total"] = 75,
@@ -2329,7 +2329,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级暮光    (+75)",
 			["bad"] = false,
-			["class"] = "DRUID",
+			["compared"] = 1588942192,
 		},
 		["冷傲吉尔斯-冰霜之刃"] = {
 			["gem_info"] = "1/2 (|cff0070dd1|r)",
@@ -2424,8 +2424,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 20,
+			["class"] = "HUNTER",
 			["inspected"] = 1588941715,
-			["compared"] = 1588941755,
 			["gs"] = 450.9,
 			["heath"] = 450920,
 			["c_total"] = 20,
@@ -2435,7 +2435,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "1级无尽    (+20)",
 			["bad"] = false,
-			["class"] = "HUNTER",
+			["compared"] = 1588941755,
 		},
 		["风起春城暮-亡语者"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -2530,8 +2530,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 71,
-			["inspected"] = 1588957365,
-			["compared"] = 1588851580,
+			["class"] = "DRUID",
+			["inspected"] = 1589001439,
 			["bad"] = false,
 			["heath"] = 527640,
 			["re"] = 0,
@@ -2541,7 +2541,7 @@ TeamStatsDB = {
 			["c_total"] = 90,
 			["c_text"] = "1级洞察    (+15)\n2级真相    (+30)\n2级精通比    (+15)\n2级真相    (+30)",
 			["gs"] = 476.1,
-			["class"] = "DRUID",
+			["compared"] = 1588851580,
 		},
 		["麦克雷雷-亚雷戈斯"] = {
 			["gem_info"] = "0",
@@ -2742,18 +2742,18 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 20,
-			["inspected"] = 1588957565,
-			["compared"] = 1588939571,
+			["class"] = "DEMONHUNTER",
+			["inspected"] = 1589010264,
 			["name"] = "十里扬州路",
-			["heath"] = 658320,
+			["heath"] = 636200,
 			["re"] = 0,
 			["gsGot"] = true,
 			["bad"] = false,
 			["talent1"] = "复仇",
 			["c_total"] = 55,
 			["c_text"] = "2级暴击    (+20)\n3级暴击    (+35)",
-			["gs"] = 437,
-			["class"] = "DEMONHUNTER",
+			["gs"] = 439.7,
+			["compared"] = 1588939571,
 		},
 		["流放之狐-凤凰之神"] = {
 			["gem_info"] = "2/2 (|cff0070dd2|r)",
@@ -2848,8 +2848,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["inspected"] = 1588943930,
 			["class"] = "ROGUE",
-			["compared"] = 1588942267,
 			["gs"] = 457.4,
 			["heath"] = 432820,
 			["c_total"] = 80,
@@ -2859,7 +2859,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "2级触须    (+35)\n1级暮光    (+25)\n3级暴击比    (+20)",
 			["bad"] = false,
-			["inspected"] = 1588943930,
+			["compared"] = 1588942267,
 		},
 		["丶丷-亡语者"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -2954,8 +2954,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 71,
+			["class"] = "DEMONHUNTER",
 			["inspected"] = 1588951722,
-			["compared"] = 1588855291,
 			["name"] = "丶丷",
 			["heath"] = 926876,
 			["re"] = 0,
@@ -2965,7 +2965,7 @@ TeamStatsDB = {
 			["c_total"] = 120,
 			["c_text"] = "2级急速    (+20)\n2级暮光    (+50)\n1级专有    (+25)\n1级暮光    (+25)",
 			["gs"] = 476.1,
-			["class"] = "DEMONHUNTER",
+			["compared"] = 1588855291,
 		},
 		["优昙华院-亚雷戈斯"] = {
 			["gem_info"] = "0",
@@ -3060,8 +3060,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 27,
+			["inspected"] = 1588944211,
 			["class"] = "HUNTER",
-			["compared"] = 1588942112,
 			["gs"] = 450.9,
 			["heath"] = 388260,
 			["c_total"] = 30,
@@ -3071,7 +3071,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "1级洞察    (+15)\n1级仪式    (+15)",
 			["bad"] = false,
-			["inspected"] = 1588944211,
+			["compared"] = 1588942112,
 		},
 		["Leia-暗影议会"] = {
 			["gem_info"] = "1/2 (|cff0070dd1|r)",
@@ -3272,8 +3272,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 12,
+			["inspected"] = 1588944198,
 			["class"] = "WARRIOR",
-			["compared"] = 1588941622,
 			["gs"] = 444.8,
 			["heath"] = 406780,
 			["c_total"] = 66,
@@ -3283,7 +3283,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级仪式    (+66)",
 			["bad"] = false,
-			["inspected"] = 1588944198,
+			["compared"] = 1588941622,
 		},
 		["撒个欢-达斯雷玛"] = {
 			["gem_info"] = "0",
@@ -3378,8 +3378,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["inspected"] = 1588944163,
 			["class"] = "HUNTER",
-			["compared"] = 1588941860,
 			["gs"] = 457,
 			["heath"] = 426360,
 			["c_total"] = 35,
@@ -3389,7 +3389,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级精通    (+35)",
 			["bad"] = false,
-			["inspected"] = 1588944163,
+			["compared"] = 1588941860,
 		},
 		["德之吾幸丶-影之哀伤"] = {
 			["gem_info"] = "0",
@@ -3589,8 +3589,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["inspected"] = 1588943987,
 			["class"] = "ROGUE",
-			["compared"] = 1588942159,
 			["gs"] = 454.3,
 			["heath"] = 420280,
 			["c_total"] = 65,
@@ -3600,7 +3600,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "2级精通比    (+15)\n1级龟裂    (+15)\n3级精通    (+35)",
 			["bad"] = false,
-			["inspected"] = 1588943987,
+			["compared"] = 1588942159,
 		},
 		["希文喵丨-死亡之翼"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -3695,8 +3695,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 35,
+			["compared"] = 1588858562,
 			["class"] = "PALADIN",
-			["inspected"] = 1588861450,
 			["gs"] = 470,
 			["heath"] = 546380,
 			["c_total"] = 47,
@@ -3706,7 +3706,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级暴击    (+35)\n1级真相    (+12)",
 			["name"] = "希文喵丨",
-			["compared"] = 1588858562,
+			["inspected"] = 1588861450,
 		},
 		["不再不再永恒-摩摩尔"] = {
 			["gem_info"] = "0",
@@ -3801,8 +3801,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 42,
+			["inspected"] = 1588943949,
 			["class"] = "PRIEST",
-			["compared"] = 1588942001,
 			["gs"] = 453.6,
 			["heath"] = 413400,
 			["c_total"] = 57,
@@ -3812,7 +3812,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级爆伤    (+20)\n2级暴击比    (+15)\n1级触须    (+10)\n1级真相    (+12)",
 			["bad"] = false,
-			["inspected"] = 1588943949,
+			["compared"] = 1588942001,
 		},
 		["打蛋器-血色十字军"] = {
 			["gem_info"] = "0",
@@ -3907,8 +3907,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 59,
+			["inspected"] = 1588944011,
 			["class"] = "HUNTER",
-			["compared"] = 1588941761,
 			["gs"] = 455.2,
 			["heath"] = 416760,
 			["c_total"] = 111,
@@ -3918,7 +3918,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级触须    (+66)\n1级无尽    (+20)\n1级专有    (+25)",
 			["bad"] = false,
-			["inspected"] = 1588944011,
+			["compared"] = 1588941761,
 		},
 		["悠哒的法神-斯克提斯"] = {
 			["gem_info"] = "1/1 (|cff0070dd1|r)",
@@ -4013,8 +4013,8 @@ TeamStatsDB = {
 				0, -- [88]
 			},
 			["c_resist"] = 27,
+			["inspected"] = 1588943988,
 			["class"] = "MAGE",
-			["compared"] = 1588941700,
 			["gs"] = 465.1,
 			["heath"] = 461640,
 			["c_total"] = 40,
@@ -4024,7 +4024,7 @@ TeamStatsDB = {
 			["re"] = 0,
 			["c_text"] = "3级暴击比    (+20)\n3级精通比    (+20)",
 			["bad"] = false,
-			["inspected"] = 1588943988,
+			["compared"] = 1588941700,
 		},
 	},
 	["VERSION"] = 20200315,
@@ -4120,7 +4120,6 @@ TeamStatsDB = {
 	},
 	["minimapPos"] = 354,
 	["names"] = {
-		["风起春城暮-亡语者"] = false,
 		["十里扬州路-亡语者"] = true,
 	},
 }

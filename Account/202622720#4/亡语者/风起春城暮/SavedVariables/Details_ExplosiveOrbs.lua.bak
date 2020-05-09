@@ -9,13 +9,13 @@ ExplosiveOrbsLog = {
 			["target"] = 1,
 			["hit"] = 1,
 		},
-		["Player-857-02E153C3"] = {
-			["target"] = 3,
-			["hit"] = 3,
-		},
 		["Player-1515-04628317"] = {
 			["target"] = 9,
 			["hit"] = 5,
+		},
+		["Player-857-02E153C3"] = {
+			["target"] = 3,
+			["hit"] = 3,
 		},
 		["Creature-0-3932-1754-6599-162764-0000357698"] = {
 			["target"] = 0,
@@ -27,8 +27,8 @@ ExplosiveOrbsLog = {
 		},
 	},
 	[262] = {
-		["Player-2124-0129732E"] = {
-			["target"] = 3,
+		["Player-2124-0836E3DA"] = {
+			["target"] = 1,
 			["hit"] = 1,
 		},
 		["Player-1515-04628317"] = {
@@ -39,8 +39,8 @@ ExplosiveOrbsLog = {
 			["target"] = 3,
 			["hit"] = 2,
 		},
-		["Player-2124-0836E3DA"] = {
-			["target"] = 1,
+		["Player-2124-0129732E"] = {
+			["target"] = 3,
 			["hit"] = 1,
 		},
 	},
@@ -136,13 +136,13 @@ ExplosiveOrbsLog = {
 		},
 	},
 	[248] = {
-		["Player-2124-0AA46C2A"] = {
-			["target"] = 6,
-			["hit"] = 4,
-		},
 		["Player-857-02E153C3"] = {
 			["target"] = 1,
 			["hit"] = 1,
+		},
+		["Player-2124-0AA46C2A"] = {
+			["target"] = 6,
+			["hit"] = 4,
 		},
 		["Player-1515-04628317"] = {
 			["target"] = 7,
@@ -176,13 +176,13 @@ ExplosiveOrbsLog = {
 		},
 	},
 	[257] = {
-		["Player-2124-0AA46C2A"] = {
-			["target"] = 14,
-			["hit"] = 12,
-		},
 		["Player-857-02E153C3"] = {
 			["target"] = 7,
 			["hit"] = 7,
+		},
+		["Player-2124-0AA46C2A"] = {
+			["target"] = 14,
+			["hit"] = 12,
 		},
 		["Player-1515-04628317"] = {
 			["target"] = 14,

@@ -201,7 +201,7 @@ Skada: enabled
 SkadaPlus: enabled
 SlideBar: enabled
 SmartRes2: enabled
-SorhaQuestLog: enabled
+SorhaQuestLog: disabled
 Stubby: disabled
 SUFPlus: enabled
 !Swatter: enabled

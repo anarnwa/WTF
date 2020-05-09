@@ -511,13 +511,14 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "黑暗魔眼",
 					["code"] = "ability(原始嗥叫:920) [round=1]\nability(黑爪:919) [round=2]\nability(狩猎小队:921) [round=3]\nability(原始嗥叫:920)\nability(黑爪:919)",
 				},
+				[91361] = {
+					["author"] = "弄妆梳洗迟-古尔丹",
+					["name"] = "库拉·雷蹄",
+					["code"] = "ability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(破碎防御:542).exists]\nability(黑爪:919)\nchange(next) [self.dead]",
+				},
 				[105386] = {
 					["name"] = "瑞迪尔62",
 					["code"] = "quit [ self(德莱尼微型防御者).active & round=1 ] \nchange(德莱尼微型防御者) [enemy.aura(嚎叫).exists] \nchange(next) [self.dead] \nability(嚎叫) \nability(离子炮) \nquit",
-				},
-				[154925] = {
-					["name"] = "吱铛",
-					["code"] = "ability(飞越:515) [round=1]\nability(雷霆之箭:779)\nability(自爆:282)\nability(焚烧:179) [enemy.aura(献祭:177).exists]\nability(献祭:178)\nchange(next)",
 				},
 				["海难俘虏保底"] = {
 					["name"] = "海难俘虏03",
@@ -889,10 +890,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "鲍丁·固拳",
 					["code"] = "ability(甲壳护盾:310) [self.aura(甲壳护盾:309).duration<1]\nability(治疗波:123) \nability(汹涌:509)\nchange(机械熊猫人幼龙:844) [self(君王蟹:746).dead & enemy(脆脆:983).active]\nability(自爆:282) [enemy(脆脆:983).hp<560]\nability(雷霆之箭:779)\nability(吐息:115)\nstandby\nquit",
 				},
-				[91361] = {
-					["author"] = "弄妆梳洗迟-古尔丹",
-					["name"] = "库拉·雷蹄",
-					["code"] = "ability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(破碎防御:542).exists]\nability(黑爪:919)\nchange(next) [self.dead]",
+				[154925] = {
+					["name"] = "吱铛",
+					["code"] = "ability(飞越:515) [round=1]\nability(雷霆之箭:779)\nability(自爆:282)\nability(焚烧:179) [enemy.aura(献祭:177).exists]\nability(献祭:178)\nchange(next)",
 				},
 				[85517] = {
 					["author"] = "弄妆梳洗迟-古尔丹",

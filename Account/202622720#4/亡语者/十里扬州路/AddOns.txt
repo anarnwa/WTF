@@ -186,7 +186,7 @@ ShadowedUnitFrames: enabled
 Skada: enabled
 SkadaPlus: enabled
 SmartRes2: enabled
-SorhaQuestLog: enabled
+SorhaQuestLog: disabled
 SUFPlus: enabled
 !Swatter: enabled
 TargetNameplateIndicator: enabled

@@ -223,7 +223,7 @@ ShadowedUnitFrames: enabled
 Skada: enabled
 SlideBar: enabled
 SmartRes2: enabled
-SorhaQuestLog: enabled
+SorhaQuestLog: disabled
 SpellTimer: enabled
 Stubby: disabled
 TUnitFrame: enabled

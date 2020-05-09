@@ -14,14 +14,14 @@ PlaterDB = {
 					["Icon"] = 135996,
 					["Author"] = "Izimode-Azralon",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings (you may need /reload if some configs isn't applied immediately)    \n    --change the nameplate color to this if allowed\n    envTable.CanChangeNameplateColor = false --change to true to change the color\n    envTable.NameplateColor = \"pink\"\n    envTable.NameplateSizeOffset = 6 --increase the nameplate height by this value\n    envTable.GlowAlpha = 0.5 --amount of alpha in the outside glow effect\n    \n    --create a glow effect around the nameplate\n    envTable.glowEffect = envTable.glowEffect or Plater.CreateNameplateGlow (unitFrame.healthBar, envTable.NameplateColor)\n    envTable.glowEffect:SetOffset (-27, 25, 9, -11)\n    --envTable.glowEffect:Show() --envTable.glowEffect:Hide() --\n    \n    --set the glow effect alpha\n    envTable.glowEffect:SetAlpha (envTable.GlowAlpha)\n    \nend\n\n--[=[\nUsing spellIDs for multi-language support\n\n135029 - A Knot of Snakes (Temple of Sethraliss)\n135388 - A Knot of Snakes (Temple of Sethraliss)\n134612 - Grasping Tentacles (Shrine of the Storm)\n133361 - Wasting Servant (Waycrest Manor)\n136330 - Soul Thorns (Waycrest Manor)\n130896 - Blackout Barrel (Freehold)\n129758 - Irontide Grenadier (Freehold)\n131009 - Spirit of Gold (Atal`Dazar)\n--]=]",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \nend\n\n\n",
+					["Desc"] = "Highlight a nameplate of an important Add. Add the unit name or NpcID into the trigger box to add more.",
+					["Time"] = 1537884697,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can change the nameplate color\n    if (envTable.CanChangeNameplateColor) then\n        Plater.SetNameplateColor (unitFrame, envTable.NameplateColor)\n    end\n    \nend\n\n\n\n\n",
 					["SpellIds"] = {
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can change the nameplate color\n    if (envTable.CanChangeNameplateColor) then\n        Plater.SetNameplateColor (unitFrame, envTable.NameplateColor)\n    end\n    \nend\n\n\n\n\n",
-					["Name"] = "Unit - Important [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1537884697,
-					["Desc"] = "Highlight a nameplate of an important Add. Add the unit name or NpcID into the trigger box to add more.",
+					["Name"] = "Unit - Important [Plater]",
+					["ScriptType"] = 3,
 					["NpcNames"] = {
 						"135029", -- [1]
 						"134388", -- [2]
@@ -33,7 +33,7 @@ PlaterDB = {
 						"Healing Tide Totem", -- [8]
 						"131009", -- [9]
 					},
-					["ScriptType"] = 3,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \nend\n\n\n",
 				}, -- [1]
 				{
 					["Enabled"] = true,
@@ -42,7 +42,9 @@ PlaterDB = {
 					["Icon"] = "Interface\\AddOns\\Plater\\images\\icon_aura",
 					["Author"] = "Tercioo-Sylvanas",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --creates a glow around the icon\n    envTable.buffIconGlow = envTable.buffIconGlow or Plater.CreateIconGlow (self)\n    \nend",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.buffIconGlow:Show()\n    \nend",
+					["Desc"] = "Add the buff name in the trigger box.",
+					["Time"] = 1539013601,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    \n    \n    \nend",
 					["SpellIds"] = {
 						275826, -- [1]
 						272888, -- [2]
@@ -51,14 +53,12 @@ PlaterDB = {
 						267830, -- [5]
 						265393, -- [6]
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    \n    \n    \nend",
-					["Name"] = "Aura - Buff Alert [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1539013601,
-					["Desc"] = "Add the buff name in the trigger box.",
+					["Name"] = "Aura - Buff Alert [Plater]",
+					["ScriptType"] = 1,
 					["NpcNames"] = {
 					},
-					["ScriptType"] = 1,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.buffIconGlow:Show()\n    \nend",
 				}, -- [2]
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings (you may need /reload if some configs isn't applied immediately)\n    local CONFIG_BACKGROUND_FLASH_DURATION = 0.8 --0.8\n    local CONFIG_BORDER_GLOW_ALPHA = 0.3 --0.3\n    local CONFIG_SHAKE_DURATION = 0.2 --0.2\n    local CONFIG_SHAKE_AMPLITUDE = 5 --5\n    \n    --create a glow effect in the border of the cast bar\n    envTable.glowEffect = envTable.glowEffect or Plater.CreateNameplateGlow (self)\n    envTable.glowEffect:SetOffset (-32, 30, 7, -9)\n    envTable.glowEffect:SetAlpha (CONFIG_BORDER_GLOW_ALPHA)\n    --envTable.glowEffect:Show() --envTable.glowEffect:Hide() \n    \n    --create a texture to use for a flash behind the cast bar\n    local backGroundFlashTexture = Plater:CreateImage (self, [[Interface\\ACHIEVEMENTFRAME\\UI-Achievement-Alert-Glow]], self:GetWidth()+40, self:GetHeight()+20, \"background\", {0, 400/512, 0, 170/256})\n    backGroundFlashTexture:SetBlendMode (\"ADD\")\n    backGroundFlashTexture:SetPoint (\"center\", self, \"center\")\n    backGroundFlashTexture:Hide()\n    \n    --create the animation hub to hold the flash animation sequence\n    envTable.BackgroundFlash = envTable.BackgroundFlash or Plater:CreateAnimationHub (backGroundFlashTexture, \n        function()\n            backGroundFlashTexture:Show()\n        end,\n        function()\n            backGroundFlashTexture:Hide()\n        end\n    )\n    \n    --create the flash animation sequence\n    local fadeIn = Plater:CreateAnimation (envTable.BackgroundFlash, \"ALPHA\", 1, CONFIG_BACKGROUND_FLASH_DURATION/2, 0, 1)\n    local fadeOut = Plater:CreateAnimation (envTable.BackgroundFlash, \"ALPHA\", 2, CONFIG_BACKGROUND_FLASH_DURATION/2, 1, 0)    \n    --envTable.BackgroundFlash:Play() --envTable.BackgroundFlash:Stop()\n    \n    --create a camera shake for the nameplate\n    envTable.FrameShake = Plater:CreateFrameShake (unitFrame, CONFIG_SHAKE_DURATION, CONFIG_SHAKE_AMPLITUDE, 35, false, false, 0, 1, 0.05, 0.1, Plater.GetPoints (unitFrame))    \n    \n    \n    --update the config for the flash here so it wont need a /reload\n    fadeIn:SetDuration (CONFIG_BACKGROUND_FLASH_DURATION/2)\n    fadeOut:SetDuration (CONFIG_BACKGROUND_FLASH_DURATION/2)    \n    \n    --update the config for the skake here so it wont need a /reload\n    envTable.FrameShake.OriginalAmplitude = CONFIG_SHAKE_AMPLITUDE\n    envTable.FrameShake.OriginalDuration = CONFIG_SHAKE_DURATION  \n    \nend",
@@ -98,19 +98,19 @@ PlaterDB = {
 					["Icon"] = 2175503,
 					["Author"] = "Bombad�o-Azralon",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings\n    envTable.NameplateSizeOffset = 3\n    envTable.GlowAlpha = .45\n    envTable.ShowArrow = true\n    envTable.ArrowAlpha = .45    \n    envTable.HealthBarColor = \"orange\"\n    \n    --custom frames\n    envTable.glowEffect = envTable.glowEffect or Plater.CreateNameplateGlow (unitFrame.healthBar)\n    --envTable.glowEffect:Show() --envTable.glowEffect:Hide() \n    envTable.glowEffect:SetOffset (-27, 25, 6, -8)\n    \n    --creates the spark to show the cast progress inside the health bar\n    envTable.overlaySpark = envTable.overlaySpark or Plater:CreateImage (unitFrame.healthBar)\n    envTable.overlaySpark:SetBlendMode (\"ADD\")\n    envTable.overlaySpark.width = 32\n    envTable.overlaySpark.height = 36\n    envTable.overlaySpark.alpha = .9\n    envTable.overlaySpark.texture = [[Interface\\CastingBar\\UI-CastingBar-Spark]]\n    \n    envTable.topArrow = envTable.topArrow or Plater:CreateImage (unitFrame.healthBar)\n    envTable.topArrow:SetBlendMode (\"ADD\")\n    envTable.topArrow.width = 8\n    envTable.topArrow.height = 8\n    envTable.topArrow.alpha = envTable.ArrowAlpha\n    envTable.topArrow.texture = [[Interface\\BUTTONS\\Arrow-Down-Up]]\n    \n    --scale animation\n    envTable.smallScaleAnimation = envTable.smallScaleAnimation or Plater:CreateAnimationHub (unitFrame.healthBar)\n    Plater:CreateAnimation (envTable.smallScaleAnimation, \"SCALE\", 1, 0.075, 1, 1, 1.08, 1.08)\n    Plater:CreateAnimation (envTable.smallScaleAnimation, \"SCALE\", 2, 0.075, 1, 1, 0.95, 0.95)    \n    --envTable.smallScaleAnimation:Play() --envTable.smallScaleAnimation:Stop()\n    \nend\n\n\n\n\n\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    envTable.overlaySpark:Show()\n    \n    if (envTable.ShowArrow) then\n        envTable.topArrow:Show()\n    end\n    \n    Plater.FlashNameplateBorder (unitFrame, 0.05)   \n    Plater.FlashNameplateBody (unitFrame, \"\", 0.075)\n    \n    envTable.smallScaleAnimation:Play()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \n    envTable.overlaySpark.height = nameplateHeight + 32\n    \n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \n    \nend\n\n\n\n\n\n\n",
+					["Desc"] = "Apply several animations when the explosion orb cast starts on a Mythic Dungeon with Explosion Affix",
+					["Time"] = 1540663131,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the percent\n    envTable.overlaySpark:SetPoint (\"left\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100)-16, 0)\n    \n    envTable.topArrow:SetPoint (\"bottomleft\", unitFrame.healthBar, \"topleft\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100) - 4, 2 )\n    \n    --forces the script to update on a 60Hz base\n    self.ThrottleUpdate = 0.016\n    \n    --update the health bar color coloring from yellow to red\n    --Plater.SetNameplateColor (unitFrame, max (envTable._CastPercent/100, .66), abs (envTable._CastPercent/100 - 1), 0, 1)\n    \n    Plater.SetNameplateColor (unitFrame, envTable.HealthBarColor)\n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \nend\n\n\n",
 					["SpellIds"] = {
 						240446, -- [1]
 						273577, -- [2]
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the percent\n    envTable.overlaySpark:SetPoint (\"left\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100)-16, 0)\n    \n    envTable.topArrow:SetPoint (\"bottomleft\", unitFrame.healthBar, \"topleft\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100) - 4, 2 )\n    \n    --forces the script to update on a 60Hz base\n    self.ThrottleUpdate = 0.016\n    \n    --update the health bar color coloring from yellow to red\n    --Plater.SetNameplateColor (unitFrame, max (envTable._CastPercent/100, .66), abs (envTable._CastPercent/100 - 1), 0, 1)\n    \n    Plater.SetNameplateColor (unitFrame, envTable.HealthBarColor)\n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \nend\n\n\n",
-					["Name"] = "Explosion Affix M+ [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1540663131,
-					["Desc"] = "Apply several animations when the explosion orb cast starts on a Mythic Dungeon with Explosion Affix",
+					["Name"] = "Explosion Affix M+ [Plater]",
+					["ScriptType"] = 2,
 					["NpcNames"] = {
 					},
-					["ScriptType"] = 2,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    envTable.overlaySpark:Show()\n    \n    if (envTable.ShowArrow) then\n        envTable.topArrow:Show()\n    end\n    \n    Plater.FlashNameplateBorder (unitFrame, 0.05)   \n    Plater.FlashNameplateBody (unitFrame, \"\", 0.075)\n    \n    envTable.smallScaleAnimation:Play()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \n    envTable.overlaySpark.height = nameplateHeight + 32\n    \n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \n    \nend\n\n\n\n\n\n\n",
 				}, -- [4]
 				{
 					["Enabled"] = true,
@@ -119,17 +119,17 @@ PlaterDB = {
 					["Icon"] = "Interface\\AddOns\\Plater\\images\\icon_aura",
 					["Author"] = "Tercioo-Sylvanas",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --creates a glow around the icon\n    envTable.debuffIconGlow = envTable.debuffIconGlow or Plater.CreateIconGlow (self)\n    \nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.debuffIconGlow:Show()\n    \nend\n\n\n",
+					["Desc"] = "Add the debuff name in the trigger box.",
+					["Time"] = 1538429739,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
 					["SpellIds"] = {
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
-					["Name"] = "Aura - Debuff Alert [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1538429739,
-					["Desc"] = "Add the debuff name in the trigger box.",
+					["Name"] = "Aura - Debuff Alert [Plater]",
+					["ScriptType"] = 1,
 					["NpcNames"] = {
 					},
-					["ScriptType"] = 1,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.debuffIconGlow:Show()\n    \nend\n\n\n",
 				}, -- [5]
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --https://www.wowhead.com/spell=253583/fiery-enchant\n    \n    --settings (you may need /reload if some configs isn't applied immediately)\n    \n    --castbar color (when can be interrupted)\n    envTable.CastbarColor = \"darkorange\"\n    --flash duration\n    local CONFIG_BACKGROUND_FLASH_DURATION = 0.4\n    --add this value to the cast bar height\n    envTable.CastBarHeightAdd = 5\n    \n    \n    \n    --create a fast flash above the cast bar\n    envTable.FullBarFlash = envTable.FullBarFlash or Plater.CreateFlash (self, 0.05, 1, \"white\")\n    \n    --create a camera shake for the nameplate\n    envTable.FrameShake = Plater:CreateFrameShake (unitFrame, 0.2, 5, 35, false, false, 0, 1, 0.05, 0.1, Plater.GetPoints (unitFrame))\n    \n    --create a texture to use for a flash behind the cast bar\n    local backGroundFlashTexture = Plater:CreateImage (self, [[Interface\\ACHIEVEMENTFRAME\\UI-Achievement-Alert-Glow]], self:GetWidth()+60, self:GetHeight()+50, \"background\", {0, 400/512, 0, 170/256})\n    backGroundFlashTexture:SetBlendMode (\"ADD\")\n    backGroundFlashTexture:SetPoint (\"center\", self, \"center\")\n    backGroundFlashTexture:Hide()\n    \n    --create the animation hub to hold the flash animation sequence\n    envTable.BackgroundFlash = envTable.BackgroundFlash or Plater:CreateAnimationHub (backGroundFlashTexture, \n        function()\n            backGroundFlashTexture:Show()\n        end,\n        function()\n            backGroundFlashTexture:Hide()\n        end\n    )\n    \n    --create the flash animation sequence\n    local fadeIn = Plater:CreateAnimation (envTable.BackgroundFlash, \"ALPHA\", 1, CONFIG_BACKGROUND_FLASH_DURATION/2, 0, .75)\n    local fadeOut = Plater:CreateAnimation (envTable.BackgroundFlash, \"ALPHA\", 2, CONFIG_BACKGROUND_FLASH_DURATION/2, 1, 0)    \n    --envTable.BackgroundFlash:Play() --envTable.BackgroundFlash:Stop()        \n    \nend\n\n\n",
@@ -272,18 +272,18 @@ PlaterDB = {
 					["Icon"] = 135024,
 					["Author"] = "Izimode-Azralon",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings:\n    do\n        \n        --change the nameplate color to this color\n        --can use color names: \"red\", \"yellow\"\n        --can use color hex: \"#FF0000\", \"#FFFF00\"\n        --con use color table: {1, 0, 0}, {1, 1, 0}\n        \n        envTable.Color = \"green\"\n        \n        --if true, it'll replace the health info with the unit name\n        envTable.ReplaceHealthWithName = false\n        \n        --use flash when the unit is shown in the screen\n        envTable.FlashNameplate = true\n        \n    end\n    \n    --private:\n    do\n        --create a flash for when the unit if shown\n        envTable.smallFlash = envTable.smallFlash or Plater.CreateFlash (unitFrame.healthBar, 0.15, 1, envTable.Color)\n        \n    end\n    \nend\n\n--[=[\n\nNpc IDS:\n\n141851: Spawn of G'Huun on Mythic Dungeons\n\n\n--]=]\n\n\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can flash the nameplate\n    if (envTable.FlashNameplate) then\n        envTable.smallFlash:Play()\n    end\n    \nend\n\n\n\n\n\n\n\n\n",
+					["Desc"] = "Add a unitID or unit name in 'Add Trigger' entry. See the constructor script for options.",
+					["Time"] = 1543253273,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --adjust the nameplate color\n    Plater.SetNameplateColor (unitFrame, envTable.Color)\n    \n    --check if can replace the health amount with the unit name\n    if (envTable.ReplaceHealthWithName) then\n        \n        local healthPercent = format (\"%.1f\", unitFrame.healthBar.CurrentHealth / unitFrame.healthBar.CurrentHealthMax *100)\n        \n        unitFrame.healthBar.lifePercent:SetText (unitFrame.namePlateUnitName .. \"  (\" .. healthPercent  .. \"%)\")\n        \n    end\n    \nend\n\n\n",
 					["SpellIds"] = {
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --adjust the nameplate color\n    Plater.SetNameplateColor (unitFrame, envTable.Color)\n    \n    --check if can replace the health amount with the unit name\n    if (envTable.ReplaceHealthWithName) then\n        \n        local healthPercent = format (\"%.1f\", unitFrame.healthBar.CurrentHealth / unitFrame.healthBar.CurrentHealthMax *100)\n        \n        unitFrame.healthBar.lifePercent:SetText (unitFrame.namePlateUnitName .. \"  (\" .. healthPercent  .. \"%)\")\n        \n    end\n    \nend\n\n\n",
-					["Name"] = "Color Change [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1543253273,
-					["Desc"] = "Add a unitID or unit name in 'Add Trigger' entry. See the constructor script for options.",
+					["Name"] = "Color Change [Plater]",
+					["ScriptType"] = 3,
 					["NpcNames"] = {
 						"141851", -- [1]
 					},
-					["ScriptType"] = 3,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can flash the nameplate\n    if (envTable.FlashNameplate) then\n        envTable.smallFlash:Play()\n    end\n    \nend\n\n\n\n\n\n\n\n\n",
 				}, -- [9]
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings (require a /reload after editing any setting)\n    do\n        --blink and glow\n        envTable.BlinkEnabled = true --set to 'false' to disable blinks\n        envTable.GlowEnabled = true --set to 'false' to disable glows\n        envTable.ChangeNameplateColor = true; --set to 'true' to enable nameplate color change\n        envTable.TimeLeftToBlink = 4.5; --in seconds, affects the blink effect only\n        envTable.BlinkSpeed = 1.0; --time to complete a blink loop\n        envTable.BlinkColor = \"white\"; --color of the blink\n        envTable.BlinkMaxAlpha = 0.50; --max transparency in the animation loop (1.0 is full opaque)\n        envTable.NameplateColor = \"darkred\"; --nameplate color if ChangeNameplateColor is true\n        \n        --text color\n        envTable.TimerColorEnabled = true --set to 'false' to disable changes in the color of the time left text\n        envTable.TimeLeftWarning = 8.0; --in seconds, affects the color of the text\n        envTable.TimeLeftCritical = 3.0; --in seconds, affects the color of the text    \n        envTable.TextColor_Warning = \"yellow\"; --color when the time left entered in a warning zone\n        envTable.TextColor_Critical = \"red\"; --color when the time left is critical\n        \n        --list of spellIDs to ignore\n        envTable.IgnoredSpellID = {\n            [12] = true, --use a simple comma here\n            [13] = true,\n        }\n    end\n    \n    \n    --private\n    do\n        envTable.blinkTexture = Plater:CreateImage (self, \"\", 1, 1, \"overlay\")\n        envTable.blinkTexture:SetPoint ('center', 0, 0)\n        envTable.blinkTexture:Hide()\n        \n        local onPlay = function()\n            envTable.blinkTexture:Show() \n            envTable.blinkTexture.color = envTable.BlinkColor\n        end\n        local onStop = function()\n            envTable.blinkTexture:Hide()  \n        end\n        envTable.blinkAnimation = Plater:CreateAnimationHub (envTable.blinkTexture, onPlay, onStop)\n        Plater:CreateAnimation (envTable.blinkAnimation, \"ALPHA\", 1, envTable.BlinkSpeed / 2, 0, envTable.BlinkMaxAlpha)\n        Plater:CreateAnimation (envTable.blinkAnimation, \"ALPHA\", 2, envTable.BlinkSpeed / 2, envTable.BlinkMaxAlpha, 0)\n        \n        envTable.glowEffect = envTable.glowEffect or Plater.CreateIconGlow (self)\n        --envTable.glowEffect:Show() --envTable.glowEffect:Hide()\n        \n    end\n    \nend\n\n\n\n\n",
@@ -315,17 +315,17 @@ PlaterDB = {
 					["Icon"] = 133006,
 					["Author"] = "Izimode-Azralon",
 					["ConstructorCode"] = "--gray lines are comments and doesn't affect the code\n\n--1) add the aura you want by typing its name or spellID into the \"Add Trigger\" and click the \"Add\" button.\n--2) the border will use the default color set below, to a custom color type aura name and the color you want in the BorderColorByAura table.\n\nfunction (self, unitId, unitFrame, envTable)\n    \n    --default color if the aura name isn't found in the Color By Aura table below\n    envTable.DefaultBorderColor = \"orange\"\n    \n    --transparency, affect all borders\n    envTable.BorderAlpha = 1.0\n    \n    --add the aura name and the color, \n    envTable.BorderColorByAura = {\n        \n        --examples:\n        --[\"Aura Name\"] = \"yellow\", --using regular aura name | using the name of the color\n        --[\"aura name\"] = \"#FFFF00\", --using lower case in the aura name |using html #hex for the color\n        --[54214] = {1, 1, 0}, --using the spellID instead of the name | using rgb table (0 to 1) for the color\n        --color table uses zero to one values: 255 = 1.0, 127 = 0.5, orange color = {1, 0.7, 0}\n        \n        --add your custom border colors below:\n        \n        [\"Aura Name\"] = {1, .5, 0}, --example to copy/paste\n        \n    }\n    \n    \nend\n\n\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the aura name in lower case\n    local auraLowerName = string.lower (envTable._SpellName)\n    \n    --attempt to get a custom color added by the user in the constructor script\n    local hasCustomBorderColor = envTable.BorderColorByAura [auraLowerName] or envTable.BorderColorByAura [envTable._SpellName] or envTable.BorderColorByAura [envTable._SpellID]\n    \n    --save the custom color\n    envTable.CustomBorderColor = hasCustomBorderColor\n    \nend\n\n\n",
+					["Desc"] = "Add a border to an aura icon. Add the aura into the Add Trigger entry. You can customize the icon color at the constructor script.",
+					["Time"] = 1543680853,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the custom color added by the user or the default color\n    local color = envTable.CustomBorderColor or envTable.DefaultBorderColor\n    --parse the color since it can be a color name, hex or color table\n    local r, g, b = DetailsFramework:ParseColors (color)\n    \n    --set the border color\n    self:SetBackdropBorderColor (r, g, b, envTable.BorderAlpha)\n    \nend\n\n\n\n\n",
 					["SpellIds"] = {
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the custom color added by the user or the default color\n    local color = envTable.CustomBorderColor or envTable.DefaultBorderColor\n    --parse the color since it can be a color name, hex or color table\n    local r, g, b = DetailsFramework:ParseColors (color)\n    \n    --set the border color\n    self:SetBackdropBorderColor (r, g, b, envTable.BorderAlpha)\n    \nend\n\n\n\n\n",
-					["Name"] = "Aura - Border Color [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1543680853,
-					["Desc"] = "Add a border to an aura icon. Add the aura into the Add Trigger entry. You can customize the icon color at the constructor script.",
+					["Name"] = "Aura - Border Color [Plater]",
+					["ScriptType"] = 1,
 					["NpcNames"] = {
 					},
-					["ScriptType"] = 1,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the aura name in lower case\n    local auraLowerName = string.lower (envTable._SpellName)\n    \n    --attempt to get a custom color added by the user in the constructor script\n    local hasCustomBorderColor = envTable.BorderColorByAura [auraLowerName] or envTable.BorderColorByAura [envTable._SpellName] or envTable.BorderColorByAura [envTable._SpellID]\n    \n    --save the custom color\n    envTable.CustomBorderColor = hasCustomBorderColor\n    \nend\n\n\n",
 				}, -- [11]
 				{
 					["Enabled"] = true,
@@ -334,18 +334,18 @@ PlaterDB = {
 					["Icon"] = 136048,
 					["Author"] = "Celian-Sylvanas",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount = Plater:CreateLabel (unitFrame, \"\", 16, \"silver\");\n    envTable.EnergyAmount:SetPoint (\"bottom\", unitFrame, \"top\", 0, 18);\nend\n\n--[=[\n\n\n--]=]",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Show()\nend\n\n\n",
+					["Desc"] = "Show the energy amount above the nameplate",
+					["Time"] = 1539015649,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount.text = \"\" .. UnitPower (unitId);\nend\n\n\n",
 					["SpellIds"] = {
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount.text = \"\" .. UnitPower (unitId);\nend\n\n\n",
-					["Name"] = "UnitPower [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1539015649,
-					["Desc"] = "Show the energy amount above the nameplate",
+					["Name"] = "UnitPower [Plater]",
+					["ScriptType"] = 3,
 					["NpcNames"] = {
 						"Guardian of Yogg-Saron", -- [1]
 					},
-					["ScriptType"] = 3,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Show()\nend\n\n\n",
 				}, -- [12]
 				{
 					["Enabled"] = true,
@@ -354,7 +354,9 @@ PlaterDB = {
 					["Icon"] = "Interface\\AddOns\\Plater\\images\\cast_bar",
 					["Author"] = "Izimode-Azralon",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.movingArrow = envTable.movingArrow or Plater:CreateImage (self, [[Interface\\PETBATTLES\\PetBattle-StatIcons]], 16, self:GetHeight(), \"background\", {0, 15/32, 18/32, 30/32})\n    \n    envTable.movingArrow:SetAlpha (0.275)\n    --envTable.movingArrow:SetDesaturated (true)\n    \n    envTable.movingAnimation = envTable.movingAnimation or Plater:CreateAnimationHub (envTable.movingArrow, \n        function() \n            envTable.movingArrow:Show() \n            envTable.movingArrow:SetPoint(\"left\", 0, 0)\n        end, \n        function() envTable.movingArrow:Hide() end)\n    \n    envTable.movingAnimation:SetLooping (\"REPEAT\")\n    \n    local animation = Plater:CreateAnimation (envTable.movingAnimation, \"translation\", 1, 0.2, self:GetWidth()-16, 0)\n    \n    \n    \nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.movingAnimation:Play()\nend\n\n\n",
+					["Desc"] = "Does an animation for casts that affect the frontal area of the enemy. Add spell in the Add Trigger field.",
+					["Time"] = 1539201849,
+					["UpdateCode"] = "		function (self, unitId, unitFrame, envTable)\n			\n		end\n	",
 					["SpellIds"] = {
 						255952, -- [1]
 						257426, -- [2]
@@ -382,14 +384,12 @@ PlaterDB = {
 						265541, -- [24]
 						250258, -- [25]
 					},
-					["UpdateCode"] = "		function (self, unitId, unitFrame, envTable)\n			\n		end\n	",
-					["Name"] = "Cast - Frontal Cone [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1539201849,
-					["Desc"] = "Does an animation for casts that affect the frontal area of the enemy. Add spell in the Add Trigger field.",
+					["Name"] = "Cast - Frontal Cone [Plater]",
+					["ScriptType"] = 2,
 					["NpcNames"] = {
 					},
-					["ScriptType"] = 2,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.movingAnimation:Play()\nend\n\n\n",
 				}, -- [13]
 				{
 					["Enabled"] = true,
@@ -398,19 +398,19 @@ PlaterDB = {
 					["Icon"] = 1029718,
 					["Author"] = "Celian-Sylvanas",
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.FixateTarget = Plater:CreateLabel (unitFrame);\n    envTable.FixateTarget:SetPoint (\"bottom\", unitFrame.BuffFrame, \"top\", 0, 10);    \n    \n    envTable.FixateIcon = Plater:CreateImage (unitFrame, 236188, 16, 16, \"overlay\");\n    envTable.FixateIcon:SetPoint (\"bottom\", envTable.FixateTarget, \"top\", 0, 4);    \n    \nend\n\n\n\n\n\n\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Show();\n    envTable.FixateIcon:Show();\n    \nend\n\n\n",
+					["Desc"] = "Show above the nameplate who is the player fixated",
+					["Time"] = 1539187387,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    local targetName = UnitName (unitId .. \"target\");\n    if (targetName) then\n        local _, class = UnitClass (unitId .. \"target\");\n        targetName = Plater.SetTextColorByClass (unitId .. \"target\", targetName);\n        envTable.FixateTarget.text = targetName;\n    end    \nend\n\n\n",
 					["SpellIds"] = {
 						272584, -- [1]
 						244653, -- [2]
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    local targetName = UnitName (unitId .. \"target\");\n    if (targetName) then\n        local _, class = UnitClass (unitId .. \"target\");\n        targetName = Plater.SetTextColorByClass (unitId .. \"target\", targetName);\n        envTable.FixateTarget.text = targetName;\n    end    \nend\n\n\n",
-					["Name"] = "Fixate [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1539187387,
-					["Desc"] = "Show above the nameplate who is the player fixated",
+					["Name"] = "Fixate [Plater]",
+					["ScriptType"] = 1,
 					["NpcNames"] = {
 					},
-					["ScriptType"] = 1,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Show();\n    envTable.FixateIcon:Show();\n    \nend\n\n\n",
 				}, -- [14]
 				{
 					["Enabled"] = true,
@@ -419,7 +419,9 @@ PlaterDB = {
 					["Icon"] = 841383,
 					["Author"] = "Tecno-Azralon",
 					["ConstructorCode"] = "--todo: add npc ids for multilanguage support\n\nfunction (self, unitId, unitFrame, envTable)\n    \n    --settings\n    envTable.TextAboveNameplate = \"** On You **\"\n    envTable.NameplateColor = \"green\"\n    \n    --label to show the text above the nameplate\n    envTable.FixateTarget = Plater:CreateLabel (unitFrame);\n    envTable.FixateTarget:SetPoint (\"bottom\", unitFrame.healthBar, \"top\", 0, 30);\n    \n    --the spell casted by the npc in the trigger list needs to be in the list below as well\n    local spellList = {\n        [268074] = \"Dark Purpose\", --G'huun Mythic Add\n        [260954] = \"Iron Gaze\", --Sergeant Bainbridge - Siege of Boralus\n        [257739] = \"Blind Rage\", --Blacktooth Scrapper - Freehold\n        [257314] = \"Black Powder Bomb\", --Irontide Grenadier - Freehold\n        [266107] = \"Thirst For Blood\", --Feral Bloodswarmer - The Underrot\n        [257582] = \"Raging Gaze\", --Earthrager - The MOTHERLODE!!\n        [262377] = \"Seek and Destroy\", --Crawler Mine - The MOTHERLODE!!\n        [257407] = \"Pursuit\", --Rezan - Atal'Dazar\n        --[] = \"\" --       \n        \n    }\n    \n    --build the list with localized spell names\n    envTable.FixateDebuffs = {}\n    for spellID, enUSSpellName in pairs (spellList) do\n        local localizedSpellName = GetSpellInfo (spellID)\n        envTable.FixateDebuffs [localizedSpellName or enUSSpellName] = true\n    end\n    \n    --debug - smuggled crawg\n    envTable.FixateDebuffs [\"Jagged Maw\"] = true\n    \nend\n\n--[=[\nNpcIDs:\n136461: Spawn of G'huun (mythic uldir G'huun)\n\n--]=]\n\n\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["Desc"] = "When an enemy places a debuff and starts to chase you. This script changes the nameplate color and place your name above the nameplate as well.",
+					["Time"] = 1543250950,
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --swap this to true when it is fixated\n    local isFixated = false\n    \n    --check the debuffs the player has and see if any of these debuffs has been placed by this unit\n    for debuffId = 1, 40 do\n        local name, texture, count, debuffType, duration, expirationTime, caster = UnitDebuff (\"player\", debuffId)\n        \n        --cancel the loop if there's no more debuffs on the player\n        if (not name) then \n            break \n        end\n        \n        --check if the owner of the debuff is this unit\n        if (envTable.FixateDebuffs [name] and caster and UnitIsUnit (caster, unitId)) then\n            --the debuff the player has, has been placed by this unit, set the name above the unit name\n            envTable.FixateTarget:SetText (envTable.TextAboveNameplate)\n            envTable.FixateTarget:Show()\n            Plater.SetNameplateColor (unitFrame,  envTable.NameplateColor)\n            isFixated = true\n            \n            if (not envTable.IsFixated) then\n                envTable.IsFixated = true\n                Plater.FlashNameplateBody (unitFrame, \"fixate\", .2)\n            end\n        end\n        \n    end\n    \n    --check if the nameplate color is changed but isn't fixated any more\n    if (not isFixated and envTable.IsFixated) then\n        --refresh the nameplate color\n        Plater.RefreshNameplateColor (unitFrame)\n        --reset the text\n        envTable.FixateTarget:SetText (\"\")\n        \n        envTable.IsFixated = false\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 					["SpellIds"] = {
 						"spawn of g'huun", -- [1]
 						"smuggled crawg", -- [2]
@@ -431,11 +433,9 @@ PlaterDB = {
 						"crawler mine", -- [8]
 						"rezan", -- [9]
 					},
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --swap this to true when it is fixated\n    local isFixated = false\n    \n    --check the debuffs the player has and see if any of these debuffs has been placed by this unit\n    for debuffId = 1, 40 do\n        local name, texture, count, debuffType, duration, expirationTime, caster = UnitDebuff (\"player\", debuffId)\n        \n        --cancel the loop if there's no more debuffs on the player\n        if (not name) then \n            break \n        end\n        \n        --check if the owner of the debuff is this unit\n        if (envTable.FixateDebuffs [name] and caster and UnitIsUnit (caster, unitId)) then\n            --the debuff the player has, has been placed by this unit, set the name above the unit name\n            envTable.FixateTarget:SetText (envTable.TextAboveNameplate)\n            envTable.FixateTarget:Show()\n            Plater.SetNameplateColor (unitFrame,  envTable.NameplateColor)\n            isFixated = true\n            \n            if (not envTable.IsFixated) then\n                envTable.IsFixated = true\n                Plater.FlashNameplateBody (unitFrame, \"fixate\", .2)\n            end\n        end\n        \n    end\n    \n    --check if the nameplate color is changed but isn't fixated any more\n    if (not isFixated and envTable.IsFixated) then\n        --refresh the nameplate color\n        Plater.RefreshNameplateColor (unitFrame)\n        --reset the text\n        envTable.FixateTarget:SetText (\"\")\n        \n        envTable.IsFixated = false\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-					["Name"] = "Fixate On You [Plater]",
 					["PlaterCore"] = 1,
-					["Time"] = 1543250950,
-					["Desc"] = "When an enemy places a debuff and starts to chase you. This script changes the nameplate color and place your name above the nameplate as well.",
+					["Name"] = "Fixate On You [Plater]",
+					["ScriptType"] = 3,
 					["NpcNames"] = {
 						"smuggled crawg", -- [1]
 						"sergeant bainbridge", -- [2]
@@ -447,7 +447,7 @@ PlaterDB = {
 						"rezan", -- [8]
 						"136461", -- [9]
 					},
-					["ScriptType"] = 3,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
 				}, -- [15]
 			},
 			["aura_timer_text_color"] = {
@@ -572,7 +572,7 @@ PlaterDB = {
 						0, -- [3]
 					},
 					["actorname_text_size"] = 11,
-					["power_percent_text_font"] = "Accidental Presidency",
+					["percent_text_enabled"] = true,
 					["actorname_friend_color"] = {
 						0, -- [1]
 						[3] = 0.9294117647058824,
@@ -588,7 +588,7 @@ PlaterDB = {
 						[3] = 0.03137254901960784,
 					},
 					["quest_enabled"] = true,
-					["big_actorname_text_font"] = "Accidental Presidency",
+					["power_percent_text_font"] = "Accidental Presidency",
 					["health_incombat"] = {
 						120, -- [1]
 						16, -- [2]
@@ -603,11 +603,10 @@ PlaterDB = {
 					},
 					["spellname_text_size"] = 11,
 					["percent_show_health"] = true,
-					["percent_text_enabled"] = true,
+					["big_actorname_text_font"] = "Accidental Presidency",
 					["level_text_enabled"] = true,
 				},
 				["friendlynpc"] = {
-					["big_actorname_text_size"] = 10,
 					["spellpercent_text_font"] = "Accidental Presidency",
 					["level_text_size"] = 8,
 					["cast"] = {
@@ -618,6 +617,7 @@ PlaterDB = {
 						["x"] = 2,
 						["side"] = 5,
 					},
+					["enabled"] = false,
 					["spellname_text_outline"] = "OUTLINE",
 					["level_text_font"] = "Accidental Presidency",
 					["actorname_text_font"] = "Accidental Presidency",
@@ -628,7 +628,7 @@ PlaterDB = {
 						0, -- [3]
 					},
 					["big_actortitle_text_font"] = "Accidental Presidency",
-					["spellpercent_text_size"] = 11,
+					["percent_text_ooc"] = true,
 					["level_text_anchor"] = {
 						["y"] = 0,
 						["x"] = 2,
@@ -644,7 +644,7 @@ PlaterDB = {
 					["percent_text_anchor"] = {
 						["side"] = 11,
 					},
-					["percent_show_health"] = true,
+					["relevance_state"] = 3,
 					["spellname_text_font"] = "Accidental Presidency",
 					["quest_color_neutral"] = {
 						1, -- [1]
@@ -652,22 +652,23 @@ PlaterDB = {
 						0, -- [3]
 					},
 					["actorname_text_size"] = 11,
-					["power_percent_text_font"] = "Accidental Presidency",
-					["big_actortitle_text_size"] = 10,
-					["percent_text_ooc"] = true,
-					["level_text_alpha"] = 0.5,
+					["percent_text_enabled"] = true,
+					["spellpercent_text_size"] = 11,
+					["big_actorname_text_size"] = 10,
+					["percent_show_health"] = true,
 					["spellpercent_text_enabled"] = true,
+					["big_actortitle_text_size"] = 10,
 					["percent_text_font"] = "Accidental Presidency",
 					["buff_frame_y_offset"] = 12,
-					["big_actorname_text_font"] = "Accidental Presidency",
-					["relevance_state"] = 3,
+					["spellname_text_size"] = 11,
 					["health"] = {
 						120, -- [1]
 						14, -- [2]
 					},
+					["big_actorname_text_font"] = "Accidental Presidency",
+					["level_text_alpha"] = 0.5,
 					["percent_text_size"] = 10,
-					["percent_text_enabled"] = true,
-					["spellname_text_size"] = 11,
+					["power_percent_text_font"] = "Accidental Presidency",
 					["level_text_enabled"] = true,
 				},
 				["enemyplayer"] = {
@@ -782,7 +783,7 @@ PlaterDB = {
 			["aura_alpha"] = 1,
 			["use_ui_parent"] = true,
 			["aura_show_defensive_cd"] = true,
-			["show_health_prediction"] = false,
+			["pet_width_scale"] = 0.8999999761581421,
 			["cast_statusbar_bgcolor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -791,57 +792,178 @@ PlaterDB = {
 			},
 			["first_run2"] = true,
 			["aura_width_personal"] = 23,
-			["color_override_colors"] = {
-				[3] = {
-					nil, -- [1]
-					0.2784313, -- [2]
-					0.2078431, -- [3]
-				},
-			},
 			["npc_cache"] = {
-				[136181] = {
-					"火山", -- [1]
+				[147948] = {
+					"凝结的艾泽里特", -- [1]
 					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[130639] = {
-					"钳颚咀嚼者", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[153119] = {
-					"小型虚空元素", -- [1]
-					"奥格瑞玛的惊魂幻象", -- [2]
-				},
-				[153065] = {
-					"虚缚破坏者", -- [1]
-					"奥格瑞玛的惊魂幻象", -- [2]
-				},
-				[135895] = {
-					"灼光火花", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[161815] = {
-					"克熙尔唤虚者", -- [1]
-					"心之秘室", -- [2]
 				},
 				[156146] = {
 					"虚缚持盾卫士", -- [1]
 					"奥格瑞玛的惊魂幻象", -- [2]
 				},
-				[152089] = {
-					"萨尔", -- [1]
+				[156406] = {
+					"虚缚荣誉卫兵", -- [1]
 					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[130639] = {
+					"钳颚咀嚼者", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
 				},
 				[161273] = {
 					"深渊之嗣", -- [1]
 					"心之秘室", -- [2]
 				},
-				[124581] = {
-					"脊壳钳嘴龟", -- [1]
+				[138428] = {
+					"怨鳍侍从", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[158565] = {
+					"纳罗斯", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[135893] = {
+					"燃烬卫士", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[157825] = {
+					"疯狂的折磨者", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[151785] = {
+					"折虚巨龙杀手", -- [1]
+					"Eastern Kingdoms - Vermillion Redoubt - HoA Scenario", -- [2]
+				},
+				[135925] = {
+					"爆烈之焰", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[151872] = {
+					"恐惧之握", -- [1]
+					"Emerald Dream - HoA Scenario", -- [2]
+				},
+				[140792] = {
+					"断喙拾骨者", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[135894] = {
+					"火元素", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[152479] = {
+					"折虚雏龙", -- [1]
+					"Eastern Kingdoms - Vermillion Redoubt - HoA Scenario", -- [2]
+				},
+				[145061] = {
+					"尖啸的夜翼鸦", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[151798] = {
+					"维克修娜", -- [1]
+					"Eastern Kingdoms - Vermillion Redoubt - HoA Scenario", -- [2]
+				},
+				[153141] = {
+					"未知目标", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[158567] = {
+					"被折磨的库卡隆横扫者", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				["144942"] = {
+					"Spark Bot", -- [1]
+					"Battle of Dazar'alor", -- [2]
+				},
+				[135895] = {
+					"灼光火花", -- [1]
 					"Whispering Reef (Islands 10)", -- [2]
 				},
 				[152669] = {
 					"虚空液球", -- [1]
 					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[156268] = {
+					"未知目标", -- [1]
+					"心之秘室", -- [2]
+				},
+				[152162] = {
+					"折虚击天战士", -- [1]
+					"Eastern Kingdoms - Vermillion Redoubt - HoA Scenario", -- [2]
+				},
+				[152699] = {
+					"虚缚狂战士", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[122266] = {
+					"脊壳龟", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[154347] = {
+					"折虚腐蚀者", -- [1]
+					"Eastern Kingdoms - Vermillion Redoubt - HoA Scenario", -- [2]
+				},
+				[153943] = {
+					"屠戮者西克沃斯", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[151755] = {
+					"暗影猎犬", -- [1]
+					"Emerald Dream - HoA Scenario", -- [2]
+				},
+				[157594] = {
+					"小型虚空元素", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[161813] = {
+					"克熙尔刺客", -- [1]
+					"心之秘室", -- [2]
+				},
+				[141283] = {
+					"库尔提拉斯戟兵", -- [1]
+					"围攻伯拉勒斯", -- [2]
+				},
+				[153130] = {
+					"巨型虚空元素", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[152135] = {
+					"折虚织法者", -- [1]
+					"Eastern Kingdoms - Vermillion Redoubt - HoA Scenario", -- [2]
+				},
+				[153065] = {
+					"虚缚破坏者", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[151836] = {
+					"虚空恐魔", -- [1]
+					"Emerald Dream - HoA Scenario", -- [2]
+				},
+				[132755] = {
+					"断喙食腐鸟", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[152089] = {
+					"萨尔", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[153119] = {
+					"小型虚空元素", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[151742] = {
+					"折虚入侵者", -- [1]
+					"Eastern Kingdoms - Vermillion Redoubt - HoA Scenario", -- [2]
+				},
+				[136181] = {
+					"火山", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[124581] = {
+					"脊壳钳嘴龟", -- [1]
+					"Whispering Reef (Islands 10)", -- [2]
+				},
+				[141495] = {
+					"库尔提拉斯步兵", -- [1]
+					"围攻伯拉勒斯", -- [2]
 				},
 				[153097] = {
 					"虚缚萨满祭司", -- [1]
@@ -851,72 +973,36 @@ PlaterDB = {
 					"无面毁伤者", -- [1]
 					"心之秘室", -- [2]
 				},
-				[135931] = {
-					"灰岩", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
+				[152987] = {
+					"无面碎心者", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
 				},
-				[147932] = {
-					"焦躁的艾泽里特裂片", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
+				[161815] = {
+					"克熙尔唤虚者", -- [1]
+					"心之秘室", -- [2]
 				},
-				[135894] = {
-					"火元素", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
+				[153244] = {
+					"湮灭元素", -- [1]
+					"奥格瑞玛的惊魂幻象", -- [2]
+				},
+				[151752] = {
+					"虚空群居兽", -- [1]
+					"Emerald Dream - HoA Scenario", -- [2]
 				},
 				[152704] = {
 					"蠕行腐蚀", -- [1]
 					"奥格瑞玛的惊魂幻象", -- [2]
 				},
-				[145061] = {
-					"尖啸的夜翼鸦", -- [1]
+				[151754] = {
+					"虚空怨灵", -- [1]
+					"Emerald Dream - HoA Scenario", -- [2]
+				},
+				[147932] = {
+					"焦躁的艾泽里特裂片", -- [1]
 					"Whispering Reef (Islands 10)", -- [2]
 				},
-				[147948] = {
-					"凝结的艾泽里特", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[135893] = {
-					"燃烬卫士", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[161813] = {
-					"克熙尔刺客", -- [1]
-					"心之秘室", -- [2]
-				},
-				[156268] = {
-					"未知目标", -- [1]
-					"心之秘室", -- [2]
-				},
-				[153141] = {
-					"未知目标", -- [1]
-					"奥格瑞玛的惊魂幻象", -- [2]
-				},
-				[132755] = {
-					"断喙食腐鸟", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[156406] = {
-					"虚缚荣誉卫兵", -- [1]
-					"奥格瑞玛的惊魂幻象", -- [2]
-				},
-				[138428] = {
-					"怨鳍侍从", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[122266] = {
-					"脊壳龟", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				[140792] = {
-					"断喙拾骨者", -- [1]
-					"Whispering Reef (Islands 10)", -- [2]
-				},
-				["144942"] = {
-					"Spark Bot", -- [1]
-					"Battle of Dazar'alor", -- [2]
-				},
-				[135925] = {
-					"爆烈之焰", -- [1]
+				[135931] = {
+					"灰岩", -- [1]
 					"Whispering Reef (Islands 10)", -- [2]
 				},
 			},
@@ -1791,6 +1877,13 @@ PlaterDB = {
 						["frequency"] = 50,
 					},
 				},
+				[162243] = {
+					{
+						["fade_out"] = 0.08999999612569809,
+						["scaleX"] = 0.09999847412109375,
+						["fade_in"] = 0.009999999776482582,
+					}, -- [1]
+				},
 				["86040"] = {
 					["1"] = {
 						["scaleY"] = 1,
@@ -2372,12 +2465,15 @@ PlaterDB = {
 				},
 			},
 			["number_region"] = "eastasia",
-			["aggro_modifies"] = {
-				["actor_name_color"] = true,
-				["border_color"] = true,
-			},
+			["health_selection_overlay_alpha"] = 0.099999994039535,
 			["minor_height_scale"] = 0.94999998807907,
-			["health_statusbar_texture"] = "DGround",
+			["color_override_colors"] = {
+				[3] = {
+					nil, -- [1]
+					0.2784313, -- [2]
+					0.2078431, -- [3]
+				},
+			},
 			["hook_data"] = {
 				{
 					["Enabled"] = true,
@@ -3025,6 +3121,145 @@ PlaterDB = {
 					["Icon"] = "Interface\\Buttons\\UI-Quickslot2",
 					["PlaterCore"] = 1,
 				}, -- [15]
+				{
+					["Enabled"] = true,
+					["Revision"] = 215,
+					["semver"] = "",
+					["HooksTemp"] = {
+						["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable)\n    \n    local buffSpecialGlow = true\n    \n    \n    -- functions --\n    local auraContainers = {unitFrame.BuffFrame.PlaterBuffList}\n    \n    if (Plater.db.profile.buffs_on_aura2) then\n        auraContainers [2] = unitFrame.BuffFrame2.PlaterBuffList\n    end\n    \n    for containerID = 1, #auraContainers do\n        \n        local auraContainer = auraContainers [containerID]\n        \n        for index, auraIcon in ipairs (auraContainer) do\n            if not Plater.StartGlow then\n                auraIcon.purgeGlowEffect = auraIcon.purgeGlowEffect or Plater.CreateIconGlow (auraIcon)\n                if (auraIcon:IsShown() and auraIcon.CanStealOrPurge) then\n                    auraIcon.purgeGlowEffect:SetColor( envTable.AntsColor, envTable.GlowColor)\n                    auraIcon.purgeGlowEffect:Show()\n                else\n                    auraIcon.purgeGlowEffect:Hide()\n                end\n            else\n                if (auraIcon:IsShown() and auraIcon.CanStealOrPurge) then\n                    Plater.StartGlow(auraIcon, envTable.AntsColor, envTable.options)\n                else\n                    Plater.StopGlow(auraIcon)\n                end                \n            end\n        end\n        \n    end\n    \n    if buffSpecialGlow then\n        for _, auraIcon in ipairs (unitFrame.ExtraIconFrame.IconPool) do\n            if auraIcon:IsShown() then\n                local canStealOrPurge = auraIcon.canStealOrPurge\n                \n                if not Plater.StartGlow then\n                    auraIcon.purgeGlowEffect = auraIcon.purgeGlowEffect or Plater.CreateIconGlow (auraIcon)\n                    if (auraIcon:IsShown() and canStealOrPurge) then\n                        auraIcon.purgeGlowEffect:SetColor( envTable.AntsColor, envTable.GlowColor)\n                        auraIcon.purgeGlowEffect:Show()\n                    else\n                        auraIcon.purgeGlowEffect:Hide()\n                    end\n                else\n                    if (auraIcon:IsShown() and canStealOrPurge) then\n                        Plater.StartGlow(auraIcon, envTable.AntsColor, envTable.options)\n                    else\n                        Plater.StopGlow(auraIcon)\n                    end                \n                end\n            end\n        end\n    end\n    \nend",
+						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    -- settings:\n    \n    -- for old-fashioned glows:\n    envTable.GlowColor = \"orange\"\n    envTable.AntsColor = \"red\"\n    \n    -- for the LibCustomGlow implementation (default):\n    envTable.options = {\n        glowType = \"pixel\",\n        color = \"red\", -- all plater color types accepted, from lib: {r,g,b,a}, color of lines and opacity, from 0 to 1. Defaul value is {0.95, 0.95, 0.32, 1}\n        N = 8, -- number of lines. Defaul value is 8;\n        frequency = 0.25, -- frequency, set to negative to inverse direction of rotation. Default value is 0.25;\n        length = 4, -- length of lines. Default value depends on region size and number of lines;\n        th = 2, -- thickness of lines. Default value is 2;\n        xOffset = 0,\n        yOffset = 0, -- offset of glow relative to region border;\n        border = false, -- set to true to create border under lines;\n        key = \"\", -- key of glow, allows for multiple glows on one frame;\n    }\n    \nend",
+					},
+					["Time"] = 1589002141,
+					["Author"] = "Viashi-Antonidas",
+					["LoadConditions"] = {
+						["talent"] = {
+						},
+						["group"] = {
+						},
+						["class"] = {
+						},
+						["map_ids"] = {
+						},
+						["race"] = {
+						},
+						["pvptalent"] = {
+						},
+						["spec"] = {
+						},
+						["affix"] = {
+						},
+						["encounter_ids"] = {
+						},
+						["role"] = {
+						},
+					},
+					["Desc"] = "Adds a glow to the aura if you can steal or purge the buff.",
+					["Hooks"] = {
+						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    -- settings:\n    \n    -- for old-fashioned glows:\n    envTable.GlowColor = \"orange\"\n    envTable.AntsColor = \"red\"\n    \n    -- for the LibCustomGlow implementation (default):\n    envTable.options = {\n        glowType = \"pixel\",\n        color = \"red\", -- all plater color types accepted, from lib: {r,g,b,a}, color of lines and opacity, from 0 to 1. Defaul value is {0.95, 0.95, 0.32, 1}\n        N = 8, -- number of lines. Defaul value is 8;\n        frequency = 0.25, -- frequency, set to negative to inverse direction of rotation. Default value is 0.25;\n        length = 4, -- length of lines. Default value depends on region size and number of lines;\n        th = 2, -- thickness of lines. Default value is 2;\n        xOffset = 0,\n        yOffset = 0, -- offset of glow relative to region border;\n        border = false, -- set to true to create border under lines;\n        key = \"\", -- key of glow, allows for multiple glows on one frame;\n    }\n    \nend",
+						["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable)\n    \n    local buffSpecialGlow = true\n    \n    \n    -- functions --\n    local auraContainers = {unitFrame.BuffFrame.PlaterBuffList}\n    \n    if (Plater.db.profile.buffs_on_aura2) then\n        auraContainers [2] = unitFrame.BuffFrame2.PlaterBuffList\n    end\n    \n    for containerID = 1, #auraContainers do\n        \n        local auraContainer = auraContainers [containerID]\n        \n        for index, auraIcon in ipairs (auraContainer) do\n            if not Plater.StartGlow then\n                auraIcon.purgeGlowEffect = auraIcon.purgeGlowEffect or Plater.CreateIconGlow (auraIcon)\n                if (auraIcon:IsShown() and auraIcon.CanStealOrPurge) then\n                    auraIcon.purgeGlowEffect:SetColor( envTable.AntsColor, envTable.GlowColor)\n                    auraIcon.purgeGlowEffect:Show()\n                else\n                    auraIcon.purgeGlowEffect:Hide()\n                end\n            else\n                if (auraIcon:IsShown() and auraIcon.CanStealOrPurge) then\n                    Plater.StartGlow(auraIcon, envTable.AntsColor, envTable.options)\n                else\n                    Plater.StopGlow(auraIcon)\n                end                \n            end\n        end\n        \n    end\n    \n    if buffSpecialGlow then\n        for _, auraIcon in ipairs (unitFrame.ExtraIconFrame.IconPool) do\n            if auraIcon:IsShown() then\n                local canStealOrPurge = auraIcon.canStealOrPurge\n                \n                if not Plater.StartGlow then\n                    auraIcon.purgeGlowEffect = auraIcon.purgeGlowEffect or Plater.CreateIconGlow (auraIcon)\n                    if (auraIcon:IsShown() and canStealOrPurge) then\n                        auraIcon.purgeGlowEffect:SetColor( envTable.AntsColor, envTable.GlowColor)\n                        auraIcon.purgeGlowEffect:Show()\n                    else\n                        auraIcon.purgeGlowEffect:Hide()\n                    end\n                else\n                    if (auraIcon:IsShown() and canStealOrPurge) then\n                        Plater.StartGlow(auraIcon, envTable.AntsColor, envTable.options)\n                    else\n                        Plater.StopGlow(auraIcon)\n                    end                \n                end\n            end\n        end\n    end\n    \nend",
+					},
+					["Prio"] = 99,
+					["Name"] = "Steal/Purge Aura Glow",
+					["PlaterCore"] = 1,
+					["LastHookEdited"] = "Constructor",
+					["url"] = "",
+					["Icon"] = "INTERFACE\\ICONS\\Ability_Creature_Cursed_04",
+					["version"] = -1,
+				}, -- [16]
+				{
+					["Enabled"] = true,
+					["Revision"] = 71,
+					["semver"] = "",
+					["HooksTemp"] = {
+						["Player Logon"] = "function (self, unitId, unitFrame, envTable)\n    \n    -- /RELOAD AFTER IMPORTING OR CHANGING THE SCRIPT\n    -- SELECT THE INDICATOR AT THE TARGET TAB\n    \n    Plater.TargetIndicators    [\"Double Arrows\"] = {\n        path = [[Interface\\AddOns\\Plater\\media\\arrow_double_right_64]],\n        coords = {\n            {0, 1, 0, 1}, \n            {1, 0, 0, 1}\n        },\n        desaturated = false,\n        width = 20,\n        height = 16,\n        x = 28,\n        y = 0,\n        blend = \"ADD\",\n        color = \"gold\",\n    }    \n    \nend",
+					},
+					["Time"] = 1589002145,
+					["Author"] = "�r��ne-Kel'thuzad",
+					["LoadConditions"] = {
+						["talent"] = {
+						},
+						["group"] = {
+						},
+						["class"] = {
+						},
+						["map_ids"] = {
+						},
+						["role"] = {
+						},
+						["pvptalent"] = {
+						},
+						["spec"] = {
+						},
+						["affix"] = {
+						},
+						["encounter_ids"] = {
+						},
+						["race"] = {
+						},
+					},
+					["Desc"] = "Adds double arrow as a target indicators option",
+					["Hooks"] = {
+						["Player Logon"] = "function (self, unitId, unitFrame, envTable)\n    \n    -- /RELOAD AFTER IMPORTING OR CHANGING THE SCRIPT\n    -- SELECT THE INDICATOR AT THE TARGET TAB\n    \n    Plater.TargetIndicators    [\"Double Arrows\"] = {\n        path = [[Interface\\AddOns\\Plater\\media\\arrow_double_right_64]],\n        coords = {\n            {0, 1, 0, 1}, \n            {1, 0, 0, 1}\n        },\n        desaturated = false,\n        width = 20,\n        height = 16,\n        x = 28,\n        y = 0,\n        blend = \"ADD\",\n        color = \"gold\",\n    }    \n    \nend",
+					},
+					["Prio"] = 99,
+					["Name"] = "Double Arrow Target",
+					["PlaterCore"] = 1,
+					["LastHookEdited"] = "Player Logon",
+					["url"] = "",
+					["Icon"] = "Interface\\AddOns\\Plater\\media\\arrow_double_right_64",
+					["version"] = -1,
+				}, -- [17]
+				{
+					["Enabled"] = true,
+					["Revision"] = 60,
+					["semver"] = "",
+					["HooksTemp"] = {
+						["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.CheckForQuest (unitFrame)\n    \nend\n\n\n",
+						["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    unitFrame.ExtraQuestMarker22154:Hide()\n    \nend\n\n\n",
+						["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (unitFrame.ExtraQuestMarker22154) then\n        \n        unitFrame.ExtraQuestMarker22154:Hide()\n        \n    end    \n    \nend\n\n\n",
+						["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.CheckForQuest (unitFrame)\n    \nend\n\n\n",
+						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Texture = [[Interface\\OPTIONSFRAME\\UI-OptionsFrame-NewFeatureIcon]]\n    envTable.Size = 24\n    envTable.Anchor = {\n        side = 6, --right side\n        x = -80,\n        y = 36\n    }\n    \n    if (not unitFrame.ExtraQuestMarker22154) then\n        unitFrame.ExtraQuestMarker22154 = unitFrame:CreateTexture (nil, \"overlay\")\n        local texture = unitFrame.ExtraQuestMarker22154\n        \n        texture:SetTexture (envTable.Texture)\n        texture:SetSize (envTable.Size, envTable.Size)\n        Plater.SetAnchor (texture, envTable.Anchor)\n    end\n    \n    function envTable.CheckForQuest (unitFrame)\n        if (unitFrame.namePlateIsQuestObjective) then\n            unitFrame.ExtraQuestMarker22154:Show()\n            \n        else\n            unitFrame.ExtraQuestMarker22154:Hide()\n            \n        end\n    end\nend\n\n\n\n\n\n\n",
+					},
+					["Name"] = "Extra Quest Icon",
+					["Author"] = "Izimode-Azralon",
+					["PlaterCore"] = 1,
+					["Desc"] = "Show an extra icon if the unit is a part of a quest you're current doing. You may adjust where the exclamation mark is shown in the Constructor.",
+					["Hooks"] = {
+						["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.CheckForQuest (unitFrame)\n    \nend\n\n\n",
+						["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    unitFrame.ExtraQuestMarker22154:Hide()\n    \nend\n\n\n",
+						["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (unitFrame.ExtraQuestMarker22154) then\n        \n        unitFrame.ExtraQuestMarker22154:Hide()\n        \n    end    \n    \nend\n\n\n",
+						["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.CheckForQuest (unitFrame)\n    \nend\n\n\n",
+						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.Texture = [[Interface\\OPTIONSFRAME\\UI-OptionsFrame-NewFeatureIcon]]\n    envTable.Size = 24\n    envTable.Anchor = {\n        side = 6, --right side\n        x = -80,\n        y = 36\n    }\n    \n    if (not unitFrame.ExtraQuestMarker22154) then\n        unitFrame.ExtraQuestMarker22154 = unitFrame:CreateTexture (nil, \"overlay\")\n        local texture = unitFrame.ExtraQuestMarker22154\n        \n        texture:SetTexture (envTable.Texture)\n        texture:SetSize (envTable.Size, envTable.Size)\n        Plater.SetAnchor (texture, envTable.Anchor)\n    end\n    \n    function envTable.CheckForQuest (unitFrame)\n        if (unitFrame.namePlateIsQuestObjective) then\n            unitFrame.ExtraQuestMarker22154:Show()\n            \n        else\n            unitFrame.ExtraQuestMarker22154:Hide()\n            \n        end\n    end\nend\n\n\n\n\n\n\n",
+					},
+					["Prio"] = 99,
+					["version"] = -1,
+					["LoadConditions"] = {
+						["talent"] = {
+						},
+						["group"] = {
+						},
+						["class"] = {
+						},
+						["map_ids"] = {
+						},
+						["role"] = {
+						},
+						["pvptalent"] = {
+						},
+						["race"] = {
+						},
+						["affix"] = {
+						},
+						["encounter_ids"] = {
+						},
+						["spec"] = {
+						},
+					},
+					["LastHookEdited"] = "Constructor",
+					["url"] = "",
+					["Icon"] = "Interface\\OPTIONSFRAME\\UI-OptionsFrame-NewFeatureIcon",
+					["Time"] = 1589007188,
+				}, -- [18]
 			},
 			["disable_omnicc_on_auras"] = true,
 			["aura_width"] = 22,
@@ -3035,7 +3270,7 @@ PlaterDB = {
 				0.47450980392157, -- [3]
 				0.79000000655651, -- [4]
 			},
-			["pet_width_scale"] = 0.8999999761581421,
+			["range_check_enabled"] = false,
 			["quick_hide"] = true,
 			["hook_data_trash"] = {
 				{
@@ -3157,7 +3392,10 @@ PlaterDB = {
 			["extra_icon_anchor"] = {
 				["y"] = 0,
 			},
-			["range_check_alpha"] = 0.5,
+			["resources"] = {
+				["y_offset_target"] = 17.79999542236328,
+				["y_offset_target_withauras"] = 36,
+			},
 			["extra_icon_auras"] = {
 				277242, -- [1]
 			},
@@ -3165,12 +3403,9 @@ PlaterDB = {
 			["semver"] = "1.0.2",
 			["cast_statusbar_texture"] = "PlaterTexture",
 			["aura_cooldown_edge_texture"] = "Interface\\GLUES\\loadingOld",
-			["resources"] = {
-				["y_offset_target"] = 17.79999542236328,
-				["y_offset_target_withauras"] = 36,
-			},
 			["pet_height_scale"] = 0.94999998807907,
 			["first_run3"] = true,
+			["transparency_behavior"] = 4,
 			["ui_parent_scale_tune"] = 1.124999991618097,
 			["aura_stack_color"] = {
 				nil, -- [1]
@@ -3182,16 +3417,7 @@ PlaterDB = {
 			["indicator_raidmark_anchor"] = {
 				["x"] = -34.02999877929688,
 			},
-			["aura_tracker"] = {
-				["buff_banned"] = {
-					["206150"] = true,
-					["61574"] = true,
-					["61573"] = true,
-				},
-				["buff_tracked"] = {
-					["209859"] = true,
-				},
-			},
+			["health_statusbar_texture"] = "DGround",
 			["hook_auto_imported"] = {
 				["Targetting Alpha"] = 3,
 				["Dont Have Aura"] = 1,
@@ -3202,9 +3428,9 @@ PlaterDB = {
 				["Blockade Encounter"] = 1,
 				["Aura Reorder"] = 1,
 				["Reorder Nameplate"] = 3,
+				["Hide Neutral Units"] = 1,
 				["Combo Points"] = 3,
 				["Extra Border"] = 2,
-				["Hide Neutral Units"] = 1,
 				["Target Color"] = 3,
 				["Execute Range"] = 1,
 				["Attacking Specific Unit"] = 1,
@@ -3213,225 +3439,15 @@ PlaterDB = {
 			["update_throttle"] = 0.24999998509884,
 			["minor_width_scale"] = 0.89999997615814,
 			["captured_spells"] = {
-				[291295] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
+				[164815] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[167898] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[106839] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
-				},
-				[228128] = {
-					["source"] = "封印小氼-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[270070] = {
-					["source"] = "冷月-克尔苏加德",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[104282] = {
-					["source"] = "估计孤寂-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[278767] = {
-					["source"] = "清风池水-基尔加丹",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[254472] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "粉红顽皮牛丶-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[295137] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[223143] = {
-					["source"] = "线芯-达文格尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[305369] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "虚缚荣誉卫兵",
-					["npcID"] = 156406,
-				},
-				[23881] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[304603] = {
-					["source"] = "雾恰烧卖-格瑞姆巴托",
 					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
+					["source"] = "比昂格-埃克索图斯",
 					["npcID"] = 0,
 				},
-				[257415] = {
-					["source"] = "猥琐的脆皮-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[254474] = {
-					["source"] = "无头騎士-血牙魔王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[527] = {
+				[298286] = {
+					["source"] = "西北丨憨坦-鬼雾峰",
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫栗子-冰风岗",
-					["npcID"] = 0,
-				},
-				[258822] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "补刀者云翼",
-					["npcID"] = 140800,
-				},
-				[303837] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "兴玲-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[274426] = {
-					["source"] = "今生为爱狂-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[285424] = {
-					["source"] = "麦麦兜-鬼雾峰",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[52174] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
-					["npcID"] = 0,
-				},
-				[304606] = {
-					["source"] = "乄西风",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[272126] = {
-					["source"] = "Twjshu-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[156779] = {
-					["source"] = "黑橙蓝绿紫-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[102558] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[328136] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[190411] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[308189] = {
-					["source"] = "锦丨鲤-格瑞姆巴托",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[312793] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "奥蕾丽亚-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[299239] = {
-					["source"] = "单纯丨可乐-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[312794] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "茉莉清丶龙龙-奥拉基尔",
-					["npcID"] = 0,
-				},
-				[305378] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "虚缚荣誉卫兵",
-					["npcID"] = 156406,
-				},
-				[304611] = {
-					["source"] = "乄西风",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[68992] = {
-					["source"] = "估计孤寂-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[289523] = {
-					["source"] = "灰烬冰霜-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[257420] = {
-					["source"] = "你偷偷地-洛萨",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[105693] = {
-					["source"] = "恶丨魔宴灬-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[45334] = {
-					["source"] = "风起春城暮",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[222256] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "万恶罪魁-达隆米尔",
 					["npcID"] = 0,
 				},
 				[215479] = {
@@ -3440,581 +3456,46 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[139] = {
-					["source"] = "那妞真靓-自由之风",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[300526] = {
-					["source"] = "未知目标",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 154524,
-				},
-				[556] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "龟钢片-勇士岛",
-					["npcID"] = 0,
-				},
-				[294133] = {
-					["source"] = "镰仓江之鸟-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297970] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "小汤包-洛萨",
-					["npcID"] = 0,
-				},
-				[313571] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[5487] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[8936] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "看我变个熊丶-伊莫塔尔",
-					["npcID"] = 0,
-				},
-				[248473] = {
-					["source"] = "鹹濕牌士力架-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[289277] = {
-					["source"] = "解忧水果铺-利刃之拳",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[303344] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[299508] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "丷小瓢蟲灬-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[192081] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[303345] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[208705] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "仆射-格瑞姆巴托",
-					["npcID"] = 0,
-				},
-				[299510] = {
-					["source"] = "命运灬一刀-洛萨",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[299511] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "戏迷-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[203975] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[132621] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "邻家小黑初成-自由之风",
-					["npcID"] = 0,
-				},
-				[267288] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "大地之环萨满",
-					["npcID"] = 135671,
-				},
-				[212799] = {
-					["source"] = "鉴娚春-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[203720] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[285959] = {
-					["source"] = "叮当喵-洛萨",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[273428] = {
-					["source"] = "Mowang-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[108446] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "利恩阿沙克",
-					["npcID"] = 17252,
-				},
-				[262687] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "炸弹机器人9000型",
-					["npcID"] = 133660,
-				},
-				[299516] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "柠檬小脸-洛萨",
-					["npcID"] = 0,
-				},
-				[318187] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[317420] = {
-					["source"] = "风舞凌云-基尔加丹",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[585] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫栗子-冰风岗",
-					["npcID"] = 0,
-				},
-				[204490] = {
-					["source"] = "十里扬州路",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[24858] = {
-					["source"] = "镹伍贰柒-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[268062] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[292359] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "渔舟晚-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[253595] = {
-					["source"] = "赏金骑士-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297220] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "虚缚萨满祭司",
-					["npcID"] = 153097,
-				},
-				[292361] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[223929] = {
-					["source"] = "坟头冒青烟-白银之手",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[292362] = {
-					["source"] = "万般皆下品-红龙军团",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[300802] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[203981] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[292363] = {
-					["type"] = "BUFF",
-					["source"] = "長夜-丽丽（四川）",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[292364] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "忆难忘-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[224186] = {
-					["source"] = "剩光守护-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[143625] = {
-					["source"] = "詩雲丶-燃烧之刃",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[192090] = {
-					["source"] = "风起春城暮",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[267558] = {
-					["source"] = "浅夏初晴-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[193753] = {
-					["source"] = "半生轻狂客-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[289298] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[221886] = {
-					["source"] = "二顺的萨满-黑翼之巢",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[235313] = {
-					["source"] = "启程狂想-燃烧之刃",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[172015] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "Taurendr-安苏",
-					["npcID"] = 0,
-				},
-				[285719] = {
-					["source"] = "王根基-熊猫酒仙",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[121557] = {
-					["source"] = "买买太冲辣-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[300809] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[278559] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "狠人是我-达文格尔",
-					["npcID"] = 0,
-				},
-				[221887] = {
-					["source"] = "奥蕾丽亚-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[101545] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "封印痴狂-基尔加丹",
-					["npcID"] = 0,
-				},
-				[285978] = {
-					["source"] = "詩雲丶-燃烧之刃",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[313088] = {
-					["source"] = "司马乄仲达-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[271401] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "补刀者云翼",
-					["npcID"] = 140800,
-				},
-				[285979] = {
-					["source"] = "寒光竹影-血色十字军",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[302348] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "为啥我爱小月-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[308742] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "倒影流年-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[285981] = {
-					["source"] = "雪月风花丶丶",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297746] = {
-					["encounterID"] = 2332,
-					["source"] = "萨尔",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 152089,
-				},
-				[298002] = {
-					["source"] = "丷凨淸丷-萨尔",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[8921] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
-				},
-				[204883] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "联盟萌-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[272940] = {
-					["source"] = "寒光竹影-血色十字军",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[294935] = {
-					["source"] = "寒光竹影-血色十字军",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297237] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "虚缚萨满祭司",
-					["npcID"] = 153097,
-				},
-				[193759] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "萨菲罗丝-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[299540] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "买买太冲辣-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[192225] = {
-					["source"] = "恶魔猎杀-冬寒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[299541] = {
+				[298287] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "楊阳洋-鬼雾峰",
 					["npcID"] = 0,
 				},
-				[273455] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "Aglaia-普罗德摩",
-					["npcID"] = 0,
-				},
-				[314631] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "洙妮美",
-					["npcID"] = 0,
-				},
-				[264760] = {
-					["source"] = "丢丢麻麻-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[264761] = {
-					["source"] = "慕容紫月-奥拉基尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311308] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "你偷偷地-洛萨",
-					["npcID"] = 0,
-				},
-				[303380] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
-					["encounterID"] = 2332,
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[72968] = {
-					["source"] = "阿嬭托莉娅-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[319237] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311309] = {
-					["source"] = "昼之羲和-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[289315] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311310] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "蓝卟萬-利刃之拳",
-					["npcID"] = 0,
-				},
-				[312845] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "克熙尔刺客",
-					["npcID"] = 161813,
-				},
-				[293664] = {
-					["source"] = "买买太冲辣-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[235450] = {
-					["source"] = "鉴娚春-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[2580] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[25771] = {
+				[315176] = {
 					["source"] = "Xiaodouding",
 					["type"] = "DEBUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[299550] = {
-					["source"] = "命运灬一刀-洛萨",
+				[299312] = {
 					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鬼魅魔王-萨尔",
 					["npcID"] = 0,
 				},
-				[305945] = {
-					["source"] = "Plutomage-鬼雾峰",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[299296] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鬼医三十八号-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[226757] = {
-					["source"] = "萝莉丶魔导师-海克泰尔",
-					["type"] = "DEBUFF",
+				[193475] = {
+					["type"] = "BUFF",
+					["source"] = "风信子-达文格尔",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[69070] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "奇奇跳跳糖-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[299298] = {
+				[183752] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[289324] = {
-					["source"] = "子曰不要学我-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[287790] = {
+				[252071] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "渔舟晚-丽丽（四川）",
+					["source"] = "挑叁拣泗-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[45181] = {
-					["source"] = "诺提雷斯-雷斧堡垒",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
+				[281403] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "魅乄舞-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[287280] = {
-					["source"] = "Lastlyze-影之哀伤",
+				[315179] = {
+					["source"] = "四核强能-奥达曼",
 					["type"] = "DEBUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
@@ -4025,100 +3506,63 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[12654] = {
-					["source"] = "萝莉丶魔导师-海克泰尔",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[131493] = {
-					["source"] = "阿森西奥-达文格尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[192106] = {
-					["source"] = "小傻满-燃烧之刃",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[245686] = {
-					["source"] = "剃刀小哥-奥拉基尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[299304] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "溜狗狗的妹妹-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[281402] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "元素活着-萨尔",
-					["npcID"] = 0,
-				},
-				[274753] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "怨鳍投叉手",
-					["npcID"] = 138427,
-				},
-				[296492] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "虚空液球",
-					["npcID"] = 152669,
-				},
-				[281403] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "魅乄舞-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[124506] = {
-					["source"] = "七夜武魂-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[8690] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Cirillaa-雷斧堡垒",
-					["npcID"] = 0,
-				},
 				[281404] = {
 					["source"] = "Plutomage-鬼雾峰",
 					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[298796] = {
-					["source"] = "圣徒降临-雷斧堡垒",
+				[299316] = {
+					["source"] = "疯狂候鸟-丽丽（四川）",
 					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[85256] = {
+					["source"] = "艾璐妮-自由之风",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[299317] = {
+					["source"] = "八丶荒-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[285500] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "神龍小飛猴-洛萨",
+					["npcID"] = 0,
+				},
+				[302388] = {
+					["type"] = "BUFF",
+					["source"] = "维克修娜",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 151798,
+				},
+				[153561] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[299318] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "余生残梦-基尔加丹",
+					["npcID"] = 0,
+				},
+				[123254] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "广岛之恋-血牙魔王",
+					["npcID"] = 0,
+				},
+				[270661] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "天蝎座的爱-丽丽（四川）",
 					["npcID"] = 0,
 				},
 				[275779] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[298286] = {
-					["source"] = "西北丨憨坦-鬼雾峰",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[326419] = {
-					["source"] = "蓝眉天使-死亡之翼",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298287] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "楊阳洋-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[190831] = {
-					["source"] = "Forvoljin-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
 				[280385] = {
@@ -4127,66 +3571,10 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[299312] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鬼魅魔王-萨尔",
-					["npcID"] = 0,
-				},
-				[315681] = {
-					["source"] = "婀娜-奥拉基尔",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[294966] = {
-					["source"] = "未知目标",
+				[301367] = {
+					["source"] = "言朱示申-甜水绿洲",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[96312] = {
-					["source"] = "战神楚留香-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[293945] = {
-					["source"] = "叶赫那拉云锦-克尔苏加德",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[299317] = {
-					["source"] = "八丶荒-鬼雾峰",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[299318] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "余生残梦-基尔加丹",
-					["npcID"] = 0,
-				},
-				[44544] = {
-					["source"] = "夏夜的寒风-血牙魔王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[315176] = {
-					["source"] = "Xiaodouding",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[252216] = {
-					["source"] = "鸟树熊猫德-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[214621] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫栗子-冰风岗",
 					["npcID"] = 0,
 				},
 				[299321] = {
@@ -4194,19 +3582,18 @@ PlaterDB = {
 					["source"] = "烟花易凉丶-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[272979] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[31687] = {
+				[79884] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "娜塔利-奥达曼",
+					["source"] = "佐尔·孤树",
+					["npcID"] = 152228,
+				},
+				[116858] = {
+					["source"] = "Urbb-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[315179] = {
-					["source"] = "四核强能-奥达曼",
+				[223929] = {
+					["source"] = "坟头冒青烟-白银之手",
 					["type"] = "DEBUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
@@ -4216,167 +3603,81 @@ PlaterDB = {
 					["source"] = "擎雨盖-洛萨",
 					["npcID"] = 0,
 				},
-				[202602] = {
-					["source"] = "战吊护你一生-格瑞姆巴托",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[280398] = {
-					["source"] = "蓝蓝之瞳-普罗德摩",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
+				[167381] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "地下城训练假人",
+					["npcID"] = 144078,
 				},
 				[299324] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "线芯-达文格尔",
 					["npcID"] = 0,
 				},
-				[273238] = {
-					["source"] = "十里扬州路",
+				[281413] = {
+					["source"] = "丿大美妞-达文格尔",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[68054] = {
-					["source"] = "基维斯",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 35642,
-				},
-				[280400] = {
-					["source"] = "Xiaodouding",
+				[221883] = {
+					["source"] = "月半方知-奥达曼",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[314671] = {
-					["source"] = "国产雷神索尔-奥达曼",
+				[224186] = {
+					["source"] = "剩光守护-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[259241] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 131265,
+				},
+				[194249] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "鹰王-洛萨",
+					["npcID"] = 0,
+				},
+				[190411] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[271194] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[165776] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "石行蜘蛛",
-					["npcID"] = 131890,
-				},
-				[251836] = {
-					["source"] = "花落乄叶相随-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[296003] = {
-					["source"] = "我是哀木涕-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[262500] = {
-					["source"] = "拉沙克·铁墙",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 133556,
-				},
-				[275544] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[213858] = {
 					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[251837] = {
-					["source"] = "拉你垫背-雷霆之王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[280149] = {
-					["source"] = "戦父裂人",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[251838] = {
-					["type"] = "BUFF",
-					["source"] = "長夜-丽丽（四川）",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[132403] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[314678] = {
-					["source"] = "国产雷神索尔-奥达曼",
+				[228537] = {
+					["source"] = "强悍如我-奥达曼",
 					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[251839] = {
-					["source"] = "Evilcjknight-死亡之翼",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[220510] = {
-					["source"] = "苔原-埃克索图斯",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[1459] = {
-					["source"] = "蓝眉天使-死亡之翼",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297034] = {
-					["source"] = "兜兜德-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297035] = {
-					["source"] = "低眉罂粟-勇士岛",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[94719] = {
+				[300351] = {
+					["source"] = "屠戮者西克沃斯",
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "德爷德啦-鬼雾峰",
-					["npcID"] = 0,
+					["npcID"] = 153943,
 				},
-				[280412] = {
-					["source"] = "风起春城暮",
+				[292675] = {
+					["source"] = "嘿丶那个戰仕-丽丽（四川）",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[287062] = {
-					["source"] = "柏小逗-丽丽（四川）",
-					["type"] = "BUFF",
+				[158940] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 140604,
 				},
-				[268904] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
+				[79886] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "佐尔·孤树",
+					["npcID"] = 152228,
+				},
+				[290119] = {
+					["source"] = "邂逅恍若-达文格尔",
+					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
 				[315195] = {
@@ -4384,649 +3685,20 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[297037] = {
-					["source"] = "未知目标",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[279902] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[268905] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[295248] = {
-					["source"] = "夏夜的寒风-血牙魔王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[313918] = {
-					["source"] = "风雷怒暴-萨格拉斯",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298829] = {
-					["source"] = "未知目标",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 152200,
-				},
-				[297039] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[313663] = {
-					["source"] = "萝莉丶魔导师-海克泰尔",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297040] = {
-					["source"] = "鬼医三十八号-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[108211] = {
-					["source"] = "暴走的鲁鲁-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[1490] = {
-					["source"] = "十里扬州路",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[89158] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "狄戎丶飒瑟-阿卡玛",
-					["npcID"] = 0,
-				},
-				[288091] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[201334] = {
-					["source"] = "顺德者昌-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[279397] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[32216] = {
-					["source"] = "擎雨盖-洛萨",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298068] = {
-					["source"] = "灬惺丶-血环",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[165658] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "石行蜘蛛",
-					["npcID"] = 131890,
-				},
-				[298836] = {
-					["source"] = "詩雲丶-燃烧之刃",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[204021] = {
-					["encounterID"] = 2332,
-					["source"] = "十里扬州路",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[298837] = {
-					["source"] = "皮皮猫丶-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[217832] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[53595] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[185736] = {
-					["source"] = "当浮一大白丶-奥特兰克",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[126755] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "圣光的师姐-洛萨",
-					["npcID"] = 0,
-				},
-				[264314] = {
-					["source"] = "丶丷",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298841] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[316744] = {
-					["source"] = "拉你垫背-雷霆之王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[307026] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "爱上夜生活-自由之风",
-					["npcID"] = 0,
-				},
-				[256453] = {
-					["source"] = "杠杠的左耳-格瑞姆巴托",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[208628] = {
-					["source"] = "錵灬-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[8220] = {
-					["source"] = "未知目标",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[231390] = {
-					["source"] = "狐乱射丶-无尽之海",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[129250] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫栗子-冰风岗",
-					["npcID"] = 0,
-				},
-				[222695] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "马里奥扬-萨尔",
-					["npcID"] = 0,
-				},
-				[270457] = {
-					["source"] = "怨鳍侍从",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 138428,
-				},
-				[136508] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Yamakasu-奥达曼",
-					["npcID"] = 0,
-				},
-				[280177] = {
-					["source"] = "水水-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[300893] = {
+				[203975] = {
 					["source"] = "风起春城暮",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[270460] = {
-					["source"] = "断岳者古鲁",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 140768,
-				},
-				[781] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "伊丽娜丝-冬寒",
-					["npcID"] = 0,
-				},
-				[12472] = {
-					["source"] = "夏夜的寒风-血牙魔王",
+				[167385] = {
+					["source"] = "地下城训练假人",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
+					["npcID"] = 144078,
 				},
-				[119085] = {
-					["source"] = "牛黑力法法-达隆米尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[5225] = {
-					["source"] = "今生为爱狂-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[783] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
-				},
-				[176151] = {
-					["source"] = "神棍大叔-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[115313] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "迦罗娜的大牛-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[194310] = {
-					["source"] = "坟头冒青烟-白银之手",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[154797] = {
-					["source"] = "迪菲亚之心-普罗德摩",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[284275] = {
-					["source"] = "Opal-勇士岛",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311129] = {
-					["source"] = "满溢困惑",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 161829,
-				},
-				[285811] = {
-					["source"] = "塔利·萨普纳波",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 133627,
-				},
-				[298343] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[284277] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "渔舟晚-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[256459] = {
-					["source"] = "主演-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[281209] = {
-					["source"] = "安心的小猫咪-国王之谷",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[288882] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298601] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "茉娅缇-萨尔",
-					["npcID"] = 0,
-				},
-				[186257] = {
-					["source"] = "諾森德的雪-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[156079] = {
-					["source"] = "小猪妞-艾欧娜尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[45062] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "涵函涵-克尔苏加德",
-					["npcID"] = 0,
-				},
-				[298604] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "恶魔福缘-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[298605] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "花寒凛-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[317020] = {
-					["source"] = "丶肉肉大魔王-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[286587] = {
-					["source"] = "柏小逗-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[257103] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "秋香专属-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[316767] = {
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298609] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "伊丽娜丝-冬寒",
-					["npcID"] = 0,
-				},
-				[316768] = {
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[207744] = {
-					["type"] = "DEBUFF",
-					["source"] = "十里扬州路",
-					["encounterID"] = 2332,
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[198793] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫咪爱吃鱼-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[312677] = {
-					["source"] = "克熙尔唤虚者",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 161815,
-				},
-				[74589] = {
-					["source"] = "随机随机-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[312678] = {
-					["source"] = "十里扬州路",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[236645] = {
-					["source"] = "水水-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[312679] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "克熙尔唤虚者",
-					["npcID"] = 161815,
-				},
-				[148540] = {
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[57723] = {
-					["source"] = "花落乄叶相随-丽丽（四川）",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[280713] = {
-					["source"] = "昼之羲和-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[316007] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "看我变个熊丶-伊莫塔尔",
-					["npcID"] = 0,
-				},
-				[273298] = {
-					["source"] = "柏小逗-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[24450] = {
-					["source"] = "未知目标",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 42718,
-				},
-				[298618] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "牛黑力法法-达隆米尔",
-					["npcID"] = 0,
-				},
-				[280205] = {
-					["source"] = "龟钢片-勇士岛",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[316522] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[277904] = {
-					["source"] = "玛蒂达尔-国王之谷",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[208772] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[33907] = {
-					["source"] = "布罗尔·熊皮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 142294,
-				},
-				[312687] = {
-					["source"] = "无面毁伤者",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 161812,
-				},
-				[268954] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
-					["encounterID"] = 2332,
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[268955] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
-					["encounterID"] = 2332,
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[285835] = {
-					["source"] = "拉沙克·铁墙",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 133556,
-				},
-				[57724] = {
-					["source"] = "小傻满-燃烧之刃",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[268956] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[285836] = {
-					["source"] = "艾泽里特提取器",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 147188,
-				},
-				[58875] = {
-					["source"] = "茉娅缇-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[185245] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[11426] = {
-					["source"] = "夏夜的寒风-血牙魔王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[285837] = {
-					["source"] = "艾泽里特提取器",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 147188,
-				},
-				[269214] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[213634] = {
-					["source"] = "Aurora-铜龙军团",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[279956] = {
-					["source"] = "坟头冒青烟-白银之手",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[313971] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "深渊之嗣",
-					["npcID"] = 161273,
-				},
-				[6788] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[2383] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[3408] = {
-					["source"] = "真的汉子-克尔苏加德",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[270241] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "燃烬卫士",
-					["npcID"] = 135893,
-				},
-				[294027] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[267685] = {
-					["source"] = "夏夜的寒风-血牙魔王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[281240] = {
-					["source"] = "恩利尔-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[317301] = {
-					["source"] = "克熙尔唤虚者",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 161815,
-				},
-				[288146] = {
-					["source"] = "冷月-克尔苏加德",
+				[196555] = {
+					["source"] = "肥藤藤脚震震-索拉丁",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
@@ -5037,20 +3709,712 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[259161] = {
-					["source"] = "哎呀取啥名-丽丽（四川）",
+				[290121] = {
+					["source"] = "丶丷",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[270246] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "火元素",
-					["npcID"] = 135894,
+				[280398] = {
+					["source"] = "蓝蓝之瞳-普罗德摩",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
 				},
-				[255070] = {
+				[288075] = {
+					["source"] = "你的騎士-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[167898] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[313663] = {
+					["source"] = "萝莉丶魔导师-海克泰尔",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298823] = {
+					["source"] = "欧皇柯基-洛萨",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[235450] = {
+					["source"] = "鉴娚春-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[23922] = {
+					["source"] = "犇気衝天-鬼雾峰",
 					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[303943] = {
+					["source"] = "Madetoheal-洛萨",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[204490] = {
+					["source"] = "十里扬州路",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[245686] = {
+					["source"] = "剃刀小哥-奥拉基尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[199373] = {
+					["source"] = "亡者大军",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 24207,
+				},
+				[280404] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[212423] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "复生的潜伏者",
+					["npcID"] = 99541,
+				},
+				[267611] = {
+					["source"] = "清风抚水-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[3561] = {
+					["source"] = "水瓶座-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[271194] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[267612] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298829] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 152200,
+				},
+				[295248] = {
+					["source"] = "夏夜的寒风-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[156132] = {
+					["source"] = "絮雪-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[45334] = {
+					["source"] = "风起春城暮",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[203981] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280409] = {
+					["source"] = "呼噜娃-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[287062] = {
+					["source"] = "柏小逗-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[5217] = {
+					["source"] = "今生为爱狂-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[5225] = {
+					["source"] = "今生为爱狂-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[271711] = {
+					["source"] = "奥利奥麦旋风-遗忘海岸",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[319304] = {
+					["source"] = "纳罗斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 158565,
+				},
+				[262500] = {
+					["source"] = "拉沙克·铁墙",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 133556,
+				},
+				[280412] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298836] = {
+					["source"] = "詩雲丶-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[279902] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298837] = {
+					["source"] = "皮皮猫丶-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297302] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "无尽饥饿图腾",
+					["npcID"] = 153141,
+				},
+				[226757] = {
+					["source"] = "萝莉丶魔导师-海克泰尔",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[288091] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[307026] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "爱上夜生活-自由之风",
+					["npcID"] = 0,
+				},
+				[207311] = {
+					["source"] = "戦父裂人",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[213708] = {
+					["source"] = "呼噜娃-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302933] = {
+					["source"] = "孤惊残雪-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[185562] = {
+					["source"] = "辉煌幻影-古尔丹",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[155625] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[295258] = {
+					["source"] = "强悍如我-奥达曼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[201427] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "人可林三-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[298841] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[204242] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "笑刀神-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[317265] = {
+					["source"] = "非法用户名-甜水绿洲",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[266091] = {
+					["source"] = "暮色天音-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[279397] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[251836] = {
+					["source"] = "花落乄叶相随-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193753] = {
+					["source"] = "半生轻狂客-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297822] = {
+					["encounterID"] = 2332,
+					["source"] = "萨尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 152089,
+				},
+				[300893] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[127230] = {
+					["source"] = "圣埃米克劳斯-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[311129] = {
+					["source"] = "满溢困惑",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 161829,
+				},
+				[5697] = {
+					["source"] = "希丝缇娜-红云台地",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[251838] = {
+					["source"] = "長夜-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[1943] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "祖达萨阿昆达-萨尔",
+					["npcID"] = 0,
+				},
+				[162794] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[1953] = {
+					["source"] = "我教你梳中分-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[251839] = {
+					["source"] = "Evilcjknight-死亡之翼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297315] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "巨型虚空元素",
+					["npcID"] = 153130,
+				},
+				[273264] = {
+					["source"] = "猪大嘴骚扁担-达文格尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[38556] = {
+					["source"] = "暗矛猎头者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 152201,
+				},
+				[300388] = {
+					["source"] = "屠戮者西克沃斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 153943,
+				},
+				[256958] = {
+					["source"] = "纳萨瓦嗜食者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 124688,
+				},
+				[19574] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[316767] = {
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280433] = {
+					["source"] = "被遗忘的时光-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[316768] = {
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193759] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "萨菲罗丝-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[187874] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[255937] = {
+					["source"] = "玛雅丨天汉-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[312677] = {
+					["source"] = "克熙尔唤虚者",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 161815,
+				},
+				[312678] = {
+					["source"] = "十里扬州路",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[312679] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "克熙尔唤虚者",
+					["npcID"] = 161815,
+				},
+				[256451] = {
+					["source"] = "黑山药-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[286581] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "祖达萨阿昆达-萨尔",
+					["npcID"] = 0,
+				},
+				[6201] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "尼古拉斯赵士-索拉丁",
+					["npcID"] = 0,
+				},
+				[147193] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "闇夜幽影-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[188389] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "非法用户名-甜水绿洲",
+					["npcID"] = 0,
+				},
+				[2098] = {
+					["source"] = "潜行使者-埃克索图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[527] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫栗子-冰风岗",
+					["npcID"] = 0,
+				},
+				[102543] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[256453] = {
+					["source"] = "杠杠的左耳-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[12654] = {
+					["source"] = "萝莉丶魔导师-海克泰尔",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[172015] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Taurendr-安苏",
+					["npcID"] = 0,
+				},
+				[298357] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[286587] = {
+					["source"] = "柏小逗-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[312687] = {
+					["source"] = "无面毁伤者",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 161812,
+				},
+				[157176] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚空恐魔",
+					["npcID"] = 151836,
+				},
+				[205025] = {
+					["source"] = "小太-利刃之拳",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[556] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "龟钢片-勇士岛",
+					["npcID"] = 0,
+				},
+				[191208] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "微澜-奥特兰克",
+					["npcID"] = 0,
+				},
+				[102417] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "恩利尔-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[304504] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "贺海笑-洛萨",
+					["npcID"] = 0,
+				},
+				[315763] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "烽火戏诸候-自由之风",
+					["npcID"] = 0,
+				},
+				[145152] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[200166] = {
+					["source"] = "强悍如我-奥达曼",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[210657] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[317301] = {
+					["source"] = "克熙尔唤虚者",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 161815,
+				},
+				[6673] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[256459] = {
 					["source"] = "主演-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[171253] = {
+					["source"] = "愤怒的双鱼-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[585] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫栗子-冰风岗",
+					["npcID"] = 0,
+				},
+				[273293] = {
+					["source"] = "Imbabwj-利刃之拳",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[589] = {
+					["source"] = "琥珀-勇士岛",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[16953] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[210660] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[190446] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "聖心决-血牙魔王",
+					["npcID"] = 0,
+				},
+				[273809] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Madetoheal-洛萨",
+					["npcID"] = 0,
+				},
+				[273298] = {
+					["source"] = "柏小逗-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[277904] = {
+					["source"] = "玛蒂达尔-国王之谷",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[34914] = {
+					["source"] = "琥珀-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[106898] = {
+					["source"] = "村委会话事人-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[219874] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "野生梦境角马",
+					["npcID"] = 109819,
+				},
+				[272790] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[132621] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "邻家小黑初成-自由之风",
+					["npcID"] = 0,
+				},
+				[33763] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "低眉罂粟-勇士岛",
+					["npcID"] = 0,
+				},
+				[279956] = {
+					["source"] = "坟头冒青烟-白银之手",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[210152] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "人可林三-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[275863] = {
+					["source"] = "低调点-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[231390] = {
+					["source"] = "狐乱射丶-无尽之海",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
 				[295310] = {
@@ -5059,44 +4423,799 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[270248] = {
+				[288146] = {
+					["source"] = "冷月-克尔苏加德",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[227041] = {
+					["source"] = "Ripple-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302477] = {
+					["source"] = "虚空怨灵",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 151754,
+				},
+				[269214] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[217832] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[270241] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "燃烬卫士",
 					["npcID"] = 135893,
 				},
-				[124211] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "Lich-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[124275] = {
-					["source"] = "清风池水-基尔加丹",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[31884] = {
+				[315787] = {
 					["source"] = "Xiaodouding",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[43308] = {
-					["source"] = "詩雲丶-燃烧之刃",
+				[171519] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "夺命搓澡-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[131347] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "万物咸覩-凤凰之神",
+					["npcID"] = 0,
+				},
+				[202225] = {
+					["source"] = "嘿丶那个戰仕-丽丽（四川）",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[171186] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "盐目斧喙鸟",
-					["npcID"] = 130832,
+				[267685] = {
+					["source"] = "夏夜的寒风-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
 				},
-				[275110] = {
+				[316814] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "渔舟晚-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[311185] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "补刀者云翼",
-					["npcID"] = 140800,
+					["source"] = "解忧水果铺-利刃之拳",
+					["npcID"] = 0,
+				},
+				[53595] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
+					["npcID"] = 0,
+				},
+				[311186] = {
+					["source"] = "阎栤-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[79140] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "祖达萨阿昆达-萨尔",
+					["npcID"] = 0,
+				},
+				[288158] = {
+					["source"] = "丿樱灬舞-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[311187] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "水水-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[270248] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "燃烬卫士",
+					["npcID"] = 135893,
+				},
+				[260567] = {
+					["source"] = "图腾师贾什加",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 126056,
+				},
+				[295838] = {
+					["source"] = "裤裆没有蛋-萨尔",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[703] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "祖达萨阿昆达-萨尔",
+					["npcID"] = 0,
+				},
+				[20473] = {
+					["source"] = "Dawnlight-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[274346] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "刀镰梦-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[297375] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "傻馒不好吃-利刃之拳",
+					["npcID"] = 0,
+				},
+				[273323] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[193530] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193786] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[316823] = {
+					["source"] = "艾璐妮-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[278954] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295842] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[304542] = {
+					["source"] = "死都不行-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[197625] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "阿良良木桑-死亡之翼",
+					["npcID"] = 0,
+				},
+				[16827] = {
+					["source"] = "未知目标",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 69946,
+				},
+				[208628] = {
+					["source"] = "錵灬-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[176644] = {
+					["source"] = "神恩天赐-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[316826] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "扭曲的附肢",
+					["npcID"] = 162764,
+				},
+				[304545] = {
+					["source"] = "死都不行-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[281517] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[279471] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "环视至高岭-洛萨",
+					["npcID"] = 0,
+				},
+				[273842] = {
+					["source"] = "买买太冲辣-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[19514] = {
+					["source"] = "碎地者特加",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 152200,
+				},
+				[740] = {
+					["source"] = "臊子泥泥-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295337] = {
+					["source"] = "红枚王-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[304037] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "崔丝塔娜-血牙魔王",
+					["npcID"] = 0,
+				},
+				[310690] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[311202] = {
+					["source"] = "寂地无声-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[278962] = {
+					["source"] = "影子武-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[269239] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[311203] = {
+					["source"] = "绝对心塞-伊莫塔尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295339] = {
+					["source"] = "止戈-血环",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[93985] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[139546] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[260575] = {
+					["source"] = "图腾师贾什加",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 126056,
+				},
+				[316835] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "扭曲的附肢",
+					["npcID"] = 162764,
+				},
+				[300971] = {
+					["source"] = "月天寒-远古海滩",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[317859] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[195072] = {
+					["source"] = "大口罩-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[277943] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295343] = {
+					["source"] = "止戈-血环",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[768] = {
+					["source"] = "尼奥洛鲨鱼-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[196608] = {
+					["source"] = "柏小逗-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[102558] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[256739] = {
+					["source"] = "Ariel-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[774] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "看我变个熊丶-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[260322] = {
+					["source"] = "托杰克",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 136381,
+				},
+				[781] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "伊丽娜丝-冬寒",
+					["npcID"] = 0,
+				},
+				[783] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[155158] = {
+					["source"] = "Dreamcool-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298419] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "尤物丶-奥拉基尔",
+					["npcID"] = 0,
+				},
+				[193796] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[275391] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "惜落丨夕顔丨-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[311214] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "夏夜的寒风-血牙魔王",
+					["npcID"] = 0,
+				},
+				[213243] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[85288] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鱼白影青-冰风岗",
+					["npcID"] = 0,
+				},
+				[158486] = {
+					["source"] = "幽明骑士-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[311215] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "司马乄仲达-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[8690] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Cirillaa-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[311216] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "那妞真靓-自由之风",
+					["npcID"] = 0,
+				},
+				[21562] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[311217] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "明月笃心-萨尔",
+					["npcID"] = 0,
+				},
+				[259302] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "亨利·贝克沃塔",
+					["npcID"] = 127901,
+				},
+				[194310] = {
+					["source"] = "坟头冒青烟-白银之手",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[260070] = {
+					["source"] = "帕库拉祭司",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 131834,
+				},
+				[190984] = {
+					["source"] = "比昂格-埃克索图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[274373] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "拾柒朵小花儿-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[319919] = {
+					["source"] = "迦罗娜的大牛-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[275909] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[304056] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[260072] = {
+					["source"] = "帕库拉祭司",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 131834,
+				},
+				[262607] = {
+					["source"] = "塔利·萨普纳波",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 133627,
+				},
+				[277960] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[300989] = {
+					["source"] = "明月笃心-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[15407] = {
+					["source"] = "琥珀-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298431] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[270285] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "灰岩",
+					["npcID"] = 135931,
+				},
+				[53600] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
+					["npcID"] = 0,
+				},
+				[22842] = {
+					["source"] = "臊子泥泥-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[318391] = {
+					["source"] = "彼岸巨虫",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 152550,
+				},
+				[243955] = {
+					["source"] = "无头騎士-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[106785] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[853] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "笑刀神-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[303041] = {
+					["source"] = "丢你个柒黒-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297412] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[165658] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "石行蜘蛛",
+					["npcID"] = 131890,
+				},
+				[157982] = {
+					["source"] = "臊子泥泥-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[27576] = {
+					["source"] = "窃玉-黑龙军团",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[279503] = {
+					["source"] = "死骑布鲁-甜水绿洲",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298950] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Skyfox-埃克索图斯",
+					["npcID"] = 0,
+				},
+				[295368] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "刀镰梦-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[176151] = {
+					["source"] = "神棍大叔-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[39592] = {
+					["source"] = "灼热图腾",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 132178,
+				},
+				[263642] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[54049] = {
+					["source"] = "扎恩多姆",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 417,
+				},
+				[77489] = {
+					["source"] = "那妞真靓-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[883] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "赤色夏亚-洛萨",
+					["npcID"] = 0,
+				},
+				[224001] = {
+					["source"] = "提里奥弔弗丁-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295373] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "神龍小飛猴-洛萨",
+					["npcID"] = 0,
+				},
+				[277462] = {
+					["source"] = "风投爆破专家",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 139806,
+				},
+				[30455] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "聖心决-血牙魔王",
+					["npcID"] = 0,
+				},
+				[69046] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "元素大腿粗-萨尔",
+					["npcID"] = 0,
+				},
+				[263648] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["encounterID"] = 2332,
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[275931] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "幽灵幻血-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[24858] = {
+					["source"] = "镹伍贰柒-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295378] = {
+					["source"] = "夜幕下的瘋狂-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[269279] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[224772] = {
+					["source"] = "剩光守护-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268769] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "魔能的橘子-奥拉基尔",
+					["npcID"] = 0,
+				},
+				[298452] = {
+					["source"] = "低调点-萨尔",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297941] = {
+					["source"] = "心胸似海-克尔苏加德",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[286171] = {
+					["source"] = "Evilcjknight-死亡之翼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[132403] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[3714] = {
+					["source"] = "锋釰-奥达曼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[328136] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[132404] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[157736] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "玄空-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[101545] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "封印痴狂-基尔加丹",
+					["npcID"] = 0,
+				},
+				[203538] = {
+					["source"] = "烈楓-永恒之井",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268776] = {
+					["source"] = "阿曼尼斗熊",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 130257,
+				},
+				[275429] = {
+					["source"] = "暮色天音-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[184092] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
+					["npcID"] = 0,
 				},
 				[203539] = {
 					["source"] = "烈楓-永恒之井",
@@ -5109,1395 +5228,42 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[299664] = {
-					["source"] = "花落乄叶相随-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[316801] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[290119] = {
-					["source"] = "邂逅恍若-达文格尔",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[5697] = {
-					["type"] = "BUFF",
-					["source"] = "希丝缇娜-红云台地",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[12042] = {
-					["source"] = "大表哥灬大海-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[213771] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
-				},
-				[3567] = {
-					["source"] = "五星瓢虫-埃德萨拉",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[6668] = {
-					["source"] = "烛龙之眼-鬼雾峰",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[228477] = {
-					["event"] = "SPELL_CAST_SUCCESS",
+				[291295] = {
 					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[11541] = {
-					["source"] = "提里奥弔弗丁-勇士岛",
+				[188443] = {
+					["source"] = "红枚王-勇士岛",
 					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[316036] = {
+				[298461] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "笑刀神-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[304603] = {
+					["source"] = "雾恰烧卖-格瑞姆巴托",
 					["type"] = "DEBUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[224001] = {
-					["source"] = "提里奥弔弗丁-勇士岛",
+				[108839] = {
 					["type"] = "BUFF",
+					["source"] = "行走的女王-丽丽（四川）",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[5217] = {
-					["source"] = "今生为爱狂-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[134522] = {
-					["source"] = "王启繁-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[255937] = {
-					["source"] = "玛雅丨天汉-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[302933] = {
-					["source"] = "孤惊残雪-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[268887] = {
-					["source"] = "槲寄生丨-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[278954] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[300693] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[3561] = {
-					["source"] = "水瓶座-雷斧堡垒",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[270515] = {
-					["source"] = "自由的艾泽里特",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 131311,
-				},
-				[256739] = {
-					["source"] = "Ariel-勇士岛",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[191208] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "微澜-奥特兰克",
-					["npcID"] = 0,
-				},
-				[184362] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[294155] = {
-					["source"] = "韶华尽-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[259455] = {
-					["source"] = "影魅-索拉丁",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[202137] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[276112] = {
-					["source"] = "豆奶丶齐刘海-国王之谷",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[118922] = {
-					["source"] = "伊丽娜丝-冬寒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[273842] = {
-					["source"] = "买买太冲辣-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[116841] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "冲动的火山-奥达曼",
-					["npcID"] = 0,
-				},
-				[269239] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[111400] = {
-					["source"] = "Markwayne-格瑞姆巴托",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[164273] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "Aydenn-国王之谷",
-					["npcID"] = 0,
-				},
-				[317065] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[119611] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "莳咣嘰-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[311185] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "解忧水果铺-利刃之拳",
-					["npcID"] = 0,
-				},
-				[315787] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[176644] = {
-					["source"] = "神恩天赐-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[281517] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297118] = {
-					["source"] = "七月丶死骑-阿纳克洛斯",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[48265] = {
-					["source"] = "戦父裂人",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[290469] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "迷失在夜空中-燃烧之刃",
-					["npcID"] = 0,
-				},
-				[115008] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "牛黑力法法-达隆米尔",
-					["npcID"] = 0,
-				},
-				[257408] = {
-					["source"] = "猫大哈-索拉丁",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[80354] = {
-					["source"] = "落星秋月-永恒之井",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[188033] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "刀锋追猎者-甜水绿洲",
-					["npcID"] = 0,
-				},
-				[311186] = {
-					["source"] = "阎栤-勇士岛",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[6201] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "尼古拉斯赵士-索拉丁",
-					["npcID"] = 0,
-				},
-				[243955] = {
-					["source"] = "无头騎士-血牙魔王",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[166302] = {
-					["source"] = "未知目标",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 101527,
-				},
-				[295842] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[116847] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "武器大师-洛萨",
-					["npcID"] = 0,
-				},
-				[316814] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "渔舟晚-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[227041] = {
-					["source"] = "Ripple-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[65081] = {
-					["source"] = "戏迷-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298621] = {
-					["source"] = "犀首一萨-基尔加丹",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[298620] = {
-					["source"] = "镰仓江之鸟-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[288158] = {
-					["source"] = "丿樱灬舞-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[178740] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[287916] = {
-					["source"] = "暗淡的遗忘-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[207640] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "低眉罂粟-勇士岛",
-					["npcID"] = 0,
-				},
-				[260881] = {
-					["source"] = "春妮-埃德萨拉",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[260069] = {
-					["source"] = "贡克祭司",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 131809,
-				},
-				[171253] = {
-					["source"] = "愤怒的双鱼-洛萨",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[296510] = {
-					["source"] = "蠕行腐蚀",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 152704,
-				},
-				[298603] = {
-					["source"] = "开心菠萝-黑翼之巢",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[278244] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "爱如月光-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[164547] = {
-					["type"] = "BUFF",
-					["source"] = "小鸡顿蘑菇-萨尔",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[270661] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "天蝎座的爱-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[242551] = {
-					["source"] = "肉串-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[260070] = {
-					["source"] = "帕库拉祭司",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 131834,
-				},
-				[254471] = {
-					["source"] = "Dawnlight-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[2641] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "过河小卒迩-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[202164] = {
-					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[207386] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "看我变个熊丶-伊莫塔尔",
-					["npcID"] = 0,
-				},
-				[286171] = {
-					["source"] = "Evilcjknight-死亡之翼",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[16591] = {
-					["source"] = "拉轰的小强-甜水绿洲",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[258920] = {
-					["source"] = "鸦眼-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311187] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "水水-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[154796] = {
-					["source"] = "Account-奥拉基尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[160331] = {
-					["source"] = "Ripple-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[307870] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[1022] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[305946] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "战神楚留香-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[768] = {
-					["source"] = "尼奥洛鲨鱼-燃烧之刃",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[315161] = {
-					["source"] = "Xiaodouding",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[260072] = {
-					["source"] = "帕库拉祭司",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 131834,
-				},
-				[16595] = {
-					["source"] = "韶华尽-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[2645] = {
-					["source"] = "春妮-埃德萨拉",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[1850] = {
-					["source"] = "茉莉清丶龙龙-奥拉基尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[124218] = {
-					["source"] = "邻家小黑初成-自由之风",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[8212] = {
-					["source"] = "钝刀肉-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[256451] = {
-					["source"] = "黑山药-自由之风",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[274968] = {
-					["source"] = "机械警戒犬",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 139805,
-				},
-				[46924] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "凤凤-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[279606] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "未知目标",
-					["npcID"] = 26125,
-				},
-				[54149] = {
-					["source"] = "Dawnlight-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[3714] = {
-					["source"] = "锋釰-奥达曼",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[20473] = {
-					["source"] = "Dawnlight-雷斧堡垒",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[298606] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "壹叁伍柒玖-索拉丁",
-					["npcID"] = 0,
-				},
-				[298412] = {
-					["source"] = "孤惊残雪-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[231504] = {
-					["source"] = "熊猫幂幂-达文格尔",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[19514] = {
-					["source"] = "碎地者特加",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 152200,
-				},
-				[271559] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[280204] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[290372] = {
-					["source"] = "低眉罂粟-勇士岛",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[300971] = {
-					["source"] = "月天寒-远古海滩",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[186258] = {
-					["source"] = "芊山暮雪-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[281413] = {
-					["source"] = "丿大美妞-达文格尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[287270] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Deam-萨尔",
-					["npcID"] = 0,
-				},
-				[311202] = {
-					["source"] = "寂地无声-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298823] = {
-					["source"] = "欧皇柯基-洛萨",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[275909] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[227723] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311203] = {
-					["source"] = "绝对心塞-伊莫塔尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[281792] = {
-					["source"] = "米蕾-格瑞姆巴托",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[260843] = {
-					["source"] = "贾登·弗拉",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 122704,
-				},
-				[102417] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "恩利尔-丽丽（四川）",
-					["npcID"] = 0,
-				},
-				[198069] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[176458] = {
-					["source"] = "Blacksmithing Follower - Alliance",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 88403,
-				},
-				[288075] = {
-					["source"] = "你的騎士-雷斧堡垒",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[187827] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[270285] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "灰岩",
-					["npcID"] = 135931,
-				},
-				[193456] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "岂曰无衣-达克萨隆",
-					["npcID"] = 0,
-				},
-				[203538] = {
-					["source"] = "烈楓-永恒之井",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[309927] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "达芙妮丶-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[165961] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[280772] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[298419] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "尤物丶-奥拉基尔",
-					["npcID"] = 0,
-				},
-				[184092] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[264774] = {
-					["source"] = "鉴娚春-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[280773] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[247454] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[47540] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫栗子-冰风岗",
-					["npcID"] = 0,
-				},
-				[131347] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "万物咸覩-凤凰之神",
-					["npcID"] = 0,
-				},
-				[203812] = {
-					["source"] = "散华神乐-索拉丁",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[268854] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[204197] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫栗子-冰风岗",
-					["npcID"] = 0,
-				},
-				[90328] = {
-					["source"] = "未知目标",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 151096,
-				},
-				[204213] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[317859] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[164812] = {
-					["source"] = "风起春城暮",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[203814] = {
-					["source"] = "陈丶冰镇阔落-埃克索图斯",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[280776] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[121536] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "买买太冲辣-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[298415] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "柠檬小脸-洛萨",
-					["npcID"] = 0,
-				},
-				[53600] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[292463] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[263642] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[188370] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[117828] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "缥缈情书-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[298282] = {
-					["source"] = "单纯丨可乐-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[196608] = {
-					["source"] = "柏小逗-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[204157] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[319919] = {
-					["source"] = "迦罗娜的大牛-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[138927] = {
-					["source"] = "凉城旧梦丶-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[270334] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "灰岩",
-					["npcID"] = 135931,
-				},
-				[297302] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "无尽饥饿图腾",
-					["npcID"] = 153141,
-				},
-				[311214] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "夏夜的寒风-血牙魔王",
-					["npcID"] = 0,
-				},
-				[1953] = {
-					["source"] = "我教你梳中分-埃克索图斯",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[26573] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[204843] = {
-					["source"] = "十里扬州路",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[108366] = {
-					["source"] = "天蝎座的爱-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[2823] = {
-					["source"] = "真的汉子-克尔苏加德",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311215] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "司马乄仲达-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[6673] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[311216] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "那妞真靓-自由之风",
-					["npcID"] = 0,
-				},
-				[278736] = {
-					["source"] = "哎呀取啥名-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[17] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "猫栗子-冰风岗",
-					["npcID"] = 0,
-				},
-				[311217] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "明月笃心-萨尔",
-					["npcID"] = 0,
-				},
-				[304056] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[194384] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[263648] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
-					["encounterID"] = 2332,
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[271103] = {
-					["source"] = "Xiaodouding",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[257422] = {
-					["source"] = "插曲灬-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[31935] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[298431] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[5308] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[300989] = {
-					["source"] = "明月笃心-萨尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[290121] = {
-					["source"] = "丶丷",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[193333] = {
-					["source"] = "月落轻风-国王之谷",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[314033] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "克熙尔唤虚者",
-					["npcID"] = 161815,
-				},
-				[203819] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[264352] = {
-					["source"] = "鉴娚春-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[295378] = {
-					["source"] = "夜幕下的瘋狂-格瑞姆巴托",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[204598] = {
-					["source"] = "十里扬州路",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[277462] = {
-					["source"] = "风投爆破专家",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 139806,
-				},
-				[69046] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "元素大腿粗-萨尔",
-					["npcID"] = 0,
-				},
-				[268953] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
-					["encounterID"] = 2332,
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[40120] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[269279] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[312107] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297412] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[278769] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[297168] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[265742] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "小傻满-燃烧之刃",
-					["npcID"] = 0,
-				},
-				[295367] = {
-					["source"] = "十里扬州路",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[271071] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[264764] = {
-					["source"] = "慕容紫月-奥拉基尔",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[249984] = {
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[167385] = {
-					["source"] = "地下城训练假人",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 144078,
-				},
-				[127230] = {
-					["source"] = "圣埃米克劳斯-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[303041] = {
-					["source"] = "丢你个柒黒-鬼雾峰",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[247456] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[109132] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "熊猫幂幂-达文格尔",
-					["npcID"] = 0,
-				},
-				[184367] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[156132] = {
-					["source"] = "絮雪-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[195457] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "丟丟粑粑-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[259454] = {
-					["source"] = "小拳拳锤你哦-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298839] = {
-					["source"] = "寄流年-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[118000] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[296138] = {
-					["source"] = "三鹿氖-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[262607] = {
-					["source"] = "塔利·萨普纳波",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 133627,
-				},
-				[96231] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[297822] = {
-					["encounterID"] = 2332,
-					["source"] = "萨尔",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 152089,
-				},
-				[297162] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[67833] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "赏金骑士-鬼雾峰",
-					["npcID"] = 0,
-				},
-				[85288] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[232698] = {
-					["source"] = "鬼医三十八号-丽丽（四川）",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298926] = {
-					["source"] = "夜袭寡妇村-鬼雾峰",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[318219] = {
-					["source"] = "十里扬州路",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[93622] = {
-					["source"] = "风起春城暮",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[318391] = {
-					["source"] = "彼岸巨虫",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 152550,
-				},
-				[198837] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "复生的潜伏者",
-					["npcID"] = 99541,
-				},
-				[312915] = {
-					["source"] = "风雷怒暴-萨格拉斯",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298703] = {
-					["source"] = "蛋糕好好吃-国王之谷",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[195072] = {
-					["source"] = "大口罩-丽丽（四川）",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[298512] = {
-					["source"] = "梅塞施密特-熊猫酒仙",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[207685] = {
-					["source"] = "十里扬州路",
-					["type"] = "DEBUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[298700] = {
-					["source"] = "风的姿态-迦顿",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[21562] = {
-					["source"] = "猫栗子-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[33917] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
-				},
-				[287769] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[167381] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "地下城训练假人",
-					["npcID"] = 144078,
-				},
-				[225919] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[316985] = {
-					["source"] = "Valkyrien-基尔加丹",
-					["event"] = "SPELL_CAST_SUCCESS",
-					["npcID"] = 0,
-				},
-				[207684] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[270058] = {
-					["source"] = "低眉罂粟-勇士岛",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[225921] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[77489] = {
-					["source"] = "那妞真靓-自由之风",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 0,
-				},
-				[23768] = {
-					["source"] = "塞格",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
-					["npcID"] = 14822,
-				},
-				[93985] = {
+				[312793] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
-				},
-				[268856] = {
-					["source"] = "鱼白影青-冰风岗",
-					["type"] = "BUFF",
-					["event"] = "SPELL_AURA_APPLIED",
+					["source"] = "奥蕾丽亚-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[2983] = {
-					["source"] = "Anicus-雷斧堡垒",
+				[22812] = {
+					["source"] = "王海波-萨尔",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
@@ -6508,52 +5274,669 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[197561] = {
+				[308188] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "凹凸的爱-死亡之翼",
+					["npcID"] = 0,
+				},
+				[312794] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "茉莉清丶龙龙-奥拉基尔",
+					["npcID"] = 0,
+				},
+				[308189] = {
+					["source"] = "锦丨鲤-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[312795] = {
+					["source"] = "美云-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[44457] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[145205] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "看我变个熊丶-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[304612] = {
+					["source"] = "抹不掉的心痕-奥特兰克",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[201754] = {
+					["source"] = "弗特莱",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 76946,
+				},
+				[197916] = {
+					["type"] = "BUFF",
+					["source"] = "老中醫-洛萨",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[111400] = {
+					["source"] = "Markwayne-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[115750] = {
+					["source"] = "炫丶光-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[295402] = {
+					["source"] = "打怪狂魔-奥达曼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[215572] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "风烧的突突-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[207640] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "低眉罂粟-勇士岛",
+					["npcID"] = 0,
+				},
+				[32216] = {
+					["source"] = "擎雨盖-洛萨",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[48168] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 96955,
+				},
+				[279028] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[136508] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Yamakasu-奥达曼",
+					["npcID"] = 0,
+				},
+				[307176] = {
+					["source"] = "亚瑟摩根-达文格尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[207386] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "看我变个熊丶-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[1022] = {
 					["source"] = "Xiaodouding",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[16979] = {
+				[100015] = {
+					["source"] = "折虚织法者",
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
+					["npcID"] = 152135,
+				},
+				[188196] = {
+					["source"] = "红枚王-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[221883] = {
-					["source"] = "月半方知-奥达曼",
+				[8212] = {
+					["source"] = "钝刀肉-雷斧堡垒",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[190784] = {
+				[270844] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "刚螙-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[300526] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 154524,
+				},
+				[279033] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[270334] = {
 					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "灰岩",
+					["npcID"] = 135931,
+				},
+				[193315] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[257284] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "夺命搓澡-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[126755] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "圣光的师姐-洛萨",
+					["npcID"] = 0,
+				},
+				[193316] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[194084] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[299508] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "丷小瓢蟲灬-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[254471] = {
+					["source"] = "Dawnlight-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[209693] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "刀镰梦-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[317420] = {
+					["source"] = "风舞凌云-基尔加丹",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[184362] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299510] = {
+					["source"] = "命运灬一刀-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[254472] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "粉红顽皮牛丶-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[258822] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "补刀者云翼",
+					["npcID"] = 140800,
+				},
+				[43308] = {
+					["source"] = "詩雲丶-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299511] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "戏迷-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[289277] = {
+					["source"] = "解忧水果铺-利刃之拳",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[120360] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[254474] = {
 					["source"] = "无头騎士-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[83244] = {
+				[299516] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "过河小卒迩-丽丽（四川）",
+					["source"] = "柠檬小脸-洛萨",
 					["npcID"] = 0,
 				},
-				[81262] = {
+				[116011] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[81340] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "百花齐放",
-					["npcID"] = 47649,
-				},
-				[77758] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
+					["source"] = "拾柒朵小花儿-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[165777] = {
+				[203812] = {
+					["source"] = "散华神乐-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[265742] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "小傻满-燃烧之刃",
+					["npcID"] = 0,
+				},
+				[289283] = {
+					["source"] = "迈克格雷迪-利刃之拳",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[132168] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[184367] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鱼白影青-冰风岗",
+					["npcID"] = 0,
+				},
+				[122281] = {
+					["source"] = "绝版-奥达曼",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[203814] = {
+					["source"] = "陈丶冰镇阔落-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[48107] = {
+					["source"] = "Dreamcool-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[219167] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "盐牙猎潮者",
+					["npcID"] = 139161,
+				},
+				[2383] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[195627] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[292359] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "渔舟晚-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[299524] = {
+					["source"] = "疯狂候鸟-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[205351] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鹰王-洛萨",
+					["npcID"] = 0,
+				},
+				[292360] = {
+					["source"] = "帝剋-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[85948] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "点点儿-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[277521] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "海贤班克森",
+					["npcID"] = 138226,
+				},
+				[292362] = {
+					["source"] = "万般皆下品-红龙军团",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[273428] = {
+					["source"] = "Mowang-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[292363] = {
+					["source"] = "長夜-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[33395] = {
+					["source"] = "水元素",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 78116,
+				},
+				[116014] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[292364] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "忆难忘-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[187698] = {
+					["source"] = "射爆显示器-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[48108] = {
+					["source"] = "奥利奥麦旋风-遗忘海岸",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[96312] = {
+					["source"] = "战神楚留香-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[33907] = {
+					["source"] = "布罗尔·熊皮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 142294,
+				},
+				[119085] = {
+					["source"] = "牛黑力法法-达隆米尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[308742] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "倒影流年-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[203819] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[204843] = {
+					["source"] = "十里扬州路",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[274968] = {
+					["source"] = "机械警戒犬",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 139805,
+				},
+				[236060] = {
+					["source"] = "奥利奥麦旋风-遗忘海岸",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[228128] = {
+					["source"] = "封印小氼-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[108211] = {
+					["source"] = "暴走的鲁鲁-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[77762] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[273947] = {
+					["source"] = "死骑布鲁-甜水绿洲",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298512] = {
+					["source"] = "梅塞施密特-熊猫酒仙",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285719] = {
+					["source"] = "王根基-熊猫酒仙",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[257044] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "李大牙-埃克索图斯",
+					["npcID"] = 0,
+				},
+				[197937] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "广岛之恋-血牙魔王",
+					["npcID"] = 0,
+				},
+				[48045] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "DEBUFF",
-					["source"] = "灌注艾泽里特的元素",
-					["npcID"] = 137905,
+					["source"] = "广岛之恋-血牙魔王",
+					["npcID"] = 0,
 				},
-				[267560] = {
-					["source"] = "浅夏初晴-丽丽（四川）",
+				[311308] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "你偷偷地-洛萨",
+					["npcID"] = 0,
+				},
+				[299538] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "牛黑力法法-达隆米尔",
+					["npcID"] = 0,
+				},
+				[2643] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[311309] = {
+					["source"] = "昼之羲和-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[299539] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "历小生-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[5308] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鱼白影青-冰风岗",
+					["npcID"] = 0,
+				},
+				[312845] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "克熙尔刺客",
+					["npcID"] = 161813,
+				},
+				[311310] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "蓝卟萬-利刃之拳",
+					["npcID"] = 0,
+				},
+				[299540] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "买买太冲辣-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[193333] = {
+					["source"] = "月落轻风-国王之谷",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[294935] = {
+					["source"] = "寒光竹影-血色十字军",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299541] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "楊阳洋-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[31707] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "水元素",
+					["npcID"] = 78116,
+				},
+				[108853] = {
+					["source"] = "Dreamcool-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[274979] = {
+					["source"] = "乌戈图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 128584,
+				},
+				[298009] = {
+					["source"] = "星之彩-艾欧娜尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[155722] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[32379] = {
+					["source"] = "琥珀-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[288800] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[271401] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "补刀者云翼",
+					["npcID"] = 140800,
+				},
+				[265772] = {
+					["source"] = "精神错乱的懦夫",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 135054,
+				},
+				[274472] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "夺命搓澡-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[204596] = {
+					["encounterID"] = 2332,
+					["source"] = "十里扬州路",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[2823] = {
+					["source"] = "真的汉子-克尔苏加德",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299550] = {
+					["source"] = "命运灬一刀-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[306715] = {
+					["source"] = "撸龙-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[272940] = {
+					["source"] = "寒光竹影-血色十字军",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[287270] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Deam-萨尔",
+					["npcID"] = 0,
+				},
+				[160331] = {
+					["source"] = "Ripple-鬼雾峰",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
@@ -6564,46 +5947,2483 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[204255] = {
-					["event"] = "SPELL_CAST_SUCCESS",
+				[204598] = {
 					["source"] = "十里扬州路",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[312372] = {
-					["source"] = "Ripple-鬼雾峰",
+				[165961] = {
+					["source"] = "风起春城暮",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[183752] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
+				[273455] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Aglaia-普罗德摩",
 					["npcID"] = 0,
 				},
-				[224772] = {
-					["source"] = "剩光守护-鬼雾峰",
+				[278574] = {
+					["source"] = "送奶员-阿卡玛",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[79175] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "凿沙蟹",
+					["npcID"] = 123236,
+				},
+				[263224] = {
+					["source"] = "战鼓手祖鲁拉",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 126907,
+				},
+				[271924] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[222256] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "万恶罪魁-达隆米尔",
+					["npcID"] = 0,
+				},
+				[268854] = {
+					["source"] = "鱼白影青-冰风岗",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[289283] = {
-					["source"] = "迈克格雷迪-利刃之拳",
+				[1490] = {
+					["source"] = "十里扬州路",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[2983] = {
+					["source"] = "Anicus-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[190784] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "无头騎士-血牙魔王",
+					["npcID"] = 0,
+				},
+				[287790] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "渔舟晚-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[268856] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[273974] = {
+					["source"] = "送奶员-阿卡玛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[287280] = {
+					["source"] = "Lastlyze-影之哀伤",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[296492] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚空液球",
+					["npcID"] = 152669,
+				},
+				[264764] = {
+					["source"] = "慕容紫月-奥拉基尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[115767] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[260384] = {
+					["source"] = "星之彩-艾欧娜尔",
 					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[204596] = {
+				[124211] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Lich-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[69070] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "奇奇跳跳糖-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[267325] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[176458] = {
+					["source"] = "Blacksmithing Follower - Alliance",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 88403,
+				},
+				[267326] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "魔能的橘子-奥拉基尔",
+					["npcID"] = 0,
+				},
+				[183111] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 104091,
+				},
+				[267327] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "魔能的橘子-奥拉基尔",
+					["npcID"] = 0,
+				},
+				[280121] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "贺海笑-洛萨",
+					["npcID"] = 0,
+				},
+				[118455] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[267329] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[275006] = {
+					["source"] = "天山雪猪-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[267330] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[267331] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[89158] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "狄戎丶飒瑟-阿卡玛",
+					["npcID"] = 0,
+				},
+				[287802] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[100] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风烧的突突-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[235313] = {
+					["source"] = "启程狂想-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[1604] = {
+					["source"] = "纳萨瓦嗜食者",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 124688,
+				},
+				[293945] = {
+					["source"] = "叶赫那拉云锦-克尔苏加德",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[293946] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "乌发无天-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[273988] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "神龍小飛猴-洛萨",
+					["npcID"] = 0,
+				},
+				[301624] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "鹰王-洛萨",
+					["npcID"] = 0,
+				},
+				[44212] = {
+					["source"] = "人死如灯灭-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[160600] = {
+					["type"] = "BUFF",
+					["source"] = "微斯人孰与归-红龙军团",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[6572] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[273992] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "送奶员-阿卡玛",
+					["npcID"] = 0,
+				},
+				[273481] = {
+					["source"] = "艾璐妮-自由之风",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[296510] = {
+					["source"] = "蠕行腐蚀",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 152704,
+				},
+				[6668] = {
+					["source"] = "烛龙之眼-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[268877] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[51505] = {
+					["source"] = "红枚王-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[20707] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "玄空-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[290372] = {
+					["source"] = "低眉罂粟-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[62124] = {
+					["source"] = "神魔丰-雷斧堡垒",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[207684] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[203846] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "尤物熊猫-达文格尔",
+					["npcID"] = 0,
+				},
+				[296003] = {
+					["source"] = "我是哀木涕-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[6788] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[11541] = {
+					["source"] = "提里奥弔弗丁-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[193356] = {
+					["source"] = "影子武-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[119611] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "莳咣嘰-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[206662] = {
+					["source"] = "撸龙-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280653] = {
+					["type"] = "BUFF",
+					["source"] = "戦父裂人",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193357] = {
+					["source"] = "影子武-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[313918] = {
+					["source"] = "风雷怒暴-萨格拉斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[272979] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[296008] = {
+					["source"] = "朱红哨兵",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 152177,
+				},
+				[193358] = {
+					["source"] = "影子武-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[203849] = {
+					["source"] = "李大牙-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[47540] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫栗子-冰风岗",
+					["npcID"] = 0,
+				},
+				[268887] = {
+					["source"] = "槲寄生丨-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[124218] = {
+					["source"] = "邻家小黑初成-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193359] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[297034] = {
+					["source"] = "兜兜德-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[277588] = {
+					["source"] = "召唤来的恐魔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 137657,
+				},
+				[116670] = {
+					["source"] = "老中醫-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[297035] = {
+					["source"] = "低眉罂粟-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[40120] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[68054] = {
+					["source"] = "基维斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 35642,
+				},
+				[192081] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[194384] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297037] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[3567] = {
+					["source"] = "五星瓢虫-埃德萨拉",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[24450] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 42718,
+				},
+				[297039] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268893] = {
+					["source"] = "奥利奥麦旋风-遗忘海岸",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[115008] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "牛黑力法法-达隆米尔",
+					["npcID"] = 0,
+				},
+				[302669] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚空恐魔",
+					["npcID"] = 151836,
+				},
+				[297040] = {
+					["source"] = "鬼医三十八号-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[78674] = {
+					["source"] = "比昂格-埃克索图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[5221] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[1822] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[16870] = {
+					["source"] = "大嫂的紫茄子-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[288343] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "鹰王-洛萨",
+					["npcID"] = 0,
+				},
+				[268898] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "风烧的突突-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[298068] = {
+					["source"] = "灬惺丶-血环",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[113858] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "玄空-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[1850] = {
+					["source"] = "茉莉清丶龙龙-奥拉基尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[55090] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "点点儿-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[116] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "聖心决-血牙魔王",
+					["npcID"] = 0,
+				},
+				[51124] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[306770] = {
+					["source"] = "纳罗斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 158565,
+				},
+				[205648] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[313424] = {
+					["source"] = "阿有面包啊-基尔加丹",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[31935] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
+					["npcID"] = 0,
+				},
+				[296537] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "疯狂的折磨者",
+					["npcID"] = 157825,
+				},
+				[268904] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[312915] = {
+					["source"] = "风雷怒暴-萨格拉斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[33917] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[48438] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "看我变个熊丶-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[121536] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "买买太冲辣-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[271465] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "比昂格-埃克索图斯",
+					["npcID"] = 0,
+				},
+				[204883] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "联盟萌-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[156779] = {
+					["source"] = "黑橙蓝绿紫-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[192090] = {
+					["source"] = "风起春城暮",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[260409] = {
+					["source"] = "血怒翼手龙",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 126618,
+				},
+				[223819] = {
+					["source"] = "送奶员-阿卡玛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[11366] = {
+					["source"] = "奥利奥麦旋风-遗忘海岸",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[122] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "无敌祺祺-利刃之拳",
+					["npcID"] = 0,
+				},
+				[312411] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "窃玉-黑龙军团",
+					["npcID"] = 0,
+				},
+				[278124] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[109128] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[117828] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "缥缈情书-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[317020] = {
+					["source"] = "丶肉肉大魔王-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[246851] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[134522] = {
+					["source"] = "王启繁-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[53365] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "拾柒朵小花儿-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[13877] = {
+					["source"] = "潜行使者-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[246852] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280177] = {
+					["source"] = "水水-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298601] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "茉娅缇-萨尔",
+					["npcID"] = 0,
+				},
+				[264314] = {
+					["source"] = "丶丷",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[197214] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[298603] = {
+					["source"] = "开心菠萝-黑翼之巢",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[270457] = {
+					["source"] = "怨鳍侍从",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 138428,
+				},
+				[275063] = {
+					["source"] = "乌戈图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 128584,
+				},
+				[298604] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "恶魔福缘-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[285811] = {
+					["source"] = "塔利·萨普纳波",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 133627,
+				},
+				[298605] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "花寒凛-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[288882] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[255299] = {
+					["source"] = "纳萨瓦嗜食者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 124688,
+				},
+				[298606] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "壹叁伍柒玖-索拉丁",
+					["npcID"] = 0,
+				},
+				[270460] = {
+					["source"] = "断岳者古鲁",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 140768,
+				},
+				[264831] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[45242] = {
+					["source"] = "琥珀-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[207707] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 137489,
+				},
+				[191587] = {
+					["source"] = "繁华丶誰許-甜水绿洲",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[316007] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "看我变个熊丶-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[231504] = {
+					["source"] = "熊猫幂幂-达文格尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[281209] = {
+					["source"] = "安心的小猫咪-国王之谷",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[281721] = {
+					["source"] = "霧雨魔理莎-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[258883] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[2120] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "无敌祺祺-利刃之拳",
+					["npcID"] = 0,
+				},
+				[316522] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298611] = {
+					["source"] = "弱水三千-埃克索图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[109132] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "熊猫幂幂-达文格尔",
+					["npcID"] = 0,
+				},
+				[74589] = {
+					["source"] = "随机随机-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[114250] = {
+					["source"] = "赞达拉拉-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[136] = {
+					["source"] = "猪大嘴骚扁担-达文格尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[106830] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "环视至高岭-洛萨",
+					["npcID"] = 0,
+				},
+				[212061] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 137489,
+				},
+				[281216] = {
+					["type"] = "BUFF",
+					["source"] = "伊夫人-洛萨",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[139] = {
+					["source"] = "那妞真靓-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[8936] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "看我变个熊丶-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[214621] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫栗子-冰风岗",
+					["npcID"] = 0,
+				},
+				[298618] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "牛黑力法法-达隆米尔",
+					["npcID"] = 0,
+				},
+				[313971] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "深渊之嗣",
+					["npcID"] = 161273,
+				},
+				[298620] = {
+					["source"] = "镰仓江之鸟-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[298621] = {
+					["source"] = "犀首一萨-基尔加丹",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[55095] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[270987] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 120949,
+				},
+				[194153] = {
+					["source"] = "比昂格-埃克索图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[268429] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "惜落丨夕顔丨-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[90328] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 151096,
+				},
+				[217694] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[61684] = {
+					["source"] = "米奥妮克丝",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 110340,
+				},
+				[280713] = {
+					["source"] = "昼之羲和-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[276108] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "啄肝鸥",
+					["npcID"] = 139233,
+				},
+				[220510] = {
+					["source"] = "苔原-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[256077] = {
+					["source"] = "食腐野猪",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 133822,
+				},
+				[267410] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[280204] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280205] = {
+					["source"] = "龟钢片-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285835] = {
+					["source"] = "拉沙克·铁墙",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 133556,
+				},
+				[276112] = {
+					["source"] = "豆奶丶齐刘海-国王之谷",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295047] = {
+					["source"] = "蛋塔飞人-洛萨",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[126664] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[285836] = {
+					["source"] = "艾泽里特提取器",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 147188,
+				},
+				[190319] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[194669] = {
+					["type"] = "BUFF",
+					["source"] = "渔舟晚-丽丽（四川）",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[190831] = {
+					["source"] = "Forvoljin-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285837] = {
+					["source"] = "艾泽里特提取器",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 147188,
+				},
+				[257103] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "秋香专属-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[277650] = {
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[202602] = {
+					["source"] = "战吊护你一生-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268439] = {
+					["source"] = "呼噜娃-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[294027] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268953] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["encounterID"] = 2332,
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[115151] = {
+					["source"] = "老中醫-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[268954] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["encounterID"] = 2332,
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[284307] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Svieta-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[151685] = {
+					["source"] = "纳罗斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 158565,
+				},
+				[93402] = {
+					["source"] = "比昂格-埃克索图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[49020] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[300174] = {
+					["source"] = "Urbb-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[2580] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[264352] = {
+					["source"] = "鉴娚春-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[281240] = {
+					["source"] = "恩利尔-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[35395] = {
+					["source"] = "艾璐妮-自由之风",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[299664] = {
+					["source"] = "花落乄叶相随-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[317065] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[80354] = {
+					["source"] = "落星秋月-永恒之井",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297108] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[275103] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "乌戈图斯",
+					["npcID"] = 128584,
+				},
+				[279709] = {
+					["source"] = "比昂格-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[300691] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "帝剋-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[113746] = {
+					["source"] = "止戈-血环",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[209261] = {
+					["source"] = "张欣鑫丶-雷斧堡垒",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[300693] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[8921] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[279715] = {
+					["source"] = "奥利奥麦旋风-遗忘海岸",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[274598] = {
+					["source"] = "奥利奥麦旋风-遗忘海岸",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[275110] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "补刀者云翼",
+					["npcID"] = 140800,
+				},
+				[106839] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[274087] = {
+					["source"] = "泽坎",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 153789,
+				},
+				[44544] = {
+					["source"] = "夏夜的寒风-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297118] = {
+					["source"] = "七月丶死骑-阿纳克洛斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[264878] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[22568] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[201334] = {
+					["source"] = "顺德者昌-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[290467] = {
+					["source"] = "春风一度-洛萨",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[236645] = {
+					["source"] = "水水-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[84963] = {
+					["source"] = "咄咄逼人-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[290469] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "迷失在夜空中-燃烧之刃",
+					["npcID"] = 0,
+				},
+				[104282] = {
+					["source"] = "估计孤寂-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[217200] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[307870] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[255070] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "主演-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[256460] = {
+					["type"] = "BUFF",
+					["source"] = "不胖胖子胖-丽丽（四川）",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[210372] = {
+					["type"] = "BUFF",
+					["source"] = "Yihhae-萨格拉斯",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[307128] = {
+					["type"] = "BUFF",
+					["source"] = "戦父裂人",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297126] = {
+					["type"] = "BUFF",
+					["source"] = "戦父裂人",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[275699] = {
+					["source"] = "戦父裂人",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[43265] = {
+					["source"] = "戦父裂人",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[270515] = {
+					["source"] = "自由的艾泽里特",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 131311,
+				},
+				[32752] = {
+					["type"] = "BUFF",
+					["source"] = "行走的女王-丽丽（四川）",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[19434] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "李大牙-埃克索图斯",
+					["npcID"] = 0,
+				},
+				[2948] = {
+					["source"] = "Dreamcool-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[197919] = {
+					["type"] = "BUFF",
+					["source"] = "老中醫-洛萨",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[124682] = {
+					["type"] = "BUFF",
+					["source"] = "老中醫-洛萨",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[287916] = {
+					["source"] = "暗淡的遗忘-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[93622] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[185311] = {
+					["type"] = "BUFF",
+					["source"] = "肠炎灵-伊莫塔尔",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[57723] = {
+					["source"] = "花落乄叶相随-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[188033] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "刀锋追猎者-甜水绿洲",
+					["npcID"] = 0,
+				},
+				[115804] = {
+					["source"] = "蝎子",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 3127,
+				},
+				[278134] = {
+					["type"] = "BUFF",
+					["source"] = "丶尛不嚸-丽丽（四川）",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[212801] = {
+					["type"] = "BUFF",
+					["source"] = "阿信弔小秋-格瑞姆巴托",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[223500] = {
+					["type"] = "BUFF",
+					["source"] = "米迦勒的裁决-格瑞姆巴托",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[184662] = {
+					["type"] = "BUFF",
+					["source"] = "萌萌的萌皮卡-国王之谷",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[199804] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[198013] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "刀镰梦-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[271543] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[188290] = {
+					["source"] = "死骑布鲁-甜水绿洲",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297204] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[281178] = {
+					["source"] = "艾璐妮-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[271544] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[100016] = {
+					["source"] = "折虚织法者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 152135,
+				},
+				[38621] = {
+					["source"] = "折虚击天战士",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 152162,
+				},
+				[49966] = {
+					["source"] = "弗特莱",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 76946,
+				},
+				[6268] = {
+					["source"] = "折虚入侵者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 151742,
+				},
+				[58875] = {
+					["source"] = "茉娅缇-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[204021] = {
 					["encounterID"] = 2332,
 					["source"] = "十里扬州路",
 					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[202138] = {
+				[309927] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "达芙妮丶-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[302475] = {
+					["source"] = "暗影猎犬",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 151755,
+				},
+				[209785] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "圣祺褀-利刃之拳",
+					["npcID"] = 0,
+				},
+				[302395] = {
+					["source"] = "虚空群居兽",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 151752,
+				},
+				[175456] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "执灬念-利刃之拳",
+					["npcID"] = 0,
+				},
+				[233149] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "风一样的青年-泰兰德",
+					["npcID"] = 0,
+				},
+				[79849] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "肯瑞托卫士",
+					["npcID"] = 104091,
+				},
+				[256099] = {
+					["source"] = "尸体贩子尤吉",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 124977,
+				},
+				[207289] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "点点儿-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[12472] = {
+					["source"] = "夏夜的寒风-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[195457] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "丟丟粑粑-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[167971] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "布林顿7000",
+					["npcID"] = 153897,
+				},
+				[57724] = {
+					["source"] = "小傻满-燃烧之刃",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[52174] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
+					["npcID"] = 0,
+				},
+				[165776] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "石行蜘蛛",
+					["npcID"] = 131890,
+				},
+				[258147] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "铜齿徘徊者",
+					["npcID"] = 131365,
+				},
+				[105693] = {
+					["source"] = "恶丨魔宴灬-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298161] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299322] = {
+					["source"] = "圣灬徒-奥拉基尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[294254] = {
+					["source"] = "正在捉你",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[305805] = {
+					["source"] = "澄心-奥达曼",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[160832] = {
+					["source"] = "辉煌幻影-古尔丹",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[165777] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "灌注艾泽里特的元素",
+					["npcID"] = 137905,
+				},
+				[179996] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 90377,
+				},
+				[277181] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "笑刀神-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[119415] = {
+					["source"] = "二十四桥月夜-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[286393] = {
+					["source"] = "艾璐妮-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302494] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "恐惧之握",
+					["npcID"] = 151872,
+				},
+				[185736] = {
+					["source"] = "当浮一大白丶-奥特兰克",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[290468] = {
+					["source"] = "死都不行-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[182096] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 92447,
+				},
+				[65081] = {
+					["source"] = "戏迷-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[79833] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 109364,
+				},
+				[31884] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[181477] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "堕夜构造体",
+					["npcID"] = 90005,
+				},
+				[163716] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "海滨食腐鸟",
+					["npcID"] = 126387,
+				},
+				[279913] = {
+					["source"] = "宫吧老哥大喜-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[175457] = {
+					["source"] = "暗火-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298630] = {
+					["source"] = "虚缚持盾卫士",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 156146,
+				},
+				[23736] = {
+					["source"] = "塞格",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 14822,
+				},
+				[277185] = {
+					["source"] = "Dreamcool-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[203850] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "疾风如你-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[195181] = {
+					["source"] = "死骑布鲁-甜水绿洲",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[8613] = {
+					["source"] = "或更换即可-千针石林",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[268998] = {
+					["source"] = "Hardtosay-萨格拉斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[281792] = {
+					["source"] = "米蕾-格瑞姆巴托",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[23161] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "暗火-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[299300] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "苦非天-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[314033] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "克熙尔唤虚者",
+					["npcID"] = 161815,
+				},
+				[132627] = {
+					["source"] = "茶丶茶-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[207744] = {
+					["type"] = "DEBUFF",
+					["source"] = "十里扬州路",
+					["encounterID"] = 2332,
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297146] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚缚狂战士",
+					["npcID"] = 152699,
+				},
+				[298623] = {
+					["source"] = "半桶水-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[271559] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299512] = {
+					["source"] = "青羽-甜水绿洲",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[176785] = {
+					["source"] = "瑟兰蒂斯-奥拉基尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[277608] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "海贤班克森",
+					["npcID"] = 138226,
+				},
+				[270330] = {
+					["source"] = "大块艾泽里特",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 141974,
+				},
+				[258920] = {
+					["source"] = "鸦眼-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280772] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鱼白影青-冰风岗",
+					["npcID"] = 0,
+				},
+				[84714] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "聖心决-血牙魔王",
+					["npcID"] = 0,
+				},
+				[297965] = {
+					["source"] = "青羽-甜水绿洲",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[243568] = {
+					["source"] = "野蛮的狂咒师",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 122078,
+				},
+				[280773] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[256476] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "长牙",
+					["npcID"] = 127877,
+				},
+				[296126] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[32645] = {
+					["source"] = "窃玉-黑龙军团",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[315573] = {
+					["source"] = "老板娘来根烟-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268756] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "祖达萨阿昆达-萨尔",
+					["npcID"] = 0,
+				},
+				[313770] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[313015] = {
+					["source"] = "Areas-基尔加丹",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280776] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[79176] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "凿沙蟹",
+					["npcID"] = 123236,
+				},
+				[197561] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[260069] = {
+					["source"] = "贡克祭司",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 131809,
+				},
+				[297152] = {
+					["source"] = "纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 158565,
+				},
+				[16589] = {
+					["source"] = "死都不行-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[277706] = {
+					["source"] = "暮色天音-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[255852] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "长牙",
+					["npcID"] = 127877,
+				},
+				[297153] = {
+					["source"] = "虚缚破坏者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 153065,
+				},
+				[162264] = {
+					["source"] = "被遗忘的时光-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[8092] = {
+					["source"] = "琥珀-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[186254] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[16595] = {
+					["source"] = "韶华尽-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[85739] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[127801] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 65310,
+				},
+				[208772] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[198793] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫咪爱吃鱼-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[177193] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "嘉璇-达隆米尔",
+					["npcID"] = 0,
+				},
+				[3408] = {
+					["source"] = "真的汉子-克尔苏加德",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[224125] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 100820,
+				},
+				[279204] = {
+					["source"] = "清风抚水-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[121253] = {
+					["source"] = "止戈-血环",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[205369] = {
+					["source"] = "阳关路人-索拉丁",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[266030] = {
+					["source"] = "Urbb-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[279606] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "未知目标",
+					["npcID"] = 26125,
+				},
+				[205191] = {
+					["source"] = "没名可取了-利刃之拳",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[81262] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "百花齐放",
+					["npcID"] = 47649,
+				},
+				[258925] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "月下观鸟-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[293664] = {
+					["source"] = "买买太冲辣-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268194] = {
+					["source"] = "血之初拥-鬼雾峰",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[277623] = {
+					["source"] = "艾泽里特啃食蛛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 123713,
+				},
+				[96231] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
+					["npcID"] = 0,
+				},
+				[278736] = {
+					["source"] = "哎呀取啥名-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[304605] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "哀伤骑",
+					["npcID"] = 0,
+				},
+				[205448] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鹰王-洛萨",
+					["npcID"] = 0,
+				},
+				[72968] = {
+					["source"] = "阿嬭托莉娅-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[228477] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[297941] = {
-					["source"] = "心胸似海-克尔苏加德",
+				[213634] = {
+					["source"] = "Aurora-铜龙军团",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[268836] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "风烧的突突-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[186258] = {
+					["source"] = "芊山暮雪-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297161] = {
+					["source"] = "虚缚破坏者",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 153065,
+				},
+				[253595] = {
+					["source"] = "赏金骑士-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[296138] = {
+					["source"] = "三鹿氖-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[242551] = {
+					["source"] = "肉串-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297162] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[202164] = {
+					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[276840] = {
+					["source"] = "自由莫莫-伊莫塔尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[243575] = {
+					["source"] = "野蛮的狂咒师",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 122078,
+				},
+				[316036] = {
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[155777] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "低眉罂粟-勇士岛",
+					["npcID"] = 0,
+				},
+				[304606] = {
+					["source"] = "乄西风",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[23881] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鱼白影青-冰风岗",
+					["npcID"] = 0,
+				},
+				[262652] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[5302] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285472] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "圣祺褀-利刃之拳",
+					["npcID"] = 0,
+				},
+				[298700] = {
+					["source"] = "风的姿态-迦顿",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[316801] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[166302] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 101527,
+				},
+				[279766] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "托斯卡·鹰角",
+					["npcID"] = 140778,
+				},
+				[192225] = {
+					["source"] = "恶魔猎杀-冬寒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[51714] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302797] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[279767] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "塔拉·岩风",
+					["npcID"] = 140782,
+				},
+				[45062] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "涵函涵-克尔苏加德",
+					["npcID"] = 0,
+				},
+				[8219] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "阿尔法牛-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[148540] = {
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[202188] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298703] = {
+					["source"] = "蛋糕好好吃-国王之谷",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297168] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[260881] = {
+					["source"] = "春妮-埃德萨拉",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[271581] = {
+					["source"] = "送奶员-阿卡玛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[190356] = {
+					["source"] = "随便就行-洛萨",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[185123] = {
+					["source"] = "霧雨魔理莎-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[131493] = {
+					["source"] = "阿森西奥-达文格尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[5215] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[275857] = {
+					["source"] = "低调点-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[267558] = {
+					["source"] = "浅夏初晴-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[271071] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[225921] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[212799] = {
+					["source"] = "鉴娚春-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[290819] = {
+					["source"] = "阿仙儿-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[156070] = {
+					["source"] = "辉煌幻影-古尔丹",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[29722] = {
+					["source"] = "Urbb-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[275544] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[184575] = {
+					["source"] = "艾璐妮-自由之风",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[118922] = {
+					["source"] = "伊丽娜丝-冬寒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[138927] = {
+					["source"] = "凉城旧梦丶-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285979] = {
+					["source"] = "寒光竹影-血色十字军",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[318219] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[274443] = {
+					["source"] = "赢就赢粒糖-索拉丁",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
@@ -6614,17 +8434,71 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[156080] = {
+				[280286] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "平平有奇-基尔加丹",
+					["type"] = "DEBUFF",
+					["source"] = "月下观鸟-鬼雾峰",
 					["npcID"] = 0,
 				},
-				[44212] = {
-					["source"] = "人死如灯灭-丽丽（四川）",
+				[273836] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "人可林三-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[31687] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "娜塔利-奥达曼",
+					["npcID"] = 0,
+				},
+				[1329] = {
+					["source"] = "窃玉-黑龙军团",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[275113] = {
+					["source"] = "乌戈图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 128584,
+				},
+				[115313] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "迦罗娜的大牛-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[67833] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "赏金骑士-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[205766] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "聖心决-血牙魔王",
+					["npcID"] = 0,
+				},
+				[51460] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "点点儿-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[288988] = {
+					["source"] = "潜行使者-埃克索图斯",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
+				},
+				[248473] = {
+					["source"] = "鹹濕牌士力架-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[262687] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "炸弹机器人9000型",
+					["npcID"] = 133660,
 				},
 				[87024] = {
 					["source"] = "殇丨断魂-洛萨",
@@ -6632,15 +8506,77 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[212653] = {
-					["source"] = "灰烬冰霜-丽丽（四川）",
+				[278244] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "爱如月光-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[156073] = {
+					["source"] = "夏蛮-血牙魔王",
 					["type"] = "BUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[145205] = {
+				[304611] = {
+					["source"] = "乄西风",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[213771] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "看我变个熊丶-伊莫塔尔",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[5487] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[69369] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297746] = {
+					["encounterID"] = 2332,
+					["source"] = "萨尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 152089,
+				},
+				[300761] = {
+					["source"] = "琥珀-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[202899] = {
+					["source"] = "阿仙儿-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[201846] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[287769] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[300762] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "聖心决-血牙魔王",
+					["npcID"] = 0,
+				},
+				[60103] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "四月愚人-雷斧堡垒",
 					["npcID"] = 0,
 				},
 				[210320] = {
@@ -6649,21 +8585,398 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[48438] = {
-					["event"] = "SPELL_AURA_APPLIED",
+				[157355] = {
+					["source"] = "虚空怨灵",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 151754,
+				},
+				[270058] = {
+					["source"] = "低眉罂粟-勇士岛",
 					["type"] = "BUFF",
-					["source"] = "看我变个熊丶-伊莫塔尔",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[774] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "看我变个熊丶-伊莫塔尔",
+				[305369] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚缚荣誉卫兵",
+					["npcID"] = 156406,
+				},
+				[298926] = {
+					["source"] = "夜袭寡妇村-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
 					["npcID"] = 0,
 				},
-				[85739] = {
-					["source"] = "鱼白影青-冰风岗",
+				[302299] = {
+					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
+					["source"] = "虚空恐魔",
+					["npcID"] = 151836,
+				},
+				[185245] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[154796] = {
+					["source"] = "Account-奥拉基尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[153595] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "聖心决-血牙魔王",
+					["npcID"] = 0,
+				},
+				[275689] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "帝剋-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[298343] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[273006] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "惜落丨夕顔丨-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[303836] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "神棍丶德-血牙魔王",
+					["npcID"] = 0,
+				},
+				[196840] = {
+					["source"] = "红枚王-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[268062] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[295137] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[16591] = {
+					["source"] = "拉轰的小强-甜水绿洲",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[294161] = {
+					["source"] = "弱水三千-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[316744] = {
+					["source"] = "拉你垫背-雷霆之王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[116847] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "武器大师-洛萨",
+					["npcID"] = 0,
+				},
+				[185358] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "李大牙-埃克索图斯",
+					["npcID"] = 0,
+				},
+				[26297] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "神龍小飛猴-洛萨",
+					["npcID"] = 0,
+				},
+				[273781] = {
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[289315] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[284277] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "渔舟晚-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[59052] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[47541] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "拾柒朵小花儿-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[249984] = {
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[227723] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[46968] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[25771] = {
+					["source"] = "Xiaodouding",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[273779] = {
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[301834] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鹰王-洛萨",
+					["npcID"] = 0,
+				},
+				[270246] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "火元素",
+					["npcID"] = 135894,
+				},
+				[305378] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚缚荣誉卫兵",
+					["npcID"] = 156406,
+				},
+				[262390] = {
+					["source"] = "尸体贩子诺格莎",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 124978,
+				},
+				[156079] = {
+					["source"] = "小猪妞-艾欧娜尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[278767] = {
+					["source"] = "清风池水-基尔加丹",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[188370] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299237] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "禅舞斗士-洛萨",
+					["npcID"] = 0,
+				},
+				[202137] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[278769] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[259454] = {
+					["source"] = "小拳拳锤你哦-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299238] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "圣灬徒-奥拉基尔",
+					["npcID"] = 0,
+				},
+				[156080] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "平平有奇-基尔加丹",
+					["npcID"] = 0,
+				},
+				[57755] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[279584] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "刀镰梦-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[299239] = {
+					["source"] = "单纯丨可乐-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[202138] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[198300] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[270070] = {
+					["source"] = "冷月-克尔苏加德",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[259455] = {
+					["source"] = "影魅-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[131894] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "神龍小飛猴-洛萨",
+					["npcID"] = 0,
+				},
+				[197277] = {
+					["source"] = "送奶员-阿卡玛",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[204157] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[313571] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[54149] = {
+					["source"] = "Dawnlight-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[278559] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "狠人是我-达文格尔",
+					["npcID"] = 0,
+				},
+				[12042] = {
+					["source"] = "大表哥灬大海-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[12058] = {
+					["source"] = "泽坎",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 153789,
+				},
+				[58867] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "元素迅猛龙",
+					["npcID"] = 100820,
+				},
+				[77758] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[115175] = {
+					["type"] = "BUFF",
+					["source"] = "老中醫-洛萨",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[204255] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[314678] = {
+					["source"] = "国产雷神索尔-奥达曼",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[121557] = {
+					["source"] = "买买太冲辣-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[272121] = {
+					["source"] = "玛雅丨天汉-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[221887] = {
+					["source"] = "奥蕾丽亚-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[264957] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 0,
+				},
+				[288803] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[188499] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "邺水丶朱华-影之哀伤",
+					["npcID"] = 0,
+				},
+				[163505] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["type"] = "DEBUFF",
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
@@ -6673,30 +8986,1460 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[155777] = {
-					["event"] = "SPELL_AURA_APPLIED",
+				[34767] = {
+					["source"] = "板凳木偶师-埃克索图斯",
 					["type"] = "BUFF",
-					["source"] = "低眉罂粟-勇士岛",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[33763] = {
+				[79865] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "低眉罂粟-勇士岛",
+					["source"] = "未知目标",
+					["npcID"] = 47247,
+				},
+				[8220] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[303836] = {
+				[289523] = {
+					["source"] = "灰烬冰霜-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[246152] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[269651] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "无敌祺祺-利刃之拳",
+					["npcID"] = 0,
+				},
+				[280149] = {
+					["source"] = "戦父裂人",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[289524] = {
+					["source"] = "Yangxu-普罗德摩",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[198304] = {
+					["source"] = "犇気衝天-鬼雾峰",
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "神棍丶德-血牙魔王",
+					["npcID"] = 0,
+				},
+				[48265] = {
+					["source"] = "戦父裂人",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268955] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["encounterID"] = 2332,
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[164273] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Aydenn-国王之谷",
+					["npcID"] = 0,
+				},
+				[302319] = {
+					["source"] = "折虚织法者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 152135,
+				},
+				[272126] = {
+					["source"] = "Twjshu-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[58180] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[271103] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[196834] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[318187] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[303344] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[129250] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫栗子-冰风岗",
+					["npcID"] = 0,
+				},
+				[294133] = {
+					["source"] = "镰仓江之鸟-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[289324] = {
+					["source"] = "子曰不要学我-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[303345] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[257413] = {
+					["source"] = "死了就别活了-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302322] = {
+					["source"] = "折虚织法者",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 152135,
+				},
+				[6343] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[298609] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "伊丽娜丝-冬寒",
+					["npcID"] = 0,
+				},
+				[1079] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "环视至高岭-洛萨",
+					["npcID"] = 0,
+				},
+				[68992] = {
+					["source"] = "估计孤寂-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[114282] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "麻咪哄-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[17] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫栗子-冰风岗",
+					["npcID"] = 0,
+				},
+				[2818] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "祖达萨阿昆达-萨尔",
+					["npcID"] = 0,
+				},
+				[120679] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[264774] = {
+					["source"] = "鉴娚春-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[116841] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "冲动的火山-奥达曼",
+					["npcID"] = 0,
+				},
+				[298282] = {
+					["source"] = "单纯丨可乐-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[281724] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268905] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302336] = {
+					["source"] = "折虚入侵者",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 151742,
+				},
+				[257415] = {
+					["source"] = "猥琐的脆皮-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[245389] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "祖达萨阿昆达-萨尔",
+					["npcID"] = 0,
+				},
+				[260843] = {
+					["source"] = "贾登·弗拉",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 122704,
+				},
+				[279810] = {
+					["source"] = "凌下雷-拉格纳罗斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[213405] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[205473] = {
+					["source"] = "融化的雪糕-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[178740] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[171186] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "盐目斧喙鸟",
+					["npcID"] = 130832,
+				},
+				[275936] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[269576] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "李大牙-埃克索图斯",
+					["npcID"] = 0,
+				},
+				[275895] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[268553] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "夺命搓澡-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[34026] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[105771] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[264761] = {
+					["source"] = "慕容紫月-奥拉基尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[208705] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "仆射-格瑞姆巴托",
+					["npcID"] = 0,
+				},
+				[1784] = {
+					["source"] = "Citypop-萨格拉斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[186257] = {
+					["source"] = "諾森德的雪-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193538] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[20271] = {
+					["source"] = "艾璐妮-自由之风",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[48778] = {
+					["source"] = "月影-范克里夫",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[274753] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "怨鳍投叉手",
+					["npcID"] = 138427,
+				},
+				[45181] = {
+					["source"] = "诺提雷斯-雷斧堡垒",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[286979] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "拾柒朵小花儿-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[295367] = {
+					["source"] = "十里扬州路",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302917] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[108366] = {
+					["source"] = "天蝎座的爱-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[294966] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[124506] = {
+					["source"] = "七夜武魂-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[285496] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "闇夜幽影-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[281036] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "夏蛮-血牙魔王",
+					["npcID"] = 0,
+				},
+				[290141] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "夏蛮-血牙魔王",
+					["npcID"] = 0,
+				},
+				[204197] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "猫栗子-冰风岗",
+					["npcID"] = 0,
+				},
+				[252216] = {
+					["source"] = "鸟树熊猫德-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[222695] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "马里奥扬-萨尔",
+					["npcID"] = 0,
+				},
+				[207685] = {
+					["source"] = "十里扬州路",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[273238] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285959] = {
+					["source"] = "叮当喵-洛萨",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[300800] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "笑刀神-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[273232] = {
+					["source"] = "被遗忘的时光-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[257420] = {
+					["source"] = "你偷偷地-洛萨",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[320759] = {
+					["source"] = "屠戮者西克沃斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 153943,
+				},
+				[300801] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "忽悠恁-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[305945] = {
+					["source"] = "Plutomage-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[275043] = {
+					["source"] = "乌戈图斯",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 128584,
+				},
+				[23768] = {
+					["source"] = "塞格",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 14822,
+				},
+				[300802] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297220] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚缚萨满祭司",
+					["npcID"] = 153097,
+				},
+				[210643] = {
+					["source"] = "红枚王-勇士岛",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[269571] = {
+					["source"] = "艾璐妮-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[312107] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[232893] = {
+					["source"] = "龙域无双丶-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[264760] = {
+					["source"] = "丢丢麻麻-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[17364] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[207203] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[46924] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "凤凤-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[257422] = {
+					["source"] = "插曲灬-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[280400] = {
+					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[251837] = {
+					["source"] = "拉你垫背-雷霆之王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[192106] = {
+					["source"] = "小傻满-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[53385] = {
+					["source"] = "艾璐妮-自由之风",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[313148] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "玄空-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[313088] = {
+					["source"] = "司马乄仲达-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[268899] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "风烧的突突-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[298002] = {
+					["source"] = "丷凨淸丷-萨尔",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[112042] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 1860,
+				},
+				[185565] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "窃玉-黑龙军团",
+					["npcID"] = 0,
+				},
+				[289298] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[185763] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Citypop-萨格拉斯",
+					["npcID"] = 0,
+				},
+				[294155] = {
+					["source"] = "韶华尽-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193455] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[260734] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285424] = {
+					["source"] = "麦麦兜-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[314671] = {
+					["source"] = "国产雷神索尔-奥达曼",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[300809] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[196782] = {
+					["source"] = "繁华丶誰許-甜水绿洲",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[143625] = {
+					["source"] = "詩雲丶-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[257408] = {
+					["source"] = "猫大哈-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[193456] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "岂曰无衣-达克萨隆",
+					["npcID"] = 0,
+				},
+				[83244] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "过河小卒迩-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[187827] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[316985] = {
+					["source"] = "Valkyrien-基尔加丹",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[194879] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[279572] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "广岛之恋-血牙魔王",
+					["npcID"] = 0,
+				},
+				[292361] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302932] = {
+					["source"] = "送奶员-阿卡玛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[303837] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "兴玲-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[298415] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "柠檬小脸-洛萨",
+					["npcID"] = 0,
+				},
+				[26573] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
+					["npcID"] = 0,
+				},
+				[302348] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "为啥我爱小月-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[2565] = {
+					["source"] = "犇気衝天-鬼雾峰",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[8221] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "水晶侍女-血环",
+					["npcID"] = 0,
+				},
+				[213858] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[314631] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "洙妮美",
+					["npcID"] = 0,
+				},
+				[319237] = {
+					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[154797] = {
+					["source"] = "迪菲亚之心-普罗德摩",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297970] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "小汤包-洛萨",
+					["npcID"] = 0,
+				},
+				[49184] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[51723] = {
+					["source"] = "窃玉-黑龙军团",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[260242] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "李大牙-埃克索图斯",
+					["npcID"] = 0,
+				},
+				[274426] = {
+					["source"] = "今生为爱狂-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[164545] = {
+					["source"] = "比昂格-埃克索图斯",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[199600] = {
+					["source"] = "奥兰杜-洛萨",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[108446] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "利恩阿沙克",
+					["npcID"] = 17252,
+				},
+				[318216] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285976] = {
+					["source"] = "机动装甲-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[300142] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "小猪不回来-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[279029] = {
+					["source"] = "红枚王-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[162243] = {
+					["source"] = "霧雨魔理莎-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[2641] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "过河小卒迩-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[2645] = {
+					["source"] = "春妮-埃德萨拉",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[2649] = {
+					["source"] = "蝎子",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 3127,
+				},
+				[268956] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285978] = {
+					["source"] = "詩雲丶-燃烧之刃",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[312372] = {
+					["source"] = "Ripple-鬼雾峰",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297237] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚缚萨满祭司",
+					["npcID"] = 153097,
+				},
+				[118000] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鱼白影青-冰风岗",
+					["npcID"] = 0,
+				},
+				[164547] = {
+					["source"] = "小鸡顿蘑菇-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[228260] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鹰王-洛萨",
+					["npcID"] = 0,
+				},
+				[273794] = {
+					["source"] = "快敲嗜血鼓-丽丽（四川）",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[286835] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "拾柒朵小花儿-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[225919] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[223143] = {
+					["source"] = "线芯-达文格尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[303380] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["encounterID"] = 2332,
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[231843] = {
+					["source"] = "艾璐妮-自由之风",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285981] = {
+					["source"] = "雪月风花丶丶",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[199603] = {
+					["source"] = "低调点-萨尔",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[196447] = {
+					["source"] = "Urbb-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[298839] = {
+					["source"] = "寄流年-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[212653] = {
+					["source"] = "灰烬冰霜-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[205708] = {
+					["source"] = "随便就行-洛萨",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[277649] = {
+					["source"] = "腐烂之根",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 141970,
+				},
+				[11426] = {
+					["source"] = "夏夜的寒风-血牙魔王",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[267560] = {
+					["source"] = "浅夏初晴-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[306965] = {
+					["type"] = "DEBUFF",
+					["source"] = "黑暗幻象",
+					["npcID"] = 157425,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = 2372,
+				},
+				[275672] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "风烧的突突-伊莫塔尔",
+					["npcID"] = 0,
+				},
+				[198069] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[203720] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[298412] = {
+					["source"] = "孤惊残雪-丽丽（四川）",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[198837] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "复生的潜伏者",
+					["npcID"] = 99541,
+				},
+				[256409] = {
+					["source"] = "被感染的巨蜥",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 127132,
+				},
+				[53209] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "夏蛮-血牙魔王",
+					["npcID"] = 0,
+				},
+				[135700] = {
+					["source"] = "挑叁拣泗-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[277648] = {
+					["source"] = "腐烂之根",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 141970,
+				},
+				[348] = {
+					["source"] = "Urbb-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[247454] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[259161] = {
+					["source"] = "哎呀取啥名-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[289308] = {
+					["source"] = "随便就行-洛萨",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[318227] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[302363] = {
+					["source"] = "折虚击天战士",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 152162,
+				},
+				[188034] = {
+					["source"] = "钝刀肉-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[281136] = {
+					["source"] = "未知目标",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 136306,
+				},
+				[305946] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "战神楚留香-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[302364] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "虚空恐魔",
+					["npcID"] = 151836,
+				},
+				[257946] = {
+					["source"] = "赢就赢粒糖-索拉丁",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[267288] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "大地之环萨满",
+					["npcID"] = 135671,
+				},
+				[17962] = {
+					["source"] = "Urbb-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[281402] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "元素活着-萨尔",
+					["npcID"] = 0,
+				},
+				[255975] = {
+					["source"] = "贪食的渡鸦",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 137468,
+				},
+				[51533] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "四月愚人-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[204213] = {
+					["source"] = "猫栗子-冰风岗",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[247456] = {
+					["source"] = "十里扬州路",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[19483] = {
+					["source"] = "地狱火爪牙",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 89,
+				},
+				[299296] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鬼医三十八号-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[326419] = {
+					["source"] = "蓝眉天使-死亡之翼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[232698] = {
+					["source"] = "鬼医三十八号-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[315161] = {
+					["source"] = "Xiaodouding",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[49998] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[82326] = {
+					["source"] = "Dawnlight-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[259306] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "亨利·贝克沃塔",
+					["npcID"] = 127901,
+				},
+				[221886] = {
+					["source"] = "二顺的萨满-黑翼之巢",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299298] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[16979] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
+				},
+				[303211] = {
+					["source"] = "安安小宝-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[94719] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "德爷德啦-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[79962] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 96954,
+				},
+				[304656] = {
+					["source"] = "死都不行-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[256867] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 128649,
+				},
+				[1459] = {
+					["source"] = "蓝眉天使-死亡之翼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[233641] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "Atlana-白银之手",
+					["npcID"] = 0,
+				},
+				[313643] = {
+					["source"] = "暗影疯爆-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[79890] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "佐尔·孤树",
+					["npcID"] = 152228,
+				},
+				[297574] = {
+					["npcID"] = 153244,
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "湮灭元素",
+					["encounterID"] = 2372,
+				},
+				[124219] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "牛黑力法法-达隆米尔",
+					["npcID"] = 0,
+				},
+				[302150] = {
+					["source"] = "十里扬州路",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[302594] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "恐惧之握",
+					["npcID"] = 151872,
+				},
+				[147833] = {
+					["source"] = "取名字真鍀烦-雷斧堡垒",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[63560] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "拾柒朵小花儿-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[318378] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[79892] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 96957,
+				},
+				[164812] = {
+					["source"] = "风起春城暮",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[294255] = {
+					["source"] = "正在捉你",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[79934] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
+					["npcID"] = 107244,
+				},
+				[316703] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "血之灵儿-洛萨",
+					["npcID"] = 0,
+				},
+				[256231] = {
+					["source"] = "娇憨憨-血吼",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[299304] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "溜狗狗的妹妹-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[219873] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "野生梦境角马",
+					["npcID"] = 109819,
+				},
+				[302474] = {
+					["source"] = "暗影猎犬",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 151755,
+				},
+				[219393] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "Clx-冰风岗",
+					["npcID"] = 0,
+				},
+				[315681] = {
+					["source"] = "婀娜-奥拉基尔",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[245005] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "恐惧之握",
+					["npcID"] = 151872,
+				},
+				[275765] = {
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[292653] = {
+					["source"] = "嘿丶那个戰仕-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[284275] = {
+					["source"] = "Opal-勇士岛",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[285489] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "凯总-萨尔",
+					["npcID"] = 0,
+				},
+				[89798] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "维克多·奈法里奥斯",
+					["npcID"] = 49799,
+				},
+				[46168] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "星河众生丶-丽丽（四川）",
+					["npcID"] = 0,
+				},
+				[268602] = {
+					["source"] = "阿仙儿-丽丽（四川）",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[297384] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "奉天伐罪",
+					["npcID"] = 0,
+				},
+				[285720] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "烈酒敬回忆-死亡之翼",
+					["npcID"] = 0,
+				},
+				[298796] = {
+					["source"] = "圣徒降临-雷斧堡垒",
+					["event"] = "SPELL_CAST_SUCCESS",
+					["npcID"] = 0,
+				},
+				[160889] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "执灬念-利刃之拳",
+					["npcID"] = 0,
+				},
+				[214968] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "克加瑟尔",
+					["npcID"] = 0,
+				},
+				[124275] = {
+					["source"] = "清风池水-基尔加丹",
+					["type"] = "DEBUFF",
+					["event"] = "SPELL_AURA_APPLIED",
+					["npcID"] = 0,
+				},
+				[292463] = {
+					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
 			},
 			["aura_timer_text_font"] = "Accidental Presidency",
 			["not_affecting_combat_alpha"] = 0.799999,
+			["indicator_enemyclass"] = true,
 			["aura_height"] = 18,
 			["cast_statusbar_bgtexture"] = "PlaterBackground",
-			["target_indicator"] = "NONE",
-			["indicator_enemyclass"] = true,
+			["target_indicator"] = "Double Arrows",
+			["range_check_alpha"] = 0.5,
 			["aura_height_personal"] = 19,
 			["saved_cvars"] = {
 				["ShowClassColorInNameplate"] = "1",
@@ -6709,9 +10452,9 @@ PlaterDB = {
 				["nameplateGlobalScale"] = "1.0",
 				["nameplateShowEnemyMinions"] = "1",
 				["nameplateShowFriendlyPets"] = "0",
-				["nameplateShowFriendlyNPCs"] = "1",
+				["nameplateShowFriendlyNPCs"] = "0",
 				["nameplateSelectedScale"] = "1.15",
-				["nameplatePersonalShowInCombat"] = "1",
+				["nameplatePersonalShowInCombat"] = "0",
 				["nameplatePersonalShowWithTarget"] = "0",
 				["nameplateShowSelf"] = "0",
 				["nameplateSelfTopInset"] = "0.5",
@@ -6731,8 +10474,8 @@ PlaterDB = {
 				["nameplateShowFriendlyTotems"] = "0",
 				["NamePlateVerticalScale"] = "1",
 			},
-			["login_counter"] = 24,
-			["version"] = 3,
+			["login_counter"] = 82,
+			["show_health_prediction"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["aura_stack_font"] = "Accidental Presidency",
 			["patch_version"] = 9,
@@ -6740,6 +10483,16 @@ PlaterDB = {
 			["aura_timer_text_size"] = 10,
 			["number_region_first_run"] = true,
 			["healthbar_framelevel"] = 0,
+			["aura_tracker"] = {
+				["buff_banned"] = {
+					["206150"] = true,
+					["61574"] = true,
+					["61573"] = true,
+				},
+				["buff_tracked"] = {
+					["209859"] = true,
+				},
+			},
 			["OptionsPanelDB"] = {
 				["PlaterOptionsPanelFrame"] = {
 					["scale"] = 1,
@@ -6747,7 +10500,11 @@ PlaterDB = {
 			},
 			["aura_cooldown_reverse"] = false,
 			["transparency_behavior_use_division"] = true,
-			["health_selection_overlay_alpha"] = 0.099999994039535,
+			["aggro_modifies"] = {
+				["actor_name_color"] = true,
+				["border_color"] = true,
+			},
+			["version"] = 3,
 			["cast_statusbar_spark_width"] = 32,
 		},
 		["MyNewProfile"] = {
@@ -6756,7 +10513,7 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings (you may need /reload if some configs isn't applied immediately)    \n    --change the nameplate color to this if allowed\n    envTable.CanChangeNameplateColor = false --change to true to change the color\n    envTable.NameplateColor = \"pink\"\n    envTable.NameplateSizeOffset = 6 --increase the nameplate height by this value\n    envTable.GlowAlpha = 0.5 --amount of alpha in the outside glow effect\n    \n    --create a glow effect around the nameplate\n    envTable.glowEffect = envTable.glowEffect or Plater.CreateNameplateGlow (unitFrame.healthBar, envTable.NameplateColor)\n    envTable.glowEffect:SetOffset (-27, 25, 9, -11)\n    --envTable.glowEffect:Show() --envTable.glowEffect:Hide() --\n    \n    --set the glow effect alpha\n    envTable.glowEffect:SetAlpha (envTable.GlowAlpha)\n    \nend\n\n--[=[\nUsing spellIDs for multi-language support\n\n135029 - A Knot of Snakes (Temple of Sethraliss)\n135388 - A Knot of Snakes (Temple of Sethraliss)\n134612 - Grasping Tentacles (Shrine of the Storm)\n133361 - Wasting Servant (Waycrest Manor)\n136330 - Soul Thorns (Waycrest Manor)\n130896 - Blackout Barrel (Freehold)\n129758 - Irontide Grenadier (Freehold)\n131009 - Spirit of Gold (Atal`Dazar)\n--]=]",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Hide()\n    \n    --restore the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight)    \n    \nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \nend\n\n\n",
+					["Desc"] = "Highlight a nameplate of an important Add. Add the unit name or NpcID into the trigger box to add more.",
 					["NpcNames"] = {
 						"135029", -- [1]
 						"134388", -- [2]
@@ -6769,14 +10526,14 @@ PlaterDB = {
 						"131009", -- [9]
 					},
 					["Author"] = "Izimode-Azralon",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \nend\n\n\n",
 					["ScriptType"] = 3,
-					["Desc"] = "Highlight a nameplate of an important Add. Add the unit name or NpcID into the trigger box to add more.",
-					["Name"] = "Unit - Important [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can change the nameplate color\n    if (envTable.CanChangeNameplateColor) then\n        Plater.SetNameplateColor (unitFrame, envTable.NameplateColor)\n    end\n    \nend\n\n\n\n\n",
-					["Time"] = 1537884697,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can change the nameplate color\n    if (envTable.CanChangeNameplateColor) then\n        Plater.SetNameplateColor (unitFrame, envTable.NameplateColor)\n    end\n    \nend\n\n\n\n\n",
+					["Name"] = "Unit - Important [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1537884697,
 					["Enabled"] = true,
 					["Icon"] = 135996,
 					["Revision"] = 156,
@@ -6784,16 +10541,12 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --creates a glow around the icon\n    envTable.buffIconGlow = envTable.buffIconGlow or Plater.CreateIconGlow (self)\n    \nend",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.buffIconGlow:Hide()\n    \nend",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.buffIconGlow:Show()\n    \nend",
+					["Desc"] = "Add the buff name in the trigger box.",
 					["NpcNames"] = {
 					},
 					["Author"] = "Tercioo-Sylvanas",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.buffIconGlow:Show()\n    \nend",
 					["ScriptType"] = 1,
-					["Desc"] = "Add the buff name in the trigger box.",
-					["Name"] = "Aura - Buff Alert [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    \n    \n    \nend",
-					["Time"] = 1539013601,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 						275826, -- [1]
 						272888, -- [2]
@@ -6802,6 +10555,10 @@ PlaterDB = {
 						267830, -- [5]
 						265393, -- [6]
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    \n    \n    \nend",
+					["Name"] = "Aura - Buff Alert [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1539013601,
 					["Enabled"] = true,
 					["Icon"] = "Interface\\AddOns\\Plater\\images\\icon_aura",
 					["Revision"] = 399,
@@ -6840,20 +10597,20 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings\n    envTable.NameplateSizeOffset = 3\n    envTable.GlowAlpha = .45\n    envTable.ShowArrow = true\n    envTable.ArrowAlpha = .45    \n    envTable.HealthBarColor = \"orange\"\n    \n    --custom frames\n    envTable.glowEffect = envTable.glowEffect or Plater.CreateNameplateGlow (unitFrame.healthBar)\n    --envTable.glowEffect:Show() --envTable.glowEffect:Hide() \n    envTable.glowEffect:SetOffset (-27, 25, 6, -8)\n    \n    --creates the spark to show the cast progress inside the health bar\n    envTable.overlaySpark = envTable.overlaySpark or Plater:CreateImage (unitFrame.healthBar)\n    envTable.overlaySpark:SetBlendMode (\"ADD\")\n    envTable.overlaySpark.width = 32\n    envTable.overlaySpark.height = 36\n    envTable.overlaySpark.alpha = .9\n    envTable.overlaySpark.texture = [[Interface\\CastingBar\\UI-CastingBar-Spark]]\n    \n    envTable.topArrow = envTable.topArrow or Plater:CreateImage (unitFrame.healthBar)\n    envTable.topArrow:SetBlendMode (\"ADD\")\n    envTable.topArrow.width = 8\n    envTable.topArrow.height = 8\n    envTable.topArrow.alpha = envTable.ArrowAlpha\n    envTable.topArrow.texture = [[Interface\\BUTTONS\\Arrow-Down-Up]]\n    \n    --scale animation\n    envTable.smallScaleAnimation = envTable.smallScaleAnimation or Plater:CreateAnimationHub (unitFrame.healthBar)\n    Plater:CreateAnimation (envTable.smallScaleAnimation, \"SCALE\", 1, 0.075, 1, 1, 1.08, 1.08)\n    Plater:CreateAnimation (envTable.smallScaleAnimation, \"SCALE\", 2, 0.075, 1, 1, 0.95, 0.95)    \n    --envTable.smallScaleAnimation:Play() --envTable.smallScaleAnimation:Stop()\n    \nend\n\n\n\n\n\n\n\n",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.glowEffect:Hide()\n    \n    envTable.overlaySpark:Hide()\n    envTable.topArrow:Hide()\n    \n    Plater.RefreshNameplateColor (unitFrame)\n    \n    envTable.smallScaleAnimation:Stop()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight)\nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    envTable.overlaySpark:Show()\n    \n    if (envTable.ShowArrow) then\n        envTable.topArrow:Show()\n    end\n    \n    Plater.FlashNameplateBorder (unitFrame, 0.05)   \n    Plater.FlashNameplateBody (unitFrame, \"\", 0.075)\n    \n    envTable.smallScaleAnimation:Play()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \n    envTable.overlaySpark.height = nameplateHeight + 32\n    \n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \n    \nend\n\n\n\n\n\n\n",
+					["Desc"] = "Apply several animations when the explosion orb cast starts on a Mythic Dungeon with Explosion Affix",
 					["NpcNames"] = {
 					},
 					["Author"] = "Bombad�o-Azralon",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.glowEffect:Show()\n    envTable.overlaySpark:Show()\n    \n    if (envTable.ShowArrow) then\n        envTable.topArrow:Show()\n    end\n    \n    Plater.FlashNameplateBorder (unitFrame, 0.05)   \n    Plater.FlashNameplateBody (unitFrame, \"\", 0.075)\n    \n    envTable.smallScaleAnimation:Play()\n    \n    --increase the nameplate size\n    local nameplateHeight = Plater.db.profile.plate_config.enemynpc.health_incombat [2]\n    unitFrame.healthBar:SetHeight (nameplateHeight + envTable.NameplateSizeOffset)\n    \n    envTable.overlaySpark.height = nameplateHeight + 32\n    \n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \n    \nend\n\n\n\n\n\n\n",
 					["ScriptType"] = 2,
-					["Desc"] = "Apply several animations when the explosion orb cast starts on a Mythic Dungeon with Explosion Affix",
-					["Name"] = "Explosion Affix M+ [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the percent\n    envTable.overlaySpark:SetPoint (\"left\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100)-16, 0)\n    \n    envTable.topArrow:SetPoint (\"bottomleft\", unitFrame.healthBar, \"topleft\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100) - 4, 2 )\n    \n    --forces the script to update on a 60Hz base\n    self.ThrottleUpdate = 0.016\n    \n    --update the health bar color coloring from yellow to red\n    --Plater.SetNameplateColor (unitFrame, max (envTable._CastPercent/100, .66), abs (envTable._CastPercent/100 - 1), 0, 1)\n    \n    Plater.SetNameplateColor (unitFrame, envTable.HealthBarColor)\n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \nend\n\n\n",
-					["Time"] = 1540663131,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 						240446, -- [1]
 						273577, -- [2]
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the percent\n    envTable.overlaySpark:SetPoint (\"left\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100)-16, 0)\n    \n    envTable.topArrow:SetPoint (\"bottomleft\", unitFrame.healthBar, \"topleft\", unitFrame.healthBar:GetWidth() * (envTable._CastPercent / 100) - 4, 2 )\n    \n    --forces the script to update on a 60Hz base\n    self.ThrottleUpdate = 0.016\n    \n    --update the health bar color coloring from yellow to red\n    --Plater.SetNameplateColor (unitFrame, max (envTable._CastPercent/100, .66), abs (envTable._CastPercent/100 - 1), 0, 1)\n    \n    Plater.SetNameplateColor (unitFrame, envTable.HealthBarColor)\n    envTable.glowEffect.Texture:SetAlpha (envTable.GlowAlpha)\n    \nend\n\n\n",
+					["Name"] = "Explosion Affix M+ [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1540663131,
 					["Enabled"] = true,
 					["Icon"] = 2175503,
 					["Revision"] = 324,
@@ -6861,18 +10618,18 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --creates a glow around the icon\n    envTable.debuffIconGlow = envTable.debuffIconGlow or Plater.CreateIconGlow (self)\n    \nend\n\n\n",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.debuffIconGlow:Hide()\n    \nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.debuffIconGlow:Show()\n    \nend\n\n\n",
+					["Desc"] = "Add the debuff name in the trigger box.",
 					["NpcNames"] = {
 					},
 					["Author"] = "Tercioo-Sylvanas",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.debuffIconGlow:Show()\n    \nend\n\n\n",
 					["ScriptType"] = 1,
-					["Desc"] = "Add the debuff name in the trigger box.",
-					["Name"] = "Aura - Debuff Alert [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
-					["Time"] = 1538429739,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["Name"] = "Aura - Debuff Alert [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1538429739,
 					["Enabled"] = true,
 					["Icon"] = "Interface\\AddOns\\Plater\\images\\icon_aura",
 					["Revision"] = 232,
@@ -7014,19 +10771,19 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings:\n    do\n        \n        --change the nameplate color to this color\n        --can use color names: \"red\", \"yellow\"\n        --can use color hex: \"#FF0000\", \"#FFFF00\"\n        --con use color table: {1, 0, 0}, {1, 1, 0}\n        \n        envTable.Color = \"green\"\n        \n        --if true, it'll replace the health info with the unit name\n        envTable.ReplaceHealthWithName = false\n        \n        --use flash when the unit is shown in the screen\n        envTable.FlashNameplate = true\n        \n    end\n    \n    --private:\n    do\n        --create a flash for when the unit if shown\n        envTable.smallFlash = envTable.smallFlash or Plater.CreateFlash (unitFrame.healthBar, 0.15, 1, envTable.Color)\n        \n    end\n    \nend\n\n--[=[\n\nNpc IDS:\n\n141851: Spawn of G'Huun on Mythic Dungeons\n\n\n--]=]\n\n\n\n\n",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --make plater refresh the nameplate color\n    Plater.RefreshNameplateColor (unitFrame)\n    \n        envTable.smallFlash:Stop()\n    \nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can flash the nameplate\n    if (envTable.FlashNameplate) then\n        envTable.smallFlash:Play()\n    end\n    \nend\n\n\n\n\n\n\n\n\n",
+					["Desc"] = "Add a unitID or unit name in 'Add Trigger' entry. See the constructor script for options.",
 					["NpcNames"] = {
 						"141851", -- [1]
 					},
 					["Author"] = "Izimode-Azralon",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if can flash the nameplate\n    if (envTable.FlashNameplate) then\n        envTable.smallFlash:Play()\n    end\n    \nend\n\n\n\n\n\n\n\n\n",
 					["ScriptType"] = 3,
-					["Desc"] = "Add a unitID or unit name in 'Add Trigger' entry. See the constructor script for options.",
-					["Name"] = "Color Change [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --adjust the nameplate color\n    Plater.SetNameplateColor (unitFrame, envTable.Color)\n    \n    --check if can replace the health amount with the unit name\n    if (envTable.ReplaceHealthWithName) then\n        \n        local healthPercent = format (\"%.1f\", unitFrame.healthBar.CurrentHealth / unitFrame.healthBar.CurrentHealthMax *100)\n        \n        unitFrame.healthBar.lifePercent:SetText (unitFrame.namePlateUnitName .. \"  (\" .. healthPercent  .. \"%)\")\n        \n    end\n    \nend\n\n\n",
-					["Time"] = 1543253273,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --adjust the nameplate color\n    Plater.SetNameplateColor (unitFrame, envTable.Color)\n    \n    --check if can replace the health amount with the unit name\n    if (envTable.ReplaceHealthWithName) then\n        \n        local healthPercent = format (\"%.1f\", unitFrame.healthBar.CurrentHealth / unitFrame.healthBar.CurrentHealthMax *100)\n        \n        unitFrame.healthBar.lifePercent:SetText (unitFrame.namePlateUnitName .. \"  (\" .. healthPercent  .. \"%)\")\n        \n    end\n    \nend\n\n\n",
+					["Name"] = "Color Change [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1543253273,
 					["Enabled"] = true,
 					["Icon"] = 135024,
 					["Revision"] = 59,
@@ -7057,18 +10814,18 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "--gray lines are comments and doesn't affect the code\n\n--1) add the aura you want by typing its name or spellID into the \"Add Trigger\" and click the \"Add\" button.\n--2) the border will use the default color set below, to a custom color type aura name and the color you want in the BorderColorByAura table.\n\nfunction (self, unitId, unitFrame, envTable)\n    \n    --default color if the aura name isn't found in the Color By Aura table below\n    envTable.DefaultBorderColor = \"orange\"\n    \n    --transparency, affect all borders\n    envTable.BorderAlpha = 1.0\n    \n    --add the aura name and the color, \n    envTable.BorderColorByAura = {\n        \n        --examples:\n        --[\"Aura Name\"] = \"yellow\", --using regular aura name | using the name of the color\n        --[\"aura name\"] = \"#FFFF00\", --using lower case in the aura name |using html #hex for the color\n        --[54214] = {1, 1, 0}, --using the spellID instead of the name | using rgb table (0 to 1) for the color\n        --color table uses zero to one values: 255 = 1.0, 127 = 0.5, orange color = {1, 0.7, 0}\n        \n        --add your custom border colors below:\n        \n        [\"Aura Name\"] = {1, .5, 0}, --example to copy/paste\n        \n    }\n    \n    \nend\n\n\n\n\n",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --reset the border color\n    self:SetBackdropBorderColor (0, 0, 0, 0)\n    \nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the aura name in lower case\n    local auraLowerName = string.lower (envTable._SpellName)\n    \n    --attempt to get a custom color added by the user in the constructor script\n    local hasCustomBorderColor = envTable.BorderColorByAura [auraLowerName] or envTable.BorderColorByAura [envTable._SpellName] or envTable.BorderColorByAura [envTable._SpellID]\n    \n    --save the custom color\n    envTable.CustomBorderColor = hasCustomBorderColor\n    \nend\n\n\n",
+					["Desc"] = "Add a border to an aura icon. Add the aura into the Add Trigger entry. You can customize the icon color at the constructor script.",
 					["NpcNames"] = {
 					},
 					["Author"] = "Izimode-Azralon",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the aura name in lower case\n    local auraLowerName = string.lower (envTable._SpellName)\n    \n    --attempt to get a custom color added by the user in the constructor script\n    local hasCustomBorderColor = envTable.BorderColorByAura [auraLowerName] or envTable.BorderColorByAura [envTable._SpellName] or envTable.BorderColorByAura [envTable._SpellID]\n    \n    --save the custom color\n    envTable.CustomBorderColor = hasCustomBorderColor\n    \nend\n\n\n",
 					["ScriptType"] = 1,
-					["Desc"] = "Add a border to an aura icon. Add the aura into the Add Trigger entry. You can customize the icon color at the constructor script.",
-					["Name"] = "Aura - Border Color [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the custom color added by the user or the default color\n    local color = envTable.CustomBorderColor or envTable.DefaultBorderColor\n    --parse the color since it can be a color name, hex or color table\n    local r, g, b = DetailsFramework:ParseColors (color)\n    \n    --set the border color\n    self:SetBackdropBorderColor (r, g, b, envTable.BorderAlpha)\n    \nend\n\n\n\n\n",
-					["Time"] = 1543680853,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --get the custom color added by the user or the default color\n    local color = envTable.CustomBorderColor or envTable.DefaultBorderColor\n    --parse the color since it can be a color name, hex or color table\n    local r, g, b = DetailsFramework:ParseColors (color)\n    \n    --set the border color\n    self:SetBackdropBorderColor (r, g, b, envTable.BorderAlpha)\n    \nend\n\n\n\n\n",
+					["Name"] = "Aura - Border Color [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1543680853,
 					["Enabled"] = true,
 					["Icon"] = 133006,
 					["Revision"] = 45,
@@ -7076,19 +10833,19 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount = Plater:CreateLabel (unitFrame, \"\", 16, \"silver\");\n    envTable.EnergyAmount:SetPoint (\"bottom\", unitFrame, \"top\", 0, 18);\nend\n\n--[=[\n\n\n--]=]",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Hide()\nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Show()\nend\n\n\n",
+					["Desc"] = "Show the energy amount above the nameplate",
 					["NpcNames"] = {
 						"Guardian of Yogg-Saron", -- [1]
 					},
 					["Author"] = "Celian-Sylvanas",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount:Show()\nend\n\n\n",
 					["ScriptType"] = 3,
-					["Desc"] = "Show the energy amount above the nameplate",
-					["Name"] = "UnitPower [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount.text = \"\" .. UnitPower (unitId);\nend\n\n\n",
-					["Time"] = 1539015649,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.EnergyAmount.text = \"\" .. UnitPower (unitId);\nend\n\n\n",
+					["Name"] = "UnitPower [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1539015649,
 					["Enabled"] = true,
 					["Icon"] = 136048,
 					["Revision"] = 131,
@@ -7096,16 +10853,12 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.movingArrow = envTable.movingArrow or Plater:CreateImage (self, [[Interface\\PETBATTLES\\PetBattle-StatIcons]], 16, self:GetHeight(), \"background\", {0, 15/32, 18/32, 30/32})\n    \n    envTable.movingArrow:SetAlpha (0.275)\n    --envTable.movingArrow:SetDesaturated (true)\n    \n    envTable.movingAnimation = envTable.movingAnimation or Plater:CreateAnimationHub (envTable.movingArrow, \n        function() \n            envTable.movingArrow:Show() \n            envTable.movingArrow:SetPoint(\"left\", 0, 0)\n        end, \n        function() envTable.movingArrow:Hide() end)\n    \n    envTable.movingAnimation:SetLooping (\"REPEAT\")\n    \n    local animation = Plater:CreateAnimation (envTable.movingAnimation, \"translation\", 1, 0.2, self:GetWidth()-16, 0)\n    \n    \n    \nend\n\n\n",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.movingAnimation:Stop()\nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.movingAnimation:Play()\nend\n\n\n",
+					["Desc"] = "Does an animation for casts that affect the frontal area of the enemy. Add spell in the Add Trigger field.",
 					["NpcNames"] = {
 					},
 					["Author"] = "Izimode-Azralon",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.movingAnimation:Play()\nend\n\n\n",
 					["ScriptType"] = 2,
-					["Desc"] = "Does an animation for casts that affect the frontal area of the enemy. Add spell in the Add Trigger field.",
-					["Name"] = "Cast - Frontal Cone [Plater]",
-					["UpdateCode"] = "		function (self, unitId, unitFrame, envTable)\n			\n		end\n	",
-					["Time"] = 1539201849,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 						255952, -- [1]
 						257426, -- [2]
@@ -7133,6 +10886,10 @@ PlaterDB = {
 						265541, -- [24]
 						250258, -- [25]
 					},
+					["UpdateCode"] = "		function (self, unitId, unitFrame, envTable)\n			\n		end\n	",
+					["Name"] = "Cast - Frontal Cone [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1539201849,
 					["Enabled"] = true,
 					["Icon"] = "Interface\\AddOns\\Plater\\images\\cast_bar",
 					["Revision"] = 171,
@@ -7140,20 +10897,20 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.FixateTarget = Plater:CreateLabel (unitFrame);\n    envTable.FixateTarget:SetPoint (\"bottom\", unitFrame.BuffFrame, \"top\", 0, 10);    \n    \n    envTable.FixateIcon = Plater:CreateImage (unitFrame, 236188, 16, 16, \"overlay\");\n    envTable.FixateIcon:SetPoint (\"bottom\", envTable.FixateTarget, \"top\", 0, 4);    \n    \nend\n\n\n\n\n\n\n\n\n",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Hide()\n    envTable.FixateIcon:Hide()\nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Show();\n    envTable.FixateIcon:Show();\n    \nend\n\n\n",
+					["Desc"] = "Show above the nameplate who is the player fixated",
 					["NpcNames"] = {
 					},
 					["Author"] = "Celian-Sylvanas",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:Show();\n    envTable.FixateIcon:Show();\n    \nend\n\n\n",
 					["ScriptType"] = 1,
-					["Desc"] = "Show above the nameplate who is the player fixated",
-					["Name"] = "Fixate [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    local targetName = UnitName (unitId .. \"target\");\n    if (targetName) then\n        local _, class = UnitClass (unitId .. \"target\");\n        targetName = Plater.SetTextColorByClass (unitId .. \"target\", targetName);\n        envTable.FixateTarget.text = targetName;\n    end    \nend\n\n\n",
-					["Time"] = 1539187387,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 						272584, -- [1]
 						244653, -- [2]
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    local targetName = UnitName (unitId .. \"target\");\n    if (targetName) then\n        local _, class = UnitClass (unitId .. \"target\");\n        targetName = Plater.SetTextColorByClass (unitId .. \"target\", targetName);\n        envTable.FixateTarget.text = targetName;\n    end    \nend\n\n\n",
+					["Name"] = "Fixate [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1539187387,
 					["Enabled"] = true,
 					["Icon"] = 1029718,
 					["Revision"] = 190,
@@ -7161,7 +10918,7 @@ PlaterDB = {
 				{
 					["ConstructorCode"] = "--todo: add npc ids for multilanguage support\n\nfunction (self, unitId, unitFrame, envTable)\n    \n    --settings\n    envTable.TextAboveNameplate = \"** On You **\"\n    envTable.NameplateColor = \"green\"\n    \n    --label to show the text above the nameplate\n    envTable.FixateTarget = Plater:CreateLabel (unitFrame);\n    envTable.FixateTarget:SetPoint (\"bottom\", unitFrame.healthBar, \"top\", 0, 30);\n    \n    --the spell casted by the npc in the trigger list needs to be in the list below as well\n    local spellList = {\n        [268074] = \"Dark Purpose\", --G'huun Mythic Add\n        [260954] = \"Iron Gaze\", --Sergeant Bainbridge - Siege of Boralus\n        [257739] = \"Blind Rage\", --Blacktooth Scrapper - Freehold\n        [257314] = \"Black Powder Bomb\", --Irontide Grenadier - Freehold\n        [266107] = \"Thirst For Blood\", --Feral Bloodswarmer - The Underrot\n        [257582] = \"Raging Gaze\", --Earthrager - The MOTHERLODE!!\n        [262377] = \"Seek and Destroy\", --Crawler Mine - The MOTHERLODE!!\n        [257407] = \"Pursuit\", --Rezan - Atal'Dazar\n        --[] = \"\" --       \n        \n    }\n    \n    --build the list with localized spell names\n    envTable.FixateDebuffs = {}\n    for spellID, enUSSpellName in pairs (spellList) do\n        local localizedSpellName = GetSpellInfo (spellID)\n        envTable.FixateDebuffs [localizedSpellName or enUSSpellName] = true\n    end\n    \n    --debug - smuggled crawg\n    envTable.FixateDebuffs [\"Jagged Maw\"] = true\n    \nend\n\n--[=[\nNpcIDs:\n136461: Spawn of G'huun (mythic uldir G'huun)\n\n--]=]\n\n\n\n\n",
 					["OnHideCode"] = "function (self, unitId, unitFrame, envTable)\n    envTable.FixateTarget:SetText (\"\")\n    envTable.FixateTarget:Hide()\n    \n    envTable.IsFixated = false\n    \n    Plater.RefreshNameplateColor (unitFrame)\nend\n\n\n",
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
+					["Desc"] = "When an enemy places a debuff and starts to chase you. This script changes the nameplate color and place your name above the nameplate as well.",
 					["NpcNames"] = {
 						"smuggled crawg", -- [1]
 						"sergeant bainbridge", -- [2]
@@ -7174,12 +10931,8 @@ PlaterDB = {
 						"136461", -- [9]
 					},
 					["Author"] = "Tecno-Azralon",
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
 					["ScriptType"] = 3,
-					["Desc"] = "When an enemy places a debuff and starts to chase you. This script changes the nameplate color and place your name above the nameplate as well.",
-					["Name"] = "Fixate On You [Plater]",
-					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --swap this to true when it is fixated\n    local isFixated = false\n    \n    --check the debuffs the player has and see if any of these debuffs has been placed by this unit\n    for debuffId = 1, 40 do\n        local name, texture, count, debuffType, duration, expirationTime, caster = UnitDebuff (\"player\", debuffId)\n        \n        --cancel the loop if there's no more debuffs on the player\n        if (not name) then \n            break \n        end\n        \n        --check if the owner of the debuff is this unit\n        if (envTable.FixateDebuffs [name] and caster and UnitIsUnit (caster, unitId)) then\n            --the debuff the player has, has been placed by this unit, set the name above the unit name\n            envTable.FixateTarget:SetText (envTable.TextAboveNameplate)\n            envTable.FixateTarget:Show()\n            Plater.SetNameplateColor (unitFrame,  envTable.NameplateColor)\n            isFixated = true\n            \n            if (not envTable.IsFixated) then\n                envTable.IsFixated = true\n                Plater.FlashNameplateBody (unitFrame, \"fixate\", .2)\n            end\n        end\n        \n    end\n    \n    --check if the nameplate color is changed but isn't fixated any more\n    if (not isFixated and envTable.IsFixated) then\n        --refresh the nameplate color\n        Plater.RefreshNameplateColor (unitFrame)\n        --reset the text\n        envTable.FixateTarget:SetText (\"\")\n        \n        envTable.IsFixated = false\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-					["Time"] = 1543250950,
-					["PlaterCore"] = 1,
 					["SpellIds"] = {
 						"spawn of g'huun", -- [1]
 						"smuggled crawg", -- [2]
@@ -7191,6 +10944,10 @@ PlaterDB = {
 						"crawler mine", -- [8]
 						"rezan", -- [9]
 					},
+					["UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \n    --swap this to true when it is fixated\n    local isFixated = false\n    \n    --check the debuffs the player has and see if any of these debuffs has been placed by this unit\n    for debuffId = 1, 40 do\n        local name, texture, count, debuffType, duration, expirationTime, caster = UnitDebuff (\"player\", debuffId)\n        \n        --cancel the loop if there's no more debuffs on the player\n        if (not name) then \n            break \n        end\n        \n        --check if the owner of the debuff is this unit\n        if (envTable.FixateDebuffs [name] and caster and UnitIsUnit (caster, unitId)) then\n            --the debuff the player has, has been placed by this unit, set the name above the unit name\n            envTable.FixateTarget:SetText (envTable.TextAboveNameplate)\n            envTable.FixateTarget:Show()\n            Plater.SetNameplateColor (unitFrame,  envTable.NameplateColor)\n            isFixated = true\n            \n            if (not envTable.IsFixated) then\n                envTable.IsFixated = true\n                Plater.FlashNameplateBody (unitFrame, \"fixate\", .2)\n            end\n        end\n        \n    end\n    \n    --check if the nameplate color is changed but isn't fixated any more\n    if (not isFixated and envTable.IsFixated) then\n        --refresh the nameplate color\n        Plater.RefreshNameplateColor (unitFrame)\n        --reset the text\n        envTable.FixateTarget:SetText (\"\")\n        \n        envTable.IsFixated = false\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+					["Name"] = "Fixate On You [Plater]",
+					["PlaterCore"] = 1,
+					["Time"] = 1543250950,
 					["Enabled"] = true,
 					["Icon"] = 841383,
 					["Revision"] = 194,
@@ -7335,7 +11092,9 @@ PlaterDB = {
 					["percent_text_enabled"] = true,
 					["big_actorname_text_size"] = 10,
 					["actorname_text_outline"] = "NONE",
-					["level_text_alpha"] = 0.5,
+					["actorname_text_anchor"] = {
+						["side"] = 4,
+					},
 					["spellpercent_text_enabled"] = true,
 					["big_actortitle_text_outline"] = "OUTLINE",
 					["health_incombat"] = {
@@ -7357,12 +11116,10 @@ PlaterDB = {
 						120, -- [1]
 						14, -- [2]
 					},
-					["percent_text_ooc"] = true,
-					["actorname_text_anchor"] = {
-						["side"] = 4,
-					},
-					["show_guild_name"] = true,
 					["percent_show_health"] = true,
+					["level_text_alpha"] = 0.5,
+					["percent_text_ooc"] = true,
+					["show_guild_name"] = true,
 					["level_text_enabled"] = true,
 				},
 				["friendlynpc"] = {
@@ -7548,9 +11305,9 @@ PlaterDB = {
 				["Blockade Encounter"] = 1,
 				["Attacking Specific Unit"] = 1,
 				["Reorder Nameplate"] = 3,
+				["Combo Points"] = 3,
 				["Extra Border"] = 2,
 				["Hide Neutral Units"] = 1,
-				["Combo Points"] = 3,
 				["Target Color"] = 3,
 				["Aura Reorder"] = 1,
 				["Jaina Encounter"] = 6,
@@ -8341,26 +12098,26 @@ PlaterDB = {
 						["desc"] = "",
 					},
 				},
-				["100784"] = {
+				["280720"] = {
 					["1"] = {
 						["scaleY"] = 1,
-						["fade_out"] = 0.09,
+						["fade_out"] = 0.089999996125698,
 						["absolute_sineX"] = false,
-						["duration"] = 0.099999994039536,
+						["duration"] = 0.19999998807907,
 						["absolute_sineY"] = false,
 						["animation_type"] = "frameshake",
-						["scaleX"] = 1,
-						["amplitude"] = 3,
+						["scaleX"] = 0.1,
+						["amplitude"] = 0.89999997615814,
 						["critical_scale"] = 1.05,
-						["fade_in"] = 0.01,
+						["fade_in"] = 0.0099999997764826,
 						["enabled"] = true,
 						["cooldown"] = 0.5,
-						["frequency"] = 1,
+						["frequency"] = 200,
 					},
 					["info"] = {
-						["time"] = 1539296312,
-						["class"] = "MONK",
-						["spellid"] = 100784,
+						["time"] = 1539292087,
+						["class"] = "ROGUE",
+						["spellid"] = 280720,
 						["desc"] = "",
 					},
 				},
@@ -8386,26 +12143,25 @@ PlaterDB = {
 						["desc"] = "",
 					},
 				},
-				["280720"] = {
+				["20243"] = {
 					["1"] = {
 						["scaleY"] = 1,
-						["fade_out"] = 0.089999996125698,
-						["absolute_sineX"] = false,
-						["duration"] = 0.19999998807907,
+						["fade_out"] = 0.02,
+						["duration"] = 0.12,
 						["absolute_sineY"] = false,
 						["animation_type"] = "frameshake",
 						["scaleX"] = 0.1,
-						["amplitude"] = 0.89999997615814,
-						["critical_scale"] = 1.05,
-						["fade_in"] = 0.0099999997764826,
+						["absolute_sineX"] = false,
+						["amplitude"] = 1,
+						["fade_in"] = 0.01,
 						["enabled"] = true,
 						["cooldown"] = 0.5,
-						["frequency"] = 200,
+						["frequency"] = 25,
 					},
 					["info"] = {
-						["time"] = 1539292087,
-						["class"] = "ROGUE",
-						["spellid"] = 280720,
+						["time"] = 0,
+						["class"] = "WARRIOR",
+						["spellid"] = 20243,
 						["desc"] = "",
 					},
 				},
@@ -8959,25 +12715,26 @@ PlaterDB = {
 						["desc"] = "",
 					},
 				},
-				["20243"] = {
+				["100784"] = {
 					["1"] = {
 						["scaleY"] = 1,
-						["fade_out"] = 0.02,
-						["duration"] = 0.12,
+						["fade_out"] = 0.09,
+						["absolute_sineX"] = false,
+						["duration"] = 0.099999994039536,
 						["absolute_sineY"] = false,
 						["animation_type"] = "frameshake",
-						["scaleX"] = 0.1,
-						["absolute_sineX"] = false,
-						["amplitude"] = 1,
+						["scaleX"] = 1,
+						["amplitude"] = 3,
+						["critical_scale"] = 1.05,
 						["fade_in"] = 0.01,
 						["enabled"] = true,
 						["cooldown"] = 0.5,
-						["frequency"] = 25,
+						["frequency"] = 1,
 					},
 					["info"] = {
-						["time"] = 0,
-						["class"] = "WARRIOR",
-						["spellid"] = 20243,
+						["time"] = 1539296312,
+						["class"] = "MONK",
+						["spellid"] = 100784,
 						["desc"] = "",
 					},
 				},
@@ -9012,6 +12769,28 @@ PlaterDB = {
 						["desc"] = "",
 					},
 				},
+				["86040"] = {
+					["1"] = {
+						["scaleY"] = 1,
+						["fade_out"] = 0.1,
+						["duration"] = 0.15,
+						["absolute_sineY"] = false,
+						["animation_type"] = "frameshake",
+						["scaleX"] = 0.1,
+						["absolute_sineX"] = false,
+						["amplitude"] = 2,
+						["fade_in"] = 0.05,
+						["enabled"] = true,
+						["cooldown"] = 0.25,
+						["frequency"] = 20,
+					},
+					["info"] = {
+						["time"] = 0,
+						["class"] = "WARLOCK",
+						["spellid"] = 86040,
+						["desc"] = "",
+					},
+				},
 				["222026"] = {
 					["1"] = {
 						["enabled"] = true,
@@ -9042,28 +12821,6 @@ PlaterDB = {
 						["enabled"] = true,
 						["cooldown"] = 0.5,
 						["frequency"] = 3.1,
-					},
-				},
-				["86040"] = {
-					["1"] = {
-						["scaleY"] = 1,
-						["fade_out"] = 0.1,
-						["duration"] = 0.15,
-						["absolute_sineY"] = false,
-						["animation_type"] = "frameshake",
-						["scaleX"] = 0.1,
-						["absolute_sineX"] = false,
-						["amplitude"] = 2,
-						["fade_in"] = 0.05,
-						["enabled"] = true,
-						["cooldown"] = 0.25,
-						["frequency"] = 20,
-					},
-					["info"] = {
-						["time"] = 0,
-						["class"] = "WARLOCK",
-						["spellid"] = 86040,
-						["desc"] = "",
 					},
 				},
 				["49998"] = {
@@ -10188,22 +13945,22 @@ PlaterDB = {
 					["source"] = "落星秋月-永恒之井",
 					["npcID"] = 0,
 				},
-				[199736] = {
+				[257408] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "丶肉肉大魔王-丽丽（四川）",
+					["source"] = "猫大哈-索拉丁",
 					["npcID"] = 0,
 				},
-				[279902] = {
+				[138927] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "猫栗子-冰风岗",
+					["source"] = "凉城旧梦丶-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[2580] = {
+				[201334] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "风起春城暮",
+					["source"] = "顺德者昌-丽丽（四川）",
 					["npcID"] = 0,
 				},
 				[186258] = {
@@ -10224,22 +13981,22 @@ PlaterDB = {
 					["source"] = "猥琐的脆皮-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[138927] = {
+				[199736] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "凉城旧梦丶-丽丽（四川）",
+					["source"] = "丶肉肉大魔王-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[201334] = {
+				[2580] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "顺德者昌-丽丽（四川）",
+					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
-				[257408] = {
+				[315161] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "猫大哈-索拉丁",
+					["type"] = "DEBUFF",
+					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
 				[248473] = {
@@ -10264,16 +14021,16 @@ PlaterDB = {
 					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
-				[256459] = {
+				[196608] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "主演-雷斧堡垒",
+					["source"] = "柏小逗-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[115008] = {
+				[171186] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "牛黑力法法-达隆米尔",
-					["npcID"] = 0,
+					["source"] = "盐目斧喙鸟",
+					["npcID"] = 130832,
 				},
 				[19514] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -10302,10 +14059,10 @@ PlaterDB = {
 					["source"] = "补刀者云翼",
 					["npcID"] = 140800,
 				},
-				[315161] = {
+				[232698] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["source"] = "鬼医三十八号-丽丽（四川）",
 					["npcID"] = 0,
 				},
 				[226757] = {
@@ -10337,28 +14094,26 @@ PlaterDB = {
 					["source"] = "王启繁-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[232698] = {
+				[279902] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "鬼医三十八号-丽丽（四川）",
+					["source"] = "猫栗子-冰风岗",
 					["npcID"] = 0,
 				},
-				[194310] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "坟头冒青烟-白银之手",
-					["npcID"] = 0,
-				},
-				[296510] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "蠕行腐蚀",
-					["npcID"] = 152704,
-				},
-				[247456] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
+				[228477] = {
+					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "十里扬州路",
+					["npcID"] = 0,
+				},
+				[115008] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "牛黑力法法-达隆米尔",
+					["npcID"] = 0,
+				},
+				[186257] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "諾森德的雪-萨尔",
 					["npcID"] = 0,
 				},
 				[299321] = {
@@ -10372,20 +14127,20 @@ PlaterDB = {
 					["source"] = "詩雲丶-燃烧之刃",
 					["npcID"] = 0,
 				},
-				[228477] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
 				[247454] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[186257] = {
+				[194310] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "諾森德的雪-萨尔",
+					["type"] = "DEBUFF",
+					["source"] = "坟头冒青烟-白银之手",
+					["npcID"] = 0,
+				},
+				[781] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "伊丽娜丝-冬寒",
 					["npcID"] = 0,
 				},
 				[311203] = {
@@ -10465,10 +14220,11 @@ PlaterDB = {
 					["source"] = "水水-鬼雾峰",
 					["npcID"] = 0,
 				},
-				[783] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
+				[204021] = {
 					["npcID"] = 0,
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "十里扬州路",
+					["encounterID"] = 2332,
 				},
 				[279397] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -10506,8 +14262,9 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[96231] = {
-					["event"] = "SPELL_CAST_SUCCESS",
+				[197561] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
 					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
@@ -10517,11 +14274,10 @@ PlaterDB = {
 					["source"] = "买买太冲辣-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[262500] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "拉沙克·铁墙",
-					["npcID"] = 133556,
+				[96231] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
+					["npcID"] = 0,
 				},
 				[297412] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -10558,11 +14314,11 @@ PlaterDB = {
 					["source"] = "秋香专属-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[197561] = {
+				[262500] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
+					["type"] = "DEBUFF",
+					["source"] = "拉沙克·铁墙",
+					["npcID"] = 133556,
 				},
 				[204598] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -10587,16 +14343,16 @@ PlaterDB = {
 					["source"] = "鉴娚春-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[192081] = {
+				[202164] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "风起春城暮",
+					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
 					["npcID"] = 0,
 				},
-				[57724] = {
+				[2645] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "小傻满-燃烧之刃",
+					["type"] = "BUFF",
+					["source"] = "春妮-埃德萨拉",
 					["npcID"] = 0,
 				},
 				[270460] = {
@@ -10622,10 +14378,10 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[2645] = {
+				[274426] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "春妮-埃德萨拉",
+					["source"] = "今生为爱狂-雷斧堡垒",
 					["npcID"] = 0,
 				},
 				[2641] = {
@@ -10679,10 +14435,10 @@ PlaterDB = {
 					["source"] = "清风池水-基尔加丹",
 					["npcID"] = 0,
 				},
-				[315176] = {
+				[192081] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "Xiaodouding",
+					["type"] = "BUFF",
+					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
 				[317859] = {
@@ -10691,10 +14447,10 @@ PlaterDB = {
 					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
-				[313088] = {
+				[57724] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "司马乄仲达-雷斧堡垒",
+					["type"] = "DEBUFF",
+					["source"] = "小傻满-燃烧之刃",
 					["npcID"] = 0,
 				},
 				[271103] = {
@@ -10773,16 +14529,16 @@ PlaterDB = {
 					["source"] = "风的姿态-迦顿",
 					["npcID"] = 0,
 				},
-				[298703] = {
+				[257420] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "蛋糕好好吃-国王之谷",
+					["source"] = "你偷偷地-洛萨",
 					["npcID"] = 0,
 				},
-				[164812] = {
+				[270058] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["source"] = "低眉罂粟-勇士岛",
 					["npcID"] = 0,
 				},
 				[297040] = {
@@ -10814,10 +14570,9 @@ PlaterDB = {
 					["source"] = "估计孤寂-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[1850] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "茉莉清丶龙龙-奥拉基尔",
+				[299312] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "鬼魅魔王-萨尔",
 					["npcID"] = 0,
 				},
 				[124275] = {
@@ -10826,22 +14581,21 @@ PlaterDB = {
 					["source"] = "清风池水-基尔加丹",
 					["npcID"] = 0,
 				},
-				[268905] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "鱼白影青-冰风岗",
-					["npcID"] = 0,
-				},
-				[257420] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "你偷偷地-洛萨",
-					["npcID"] = 0,
-				},
 				[208628] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
 					["source"] = "錵灬-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[314033] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "克熙尔唤虚者",
+					["npcID"] = 161815,
+				},
+				[298703] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "蛋糕好好吃-国王之谷",
 					["npcID"] = 0,
 				},
 				[194384] = {
@@ -10855,17 +14609,17 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[299312] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鬼魅魔王-萨尔",
+				[235313] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "启程狂想-燃烧之刃",
 					["npcID"] = 0,
 				},
-				[268953] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
+				[297941] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["encounterID"] = 2332,
+					["type"] = "BUFF",
+					["source"] = "心胸似海-克尔苏加德",
+					["npcID"] = 0,
 				},
 				[102558] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -10902,9 +14656,9 @@ PlaterDB = {
 					["source"] = "苔原-埃克索图斯",
 					["npcID"] = 0,
 				},
-				[52174] = {
+				[53595] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
+					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
 				[165961] = {
@@ -10940,14 +14694,16 @@ PlaterDB = {
 					["source"] = "无尽饥饿图腾",
 					["npcID"] = 153141,
 				},
-				[53595] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
+				[164812] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
-				[94719] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "德爷德啦-鬼雾峰",
+				[297035] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "低眉罂粟-勇士岛",
 					["npcID"] = 0,
 				},
 				[298197] = {
@@ -10962,22 +14718,20 @@ PlaterDB = {
 					["source"] = "詩雲丶-燃烧之刃",
 					["npcID"] = 0,
 				},
-				[243955] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "无头騎士-血牙魔王",
+				[109132] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "熊猫幂幂-达文格尔",
 					["npcID"] = 0,
 				},
-				[270058] = {
+				[295248] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "低眉罂粟-勇士岛",
+					["source"] = "夏夜的寒风-血牙魔王",
 					["npcID"] = 0,
 				},
-				[235313] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "启程狂想-燃烧之刃",
+				[52174] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
 					["npcID"] = 0,
 				},
 				[298837] = {
@@ -10997,11 +14751,11 @@ PlaterDB = {
 					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
-				[90328] = {
+				[298839] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "未知目标",
-					["npcID"] = 151096,
+					["source"] = "寄流年-丽丽（四川）",
+					["npcID"] = 0,
 				},
 				[285811] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11009,11 +14763,10 @@ PlaterDB = {
 					["source"] = "塔利·萨普纳波",
 					["npcID"] = 133627,
 				},
-				[295137] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "Xiaodouding",
-					["npcID"] = 0,
+				[262687] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "炸弹机器人9000型",
+					["npcID"] = 133660,
 				},
 				[281209] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11021,28 +14774,27 @@ PlaterDB = {
 					["source"] = "安心的小猫咪-国王之谷",
 					["npcID"] = 0,
 				},
-				[287916] = {
+				[221886] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "暗淡的遗忘-雷斧堡垒",
+					["source"] = "二顺的萨满-黑翼之巢",
 					["npcID"] = 0,
 				},
-				[298839] = {
+				[243955] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "寄流年-丽丽（四川）",
+					["source"] = "无头騎士-血牙魔王",
+					["npcID"] = 0,
+				},
+				[255070] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "主演-雷斧堡垒",
 					["npcID"] = 0,
 				},
 				[31884] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
 					["source"] = "Xiaodouding",
-					["npcID"] = 0,
-				},
-				[297035] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "低眉罂粟-勇士岛",
 					["npcID"] = 0,
 				},
 				[77489] = {
@@ -11056,11 +14808,11 @@ PlaterDB = {
 					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
-				[319919] = {
+				[90328] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "迦罗娜的大牛-丽丽（四川）",
-					["npcID"] = 0,
+					["source"] = "未知目标",
+					["npcID"] = 151096,
 				},
 				[284277] = {
 					["source"] = "渔舟晚-丽丽（四川）",
@@ -11068,10 +14820,11 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["npcID"] = 0,
 				},
-				[109132] = {
+				[297822] = {
+					["npcID"] = 152089,
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "熊猫幂幂-达文格尔",
-					["npcID"] = 0,
+					["source"] = "萨尔",
+					["encounterID"] = 2332,
 				},
 				[298841] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11091,10 +14844,10 @@ PlaterDB = {
 					["source"] = "肉串-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[178740] = {
+				[295137] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "十里扬州路",
+					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
 				[192090] = {
@@ -11157,16 +14910,15 @@ PlaterDB = {
 					["source"] = "鉴娚春-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[295248] = {
+				[12472] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
 					["source"] = "夏夜的寒风-血牙魔王",
 					["npcID"] = 0,
 				},
-				[288882] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
+				[311216] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "那妞真靓-自由之风",
 					["npcID"] = 0,
 				},
 				[318391] = {
@@ -11181,33 +14933,36 @@ PlaterDB = {
 					["source"] = "镹伍贰柒-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[203975] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
-				},
-				[279606] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "未知目标",
-					["npcID"] = 26125,
-				},
-				[131347] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "万物咸覩-凤凰之神",
-					["npcID"] = 0,
-				},
 				[259161] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
 					["source"] = "哎呀取啥名-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[284275] = {
+				[288882] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "Opal-勇士岛",
+					["source"] = "十里扬州路",
 					["npcID"] = 0,
+				},
+				[131347] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "万物咸覩-凤凰之神",
+					["npcID"] = 0,
+				},
+				[268953] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = 2332,
+				},
+				[268954] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = 2332,
 				},
 				[33907] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11215,10 +14970,10 @@ PlaterDB = {
 					["source"] = "布罗尔·熊皮",
 					["npcID"] = 142294,
 				},
-				[318187] = {
+				[203975] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "鱼白影青-冰风岗",
+					["type"] = "BUFF",
+					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
 				[45181] = {
@@ -11227,9 +14982,10 @@ PlaterDB = {
 					["source"] = "诺提雷斯-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[298601] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "茉娅缇-萨尔",
+				[192225] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "恶魔猎杀-冬寒",
 					["npcID"] = 0,
 				},
 				[273298] = {
@@ -11238,10 +14994,10 @@ PlaterDB = {
 					["source"] = "柏小逗-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[304606] = {
+				[318187] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "DEBUFF",
-					["source"] = "乄西风",
+					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
 				[268955] = {
@@ -11298,10 +15054,9 @@ PlaterDB = {
 					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
-				[72968] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "阿嬭托莉娅-丽丽（四川）",
+				[298601] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "茉娅缇-萨尔",
 					["npcID"] = 0,
 				},
 				[286587] = {
@@ -11340,20 +15095,21 @@ PlaterDB = {
 					["source"] = "大表哥灬大海-萨尔",
 					["npcID"] = 0,
 				},
-				[12472] = {
+				[304606] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "乄西风",
+					["npcID"] = 0,
+				},
+				[72968] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "夏夜的寒风-血牙魔王",
+					["source"] = "阿嬭托莉娅-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[207684] = {
+				[298606] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-				},
-				[287270] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Deam-萨尔",
+					["source"] = "壹叁伍柒玖-索拉丁",
 					["npcID"] = 0,
 				},
 				[274753] = {
@@ -11378,15 +15134,14 @@ PlaterDB = {
 					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
-				[298606] = {
+				[207684] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "壹叁伍柒玖-索拉丁",
+					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[44544] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "夏夜的寒风-血牙魔王",
+				[121536] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "买买太冲辣-雷斧堡垒",
 					["npcID"] = 0,
 				},
 				[303837] = {
@@ -11459,10 +15214,10 @@ PlaterDB = {
 					["source"] = "风舞凌云-基尔加丹",
 					["npcID"] = 0,
 				},
-				[208772] = {
+				[223143] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "猫栗子-冰风岗",
+					["type"] = "BUFF",
+					["source"] = "线芯-达文格尔",
 					["npcID"] = 0,
 				},
 				[93622] = {
@@ -11494,9 +15249,10 @@ PlaterDB = {
 					["source"] = "拉你垫背-雷霆之王",
 					["npcID"] = 0,
 				},
-				[85288] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
+				[308189] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "锦丨鲤-格瑞姆巴托",
 					["npcID"] = 0,
 				},
 				[298604] = {
@@ -11509,10 +15265,9 @@ PlaterDB = {
 					["source"] = "马里奥扬-萨尔",
 					["npcID"] = 0,
 				},
-				[264760] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "丢丢麻麻-雷斧堡垒",
+				[83244] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "过河小卒迩-丽丽（四川）",
 					["npcID"] = 0,
 				},
 				[294935] = {
@@ -11526,9 +15281,8 @@ PlaterDB = {
 					["source"] = "花寒凛-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[187827] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
+				[203795] = {
+					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
@@ -11538,16 +15292,15 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[21562] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "猫栗子-冰风岗",
+				[299508] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "丷小瓢蟲灬-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[223143] = {
+				[44544] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "线芯-达文格尔",
+					["source"] = "夏夜的寒风-血牙魔王",
 					["npcID"] = 0,
 				},
 				[285959] = {
@@ -11585,10 +15338,10 @@ PlaterDB = {
 					["source"] = "坟头冒青烟-白银之手",
 					["npcID"] = 0,
 				},
-				[308189] = {
+				[208772] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "锦丨鲤-格瑞姆巴托",
+					["type"] = "DEBUFF",
+					["source"] = "猫栗子-冰风岗",
 					["npcID"] = 0,
 				},
 				[215479] = {
@@ -11618,15 +15371,15 @@ PlaterDB = {
 					["source"] = "伊丽娜丝-冬寒",
 					["npcID"] = 0,
 				},
-				[83244] = {
+				[85288] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "过河小卒迩-丽丽（四川）",
+					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
-				[65081] = {
+				[21562] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "戏迷-鬼雾峰",
+					["source"] = "猫栗子-冰风岗",
 					["npcID"] = 0,
 				},
 				[300526] = {
@@ -11647,15 +15400,16 @@ PlaterDB = {
 					["source"] = "黑橙蓝绿紫-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[311214] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "夏夜的寒风-血牙魔王",
-					["npcID"] = 0,
-				},
-				[268856] = {
+				[65081] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "鱼白影青-冰风岗",
+					["source"] = "戏迷-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[203539] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "烈楓-永恒之井",
 					["npcID"] = 0,
 				},
 				[285836] = {
@@ -11720,9 +15474,10 @@ PlaterDB = {
 					["source"] = "鉴娚春-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[312794] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "茉莉清丶龙龙-奥拉基尔",
+				[264760] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "丢丢麻麻-雷斧堡垒",
 					["npcID"] = 0,
 				},
 				[281240] = {
@@ -11731,17 +15486,17 @@ PlaterDB = {
 					["source"] = "恩利尔-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[303345] = {
+				[268856] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "十里扬州路",
+					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
-				[260069] = {
+				[192106] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "贡克祭司",
-					["npcID"] = 131809,
+					["source"] = "小傻满-燃烧之刃",
+					["npcID"] = 0,
 				},
 				[264761] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11783,11 +15538,11 @@ PlaterDB = {
 					["source"] = "鸦眼-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[260072] = {
+				[312677] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "帕库拉祭司",
-					["npcID"] = 131834,
+					["type"] = "DEBUFF",
+					["source"] = "克熙尔唤虚者",
+					["npcID"] = 161815,
 				},
 				[585] = {
 					["event"] = "SPELL_CAST_SUCCESS",
@@ -11823,16 +15578,17 @@ PlaterDB = {
 					["source"] = "牛黑力法法-达隆米尔",
 					["npcID"] = 0,
 				},
-				[203795] = {
-					["event"] = "SPELL_CAST_SUCCESS",
+				[303345] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[192106] = {
+				[260069] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "小傻满-燃烧之刃",
-					["npcID"] = 0,
+					["source"] = "贡克祭司",
+					["npcID"] = 131809,
 				},
 				[143625] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11886,11 +15642,11 @@ PlaterDB = {
 					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
-				[118922] = {
+				[260072] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "伊丽娜丝-冬寒",
-					["npcID"] = 0,
+					["source"] = "帕库拉祭司",
+					["npcID"] = 131834,
 				},
 				[1459] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11915,10 +15671,9 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[285978] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "詩雲丶-燃烧之刃",
+				[8921] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
 				[108446] = {
@@ -11968,11 +15723,11 @@ PlaterDB = {
 					["source"] = "猫栗子-冰风岗",
 					["npcID"] = 0,
 				},
-				[312677] = {
+				[118922] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "克熙尔唤虚者",
-					["npcID"] = 161815,
+					["type"] = "BUFF",
+					["source"] = "伊丽娜丝-冬寒",
+					["npcID"] = 0,
 				},
 				[85739] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -11985,10 +15740,11 @@ PlaterDB = {
 					["source"] = "娜塔利-奥达曼",
 					["npcID"] = 0,
 				},
-				[297220] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "虚缚萨满祭司",
-					["npcID"] = 153097,
+				[285978] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "詩雲丶-燃烧之刃",
+					["npcID"] = 0,
 				},
 				[273842] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -12201,10 +15957,10 @@ PlaterDB = {
 					["source"] = "无面毁伤者",
 					["npcID"] = 161812,
 				},
-				[8921] = {
+				[297220] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "风起春城暮",
-					["npcID"] = 0,
+					["source"] = "虚缚萨满祭司",
+					["npcID"] = 153097,
 				},
 				[12654] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -12241,10 +15997,9 @@ PlaterDB = {
 					["source"] = "王根基-熊猫酒仙",
 					["npcID"] = 0,
 				},
-				[268854] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "鱼白影青-冰风岗",
+				[53600] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
 				[1719] = {
@@ -12265,10 +16020,10 @@ PlaterDB = {
 					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
-				[203539] = {
+				[187827] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "烈楓-永恒之井",
+					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
 				[119085] = {
@@ -12293,14 +16048,15 @@ PlaterDB = {
 					["source"] = "烈楓-永恒之井",
 					["npcID"] = 0,
 				},
-				[53600] = {
+				[312794] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "Xiaodouding",
+					["source"] = "茉莉清丶龙龙-奥拉基尔",
 					["npcID"] = 0,
 				},
-				[299508] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "丷小瓢蟲灬-丽丽（四川）",
+				[268854] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
 				[148540] = {
@@ -12314,10 +16070,9 @@ PlaterDB = {
 					["source"] = "真的汉子-克尔苏加德",
 					["npcID"] = 0,
 				},
-				[298512] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "梅塞施密特-熊猫酒仙",
+				[287270] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "Deam-萨尔",
 					["npcID"] = 0,
 				},
 				[251839] = {
@@ -12359,9 +16114,10 @@ PlaterDB = {
 					["source"] = "圣埃米克劳斯-鬼雾峰",
 					["npcID"] = 0,
 				},
-				[311216] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "那妞真靓-自由之风",
+				[298512] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "梅塞施密特-熊猫酒仙",
 					["npcID"] = 0,
 				},
 				[299664] = {
@@ -12375,9 +16131,10 @@ PlaterDB = {
 					["source"] = "虚缚萨满祭司",
 					["npcID"] = 153097,
 				},
-				[121536] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "买买太冲辣-雷斧堡垒",
+				[204490] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
 				[8690] = {
@@ -12385,27 +16142,25 @@ PlaterDB = {
 					["source"] = "Cirillaa-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[204490] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
+				[270241] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "燃烬卫士",
+					["npcID"] = 135893,
 				},
 				[302348] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "为啥我爱小月-鬼雾峰",
 					["npcID"] = 0,
 				},
-				[270241] = {
+				[184367] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "燃烬卫士",
-					["npcID"] = 135893,
-				},
-				[192225] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "恶魔猎杀-冬寒",
+					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
+				},
+				[279606] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "未知目标",
+					["npcID"] = 26125,
 				},
 				[204255] = {
 					["event"] = "SPELL_CAST_SUCCESS",
@@ -12418,17 +16173,16 @@ PlaterDB = {
 					["source"] = "花落乄叶相随-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[184367] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "鱼白影青-冰风岗",
+				[193753] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "半生轻狂客-萨尔",
 					["npcID"] = 0,
 				},
-				[268954] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
+				[311214] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "夏夜的寒风-血牙魔王",
 					["npcID"] = 0,
-					["event"] = "SPELL_AURA_APPLIED",
-					["encounterID"] = 2332,
 				},
 				[223929] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -12436,10 +16190,10 @@ PlaterDB = {
 					["source"] = "坟头冒青烟-白银之手",
 					["npcID"] = 0,
 				},
-				[45334] = {
+				[284275] = {
 					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "DEBUFF",
-					["source"] = "风起春城暮",
+					["type"] = "BUFF",
+					["source"] = "Opal-勇士岛",
 					["npcID"] = 0,
 				},
 				[270285] = {
@@ -12464,38 +16218,39 @@ PlaterDB = {
 					["source"] = "买买太冲辣-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[297822] = {
-					["npcID"] = 152089,
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "萨尔",
-					["encounterID"] = 2332,
+				[178740] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
 				},
 				[299541] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "楊阳洋-鬼雾峰",
 					["npcID"] = 0,
 				},
-				[221886] = {
+				[94719] = {
+					["event"] = "SPELL_CAST_SUCCESS",
+					["source"] = "德爷德啦-鬼雾峰",
+					["npcID"] = 0,
+				},
+				[319919] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "二顺的萨满-黑翼之巢",
+					["source"] = "迦罗娜的大牛-丽丽（四川）",
 					["npcID"] = 0,
 				},
-				[193753] = {
+				[287916] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "半生轻狂客-萨尔",
+					["source"] = "暗淡的遗忘-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[255070] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "主演-雷斧堡垒",
+				[45334] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "风起春城暮",
 					["npcID"] = 0,
-				},
-				[262687] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "炸弹机器人9000型",
-					["npcID"] = 133660,
 				},
 				[224186] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -12549,12 +16304,6 @@ PlaterDB = {
 					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
-				[297941] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "心胸似海-克尔苏加德",
-					["npcID"] = 0,
-				},
 				[68992] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
@@ -12571,6 +16320,12 @@ PlaterDB = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
 					["source"] = "暴走的鲁鲁-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[1850] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "茉莉清丶龙龙-奥拉基尔",
 					["npcID"] = 0,
 				},
 				[102417] = {
@@ -12591,10 +16346,10 @@ PlaterDB = {
 					["source"] = "Anicus-雷斧堡垒",
 					["npcID"] = 0,
 				},
-				[202164] = {
+				[268905] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "胡瓜碎颅杀丶-燃烧之刃",
+					["source"] = "鱼白影青-冰风岗",
 					["npcID"] = 0,
 				},
 				[203812] = {
@@ -12609,24 +16364,6 @@ PlaterDB = {
 					["source"] = "风起春城暮",
 					["npcID"] = 0,
 				},
-				[314033] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "克熙尔唤虚者",
-					["npcID"] = 161815,
-				},
-				[274426] = {
-					["event"] = "SPELL_AURA_APPLIED",
-					["type"] = "BUFF",
-					["source"] = "今生为爱狂-雷斧堡垒",
-					["npcID"] = 0,
-				},
-				[303380] = {
-					["type"] = "BUFF",
-					["source"] = "十里扬州路",
-					["npcID"] = 0,
-					["event"] = "SPELL_AURA_APPLIED",
-					["encounterID"] = 2332,
-				},
 				[272126] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
@@ -12636,6 +16373,25 @@ PlaterDB = {
 				[311217] = {
 					["event"] = "SPELL_CAST_SUCCESS",
 					["source"] = "明月笃心-萨尔",
+					["npcID"] = 0,
+				},
+				[303380] = {
+					["type"] = "BUFF",
+					["source"] = "十里扬州路",
+					["npcID"] = 0,
+					["event"] = "SPELL_AURA_APPLIED",
+					["encounterID"] = 2332,
+				},
+				[313088] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "司马乄仲达-雷斧堡垒",
+					["npcID"] = 0,
+				},
+				[315176] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "DEBUFF",
+					["source"] = "Xiaodouding",
 					["npcID"] = 0,
 				},
 				[286171] = {
@@ -12662,16 +16418,15 @@ PlaterDB = {
 					["source"] = "殇丨断魂-洛萨",
 					["npcID"] = 0,
 				},
-				[204021] = {
-					["npcID"] = 0,
+				[783] = {
 					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "十里扬州路",
-					["encounterID"] = 2332,
+					["source"] = "风起春城暮",
+					["npcID"] = 0,
 				},
-				[8220] = {
+				[247456] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "未知目标",
+					["source"] = "十里扬州路",
 					["npcID"] = 0,
 				},
 				[296003] = {
@@ -12685,9 +16440,10 @@ PlaterDB = {
 					["source"] = "猫栗子-冰风岗",
 					["npcID"] = 0,
 				},
-				[781] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "伊丽娜丝-冬寒",
+				[8220] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "未知目标",
 					["npcID"] = 0,
 				},
 				[203814] = {
@@ -12696,11 +16452,11 @@ PlaterDB = {
 					["source"] = "陈丶冰镇阔落-埃克索图斯",
 					["npcID"] = 0,
 				},
-				[196608] = {
+				[296510] = {
 					["event"] = "SPELL_AURA_APPLIED",
 					["type"] = "BUFF",
-					["source"] = "柏小逗-丽丽（四川）",
-					["npcID"] = 0,
+					["source"] = "蠕行腐蚀",
+					["npcID"] = 152704,
 				},
 				[272979] = {
 					["event"] = "SPELL_AURA_APPLIED",
@@ -12718,10 +16474,11 @@ PlaterDB = {
 					["source"] = "无头騎士-血牙魔王",
 					["npcID"] = 0,
 				},
-				[171186] = {
-					["event"] = "SPELL_CAST_SUCCESS",
-					["source"] = "盐目斧喙鸟",
-					["npcID"] = 130832,
+				[256459] = {
+					["event"] = "SPELL_AURA_APPLIED",
+					["type"] = "BUFF",
+					["source"] = "主演-雷斧堡垒",
+					["npcID"] = 0,
 				},
 				[126755] = {
 					["event"] = "SPELL_CAST_SUCCESS",

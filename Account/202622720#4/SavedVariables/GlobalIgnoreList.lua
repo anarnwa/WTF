@@ -479,7 +479,7 @@ GlobalIgnoreDB = {
 		"韩式辣牛肉-影之哀伤", -- [229]
 		"团团饲养员-伊利丹", -- [230]
 	},
-	["autoTime"] = 600,
+	["trackChanges"] = true,
 	["autoCount"] = 3,
 	["revision"] = 1,
 	["syncInfo"] = {
@@ -945,7 +945,7 @@ GlobalIgnoreDB = {
 		{
 		}, -- [230]
 	},
-	["autoUpdate"] = true,
+	["autoTime"] = 600,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -1922,7 +1922,7 @@ GlobalIgnoreDB = {
 		"布洛克斯唏加-亡语者", -- [11]
 		"拱白菜的小猪-亡语者", -- [12]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
 	["samefaction"] = true,
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]

@@ -547,14 +547,13 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "黑暗魔眼",
 					["code"] = "ability(原始嗥叫:920) [round=1]\nability(黑爪:919) [round=2]\nability(狩猎小队:921) [round=3]\nability(原始嗥叫:920)\nability(黑爪:919)",
 				},
+				[105386] = {
+					["name"] = "瑞迪尔62",
+					["code"] = "quit [ self(德莱尼微型防御者).active & round=1 ] \nchange(德莱尼微型防御者) [enemy.aura(嚎叫).exists] \nchange(next) [self.dead] \nability(嚎叫) \nability(离子炮) \nquit",
+				},
 				[154925] = {
 					["name"] = "吱铛",
 					["code"] = "ability(飞越:515) [round=1]\nability(雷霆之箭:779)\nability(自爆:282)\nability(焚烧:179) [enemy.aura(献祭:177).exists]\nability(献祭:178)\nchange(next)",
-				},
-				[91361] = {
-					["author"] = "弄妆梳洗迟-古尔丹",
-					["name"] = "库拉·雷蹄",
-					["code"] = "ability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(破碎防御:542).exists]\nability(黑爪:919)\nchange(next) [self.dead]",
 				},
 				["海难俘虏保底"] = {
 					["name"] = "海难俘虏03",
@@ -926,9 +925,10 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "斯卡姆之子",
 					["code"] = "ability(灵火之箭:1066) [enemy.type=飞行]\nability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(黑爪:919) \nability(灼燃大地:172)\nability(焚烧:179)\nability(灵火之箭:1066)\nchange(next)",
 				},
-				[105386] = {
-					["name"] = "瑞迪尔62",
-					["code"] = "quit [ self(德莱尼微型防御者).active & round=1 ] \nchange(德莱尼微型防御者) [enemy.aura(嚎叫).exists] \nchange(next) [self.dead] \nability(嚎叫) \nability(离子炮) \nquit",
+				[91361] = {
+					["author"] = "弄妆梳洗迟-古尔丹",
+					["name"] = "库拉·雷蹄",
+					["code"] = "ability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(破碎防御:542).exists]\nability(黑爪:919)\nchange(next) [self.dead]",
 				},
 				[85517] = {
 					["author"] = "弄妆梳洗迟-古尔丹",

@@ -55,9 +55,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["groups"] = {
-	},
-	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -81,10 +78,10 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["yOff"] = 0,
-			["minDuration"] = 2,
-			["spiralOpacity"] = 1.00999997742474,
 			["scaleText"] = true,
+			["yOff"] = 0,
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
@@ -94,4 +91,7 @@ OmniCC4Config = {
 			["fontSize"] = 25,
 		},
 	},
+	["groups"] = {
+	},
+	["version"] = "8.2.5",
 }

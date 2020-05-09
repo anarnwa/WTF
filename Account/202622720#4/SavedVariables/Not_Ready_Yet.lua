@@ -5,12 +5,12 @@ Not_Ready_Yet_DB = {
 			[2] = {
 				[183752] = "瓦解",
 				[187827] = "恶魔变形",
-				[202138] = "锁链咒符",
+				[204021] = "烈火烙印",
 				[202137] = "沉默咒符",
-				[217832] = "禁锢",
+				[202138] = "锁链咒符",
 				[278326] = "吞噬魔法",
 				[207684] = "悲苦咒符",
-				[204021] = "烈火烙印",
+				[217832] = "禁锢",
 			},
 		},
 		["DRUID"] = {
@@ -56,7 +56,7 @@ Not_Ready_Yet_DB = {
 		["channel"] = "COMBAT",
 		["FaILEDreport"] = "{SpellName} 释放失败 CD {CD} 秒",
 		["readyreport"] = "{SpellName} 已就绪",
-		["enable"] = true,
+		["enable"] = false,
 		["SUCCEEDEDreport"] = "已施放{SpellName}",
 	},
 	["profileKeys"] = {

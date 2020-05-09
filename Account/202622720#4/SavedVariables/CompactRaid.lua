@@ -374,10 +374,10 @@ CompactRaidDB = {
 				},
 				["CornerIndicators"] = {
 					["talent4"] = {
-						["BOTTOMLEFT"] = "[selfcast]#1#[aura]#生命绽放#[style]#2#",
 						["TOPLEFT"] = "[selfcast]#1#[aura]#回春术#[style]#2#",
-						["RIGHT"] = "[selfcast]#1#[aura]#栽培#[b1]#0.0#[b2]#0.0#[b3]#0.0#[g1]#1.0#[g3]#0.0#[g2]#1.0#[r3]#1.0#[style]#2#[r1]#0.0#[r2]#1.0#",
 						["TOPRIGHT"] = "[selfcast]#1#[aura]#野性成长#[style]#2#",
+						["RIGHT"] = "[selfcast]#1#[aura]#栽培#[b1]#0.0#[b2]#0.0#[b3]#0.0#[g1]#1.0#[g3]#0.0#[g2]#1.0#[r3]#1.0#[style]#2#[r1]#0.0#[r2]#1.0#",
+						["BOTTOMLEFT"] = "[selfcast]#1#[aura]#生命绽放#[style]#2#",
 						["TOP"] = "[selfcast]#1#[scale]#150#[aura]#艾欧娜尔之种#[b1]#0.0#[b2]#0.0#[b3]#0.0#[g1]#1.0#[g3]#0.0#[g2]#1.0#[r3]#1.0#[style]#2#[r1]#0.0#[r2]#1.0#",
 						["LEFT"] = "[selfcast]#1#[aura]#回春术（萌芽）#[b1]#0.0#[b2]#0.0#[b3]#0.0#[g1]#1.0#[g3]#0.0#[g2]#1.0#[r3]#1.0#[style]#2#[r1]#0.0#[r2]#1.0#",
 					},
@@ -614,8 +614,8 @@ CompactRaidDB = {
 					},
 				},
 			},
-			["showPartyPets"] = 1,
 			["version"] = 5.09,
+			["showPartyPets"] = 1,
 			["showFriendlyNpc"] = 1,
 		},
 		["Funerals - 亡语者"] = {

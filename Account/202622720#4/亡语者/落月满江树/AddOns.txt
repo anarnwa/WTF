@@ -174,7 +174,7 @@ Scrap_Config: enabled
 SexyMap: enabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
-SorhaQuestLog: enabled
+SorhaQuestLog: disabled
 SUFPlus: enabled
 !Swatter: enabled
 TargetNameplateIndicator: enabled

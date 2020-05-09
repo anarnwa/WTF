@@ -28,6 +28,9 @@ NewOpenablesProfile = {
 		["我会飞你会吗 - 亡语者"] = {
 			["questBarID"] = 169653,
 		},
+		["十里扬州路 - 亡语者"] = {
+			["questBarID"] = 167831,
+		},
 		["弄妆梳洗迟 - 古尔丹"] = {
 			["questBarID"] = 161452,
 		},
@@ -122,7 +125,7 @@ NewOpenablesProfile = {
 				[112087] = true,
 			},
 			["version"] = "|cFFFFFFFF09.08 07.08.2018 使用 |cFFFF00FF/nop|cFFFFFFFF",
-			["keyBind"] = "NUMPAD9",
+			["keyBind"] = "",
 			["iconSize"] = 50,
 			["quest"] = true,
 			["lockButton"] = true,
