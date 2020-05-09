@@ -172,7 +172,7 @@ ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
 SlideBar: enabled
 SmartRes2: enabled
-SorhaQuestLog: disabled
+SorhaQuestLog: enabled
 SpellTimer: enabled
 Stubby: disabled
 TUnitFrame: enabled
@@ -478,3 +478,5 @@ Fuckyou: enabled
 DBM-CastleNathria: enabled
 DBM-Party-Shadowlands: enabled
 Plater: enabled
+ipmythictimer: enabled
+!KalielsTracker: enabled

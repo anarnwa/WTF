@@ -1,10 +1,10 @@
 
 AutoTurnInCharacterDB = {
 	["completeonly"] = false,
-	["weapon"] = {
+	["secondary"] = {
 	},
 	["questlevel"] = true,
-	["trivial"] = false,
+	["questshare"] = false,
 	["showrewardtext"] = true,
 	["togglekey"] = 2,
 	["watchlevel"] = true,
@@ -16,16 +16,16 @@ AutoTurnInCharacterDB = {
 	["artifactpowertoggle"] = true,
 	["reviveBattlePet"] = false,
 	["darkmoonteleport"] = true,
-	["debug"] = false,
-	["stat"] = {
-	},
 	["armor"] = {
 	},
+	["stat"] = {
+	},
+	["debug"] = false,
 	["version"] = "7.0.9",
 	["relictoggle"] = true,
 	["lootreward"] = 1,
 	["all"] = 1,
-	["questshare"] = false,
-	["secondary"] = {
+	["trivial"] = false,
+	["weapon"] = {
 	},
 }

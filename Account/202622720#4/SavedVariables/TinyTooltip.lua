@@ -47,20 +47,20 @@ BigTipDB = {
 		},
 		["statusbarPosition"] = "bottom",
 		["statusbarOffsetX"] = 0,
-		["skinMoreFrames"] = true,
-		["bodyFontSize"] = "default",
-		["alwaysShowIdInfo"] = true,
-		["statusbarFontFlag"] = "THINOUTLINE",
-		["statusbarOffsetY"] = 0,
-		["statusbarColor"] = "auto",
-		["borderCorner"] = "default",
-		["statusbarText"] = false,
 		["statusbarHeight"] = 4,
-		["headerFontFlag"] = "default",
-		["headerFontSize"] = "default",
-		["statusbarTexture"] = "Interface\\AddOns\\TinyTooltip\\texture\\StatusBar",
-		["bodyFont"] = "default",
+		["bodyFontSize"] = "default",
 		["bodyFontFlag"] = "default",
+		["bodyFont"] = "default",
+		["statusbarOffsetY"] = 0,
+		["statusbarTexture"] = "Interface\\AddOns\\TinyTooltip\\texture\\StatusBar",
+		["headerFontSize"] = "default",
+		["statusbarText"] = false,
+		["skinMoreFrames"] = true,
+		["headerFontFlag"] = "default",
+		["borderCorner"] = "default",
+		["statusbarColor"] = "auto",
+		["statusbarFontFlag"] = "THINOUTLINE",
+		["alwaysShowIdInfo"] = true,
 	},
 	["version"] = 2.6,
 	["variables"] = {
@@ -221,8 +221,10 @@ BigTipDB = {
 					["wildcard"] = "<%s>",
 					["filter"] = "none",
 				},
-				["factionIcon"] = {
+				["className"] = {
 					["enable"] = true,
+					["color"] = "ffffff",
+					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
 				["name"] = {
@@ -231,10 +233,8 @@ BigTipDB = {
 					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
-				["className"] = {
+				["factionIcon"] = {
 					["enable"] = true,
-					["color"] = "ffffff",
-					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
 				["classIcon"] = {
@@ -261,7 +261,6 @@ BigTipDB = {
 			["grayForDead"] = true,
 		},
 		["npc"] = {
-			["coloredBorder"] = "reaction",
 			["elements"] = {
 				{
 					"raidIcon", -- [1]
@@ -345,7 +344,7 @@ BigTipDB = {
 					["filter"] = "none",
 				},
 			},
-			["showTarget"] = true,
+			["coloredBorder"] = "reaction",
 			["anchor"] = {
 				["returnOnUnitFrame"] = false,
 				["position"] = "inherit",
@@ -354,6 +353,7 @@ BigTipDB = {
 				["p"] = "BOTTOMRIGHT",
 				["returnInCombat"] = true,
 			},
+			["showTarget"] = true,
 			["background"] = {
 				["colorfunc"] = "default",
 				["alpha"] = 0.9,

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 108,
 	["lastSanitation"] = 3,
-	["session"] = 103,
 	["errors"] = {
 		{
 			["message"] = "Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: LevelUpDisplay:SetPoint.",
@@ -21,9 +21,16 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NPCScan\\NPCScan.toc",
+			["session"] = 104,
 			["time"] = "2020/05/09 22:06:20",
-			["session"] = 103,
-			["counter"] = 2,
+			["counter"] = 4,
 		}, -- [3]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'Molinari' 尝试调用保护功能 'UNKNOWN()'。",
+			["time"] = "2020/05/09 22:39:51",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface\\FrameXML\\SecureStateDriver.lua\"]:10: in function <Interface\\FrameXML\\SecureStateDriver.lua:8>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\Molinari\\Molinari-80300.66-Release.lua\"]:99: in function `UpdateModifier'\n[string \"@Interface\\AddOns\\Molinari\\Config.lua\"]:27: in function `callback'\n[string \"@Interface\\AddOns\\Molinari\\libs\\Wasabi\\Wasabi-7.lua\"]:329: in function `Fire'\n[string \"@Interface\\AddOns\\Molinari\\libs\\Wasabi\\Wasabi-7.lua\"]:162: in function <Interface\\AddOns\\Molinari\\libs\\Wasabi\\Wasabi.lua:155>\n[string \"=[C]\"]: in function `pcall'\n[string \"@Interface\\FrameXML\\InterfaceOptionsFrame.lua\"]:206: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:205>\n[string \"=[C]\"]: in function `securecall'\n[string \"@Interface\\FrameXML\\InterfaceOptionsFrame.lua\"]:229: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:221>",
+			["session"] = 106,
+			["counter"] = 1,
+		}, -- [4]
 	},
 }

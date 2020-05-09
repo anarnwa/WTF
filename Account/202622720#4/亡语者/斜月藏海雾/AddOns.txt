@@ -185,7 +185,7 @@ Scrap_Visualizer: enabled
 SexyMap: enabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
-SorhaQuestLog: disabled
+SorhaQuestLog: enabled
 SUFPlus: enabled
 !Swatter: enabled
 TargetNameplateIndicator: enabled
@@ -288,3 +288,5 @@ Fuckyou: enabled
 DBM-CastleNathria: enabled
 DBM-Party-Shadowlands: enabled
 Plater: enabled
+ipmythictimer: enabled
+!KalielsTracker: enabled

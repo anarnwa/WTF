@@ -14,7 +14,7 @@ HandyNotes_SuramarShalAranTelemancyDB = {
 		["朝飞暮卷 - 亡语者"] = "朝飞暮卷 - 亡语者",
 		["斜月藏海雾 - 亡语者"] = "斜月藏海雾 - 亡语者",
 		["风起春城暮 - 亡语者"] = "风起春城暮 - 亡语者",
-		["Believe - 古尔丹"] = "Believe - 古尔丹",
+		["Funerals - 亡语者"] = "Funerals - 亡语者",
 		["高楼鼓角悲 - 亡语者"] = "高楼鼓角悲 - 亡语者",
 		["她的眼眶里 - 古尔丹"] = "她的眼眶里 - 古尔丹",
 		["我会变成狼 - 亡语者"] = "我会变成狼 - 亡语者",
@@ -27,13 +27,13 @@ HandyNotes_SuramarShalAranTelemancyDB = {
 		["我会大跳你呢 - 亡语者"] = "我会大跳你呢 - 亡语者",
 		["回首见旌旗 - 亡语者"] = "回首见旌旗 - 亡语者",
 		["十里扬州路 - 古尔丹"] = "十里扬州路 - 古尔丹",
-		["Dremel - 亡语者"] = "Dremel - 亡语者",
 		["Cleaner - 亡语者"] = "Cleaner - 亡语者",
+		["Dremel - 亡语者"] = "Dremel - 亡语者",
 		["Believer - 古尔丹"] = "Believer - 古尔丹",
 		["不不尾王 - 古尔丹"] = "不不尾王 - 古尔丹",
 		["懒起画蛾眉 - 古尔丹"] = "懒起画蛾眉 - 古尔丹",
 		["十里扬州路 - 安苏"] = "十里扬州路 - 安苏",
-		["Funerals - 亡语者"] = "Funerals - 亡语者",
+		["Believe - 古尔丹"] = "Believe - 古尔丹",
 	},
 	["profiles"] = {
 		["维维尔 - 亡语者"] = {
@@ -62,7 +62,7 @@ HandyNotes_SuramarShalAranTelemancyDB = {
 		},
 		["风起春城暮 - 亡语者"] = {
 		},
-		["Believe - 古尔丹"] = {
+		["Funerals - 亡语者"] = {
 		},
 		["高楼鼓角悲 - 亡语者"] = {
 		},
@@ -88,9 +88,9 @@ HandyNotes_SuramarShalAranTelemancyDB = {
 		},
 		["十里扬州路 - 古尔丹"] = {
 		},
-		["Dremel - 亡语者"] = {
-		},
 		["Cleaner - 亡语者"] = {
+		},
+		["Dremel - 亡语者"] = {
 		},
 		["Believer - 古尔丹"] = {
 		},
@@ -100,7 +100,7 @@ HandyNotes_SuramarShalAranTelemancyDB = {
 		},
 		["十里扬州路 - 安苏"] = {
 		},
-		["Funerals - 亡语者"] = {
+		["Believe - 古尔丹"] = {
 		},
 	},
 }

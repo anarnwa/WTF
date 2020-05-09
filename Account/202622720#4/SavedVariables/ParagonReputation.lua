@@ -23,14 +23,14 @@ ParagonReputationDB = {
 	["y"] = 256,
 	["deficit"] = false,
 	["default"] = true,
-	["x"] = 0,
-	["fade"] = 5,
+	["toast"] = false,
+	["color"] = "BLUE",
 	["value"] = {
 		0, -- [1]
 		0.5, -- [2]
 		0.9, -- [3]
 		1, -- [4]
 	},
-	["color"] = "BLUE",
-	["toast"] = false,
+	["fade"] = 5,
+	["x"] = 0,
 }

@@ -174,7 +174,7 @@ Scrap_Config: enabled
 SexyMap: enabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
-SorhaQuestLog: disabled
+SorhaQuestLog: enabled
 SUFPlus: enabled
 !Swatter: enabled
 TargetNameplateIndicator: enabled
@@ -253,3 +253,5 @@ Battle Pet Current Stats: enabled
 RaiderNoAddon: enabled
 DungeonWatchDog: enabled
 Plater: enabled
+ipmythictimer: enabled
+!KalielsTracker: enabled
