@@ -1,0 +1,3 @@
+!!!Libs: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled

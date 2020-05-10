@@ -453,14 +453,14 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "活体汽油弹",
 					["code"] = "ability(多刺甲壳:1073) [!self.aura(多刺甲壳:1074).exists]\nability(沐血:423) [enemy.aura(流血:491).exists]\nability(割裂:803)",
 				},
-				["加尔维斯顿先生保底"] = {
-					["name"] = "加尔维斯顿先生01",
-					["code"] = "quit [self(阳焰瓦格里).active & round=1] \nquit [self.hp<1401 & round=1] \nchange(next) [self.dead] \nability(#2) [round=1] \nability(#3) [round=2] \nability(#1) [self(#3).active &enemy(#3).active &enemy.hp<=369] \nability(#3) [self.round=1 &!enemy(#1).active] \nability(#2) \nability(#1)",
-				},
 				[107489] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
 					["name"] = "阿玛利亚",
 					["code"] = "quit [self(#2).hpp<100 &round=1] \nquit [self(#3).dead]\nchange(next) [self.dead] \nchange(#3) [enemy(#1).dead &enemy(#2).dead &round<=5] \nchange(#2) [enemy(#1).dead &enemy(#2).active &round<=5] \nif [self(#1).active &enemy(#1).active] \nability(#2) \nability(#3) \nendif \nif [self(#2).active] \nability(#3) [!self.aura(抽水).exists] \nability(#1) [enemy(#3).active & enemy.hp<=351 &!enemy(#3).aura(无法攻击:1358).exists ] \nability(#3) [enemy(#3).active &self.aura(抽水).exists &!enemy(#3).aura(无法攻击:1358).exists ] \nability(#1) [enemy(#2).active] \nstandby \nendif \nability(#1) [self(#3).active &enemy(#2).active ] \nif [self(#3).active] \nability(#1) [enemy(#3).active & enemy.hp<=329 &!enemy(#3).aura(无法攻击:1358).exists ] \nability(#2) [enemy(#3).active &self.hp<1200 & enemy.aura(无法攻击).duration = 2] \nability(#3) [enemy(#3).active &self.aura(抽水).exists ] \nability(#3) [enemy(#3).active &enemy.aura(无法攻击).duration = 1 ] \nability(#1) [!enemy(#3).aura(无法攻击:1358).exists] \nstandby \nendif",
+				},
+				["加尔维斯顿先生保底"] = {
+					["name"] = "加尔维斯顿先生01",
+					["code"] = "quit [self(阳焰瓦格里).active & round=1] \nquit [self.hp<1401 & round=1] \nchange(next) [self.dead] \nability(#2) [round=1] \nability(#3) [round=2] \nability(#1) [self(#3).active &enemy(#3).active &enemy.hp<=369] \nability(#3) [self.round=1 &!enemy(#1).active] \nability(#2) \nability(#1)",
 				},
 				[99742] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
@@ -538,9 +538,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "斯格里克斯",
 					["code"] = "ability(鬼影缠身:652)\nchange(雪羽雏龙:1974)\nability(掠食之击:518) [enemy.aura(破碎防御:542).exists]\nability(隼龙围攻！:1773)",
 				},
-				[154926] = {
-					["name"] = "CK-9型微型压制单位",
-					["code"] = "ability(严寒:786) [round=1]\nchange(#3) [round=2]\nchange(#1) [self(#3).active]\nability(骨头风暴:1762)\nability(砍劈:943)\nability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)\nchange(#2)",
+				[146001] = {
+					["name"] = "吵吵机器人原型机",
+					["code"] = "ability(灼燃大地:172) [enemy.ability(吵吵护盾:2225).duration=0]\nability(灼燃大地:172) [enemy.aura(吵吵护盾:2226).exists]\nstandby [enemy.ability(吵吵护盾:2225).duration=0]\nstandby [enemy.aura(吵吵护盾:2226).exists]\nability(焚烧:179)\nability(燃烧:113)\nchange(next)",
 				},
 				[87122] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
@@ -552,9 +552,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "勇敢的尹勇",
 					["code"] = "quit [self.count<3]\nstandby [self(翡翠始祖龙宝宝:1167).active & enemy(咩咩:1001).active & enemy(咩咩:1001).hp<600]\nability(翡翠灵气:597) [round=2]\nability(原始之击:612) [enemy(兔兔:1002).aura(肾上腺素:161).exists & enemy(兔兔:1002).active]\nability(翡翠灵气:597) [self.aura(翡翠灵气:823).duration<2 & enemy(兔兔:1002).active]\nability(翡翠之咬:525)\nability(离子炮:209) [enemy(咩咩:1001).hp<1050]\nability(震慑:646)\nchange(#3) [self(翡翠始祖龙宝宝:1167).dead]\nchange(展览馆管理员:1227) [self(#3).active]",
 				},
-				[146001] = {
-					["name"] = "吵吵机器人原型机",
-					["code"] = "ability(灼燃大地:172) [enemy.ability(吵吵护盾:2225).duration=0]\nability(灼燃大地:172) [enemy.aura(吵吵护盾:2226).exists]\nstandby [enemy.ability(吵吵护盾:2225).duration=0]\nstandby [enemy.aura(吵吵护盾:2226).exists]\nability(焚烧:179)\nability(燃烧:113)\nchange(next)",
+				[154926] = {
+					["name"] = "CK-9型微型压制单位",
+					["code"] = "ability(严寒:786) [round=1]\nchange(#3) [round=2]\nchange(#1) [self(#3).active]\nability(骨头风暴:1762)\nability(砍劈:943)\nability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)\nchange(#2)",
 				},
 				[68555] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
@@ -589,10 +589,10 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "诺莫瑞根护卫狼",
 					["code"] = "ability(灼燃大地:172)\nability(焚烧:179)\nability(燃烧:113)",
 				},
-				[105387] = {
+				[91362] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
-					["name"] = "安杜斯",
-					["code"] = "ability(#1) [round=1]\nchange(伊奇:1532) [round=2]\nability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)",
+					["name"] = "库拉·雷蹄",
+					["code"] = "ability(雷霆之箭:779)\nability(法力澎湃:489)\nability(扫尾:122)\nchange(next) [self.dead]",
 				},
 				[150911] = {
 					["name"] = "地穴恶魔",
@@ -608,32 +608,32 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "赤芝，赤精的雏鸟",
 					["code"] = "--首轮小鬼自燃。次轮狂野魔法。第3轮换软泥。第4轮酸蚀粘液。第5轮腐蚀。第6轮吸收。7轮结束。\nability(自燃:409) [round=1]\nability(狂野魔法:592) [round=2]\nchange(翡翠软泥怪:446) [round=3]\nability(酸蚀粘液:369) [round=4]\nability(腐蚀:447) [round=5]\nability(净除:450) [enemy.ability(虚无之界:998).duration>0]\nability(吸收:449) \nchange(变异软泥怪:1920) [self(翡翠软泥怪:446).dead]",
 				},
-				[142114] = {
-					["name"] = "泰莉亚·火眉",
-					["code"] = "change(节点雏龙:1165) [enemy(涡轮:2365).dead]\nability(奥术风暴:589)\nability(法力澎湃:489)\nability(扫尾:122)\nability(原始嗥叫:920) [round=1]\nability(狩猎小队:921) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)\nchange(next)",
-				},
-				[146003] = {
-					["name"] = "诺莫瑞根护卫虎",
-					["code"] = "ability(寒冰之墓:624)\nability(召唤暴风雪:206)\nability(冰枪术:413)",
-				},
 				[87123] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
 					["name"] = "维沙尔",
 					["code"] = "--步骤：1小宠，待命，2换永恒雏龙，3先发优势，4虚弱，5扫尾，6扫尾；7敌人机械卫士上，先发优势，对方复生。8待命阵亡，9换节点雏龙奥术风暴324,10-11法力澎湃结束。\nstandby [round=1]\nchange(永恒雏龙:1161) [round=2]\nability(先发优势:405) [round=3]\nability(虚弱:471) [round=4]\nability(先发优势:405) [enemy(埃匹希斯卫士:1559).active]\nability(奥术风暴:589)\nability(法力澎湃:489)\nability(扫尾:122) \nchange(节点雏龙:1165) [self(永恒雏龙:1161).dead]",
 				},
-				[66739] = {
-					["name"] = "废土行者苏游",
-					["code"] = "change(next) [self.dead]\nquit [self(#2).dead & enemy(#1).active]\nquit [self(#2).active & enemy(#2).active]\nquit [self(#1).dead & enemy(#2).active]\nstandby [round = 1]\nstandby [enemy(#1).active & enemy.hp<=342 & enemy.round = 7]\nuse(122) [self(#3).active &enemy(#1).active]\nuse(279) [self(#2).active & self.round = 1]\nchange(#2) [self(#1).active]\nuse(589) [!weather(590)]\nuse(387)\nuse(116)\nuse(489)\nuse(122)",
+				[146003] = {
+					["name"] = "诺莫瑞根护卫虎",
+					["code"] = "ability(寒冰之墓:624)\nability(召唤暴风雪:206)\nability(冰枪术:413)",
+				},
+				[142114] = {
+					["name"] = "泰莉亚·火眉",
+					["code"] = "change(节点雏龙:1165) [enemy(涡轮:2365).dead]\nability(奥术风暴:589)\nability(法力澎湃:489)\nability(扫尾:122)\nability(原始嗥叫:920) [round=1]\nability(狩猎小队:921) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)\nchange(next)",
+				},
+				[145971] = {
+					["name"] = "蟑螂",
+					["code"] = "--伴生换宠 \nchange(next) [enemy.ability(震荡干涉:938).usable & !weather(奥术之风:590)] \nchange(next) [enemy.ability(铁钻冲锋:1921).usable & self.hp <= 325 & self.type != 元素] \nchange(next) [enemy.ability(铁钻冲锋:1921).usable & self.hp <= 217 & self.type = 元素] \nchange(#1) [self.dead] \nchange(#2) [self.dead] \nchange(#3) [self.dead] \n----------------------- \nstandby [enemy.aura(躲闪:2060).exists] \nuse(奥术风暴:589) \nuse(法力澎湃:489) [enemy.type != 机械] \nuse(雷霆之箭:779) [enemy.type = 机械] \nuse(扫尾:122) [self.speed.slow] \nuse(法力澎湃:489) \nuse(扫尾:122)",
 				},
 				[85625] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
 					["name"] = "挑战木桩",
 					["code"] = "change(幼年瓦格里:1238) [self(吓人的箱子:321).dead]\nability(厄运诅咒:218)\nability(鬼影缠身:652)\nability(死亡之握:780) [enemy.aura(痛苦:469).exists]\nability(吞食:538) [enemy.aura(痛苦:469).exists]\nability(痛苦:468)\nability(幽魂之咬:654) [enemy.hp<710]\nability(吞噬:160)\nability(狂乱之击:666)\nchange(next) [self.dead]",
 				},
-				[66819] = {
+				[128019] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
-					["name"] = "布洛克",
-					["code"] = "--：1斧喙鸟诱饵，2-3错乱，4-5空袭；敌人二号上场，6空袭，7-8错乱，9等死。10换步行炸弹雷区，11猛击一次；敌人三号上场，12-13猛击，14血低于650自爆。",
+					["name"] = "凝视者",
+					["code"] = "change(next) [self.dead]\nability(狩猎小队:921) [enemy.aura(黑爪:918).exists]\nability(跳跃:364) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)",
 				},
 				[104782] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
@@ -645,10 +645,10 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "可怕的塔尔",
 					["code"] = "--步骤:1白骨蜘蛛,黏性之网，2汲取生命，3-5噬骨； 敌人二号上，6-7噬骨，我方昏迷，8待命。9噬骨(我方亡灵特效)，10噬骨，同归于尽；11敌人三号上，我方换小宠换满凋零雄鹰，12待命，13-14染疫之爪，15幽魂之咬，结束。\nability(粘性之网:339) [round=1]\nability(汲取生命:383) [round=2]\nability(噬骨:648)\nability(幽魂之咬:654) [enemy(角斗士莫叽姆斯:1556).hp<888]\nability(染疫之爪:117)\nstandby [self.aura(昏迷:927).exists]\nchange(#3) [self(巨型白骨蜘蛛:1143).dead]\nchange(凋零雄鹰:456) [self(#3).active]",
 				},
-				[128019] = {
+				[66819] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
-					["name"] = "凝视者",
-					["code"] = "change(next) [self.dead]\nability(狩猎小队:921) [enemy.aura(黑爪:918).exists]\nability(跳跃:364) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)",
+					["name"] = "布洛克",
+					["code"] = "--：1斧喙鸟诱饵，2-3错乱，4-5空袭；敌人二号上场，6空袭，7-8错乱，9等死。10换步行炸弹雷区，11猛击一次；敌人三号上场，12-13猛击，14血低于650自爆。",
 				},
 				[94642] = {
 					["author"] = "Believer-古尔丹",
@@ -852,9 +852,9 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "恶魔之喉",
 					["code"] = "ability(狩猎小队:921) [enemy.aura(黑爪:918).exists]\nability(跳跃:364) [enemy.aura(破碎防御:542).exists]\nability(跳跃:364) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)\nchange(next) [self.dead]",
 				},
-				[145971] = {
-					["name"] = "蟑螂",
-					["code"] = "--伴生换宠 \nchange(next) [enemy.ability(震荡干涉:938).usable & !weather(奥术之风:590)] \nchange(next) [enemy.ability(铁钻冲锋:1921).usable & self.hp <= 325 & self.type != 元素] \nchange(next) [enemy.ability(铁钻冲锋:1921).usable & self.hp <= 217 & self.type = 元素] \nchange(#1) [self.dead] \nchange(#2) [self.dead] \nchange(#3) [self.dead] \n----------------------- \nstandby [enemy.aura(躲闪:2060).exists] \nuse(奥术风暴:589) \nuse(法力澎湃:489) [enemy.type != 机械] \nuse(雷霆之箭:779) [enemy.type = 机械] \nuse(扫尾:122) [self.speed.slow] \nuse(法力澎湃:489) \nuse(扫尾:122)",
+				[66739] = {
+					["name"] = "废土行者苏游",
+					["code"] = "change(next) [self.dead]\nquit [self(#2).dead & enemy(#1).active]\nquit [self(#2).active & enemy(#2).active]\nquit [self(#1).dead & enemy(#2).active]\nstandby [round = 1]\nstandby [enemy(#1).active & enemy.hp<=342 & enemy.round = 7]\nuse(122) [self(#3).active &enemy(#1).active]\nuse(279) [self(#2).active & self.round = 1]\nchange(#2) [self(#1).active]\nuse(589) [!weather(590)]\nuse(387)\nuse(116)\nuse(489)\nuse(122)",
 				},
 				[68559] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
@@ -875,10 +875,10 @@ TD_DB_BATTLEPETSCRIPT_GLOBAL = {
 					["name"] = "小贼",
 					["code"] = "change(next) [self.dead]\nability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(黑爪:918).exists]\nability(飞羽:184) [enemy.aura(破碎防御:542).exists]\nability(黑爪:919)",
 				},
-				[91362] = {
+				[105387] = {
 					["author"] = "弄妆梳洗迟-古尔丹",
-					["name"] = "库拉·雷蹄",
-					["code"] = "ability(雷霆之箭:779)\nability(法力澎湃:489)\nability(扫尾:122)\nchange(next) [self.dead]",
+					["name"] = "安杜斯",
+					["code"] = "ability(#1) [round=1]\nchange(伊奇:1532) [round=2]\nability(群殴:581) [enemy.aura(黑爪:918).exists]\nability(黑爪:919)",
 				},
 				[97709] = {
 					["author"] = "弄妆梳洗迟-古尔丹",

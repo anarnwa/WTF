@@ -1,7 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-	},
 	["encounter_spells"] = {
 		[284468] = {
 			["school"] = 1,
@@ -722,8 +720,8 @@ EncounterDetailsDB = {
 		[288091] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_HEAL"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "充值使我快乐-燃烧之刃",
 		},
@@ -3954,13 +3952,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "弗里达·铁吼",
 		},
-		[300526] = {
+		[48792] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "克熙尔剜心者",
+			["source"] = "圣弗朗西斯科-冰霜之刃",
 		},
 		[284686] = {
 			["school"] = 1,
@@ -3970,13 +3969,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "破城者洛卡",
 		},
-		[297822] = {
+		[75569] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "萨尔",
+			["source"] = "无面腐蚀者",
 		},
 		[107314] = {
 			["school"] = 1,
@@ -4016,13 +4016,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "艾萨拉之怒",
 		},
-		[292264] = {
-			["school"] = 8,
+		[156888] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "欧米茄破坏者",
+			["source"] = "黑石铸造厂",
 		},
 		[284688] = {
 			["school"] = 8,
@@ -4032,19 +4031,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "破城者洛卡",
 		},
-		[283955] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "弗里达·铁吼",
-		},
-		[106401] = {
-			["school"] = 32,
+		[273720] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "格里昂纳",
+			["source"] = "重型军火",
+		},
+		[283551] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "欧米茄破坏者",
 		},
 		[284177] = {
 			["school"] = 8,
@@ -4061,11 +4063,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "高莱克·图尔",
 		},
-		[44264] = {
-			["school"] = 64,
+		[282589] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "代言人扎克萨奇",
 		},
 		[295258] = {
 			["school"] = 4,
@@ -4100,12 +4107,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "苏库里罗恩",
 		},
-		[302555] = {
-			["school"] = 4,
+		[283143] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "艾泽拉斯守护者",
+			["source"] = "万磁臂",
 		},
 		[259856] = {
 			["school"] = 8,
@@ -4115,13 +4124,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "瑞克莎·流火",
 		},
-		[291856] = {
-			["school"] = 8,
+		[281621] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "等离子球",
+			["source"] = "风险投资公司灼天者",
 		},
 		[119981] = {
 			["school"] = 0,
@@ -4131,13 +4140,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "鬼谋神算冥谷子",
 		},
-		[281621] = {
-			["school"] = 4,
+		[291856] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "风险投资公司灼天者",
+			["source"] = "等离子球",
 		},
 		[294860] = {
 			["school"] = 8,
@@ -4153,11 +4162,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
-		[273718] = {
-			["school"] = 64,
+		[52174] = {
+			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "Boomerfly-海克泰尔",
 		},
 		[192050] = {
 			["school"] = 8,
@@ -4194,12 +4205,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "格林托克铁皮战士",
 		},
-		[36119] = {
-			["school"] = 32,
+		[44198] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "自由的瑟雷凯斯",
+			["source"] = "凤凰",
 		},
 		[106932] = {
 			["school"] = 8,
@@ -4234,14 +4245,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "深须国王",
 		},
-		[46227] = {
+		[285152] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "督军沙拉利斯",
+			["source"] = "仁慈侏儒4.U.型",
 		},
 		[286742] = {
 			["school"] = 32,
@@ -4254,20 +4263,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "狂怒幻影",
 		},
-		[85384] = {
-			["school"] = 1,
+		[44199] = {
+			["school"] = 4,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "掘强的黑牛-血色十字军",
+			["source"] = "凤凰",
 		},
-		[186562] = {
-			["school"] = 32,
+		[301351] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "恐惧猎犬",
+			["source"] = "HK-8型空中压制单位",
 		},
 		[295939] = {
 			["school"] = 8,
@@ -4277,12 +4289,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "HK-8型空中压制单位",
 		},
-		[145110] = {
-			["school"] = 8,
+		[74634] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Swineborn-格瑞姆巴托",
+			["source"] = "乌比斯将军",
 		},
 		[280404] = {
 			["school"] = 16,
@@ -4408,14 +4421,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "代言人扎克萨奇",
 		},
-		[31707] = {
-			["school"] = 16,
+		[291865] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "水元素",
+			["source"] = "R-21/X型空中单位",
 		},
 		[272418] = {
 			["school"] = 1,
@@ -4431,13 +4443,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "复仇的熔岩元素",
 		},
-		[291865] = {
-			["school"] = 8,
+		[31707] = {
+			["school"] = 16,
 			["token"] = {
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "R-21/X型空中单位",
+			["source"] = "水元素",
 		},
 		[257814] = {
 			["school"] = 1,
@@ -4447,14 +4460,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "杰斯·豪里斯",
 		},
-		[23600] = {
+		[274738] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "督军沙拉利斯",
+			["source"] = "萨神-卡拉赞",
 		},
 		[285213] = {
 			["school"] = 32,
@@ -4475,14 +4486,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "库尔提拉斯水兵",
 		},
-		[30485] = {
+		[150807] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "野蛮的卫兵",
+			["source"] = "被俘的矿工",
 		},
 		[119840] = {
 			["school"] = 1,
@@ -4494,14 +4507,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "希克提克士兵",
 		},
-		[103846] = {
+		[257544] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "莫卓克",
+			["source"] = "地怒者",
 		},
 		[298849] = {
 			["school"] = 8,
@@ -4511,12 +4524,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "崔克茜·击电",
 		},
-		[201657] = {
-			["school"] = 8,
+		[282413] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "失坠天神-影之哀伤",
 		},
 		[111668] = {
 			["school"] = 1,
@@ -4558,29 +4570,32 @@ EncounterDetailsDB = {
 			},
 			["source"] = "艾什凡观察员",
 		},
-		[128239] = {
+		[260508] = {
 			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "格尔桑捷刃兵",
+			["source"] = "魂缚巨像",
 		},
-		[115829] = {
+		[111735] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "紫晶守护者",
+			["source"] = "焦油",
 		},
-		[284459] = {
+		[202680] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "弗里达·铁吼",
+			["source"] = "瑟芬崔斯克",
 		},
 		[264235] = {
 			["school"] = 1,
@@ -4597,15 +4612,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "雪流大师",
 		},
-		[283947] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[288041] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "烈焰喷射",
+			["source"] = "大工匠梅卡托克",
 		},
 		[267818] = {
 			["school"] = 8,
@@ -4636,19 +4649,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "哈兰·斯威提",
 		},
-		[30739] = {
-			["school"] = 1,
+		[297257] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "酋长卡加斯·刃拳",
+			["source"] = "戈巴马克国王",
 		},
-		[266035] = {
-			["school"] = 1,
+		[282411] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "棘刺助祭",
+			["source"] = "阿昆达的化身",
 		},
 		[39004] = {
 			["school"] = 32,
@@ -4657,14 +4675,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "自由的虚空领域",
 		},
-		[58506] = {
+		[129262] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "石头守卫斯托克顿",
+			["source"] = "杰翰",
 		},
 		[267308] = {
 			["school"] = 8,
@@ -4692,12 +4710,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[285592] = {
+		[268619] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "惩戒幻影",
+			["source"] = "牧年-迦拉克隆",
 		},
 		[206387] = {
 			["school"] = 1,
@@ -4722,6 +4741,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "蛋",
 		},
+		[291874] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "飞行之爪",
+		},
 		[267310] = {
 			["school"] = 32,
 			["token"] = {
@@ -4730,19 +4756,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "深渊具象",
 		},
-		[291874] = {
+		[297283] = {
 			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "飞行之爪",
-		},
-		[226510] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 		},
 		[272428] = {
@@ -4787,12 +4806,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "钉刺寄生虫",
 		},
-		[91776] = {
+		[208052] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "腐臭跳跃者",
+			["source"] = "Rikii",
 		},
 		[75792] = {
 			["school"] = 32,
@@ -4868,26 +4888,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "R-21/X型空中单位",
 		},
-		[119922] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[268591] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "力冠三军库乌艾",
+			["source"] = "达萨大王",
 		},
-		[282408] = {
-			["school"] = 8,
+		[284455] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "火花机器人",
 		},
 		[274991] = {
 			["school"] = 16,
@@ -4896,14 +4909,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "维克戈斯",
 		},
-		[105479] = {
+		[285020] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "腐蚀之触",
+			["source"] = "白金拳手",
 		},
 		[257821] = {
 			["school"] = 1,
@@ -4913,14 +4926,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "尤朵拉船长",
 		},
-		[288693] = {
+		[76715] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "被折磨的幽魂",
+			["source"] = "暮光欺诈者",
 		},
 		[268851] = {
 			["school"] = 8,
@@ -4977,21 +4993,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "冫柠檬丶-盖斯",
 		},
-		[193210] = {
+		[106872] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "狂之煞",
+		},
+		[74551] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "阿什高姆",
-		},
-		[15232] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "艾尔蕾丝",
+			["source"] = "暮光捕火者",
+		},
+		[236329] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
 		},
 		[267830] = {
 			["school"] = 8,
@@ -5002,21 +5028,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "唤风者菲伊",
 		},
-		[236329] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-		},
-		[257946] = {
+		[268077] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "诗乃-燃烧平原",
+			["source"] = "女巫索林娜",
 		},
 		[119476] = {
 			["school"] = 1,
@@ -5050,14 +5069,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "破城者洛卡",
 		},
-		[27578] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[302384] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "督军沙拉利斯",
+			["source"] = "步行震击者X1型",
 		},
 		[287790] = {
 			["school"] = 1,
@@ -5082,13 +5102,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "战争大师黑角",
 		},
-		[152835] = {
-			["school"] = 4,
-			["type"] = "BUFF",
+		[156497] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "火焰投石",
+			["source"] = "黑石铸造厂",
 		},
 		[32865] = {
 			["school"] = 32,
@@ -5105,14 +5124,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "无光者维兹奥克",
 		},
-		[268347] = {
-			["school"] = 32,
+		[115767] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "斯托颂勋爵",
+			["source"] = "Boomerfly-海克泰尔",
 		},
 		[46193] = {
 			["school"] = 2,
@@ -5132,12 +5149,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "堕落的祝踏岚",
 		},
-		[271658] = {
+		[105848] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Rikii",
+			["source"] = "密封装甲板",
 		},
 		[282675] = {
 			["school"] = 32,
@@ -5148,20 +5165,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "惊悚者法索乌",
 		},
-		[265005] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "贪食的拉尔",
-		},
-		[30508] = {
+		[156107] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "高阶术士奈瑟库斯",
+			["source"] = "黑手",
+		},
+		[268587] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "达萨大王",
 		},
 		[74699] = {
 			["school"] = 32,
@@ -5172,12 +5188,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "恶毒的穴居人",
 		},
-		[115767] = {
-			["school"] = 1,
+		[268347] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Boomerfly-海克泰尔",
+			["source"] = "斯托颂勋爵",
 		},
 		[194880] = {
 			["school"] = 64,
@@ -5201,12 +5219,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "反冲",
 		},
-		[284451] = {
-			["school"] = 8,
+		[190394] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "活动炸弹",
+			["source"] = "阿克蒙德",
 		},
 		[257314] = {
 			["school"] = 1,
@@ -5217,13 +5236,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "铁潮掷弹兵",
 		},
-		[298897] = {
-			["school"] = 8,
+		[32055] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "崔克茜·击电",
+			["source"] = "夸格米拉",
 		},
 		[212792] = {
 			["school"] = 16,
@@ -5233,16 +5251,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "㒃㒃亡-海克泰尔",
 		},
-		[39016] = {
-			["school"] = 32,
+		[284453] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "末日预言者达尔莉安",
+			["source"] = "活动炸弹",
 		},
 		[258338] = {
 			["school"] = 1,
@@ -5252,15 +5268,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉乌尔船长",
 		},
-		[268586] = {
+		[282915] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "达萨大王",
+			["source"] = "惊悚者法索乌",
 		},
 		[267838] = {
 			["school"] = 8,
@@ -5301,12 +5315,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "杰斯·豪里斯",
 		},
-		[106871] = {
-			["school"] = 32,
+		[271656] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "狂之煞",
+			["source"] = "Ifyou",
 		},
 		[264144] = {
 			["school"] = 16,
@@ -5328,19 +5342,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "阿德里斯",
 		},
-		[35959] = {
-			["school"] = 4,
+		[298473] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "天怒预言者苏克拉底",
+			["source"] = "未知目标",
 		},
-		[272167] = {
-			["school"] = 8,
+		[284449] = {
+			["school"] = 2,
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "灾怨蝇",
+			["source"] = "弗里达·铁吼",
 		},
 		[257316] = {
 			["school"] = 8,
@@ -5370,29 +5385,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "指挥官沃加克",
 		},
-		[75664] = {
+		[269282] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "埃鲁达克",
+			["source"] = "卡罗蜜-伊利丹",
 		},
-		[268865] = {
-			["school"] = 64,
+		[35959] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "武器测试员",
+			["source"] = "天怒预言者苏克拉底",
 		},
-		[265002] = {
-			["school"] = 1,
+		[291613] = {
+			["school"] = 4,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "贪食的拉尔",
+			["source"] = "R-21/X型空中单位",
 		},
 		[278456] = {
 			["school"] = 8,
@@ -5411,13 +5428,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "破城者洛卡",
 		},
-		[90949] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "瓦里昂娜",
-		},
 		[267331] = {
 			["school"] = 32,
 			["type"] = "BUFF",
@@ -5425,6 +5435,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "诗乃-燃烧平原",
+		},
+		[90949] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "瓦里昂娜",
 		},
 		[257829] = {
 			["school"] = 1,
@@ -5487,12 +5504,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "微光血球",
 		},
-		[150759] = {
-			["school"] = 1,
+		[150011] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "守奴人库鲁斯托",
+			["source"] = "锻造大师戈杜哈",
 		},
 		[120759] = {
 			["school"] = 1,
@@ -5528,24 +5547,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "堕落的祝踏岚",
 		},
-		[106372] = {
-			["school"] = 34,
+		[76303] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "奥卓克希昂",
+			["source"] = "达加·燃影者",
 		},
-		[27634] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[38824] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "贾拉克萨斯",
+			["source"] = "熵能之眼",
 		},
 		[36696] = {
 			["school"] = 32,
@@ -5572,23 +5589,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "一代枭熊-血环",
 		},
-		[262513] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "风险投资公司灼天者",
-		},
-		[284446] = {
+		[197064] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "邦桑迪",
+		},
+		[270117] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "天梭-阿比迪斯",
 		},
 		[256552] = {
 			["school"] = 8,
@@ -5639,12 +5652,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "指挥官沃加克",
 		},
-		[184867] = {
-			["school"] = 32,
+		[193209] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "阿克蒙德",
+			["source"] = "阿什高姆",
 		},
 		[275014] = {
 			["school"] = 16,
@@ -5687,20 +5702,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "火焰投石",
 		},
-		[283421] = {
-			["school"] = 1,
+		[285468] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "仁慈侏儒4.U.型",
-		},
-		[115771] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "蓝晶守护者",
 		},
 		[272457] = {
 			["school"] = 1,
@@ -5711,13 +5718,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "孢子召唤师赞查",
 		},
-		[152837] = {
-			["school"] = 4,
+		[115771] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "火焰投石",
+			["source"] = "蓝晶守护者",
+		},
+		[36512] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "天怒预言者苏克拉底",
 		},
 		[263246] = {
 			["school"] = 1,
@@ -5734,18 +5751,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "格洛恩",
 		},
-		[258709] = {
+		[105846] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "丑恶的融合怪",
 		},
-		[286672] = {
-			["school"] = 32,
+		[39006] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "惩戒幻影",
+			["source"] = "天怒预言者苏克拉底",
 		},
 		[289858] = {
 			["school"] = 1,
@@ -5766,14 +5789,7 @@ EncounterDetailsDB = {
 			},
 			["source"] = "大工匠梅卡托克",
 		},
-		[195109] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "积怨织雷者",
-		},
-		[260280] = {
+		[197422] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
@@ -5781,16 +5797,23 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "商业大亨拉兹敦克",
+			["source"] = "科达娜·邪歌",
 		},
-		[31467] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[297262] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "时空领主德亚",
+			["source"] = "戈巴马克国王",
+		},
+		[259732] = {
+			["school"] = 40,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "孢子召唤师赞查",
 		},
 		[44141] = {
 			["school"] = 32,
@@ -5803,6 +5826,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "艾尔蕾丝",
 		},
+		[109247] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "暮光工兵",
+		},
 		[285254] = {
 			["school"] = 16,
 			["type"] = "DEBUFF",
@@ -5811,23 +5841,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "吉安娜·普罗德摩尔",
 		},
-		[109247] = {
+		[188614] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "暮光工兵",
-		},
-		[153679] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "守奴人库鲁斯托",
 		},
 		[39415] = {
 			["school"] = 32,
@@ -5871,22 +5890,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
-		[256405] = {
+		[162243] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "托萨克",
-		},
-		[257580] = {
-			["school"] = 8,
-			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "泥沙女王",
+			["source"] = "绝版籹紫",
 		},
 		[3391] = {
 			["school"] = 1,
@@ -5895,6 +5905,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "碎手争斗者",
 		},
+		[257580] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "泥沙女王",
+		},
 		[106433] = {
 			["school"] = 1,
 			["token"] = {
@@ -5902,21 +5919,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "雪流大师",
 		},
-		[44320] = {
+		[286026] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "邪能水晶",
-		},
-		[268278] = {
-			["school"] = 32,
-			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "维克雷斯夫人",
+			["source"] = "黄金之魂",
+		},
+		[283626] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "祝圣信徒",
 		},
 		[150324] = {
 			["school"] = 1,
@@ -5970,22 +5989,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "无光者维兹奥克",
 		},
-		[27584] = {
+		[191949] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "提拉宋·萨瑟利尔",
+		},
+		[277072] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "督军沙拉利斯",
-		},
-		[287608] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "长号一-基尔加丹",
+			["source"] = "腐化的黄金",
 		},
 		[17253] = {
 			["school"] = 1,
@@ -6013,13 +6030,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Neiyoul-影之哀伤",
 		},
-		[277072] = {
+		[27584] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "腐化的黄金",
+			["source"] = "督军沙拉利斯",
 		},
 		[257582] = {
 			["school"] = 1,
@@ -6041,46 +6060,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "雪流大师",
 		},
-		[285472] = {
+		[150038] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "玛格莫拉图斯",
+		},
+		[260242] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Ifyou",
+			["source"] = "月之淚-红龙军团",
 		},
-		[272669] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "燃烧的灵魂",
-		},
-		[263257] = {
+		[111129] = {
 			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "阿斯匹克斯",
-		},
-		[30494] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "蠕动的小软泥怪",
-		},
-		[162909] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "炉渣炸弹",
+			["source"] = "古·穿云",
 		},
 		[25821] = {
 			["school"] = 1,
@@ -6092,11 +6093,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "酋长卡加斯·刃拳",
 		},
+		[162909] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "炉渣炸弹",
+		},
 		[291915] = {
 			["school"] = 8,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
+		},
+		[263257] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "阿斯匹克斯",
 		},
 		[288333] = {
 			["school"] = 1,
@@ -6108,26 +6126,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "请怜惜娇花-凯尔萨斯",
 		},
-		[272668] = {
+		[261265] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "燃烧的灵魂",
+			["source"] = "女巫布里亚",
 		},
-		[258864] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[85288] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "艾什凡水兵",
+			["source"] = "掘强的黑牛-血色十字军",
 		},
 		[289869] = {
 			["school"] = 1,
@@ -6151,13 +6164,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灬演员灬-死亡之翼",
 		},
-		[40504] = {
+		[150753] = {
 			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "夸格米拉",
+			["source"] = "守奴人库鲁斯托",
 		},
 		[202315] = {
 			["school"] = 8,
@@ -6166,12 +6180,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "唤雷多头蛇",
 		},
-		[191685] = {
-			["school"] = 32,
+		[107270] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "圣弗朗西斯科-冰霜之刃",
+			["source"] = "最近瘾特别大-阿尔萨斯",
 		},
 		[272471] = {
 			["school"] = 1,
@@ -6196,13 +6210,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "飞行之爪",
 		},
-		[298571] = {
-			["school"] = 1,
+		[258864] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "机轮车",
+			["source"] = "艾什凡水兵",
 		},
 		[44342] = {
 			["school"] = 64,
@@ -6225,30 +6243,27 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[212800] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[189491] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "绝版籹紫",
-		},
-		[280661] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "吸吸机器人",
-		},
-		[268061] = {
-			["school"] = 8,
-			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "安纳塞隆",
+		},
+		[40504] = {
+			["school"] = 1,
+			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "瘟疫博士",
+			["source"] = "夸格米拉",
+		},
+		[270108] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
 		},
 		[263262] = {
 			["school"] = 8,
@@ -6259,22 +6274,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "页岩啃噬者",
 		},
-		[287797] = {
-			["school"] = 4,
+		[260570] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "大工匠梅卡托克",
-		},
-		[257426] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "铁潮执行者",
+		},
+		[285460] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "首席机械师闪流",
 		},
 		[27581] = {
 			["school"] = 1,
@@ -6339,6 +6352,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "伊拉贡",
 		},
+		[127802] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "请怜惜娇花-凯尔萨斯",
+		},
 		[109379] = {
 			["school"] = 1,
 			["token"] = {
@@ -6346,14 +6367,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "腐蚀之触",
-		},
-		[127802] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "请怜惜娇花-凯尔萨斯",
 		},
 		[156743] = {
 			["school"] = 1,
@@ -6372,12 +6385,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "格里昂纳",
 		},
-		[306765] = {
+		[186123] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "萨尔",
+			["source"] = "阿克蒙德",
 		},
 		[267360] = {
 			["school"] = 32,
@@ -6387,13 +6401,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "低语者沃尔兹斯",
 		},
-		[263778] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[306765] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "阿斯匹克斯",
+			["source"] = "萨尔",
 		},
 		[284760] = {
 			["school"] = 1,
@@ -6410,28 +6423,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ifyou",
 		},
-		[178741] = {
-			["school"] = 4,
+		[44271] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "爆橙",
+			["source"] = "贾拉克萨斯",
 		},
-		[47585] = {
-			["school"] = 32,
+		[197333] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "科达娜·邪歌",
+		},
+		[251839] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "牧年-迦拉克隆",
-		},
-		[31991] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "背叛者门努",
+			["source"] = "骑驴的大老黑-奥拉基尔",
 		},
 		[115982] = {
 			["school"] = 32,
@@ -6464,14 +6477,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉米·曼寇",
 		},
-		[74837] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "恶毒的穴居人",
-		},
 		[150032] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -6483,6 +6488,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "玛格莫拉图斯",
 		},
+		[240446] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+		},
 		[288345] = {
 			["school"] = 16,
 			["type"] = "BUFF",
@@ -6493,12 +6506,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "吉安娜·普罗德摩尔",
 		},
-		[107589] = {
+		[74837] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "格里昂纳",
+			["source"] = "恶毒的穴居人",
 		},
 		[287322] = {
 			["school"] = 1,
@@ -6552,12 +6566,12 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 		},
-		[296025] = {
-			["school"] = 8,
+		[148022] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "HK-8型空中压制单位",
+			["source"] = "灬观澜灬-耐普图隆",
 		},
 		[75861] = {
 			["school"] = 32,
@@ -6570,13 +6584,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "埃鲁达克",
 		},
-		[228287] = {
+		[291930] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "最近瘾特别大-阿尔萨斯",
+			["source"] = "废料压缩块",
 		},
 		[152170] = {
 			["school"] = 4,
@@ -6592,12 +6606,15 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
-		[52042] = {
-			["school"] = 8,
+		[257168] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "治疗之泉图腾",
+			["source"] = "铁潮掠夺者",
 		},
 		[90830] = {
 			["school"] = 4,
@@ -6606,28 +6623,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "铸炉之主索朗格斯",
 		},
-		[267367] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "机械化维和者",
-		},
-		[290573] = {
+		[296025] = {
 			["school"] = 8,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "贡克的化身",
+			["source"] = "HK-8型空中压制单位",
 		},
-		[121536] = {
-			["school"] = 2,
+		[193455] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "诗乃-燃烧平原",
+		},
+		[206019] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "灬演员灬-死亡之翼",
+			["source"] = "纠缠腐蚀",
 		},
 		[152939] = {
 			["school"] = 4,
@@ -6654,13 +6670,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "贪婪的追猎者",
 		},
-		[284943] = {
+		[111728] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "丰灵",
+			["source"] = "莱公",
 		},
 		[268904] = {
 			["school"] = 1,
@@ -6680,21 +6695,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "监工阿斯加里",
 		},
-		[156401] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "黑石铸造厂",
-		},
 		[88082] = {
 			["school"] = 4,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "镜像",
+		},
+		[152940] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "罗托尔",
 		},
 		[268905] = {
 			["school"] = 1,
@@ -6712,6 +6726,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "监工阿斯加里",
 		},
+		[121536] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "灬演员灬-死亡之翼",
+		},
+		[286989] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "曼赛罗伊·弗雷菲斯",
+		},
 		[257337] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -6722,24 +6750,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "投币式群体打击者",
-		},
-		[284942] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "丰灵",
-		},
-		[152940] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "罗托尔",
 		},
 		[257593] = {
 			["school"] = 8,
@@ -6779,22 +6789,23 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[192504] = {
+		[289162] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "提拉宋·萨瑟利尔",
+			["source"] = "狂怒幻影",
 		},
-		[158221] = {
+		[123655] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "最近瘾特别大-阿尔萨斯",
+			["source"] = "势不可挡哈伊岩",
 		},
 		[120] = {
 			["school"] = 16,
@@ -6813,24 +6824,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉斯塔哈大王",
 		},
-		[285453] = {
-			["school"] = 32,
+		[156096] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "乌纳特",
+			["source"] = "黑手",
 		},
-		[284941] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[286988] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "丰灵",
+			["source"] = "曼赛罗伊·弗雷菲斯",
 		},
 		[156479] = {
 			["school"] = 1,
@@ -6854,13 +6864,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "凯瑟琳修女",
 		},
-		[271711] = {
-			["school"] = 8,
+		[202314] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "圣沐-格瑞姆巴托",
+			["source"] = "未知目标",
 		},
 		[287333] = {
 			["school"] = 1,
@@ -6872,13 +6882,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉斯塔哈大王",
 		},
-		[75096] = {
-			["school"] = 8,
+		[191068] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "暮光召雷者",
+			["source"] = "亵渎",
 		},
 		[286310] = {
 			["school"] = 32,
@@ -6905,14 +6916,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "腐蚀毒液",
 		},
-		[191068] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[75096] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "亵渎",
+			["source"] = "暮光召雷者",
 		},
 		[274860] = {
 			["school"] = 1,
@@ -6952,36 +6962,39 @@ EncounterDetailsDB = {
 			},
 			["source"] = "巨钳鲁克玛尔",
 		},
-		[189534] = {
-			["school"] = 1,
+		[269399] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "卡兹洛加",
+			["source"] = "低语者沃尔兹斯",
 		},
-		[106826] = {
+		[286646] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "大工匠梅卡托克",
+		},
+		[188950] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "狂之煞",
+			["source"] = "亵渎",
 		},
-		[282215] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "飞行的猿猴驭者",
-		},
-		[162264] = {
-			["school"] = 127,
+		[260923] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "绝版籹紫",
+			["source"] = "女巫索林娜",
 		},
 		[121282] = {
 			["school"] = 8,
@@ -6992,21 +7005,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "翼虫首领尼诺洛克",
 		},
-		[278637] = {
-			["school"] = 32,
+		[189534] = {
+			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "卡兹洛加",
+		},
+		[119875] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "血虱",
-		},
-		[284614] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "亚拉特的堡垒",
+			["source"] = "将军帕瓦拉克",
 		},
 		[257597] = {
 			["school"] = 8,
@@ -7024,34 +7039,33 @@ EncounterDetailsDB = {
 			},
 			["source"] = "唤风者菲伊",
 		},
-		[119875] = {
+		[268403] = {
 			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "达萨大王",
+		},
+		[46191] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "将军帕瓦拉克",
-		},
-		[38844] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "艾瑞达死亡使者",
-		},
-		[260669] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "瑞克莎·流火",
+			["source"] = "艾尔蕾丝",
+		},
+		[185590] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "阿克蒙德",
 		},
 		[260924] = {
 			["school"] = 1,
@@ -7062,13 +7076,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拜恩比吉中士",
 		},
-		[268403] = {
-			["school"] = 8,
+		[268203] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "达萨大王",
+			["source"] = "亡触奴隶主",
 		},
 		[297574] = {
 			["school"] = 32,
@@ -7080,14 +7093,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "湮灭元素",
 		},
-		[212564] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[38844] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "折磨宝珠",
+			["source"] = "艾瑞达死亡使者",
 		},
 		[288363] = {
 			["school"] = 16,
@@ -7096,21 +7108,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "吉安娜·普罗德摩尔",
 		},
-		[184265] = {
-			["school"] = 32,
+		[260669] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "阿克蒙德",
-		},
-		[185590] = {
-			["school"] = 4,
-			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "阿克蒙德",
+			["source"] = "瑞克莎·流火",
 		},
 		[279664] = {
 			["school"] = 8,
@@ -7119,28 +7125,39 @@ EncounterDetailsDB = {
 			},
 			["source"] = "被征服的戈霍恩的触须",
 		},
-		[249923] = {
+		[106826] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "狂之煞",
+		},
+		[35951] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "亚兹玛",
+			["source"] = "小型暗影裂缝",
 		},
-		[265337] = {
-			["school"] = 1,
+		[256477] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "血渍小猪",
+			["source"] = "锯齿鲨",
 		},
-		[107850] = {
+		[282736] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "缚风者哈格拉",
+			["source"] = "帕库的化身",
 		},
 		[212565] = {
 			["school"] = 1,
@@ -7159,30 +7176,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "天梭-阿比迪斯",
 		},
-		[282736] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[249923] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "帕库的化身",
-		},
-		[115010] = {
-			["school"] = 1,
-			["token"] = {
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "未知目标",
+			["source"] = "亚兹玛",
 		},
-		[116038] = {
+		[107850] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "红玉守护者",
+			["source"] = "缚风者哈格拉",
+		},
+		[265337] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "血渍小猪",
 		},
 		[260926] = {
 			["school"] = 32,
@@ -7192,12 +7207,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女巫索林娜",
 		},
-		[8092] = {
+		[267385] = {
 			["school"] = 32,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "风雨潇潇-格瑞姆巴托",
+			["source"] = "触须",
 		},
 		[261438] = {
 			["school"] = 8,
@@ -7235,13 +7252,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "虚空石",
 		},
-		[286232] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "这个也不错-丽丽（四川）",
-		},
 		[106827] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -7251,6 +7261,13 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "狂之煞",
+		},
+		[8092] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "风雨潇潇-格瑞姆巴托",
 		},
 		[121284] = {
 			["school"] = 8,
@@ -7276,13 +7293,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "维克雷斯勋爵",
 		},
-		[283565] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[260829] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "仁慈侏儒4.U.型",
+			["source"] = "追踪导弹",
 		},
 		[267899] = {
 			["school"] = 1,
@@ -7295,19 +7312,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "铁舟修士",
 		},
-		[209862] = {
+		[150784] = {
 			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 		},
-		[256039] = {
-			["school"] = 1,
+		[285177] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "科古斯狱长",
+			["source"] = "吉安娜·普罗德摩尔",
 		},
 		[107851] = {
 			["school"] = 1,
@@ -7391,15 +7411,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灬演员灬-死亡之翼",
 		},
-		[39019] = {
+		[256577] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "预言者斯克瑞斯",
+			["source"] = "亚兹玛",
 		},
 		[282743] = {
 			["school"] = 8,
@@ -7428,14 +7446,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "三国骑士-雷斧堡垒",
 		},
-		[123496] = {
+		[107120] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "碧空翔龙",
+			["source"] = "指挥官瑞魔克",
 		},
 		[192611] = {
 			["school"] = 127,
@@ -7444,13 +7463,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "绝版籹紫",
 		},
-		[284280] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[288374] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "拉斯塔哈大王",
+			["source"] = "吉安娜·普罗德摩尔",
 		},
 		[258627] = {
 			["school"] = 1,
@@ -7462,15 +7483,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "地怒者",
 		},
-		[288374] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[284280] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "吉安娜·普罗德摩尔",
+			["source"] = "拉斯塔哈大王",
 		},
 		[257092] = {
 			["school"] = 1,
@@ -7502,22 +7521,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "铁舟修士",
 		},
-		[233272] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "格罗斯",
-		},
-		[284933] = {
+		[212423] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "拉斯塔哈大王",
+			["source"] = "复生的潜伏者",
+		},
+		[282886] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "海洋符文",
 		},
 		[258628] = {
 			["school"] = 1,
@@ -7525,15 +7545,12 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[270277] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[267890] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "商业大亨拉兹敦克",
 		},
 		[193636] = {
 			["school"] = 16,
@@ -7542,12 +7559,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "盐海小水滴",
 		},
-		[106352] = {
-			["school"] = 1,
+		[267533] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "雪流大师",
+			["source"] = "乔里船长",
 		},
 		[255558] = {
 			["school"] = 32,
@@ -7586,12 +7604,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "锻造大师戈杜哈",
 		},
-		[106830] = {
-			["school"] = 1,
+		[190398] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "一代枭熊-血环",
+			["source"] = "黑暗导管",
 		},
 		[116297] = {
 			["school"] = 4,
@@ -7615,100 +7634,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "乌纳特",
 		},
-		[190398] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "黑暗导管",
-		},
-		[282750] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "惊悚者法索乌",
-		},
-		[287490] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "未知目标",
-		},
-		[35008] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "巨钳鲁克玛尔",
-		},
-		[288380] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "火炮",
-		},
-		[20271] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "圣沐-格瑞姆巴托",
-		},
-		[268896] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "斯托颂勋爵",
-		},
-		[289916] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "拉斯塔哈大王",
-		},
-		[8936] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "魔族小德-卡德罗斯",
-		},
-		[117833] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "暴虐之蒙恩",
-		},
-		[139] = {
-			["school"] = 2,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_HEAL"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "灬演员灬-死亡之翼",
-		},
 		[269266] = {
 			["school"] = 1,
 			["token"] = {
@@ -7718,12 +7643,42 @@ EncounterDetailsDB = {
 			},
 			["source"] = "攻城恐魔",
 		},
-		[278147] = {
-			["school"] = 2,
+		[282750] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "花灬柳斋-死亡之翼",
+			["source"] = "惊悚者法索乌",
+		},
+		[75007] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "铸炉之主索朗格斯",
+		},
+		[106830] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "一代枭熊-血环",
+		},
+		[288380] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "火炮",
+		},
+		[111725] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "莱公",
 		},
 		[273232] = {
 			["school"] = 1,
@@ -7732,6 +7687,66 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "绝版籹紫",
+		},
+		[289916] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "拉斯塔哈大王",
+		},
+		[117833] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "暴虐之蒙恩",
+		},
+		[74846] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "乌比斯将军",
+		},
+		[139] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_HEAL"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "灬演员灬-死亡之翼",
+		},
+		[30146] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "虚空雨落-雷斧堡垒",
+		},
+		[278147] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "花灬柳斋-死亡之翼",
+		},
+		[257608] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "泥沙女王",
 		},
 		[191848] = {
 			["school"] = 8,
@@ -7767,14 +7782,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "HK-8型空中压制单位",
 		},
-		[20615] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[228597] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "督军沙拉利斯",
+			["source"] = "灬观澜灬-耐普图隆",
 		},
 		[279684] = {
 			["school"] = 1,
@@ -7792,13 +7805,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "猿猴折磨者3000型",
 		},
-		[115827] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[270882] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "青玉守护者",
+			["source"] = "艾泽里特足球炸弹",
 		},
 		[107215] = {
 			["school"] = 4,
@@ -7815,42 +7828,34 @@ EncounterDetailsDB = {
 			},
 			["source"] = "阿德里斯",
 		},
-		[116970] = {
+		[283394] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "石魁麟",
+			["source"] = "大工匠梅卡托克",
 		},
-		[46155] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[256137] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "塞林·火心",
+			["source"] = "艾泽里特足球炸弹",
 		},
-		[259975] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "泥沙女王",
-		},
-		[256551] = {
-			["school"] = 1,
+		[276229] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "锯齿鲨",
+			["source"] = "王牌轰炸机",
+		},
+		[262287] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "风险投资公司灼天者",
 		},
 		[282245] = {
 			["school"] = 1,
@@ -7867,13 +7872,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "亚兹玛",
 		},
-		[270882] = {
+		[267639] = {
 			["school"] = 4,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "艾泽里特足球炸弹",
+			["source"] = "殓尸者姆沁巴",
 		},
 		[304251] = {
 			["school"] = 32,
@@ -7884,29 +7890,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "霍弗",
 		},
-		[282247] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "格洛恩",
-		},
-		[267639] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "殓尸者姆沁巴",
-		},
-		[295552] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "HK-8型空中压制单位",
-		},
 		[264757] = {
 			["school"] = 32,
 			["token"] = {
@@ -7916,14 +7899,35 @@ EncounterDetailsDB = {
 			},
 			["source"] = "长者莉娅克萨",
 		},
-		[288388] = {
-			["school"] = 32,
+		[280177] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "灬观澜灬-耐普图隆",
+		},
+		[295552] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "HK-8型空中压制单位",
+		},
+		[20615] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "复生之魂",
+			["source"] = "督军沙拉利斯",
+		},
+		[282247] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "格洛恩",
 		},
 		[189548] = {
 			["school"] = 4,
@@ -7932,37 +7936,38 @@ EncounterDetailsDB = {
 			},
 			["source"] = "阿兹加洛",
 		},
-		[280177] = {
+		[267841] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "唤风者菲伊",
+		},
+		[289924] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "邦桑迪",
+		},
+		[304256] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "灬观澜灬-耐普图隆",
-		},
-		[287877] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "自爆绵羊",
+			["source"] = "霍弗",
 		},
-		[291973] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "狂犬K.U.-J.0.",
-		},
-		[269686] = {
-			["school"] = 40,
-			["type"] = "DEBUFF",
+		[31458] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "坦普卢斯",
 		},
 		[74976] = {
 			["school"] = 1,
@@ -7993,30 +7998,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉米纳利亚",
 		},
-		[117708] = {
-			["school"] = 32,
+		[269970] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "暴虐之蒙恩",
+			["source"] = "米利克萨",
 		},
-		[258381] = {
+		[184689] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "圣沐-格瑞姆巴托",
+		},
+		[291973] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "尤朵拉船长",
-		},
-		[269456] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "维克戈斯",
+			["source"] = "狂犬K.U.-J.0.",
 		},
 		[120778] = {
 			["school"] = 1,
@@ -8052,14 +8055,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "麦卡贡国王",
 		},
-		[263318] = {
-			["school"] = 8,
+		[38592] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "阿斯匹克斯",
+			["source"] = "坦普卢斯",
 		},
 		[272528] = {
 			["school"] = 1,
@@ -8070,14 +8073,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "艾什凡狙击手",
 		},
-		[35010] = {
-			["school"] = 8,
+		[288394] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "背叛者门努",
+			["source"] = "未引爆的军火",
 		},
 		[265364] = {
 			["school"] = 8,
@@ -8087,13 +8089,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "瘟疫蟾蜍",
 		},
-		[269970] = {
-			["school"] = 1,
+		[117708] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "米利克萨",
+			["source"] = "暴虐之蒙恩",
 		},
 		[192621] = {
 			["school"] = 1,
@@ -8103,21 +8107,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "阿什高姆",
 		},
-		[184689] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "圣沐-格瑞姆巴托",
-		},
-		[38592] = {
+		[258381] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "坦普卢斯",
+			["source"] = "尤朵拉船长",
+		},
+		[263318] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "阿斯匹克斯",
 		},
 		[280206] = {
 			["school"] = 32,
@@ -8134,17 +8138,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灬观澜灬-耐普图隆",
 		},
-		[260741] = {
+		[86392] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "女巫布里亚",
+			["source"] = "请怜惜娇花-凯尔萨斯",
 		},
 		[265366] = {
 			["school"] = 16,
@@ -8184,14 +8183,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "杰翰",
 		},
-		[260685] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[35010] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "长者莉娅克萨",
+			["source"] = "背叛者门努",
 		},
 		[59638] = {
 			["school"] = 16,
@@ -8216,12 +8215,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "瑟芬崔斯克",
 		},
-		[282077] = {
-			["school"] = 2,
+		[282135] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "暗铸十字军",
+			["source"] = "贡克的化身",
 		},
 		[202602] = {
 			["school"] = 1,
@@ -8245,23 +8245,25 @@ EncounterDetailsDB = {
 			},
 			["source"] = "火花机器人",
 		},
-		[287995] = {
-			["school"] = 16,
-			["type"] = "BUFF",
+		[281854] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Rikii",
+		},
+		[269369] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "凯瑟琳修女",
-		},
-		[289423] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "伊伊宝宝-达文格尔",
+			["source"] = "提扎拉",
 		},
 		[270487] = {
 			["school"] = 1,
@@ -8270,13 +8272,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "幽魂狂战士",
 		},
-		[257617] = {
-			["school"] = 8,
+		[107122] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "泥沙女王",
 		},
 		[287887] = {
 			["school"] = 1,
@@ -8287,28 +8288,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "凯瑟琳修女",
 		},
-		[195072] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "绝版籹紫",
-		},
-		[120167] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "势不可挡哈伊岩",
-		},
-		[116942] = {
-			["school"] = 4,
+		[298124] = {
+			["school"] = 40,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "受诅者魔封",
+			["source"] = "冈克",
+		},
+		[298229] = {
+			["school"] = 40,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "冈克",
+		},
+		[289423] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "伊伊宝宝-达文格尔",
 		},
 		[106835] = {
 			["school"] = 4,
@@ -8327,31 +8329,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "贾拉克萨斯",
 		},
-		[256390] = {
+		[1079] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "地道追猎者",
+			["source"] = "一代枭熊-血环",
 		},
-		[111723] = {
+		[305393] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "莱公",
+			["source"] = "白金拳手",
 		},
-		[298124] = {
-			["school"] = 40,
-			["type"] = "DEBUFF",
+		[257617] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "冈克",
+			["source"] = "泥沙女王",
 		},
 		[112929] = {
 			["school"] = 32,
@@ -8369,13 +8368,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "恐怖火炮",
 		},
-		[256594] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "拉乌尔船长",
-		},
 		[38593] = {
 			["school"] = 1,
 			["token"] = {
@@ -8384,18 +8376,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "坦普卢斯",
 		},
+		[256594] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "拉乌尔船长",
+		},
 		[120269] = {
 			["school"] = 8,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[272699] = {
-			["school"] = 8,
+		[282916] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "疯狂的孵化者",
+			["source"] = "惊悚者法索乌",
 		},
 		[268956] = {
 			["school"] = 64,
@@ -8465,6 +8465,24 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
+		[282406] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "火花机器人",
+		},
+		[289940] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "吉安娜·普罗德摩尔",
+		},
 		[306828] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -8476,21 +8494,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "萨尔",
 		},
-		[289940] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "吉安娜·普罗德摩尔",
-		},
-		[30979] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
 		[35395] = {
 			["school"] = 1,
 			["token"] = {
@@ -8499,13 +8502,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "圣沐-格瑞姆巴托",
 		},
-		[267522] = {
+		[121190] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "乔里船长",
+			["source"] = "魁麟守护者",
 		},
 		[120142] = {
 			["school"] = 1,
@@ -8542,12 +8545,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "死亡之翼",
 		},
-		[257871] = {
+		[5308] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "铁潮冒险家",
+			["source"] = "掘强的黑牛-血色十字军",
 		},
 		[272542] = {
 			["school"] = 1,
@@ -8558,14 +8561,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "艾什凡狙击手",
 		},
-		[288221] = {
-			["school"] = 4,
+		[34914] = {
+			["school"] = 32,
 			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "未引爆的军火",
+			["source"] = "风雨潇潇-格瑞姆巴托",
 		},
 		[3110] = {
 			["school"] = 4,
@@ -8574,30 +8577,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "基格米尔",
 		},
-		[16856] = {
+		[196206] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "影月术士",
+		},
+		[118297] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "原始火元素",
+		},
+		[113746] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "碎手角斗士",
-		},
-		[74981] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "铸炉之主索朗格斯",
-		},
-		[270481] = {
-			["school"] = 36,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "恶魔暴君",
+			["source"] = "小白老了-黑暗虚空",
 		},
 		[105174] = {
 			["school"] = 36,
@@ -8613,14 +8614,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "小白老了-黑暗虚空",
 		},
-		[131521] = {
+		[285431] = {
 			["school"] = 32,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "堕落的祝踏岚",
+			["source"] = "群居的空灵爪牙",
 		},
 		[74853] = {
 			["school"] = 64,
@@ -8631,20 +8631,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "乌比斯将军",
 		},
-		[287386] = {
-			["school"] = 4,
+		[74981] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "曼赛罗伊·弗雷菲斯",
-		},
-		[284316] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "约瑟夫修士",
+			["source"] = "铸炉之主索朗格斯",
 		},
 		[288410] = {
 			["school"] = 1,
@@ -8654,21 +8647,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "大工匠梅卡托克",
 		},
-		[266923] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "能量核心",
-		},
-		[263425] = {
-			["school"] = 1,
+		[284316] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "阿德里斯",
+			["source"] = "约瑟夫修士",
+		},
+		[121165] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "哈飒克觅火者",
+		},
+		[290036] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "吉安娜·普罗德摩尔",
 		},
 		[255575] = {
 			["school"] = 32,
@@ -8677,76 +8678,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女祭司阿伦扎",
 		},
-		[287757] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "大工匠梅卡托克",
-		},
-		[255577] = {
+		[185175] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "女祭司阿伦扎",
-		},
-		[285344] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "白金拳手",
-		},
-		[288415] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "邦桑迪",
-		},
-		[106966] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "次级易爆能量",
-		},
-		[246152] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "诗乃-燃烧平原",
-		},
-		[285342] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "充能风暴",
-		},
-		[286369] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "活动炸弹",
+			["source"] = "邪铁召唤者",
 		},
 		[285346] = {
 			["school"] = 1,
@@ -8755,49 +8694,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "拉斯塔哈大王",
-		},
-		[284831] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "拉斯塔哈大王",
-		},
-		[44544] = {
-			["school"] = 16,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "灬观澜灬-耐普图隆",
-		},
-		[271526] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "地怒者",
-		},
-		[286367] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "活动炸弹",
-		},
-		[285428] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "曼赛罗伊·弗雷菲斯",
 		},
 		[106199] = {
 			["school"] = 1,
@@ -8817,12 +8713,118 @@ EncounterDetailsDB = {
 			},
 			["source"] = "罗托尔",
 		},
+		[106966] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "次级易爆能量",
+		},
+		[289523] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "花灬柳斋-死亡之翼",
+		},
+		[285342] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "充能风暴",
+		},
 		[286368] = {
 			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "活动炸弹",
+		},
+		[298651] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "机轮车",
+		},
+		[284831] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "拉斯塔哈大王",
+		},
+		[307863] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "审判官格恩肖尔",
+		},
+		[271526] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "地怒者",
+		},
+		[286367] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "活动炸弹",
+		},
+		[257410] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "自然之使徒-雷斧堡垒",
+		},
+		[285344] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "白金拳手",
+		},
+		[255577] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "女祭司阿伦扎",
+		},
+		[288415] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "邦桑迪",
 		},
 		[122959] = {
 			["school"] = 1,
@@ -8851,15 +8853,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "凯尔萨斯·逐日者",
 		},
-		[298651] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[286369] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "活动炸弹",
+		},
+		[286370] = {
+			["school"] = 8,
+			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "机轮车",
+			["source"] = "活动炸弹",
+		},
+		[266923] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "能量核心",
 		},
 		[299164] = {
 			["school"] = 1,
@@ -8871,29 +8888,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "机轮车",
 		},
-		[307863] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "审判官格恩肖尔",
-		},
-		[304282] = {
-			["school"] = 1,
+		[44544] = {
+			["school"] = 16,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "雷克萨",
-		},
-		[286370] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "活动炸弹",
+			["source"] = "灬观澜灬-耐普图隆",
 		},
 		[192633] = {
 			["school"] = 16,
@@ -8909,23 +8910,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉斯塔哈大王",
 		},
-		[260696] = {
-			["school"] = 32,
+		[304282] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "女巫马拉迪",
+			["source"] = "雷克萨",
 		},
-		[263345] = {
-			["school"] = 4,
+		[265391] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "重型火炮",
+			["source"] = "宴会招待员",
 		},
 		[272554] = {
 			["school"] = 1,
@@ -8962,13 +8962,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "哈达尔·黑渊",
 		},
-		[264957] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[285427] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "未知目标",
+			["source"] = "原始摧心魔",
 		},
 		[285349] = {
 			["school"] = 4,
@@ -8988,14 +8990,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女巫布里亚",
 		},
-		[285041] = {
+		[265392] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "瘟疫蟾蜍",
+			["source"] = "宴会招待员",
 		},
 		[264368] = {
 			["school"] = 1,
@@ -9014,12 +9014,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉米纳利亚",
 		},
-		[265392] = {
-			["school"] = 1,
+		[263345] = {
+			["school"] = 4,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "宴会招待员",
+			["source"] = "重型火炮",
 		},
 		[255836] = {
 			["school"] = 32,
@@ -9030,14 +9032,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女祭司阿伦扎",
 		},
-		[255835] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[272046] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "女祭司阿伦扎",
+			["source"] = "鲨鱼饵",
 		},
 		[74984] = {
 			["school"] = 1,
@@ -9083,14 +9085,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女祭司阿伦扎",
 		},
-		[266237] = {
-			["school"] = 1,
+		[257883] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "征服者阿卡阿里",
+			["source"] = "哈达尔·黑渊",
 		},
 		[217200] = {
 			["school"] = 1,
@@ -9100,14 +9100,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kadokawa-冰风岗",
 		},
-		[260698] = {
+		[191587] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "女巫索林娜",
+			["source"] = "圣弗朗西斯科-冰霜之刃",
 		},
 		[260699] = {
 			["school"] = 32,
@@ -9136,12 +9134,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "维萨鲁斯",
 		},
-		[36677] = {
-			["school"] = 8,
+		[319643] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "熵能之眼",
+			["source"] = "萨尔",
 		},
 		[255582] = {
 			["school"] = 4,
@@ -9151,22 +9151,24 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 		},
-		[287916] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[122962] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Neiyoul-影之哀伤",
+			["source"] = "魁麟守护者",
 		},
-		[260189] = {
-			["school"] = 1,
+		[269493] = {
+			["school"] = 4,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "商业大亨拉兹敦克",
+			["source"] = "投币式群体打击者",
 		},
 		[156047] = {
 			["school"] = 4,
@@ -9195,20 +9197,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "曼赛罗伊·弗雷菲斯",
 		},
-		[319643] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[36677] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "萨尔",
+			["source"] = "熵能之眼",
 		},
-		[74986] = {
-			["school"] = 1,
+		[289963] = {
+			["school"] = 16,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
+			["source"] = "未知目标",
 		},
 		[19434] = {
 			["school"] = 1,
@@ -9228,31 +9231,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "黄金风蛇",
 		},
-		[122962] = {
+		[260189] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "魁麟守护者",
-		},
-		[290030] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "库尔提拉斯火炮",
-		},
-		[269493] = {
-			["school"] = 4,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "投币式群体打击者",
+			["source"] = "商业大亨拉兹敦克",
+		},
+		[259711] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "监狱守卫",
+		},
+		[287916] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Neiyoul-影之哀伤",
 		},
 		[109017] = {
 			["school"] = 1,
@@ -9268,19 +9271,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉斯塔哈大王",
 		},
-		[30153] = {
+		[185763] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "恶魔卫士",
+			["source"] = "冫柠檬丶-盖斯",
 		},
-		[199804] = {
+		[282801] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Neiyoul-影之哀伤",
+			["source"] = "白金拳手",
 		},
 		[265912] = {
 			["school"] = 1,
@@ -9299,12 +9306,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "产卵者",
 		},
-		[184707] = {
+		[74986] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "掘强的黑牛-血色十字军",
 		},
 		[260702] = {
 			["school"] = 32,
@@ -9318,13 +9324,12 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[282801] = {
+		[199804] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "白金拳手",
+			["source"] = "Neiyoul-影之哀伤",
 		},
 		[198013] = {
 			["school"] = 124,
@@ -9335,14 +9340,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "绝版籹紫",
 		},
-		[268024] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[276212] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "塞塔里斯之心",
+			["source"] = "商业大亨拉兹敦克",
 		},
 		[30213] = {
 			["school"] = 1,
@@ -9380,12 +9384,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女巫马拉迪",
 		},
-		[74987] = {
+		[264234] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "蛋",
 		},
 		[150677] = {
 			["school"] = 4,
@@ -9410,12 +9414,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "格洛恩",
 		},
-		[184709] = {
+		[266940] = {
 			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "掘强的黑牛-血色十字军",
+			["source"] = "征服者阿卡阿里",
 		},
 		[284851] = {
 			["school"] = 32,
@@ -9427,13 +9432,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "乌纳特",
 		},
-		[266940] = {
+		[74987] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "征服者阿卡阿里",
 		},
 		[285875] = {
 			["school"] = 1,
@@ -9465,16 +9469,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "沃卡尔",
 		},
-		[265407] = {
+		[260701] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "宴会招待员",
+			["source"] = "女巫布里亚",
 		},
 		[157331] = {
 			["school"] = 8,
@@ -9491,49 +9493,47 @@ EncounterDetailsDB = {
 			},
 			["source"] = "指挥官沃加克",
 		},
-		[287469] = {
+		[257407] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "弗里达·铁吼",
+			["source"] = "莱赞",
 		},
-		[121443] = {
-			["school"] = 8,
+		[25771] = {
+			["school"] = 2,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "翼虫首领尼诺洛克",
+			["source"] = "Igniubi-凤凰之神",
 		},
-		[121173] = {
+		[265407] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "克尔格西高阶卫士",
+			["source"] = "宴会招待员",
 		},
-		[118303] = {
+		[272055] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "不灭之影",
+			["source"] = "鲨鱼饵",
 		},
-		[265056] = {
+		[265168] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "拉米·曼寇",
 		},
@@ -9554,24 +9554,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "堕落的祝踏岚",
 		},
-		[124317] = {
+		[201754] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "将军帕瓦拉克",
+			["source"] = "野兽",
 		},
-		[30500] = {
+		[260700] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "高阶术士奈瑟库斯",
+			["source"] = "女巫马拉迪",
 		},
 		[285367] = {
 			["school"] = 32,
@@ -9591,12 +9589,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "㒃㒃亡-海克泰尔",
 		},
-		[265974] = {
+		[263927] = {
 			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "加瓦兹特",
+			["source"] = "米利克萨",
 		},
 		[79466] = {
 			["school"] = 32,
@@ -9606,13 +9606,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "埃鲁达克",
 		},
-		[194942] = {
-			["school"] = 1,
+		[285125] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "格雷泽",
+			["source"] = "拉米纳利亚",
 		},
 		[289915] = {
 			["school"] = 4,
@@ -9625,15 +9624,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "拉斯塔哈大王",
 		},
-		[255579] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[206459] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "女祭司阿伦扎",
+			["source"] = "暗影化身",
 		},
 		[256101] = {
 			["school"] = 1,
@@ -9643,13 +9641,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "科古斯狱长",
 		},
-		[258622] = {
-			["school"] = 8,
+		[261447] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "艾泽洛克",
+			["source"] = "维克雷斯勋爵",
 		},
 		[121174] = {
 			["school"] = 4,
@@ -9668,6 +9667,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "黄金风蛇",
 		},
+		[267459] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "被遗忘的居民",
+		},
+		[38540] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "时空领主德亚",
+		},
 		[263365] = {
 			["school"] = 8,
 			["token"] = {
@@ -9675,26 +9691,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "阿德里斯",
-		},
-		[250241] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "沃卡尔",
-		},
-		[267459] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "被遗忘的居民",
 		},
 		[288441] = {
 			["school"] = 16,
@@ -9704,14 +9700,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "吉安娜·普罗德摩尔",
 		},
-		[260190] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[285879] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "商业大亨拉兹敦克",
+			["source"] = "阿昆达的化身",
 		},
 		[256358] = {
 			["school"] = 1,
@@ -9720,13 +9715,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "托萨克",
 		},
-		[107357] = {
-			["school"] = 32,
+		[267060] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "堕落的祝踏岚",
+			["source"] = "智者扎纳扎尔",
 		},
 		[75245] = {
 			["school"] = 36,
@@ -9737,14 +9732,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "达加·燃影者",
 		},
-		[183969] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[31464] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "亵渎",
+			["source"] = "坦普卢斯",
 		},
 		[287419] = {
 			["school"] = 2,
@@ -9762,15 +9757,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女祭司阿伦扎",
 		},
-		[288719] = {
-			["school"] = 1,
+		[286051] = {
+			["school"] = 8,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "吉安娜·普罗德摩尔",
+			["source"] = "大工匠梅卡托克",
 		},
 		[272374] = {
 			["school"] = 4,
@@ -9789,24 +9783,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "阿库希尔",
 		},
-		[261428] = {
+		[203812] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "拜恩比吉中士",
+			["source"] = "三国骑士-雷斧堡垒",
 		},
-		[289537] = {
-			["school"] = 64,
+		[115828] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "大工匠梅卡托克",
+			["source"] = "红玉守护者",
 		},
 		[283598] = {
 			["school"] = 1,
@@ -9831,24 +9822,18 @@ EncounterDetailsDB = {
 			},
 			["source"] = "蛋",
 		},
-		[44164] = {
+		[256710] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "菲兹尔",
 		},
-		[268306] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[250368] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "维克雷斯夫人",
+			["source"] = "沃卡尔",
 		},
 		[23881] = {
 			["school"] = 1,
@@ -9857,14 +9842,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "掘强的黑牛-血色十字军",
 		},
-		[30470] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[255620] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "碎手蛮兵",
+			["source"] = "复活的荣誉卫士",
 		},
 		[197509] = {
 			["school"] = 32,
@@ -9918,12 +9902,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "科古斯狱长",
 		},
-		[285377] = {
-			["school"] = 1,
+		[44164] = {
+			["school"] = 4,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "白金拳手",
+			["source"] = "菲兹尔",
 		},
 		[285889] = {
 			["school"] = 8,
@@ -9944,28 +9930,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "绝版籹紫",
 		},
-		[114923] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "无缘也记得笑-燃烧之刃",
-		},
-		[125439] = {
+		[284864] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "天梭-阿比迪斯",
-		},
-		[257641] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "库尔提拉斯神射手",
+			["source"] = "海潮祭司之魂",
 		},
 		[288449] = {
 			["school"] = 32,
@@ -9977,6 +9949,24 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "邦桑迪",
+		},
+		[257641] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "库尔提拉斯神射手",
+		},
+		[30470] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "碎手蛮兵",
 		},
 		[30502] = {
 			["school"] = 1,
@@ -10020,12 +10010,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "血虱",
 		},
-		[284117] = {
-			["school"] = 8,
+		[117514] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "凯瑟琳修女",
+			["source"] = "不灭之影",
 		},
 		[288213] = {
 			["school"] = 1,
@@ -10034,19 +10026,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "吉安娜·普罗德摩尔",
 		},
+		[155722] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "一代枭熊-血环",
+		},
 		[285894] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "贡克的化身",
-		},
-		[292035] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "狂犬K.U.-J.0.",
 		},
 		[256363] = {
 			["school"] = 1,
@@ -10075,14 +10067,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "绝版籹紫",
 		},
-		[256106] = {
-			["school"] = 4,
+		[115804] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "天空上尉库拉格",
+			["source"] = "魔暴龙",
 		},
 		[285382] = {
 			["school"] = 1,
@@ -10092,16 +10083,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "充能风暴",
 		},
-		[39367] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[292035] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "自由的瑟雷凯斯",
+			["source"] = "狂犬K.U.-J.0.",
 		},
 		[257899] = {
 			["school"] = 1,
@@ -10132,14 +10119,36 @@ EncounterDetailsDB = {
 			},
 			["source"] = "亚兹玛",
 		},
-		[121185] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[76151] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "暮光欺诈者",
+		},
+		[118940] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "格林托克神谕师",
+		},
+		[283078] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "克尔格西高阶卫士",
+			["source"] = "格洛恩",
+		},
+		[98021] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "灵魂链接图腾",
 		},
 		[302272] = {
 			["school"] = 1,
@@ -10148,30 +10157,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "HK-8型空中压制单位",
-		},
-		[264608] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "拉米·曼寇",
-		},
-		[98021] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "灵魂链接图腾",
-		},
-		[153247] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "罗托尔",
 		},
 		[284361] = {
 			["school"] = 1,
@@ -10188,22 +10173,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rikii",
 		},
-		[286436] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[268013] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "玫斯特拉",
+			["source"] = "灾厄妖术师",
 		},
-		[287183] = {
-			["school"] = 8,
+		[283066] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "深海三叉戟",
 		},
 		[284362] = {
 			["school"] = 16,
@@ -10259,12 +10241,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "亚拉特的堡垒",
 		},
-		[284388] = {
+		[30600] = {
 			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "曼赛罗伊·弗雷菲斯",
+			["source"] = "战争使者沃姆罗格",
+		},
+		[224126] = {
+			["school"] = 16,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "幽灵狼",
 		},
 		[258925] = {
 			["school"] = 124,
@@ -10274,14 +10268,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Rikii",
-		},
-		[224126] = {
-			["school"] = 16,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "幽灵狼",
 		},
 		[257609] = {
 			["school"] = 1,
@@ -10354,30 +10340,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "星座骑士-斯坦索姆",
 		},
-		[117506] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "永影之提安",
-		},
-		[302279] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "反坦克机器人MK1型",
-		},
-		[260954] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[285945] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "拜恩比吉中士",
+			["source"] = "帕库的化身",
+		},
+		[261446] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "维克雷斯夫人",
 		},
 		[268260] = {
 			["school"] = 64,
@@ -10386,14 +10364,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "艾什凡炮手",
 		},
-		[228318] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "艾什凡观察员",
-		},
 		[265433] = {
 			["school"] = 32,
 			["token"] = {
@@ -10401,6 +10371,24 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "血誓污染者",
+		},
+		[287439] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "暗铸十字军",
+		},
+		[302279] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "反坦克机器人MK1型",
 		},
 		[242551] = {
 			["school"] = 1,
@@ -10433,13 +10421,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "大工匠梅卡托克",
 		},
-		[296142] = {
+		[181275] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "失落的灵魂",
+			["source"] = "恶魔传送门",
 		},
 		[282834] = {
 			["school"] = 1,
@@ -10476,15 +10465,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "夸格米拉",
 		},
-		[256589] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[285878] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "拉乌尔船长",
+			["source"] = "阿昆达的化身",
 		},
 		[198030] = {
 			["school"] = 124,
@@ -10492,14 +10479,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "绝版籹紫",
-		},
-		[30471] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "碎手撕裂者",
 		},
 		[105444] = {
 			["school"] = 4,
@@ -10510,6 +10489,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "未知目标",
 		},
+		[30471] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "碎手撕裂者",
+		},
 		[44614] = {
 			["school"] = 16,
 			["token"] = {
@@ -10518,13 +10505,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灬观澜灬-耐普图隆",
 		},
-		[257650] = {
+		[290001] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "拜恩比吉中士",
+			["source"] = "吉安娜·普罗德摩尔",
 		},
 		[275672] = {
 			["school"] = 1,
@@ -10534,12 +10523,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "掘强的黑牛-血色十字军",
 		},
-		[257278] = {
+		[124507] = {
 			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "哈兰·斯威提",
+			["source"] = "小白老了-黑暗虚空",
 		},
 		[191634] = {
 			["school"] = 8,
@@ -10551,14 +10540,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "萨神-卡拉赞",
 		},
-		[183436] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "这个也不错-丽丽（四川）",
-		},
 		[271579] = {
 			["school"] = 8,
 			["token"] = {
@@ -10567,21 +10548,32 @@ EncounterDetailsDB = {
 			},
 			["source"] = "风险投资公司塑地者",
 		},
-		[263914] = {
+		[257650] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "拜恩比吉中士",
+		},
+		[268008] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "米利克萨",
+			["source"] = "瘟疫博士",
 		},
-		[201363] = {
+		[271590] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "南方增长天-火焰之树",
+			["source"] = "维克雷斯夫人",
 		},
 		[39049] = {
 			["school"] = 64,
@@ -10601,13 +10593,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "哈飒克觅火者",
 		},
-		[193682] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "积怨夫人",
-		},
 		[152742] = {
 			["school"] = 4,
 			["type"] = "BUFF",
@@ -10616,13 +10601,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "火焰投石",
 		},
-		[288981] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[193682] = {
+			["school"] = 16,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "积怨夫人",
+		},
+		[212431] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "若兹-雷斧堡垒",
+			["source"] = "月之淚-红龙军团",
 		},
 		[271581] = {
 			["school"] = 2,
@@ -10641,32 +10634,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灼疮触须",
 		},
-		[123996] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "雪怒",
-		},
-		[268007] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[288981] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "若兹-雷斧堡垒",
+		},
+		[284383] = {
+			["school"] = 1,
+			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "心脏守卫",
-		},
-		[120160] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "势不可挡哈伊岩",
+			["source"] = "约瑟夫修士",
+		},
+		[280849] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "掘强的黑牛-血色十字军",
 		},
 		[284376] = {
 			["school"] = 1,
@@ -10691,6 +10680,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "恐惧猎犬",
 		},
+		[284377] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "邦桑迪",
+		},
 		[257908] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -10700,15 +10698,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "铁潮军官",
-		},
-		[284377] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "邦桑迪",
 		},
 		[256163] = {
 			["school"] = 4,
@@ -10760,29 +10749,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "哈飒克觅火者",
 		},
-		[119387] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "伊拉贡",
-		},
-		[186265] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "诗乃-燃烧平原",
-		},
-		[288475] = {
+		[270187] = {
 			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "陨冰",
+			["source"] = "维克戈斯",
+		},
+		[106470] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+		},
+		[296150] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
 		},
 		[38538] = {
 			["school"] = 64,
@@ -10822,26 +10808,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "廹钧-血顶",
 		},
-		[296150] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-		[106470] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-		[270187] = {
+		[288475] = {
 			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "维克戈斯",
+			["source"] = "陨冰",
+		},
+		[186265] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "诗乃-燃烧平原",
+		},
+		[119387] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "伊拉贡",
 		},
 		[269029] = {
 			["school"] = 1,
@@ -10882,29 +10871,32 @@ EncounterDetailsDB = {
 			},
 			["source"] = "婉枫-提瑞斯法",
 		},
-		[280849] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "掘强的黑牛-血色十字军",
-		},
-		[284383] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "约瑟夫修士",
-		},
-		[212431] = {
+		[120160] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "月之淚-红龙军团",
+			["source"] = "势不可挡哈伊岩",
+		},
+		[268007] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "心脏守卫",
+		},
+		[123996] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "雪怒",
 		},
 		[269031] = {
 			["school"] = 1,
@@ -10913,24 +10905,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Neiyoul-影之哀伤",
 		},
-		[271590] = {
+		[201363] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "维克雷斯夫人",
+			["source"] = "南方增长天-火焰之树",
 		},
-		[268008] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[263914] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "瘟疫博士",
+			["source"] = "米利克萨",
 		},
 		[259191] = {
 			["school"] = 32,
@@ -10939,22 +10928,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "亚兹玛",
 		},
-		[124507] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "小白老了-黑暗虚空",
-		},
-		[290001] = {
+		[183436] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "吉安娜·普罗德摩尔",
+			["source"] = "这个也不错-丽丽（四川）",
+		},
+		[296142] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "失落的灵魂",
 		},
 		[120800] = {
 			["school"] = 1,
@@ -10964,22 +10952,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "指挥官沃加克",
 		},
-		[285878] = {
+		[257278] = {
 			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "阿昆达的化身",
+			["source"] = "哈兰·斯威提",
 		},
-		[181275] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[256589] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "恶魔传送门",
+			["source"] = "拉乌尔船长",
 		},
 		[201364] = {
 			["school"] = 1,
@@ -10995,15 +10983,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "缚灵者戈拉亚",
 		},
-		[287439] = {
+		[228318] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "暗铸十字军",
+			["source"] = "艾什凡观察员",
 		},
 		[210320] = {
 			["school"] = 2,
@@ -11013,22 +10999,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "花灬柳斋-死亡之翼",
 		},
-		[261446] = {
+		[260954] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "拜恩比吉中士",
+		},
+		[117506] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "维克雷斯夫人",
-		},
-		[285945] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "帕库的化身",
+			["source"] = "永影之提安",
 		},
 		[295134] = {
 			["school"] = 1,
@@ -11054,16 +11040,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "小白老了-黑暗虚空",
 		},
-		[30600] = {
+		[284388] = {
 			["school"] = 4,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "战争使者沃姆罗格",
+			["source"] = "曼赛罗伊·弗雷菲斯",
 		},
 		[154796] = {
 			["school"] = 1,
@@ -11081,42 +11063,47 @@ EncounterDetailsDB = {
 			},
 			["source"] = "哈兰·斯威提",
 		},
-		[283066] = {
-			["school"] = 1,
+		[287183] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "深海三叉戟",
-		},
-		[268013] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "灾厄妖术师",
-		},
-		[283078] = {
-			["school"] = 1,
-			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "格洛恩",
 		},
-		[118940] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "格林托克神谕师",
-		},
-		[76151] = {
-			["school"] = 32,
+		[286436] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "暮光欺诈者",
+			["source"] = "玫斯特拉",
+		},
+		[153247] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "罗托尔",
+		},
+		[264608] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "拉米·曼寇",
+		},
+		[121185] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "克尔格西高阶卫士",
 		},
 		[106984] = {
 			["school"] = 8,
@@ -11127,13 +11114,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "古·穿云",
 		},
-		[115804] = {
-			["school"] = 1,
+		[39367] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "魔暴龙",
+			["source"] = "自由的瑟雷凯斯",
 		},
 		[16591] = {
 			["school"] = 1,
@@ -11143,12 +11133,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "骑驴的大老黑-奥拉基尔",
 		},
-		[155722] = {
-			["school"] = 1,
+		[256106] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "一代枭熊-血环",
+			["source"] = "天空上尉库拉格",
 		},
 		[15496] = {
 			["school"] = 1,
@@ -11158,14 +11150,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "血卫士伯鲁恩",
 		},
-		[117514] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[284117] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "不灭之影",
+			["source"] = "凯瑟琳修女",
 		},
 		[75000] = {
 			["school"] = 1,
@@ -11191,35 +11181,36 @@ EncounterDetailsDB = {
 			},
 			["source"] = "玫斯特拉",
 		},
-		[284864] = {
+		[125439] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "天梭-阿比迪斯",
+		},
+		[285377] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "白金拳手",
+		},
+		[114923] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "无缘也记得笑-燃烧之刃",
+		},
+		[268306] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "海潮祭司之魂",
-		},
-		[255620] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "复活的荣誉卫士",
-		},
-		[250368] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "沃卡尔",
-		},
-		[256710] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
+			["source"] = "维克雷斯夫人",
 		},
 		[270576] = {
 			["school"] = 1,
@@ -11237,21 +11228,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "圣光爆米花-雷斧堡垒",
 		},
-		[115828] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[289537] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "红玉守护者",
+			["source"] = "大工匠梅卡托克",
 		},
-		[203812] = {
+		[261428] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "三国骑士-雷斧堡垒",
+			["source"] = "拜恩比吉中士",
 		},
 		[121442] = {
 			["school"] = 8,
@@ -11260,46 +11254,51 @@ EncounterDetailsDB = {
 			},
 			["source"] = "翼虫首领尼诺洛克",
 		},
-		[286051] = {
-			["school"] = 8,
+		[288719] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "吉安娜·普罗德摩尔",
+		},
+		[183969] = {
+			["school"] = 32,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "大工匠梅卡托克",
+			["source"] = "亵渎",
 		},
-		[31464] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[107357] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "坦普卢斯",
+			["source"] = "堕落的祝踏岚",
 		},
-		[267060] = {
+		[260190] = {
 			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "智者扎纳扎尔",
-		},
-		[285879] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "阿昆达的化身",
-		},
-		[38540] = {
-			["school"] = 64,
-			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "时空领主德亚",
+			["source"] = "商业大亨拉兹敦克",
+		},
+		[250241] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "沃卡尔",
 		},
 		[105834] = {
 			["school"] = 4,
@@ -11309,23 +11308,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "丑恶的融合怪",
 		},
-		[261447] = {
+		[258622] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "艾泽洛克",
+		},
+		[255579] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "维克雷斯勋爵",
-		},
-		[206459] = {
-			["school"] = 32,
-			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "暗影化身",
+			["source"] = "女祭司阿伦扎",
 		},
 		[110312] = {
 			["school"] = 32,
@@ -11336,80 +11335,85 @@ EncounterDetailsDB = {
 			},
 			["source"] = "战争大师黑角",
 		},
-		[285125] = {
-			["school"] = 16,
+		[194942] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "格雷泽",
+		},
+		[265974] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "拉米纳利亚",
+			["source"] = "加瓦兹特",
 		},
-		[263927] = {
+		[30500] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "高阶术士奈瑟库斯",
+		},
+		[124317] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "将军帕瓦拉克",
+		},
+		[265056] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "拉米·曼寇",
+		},
+		[118303] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "不灭之影",
+		},
+		[121443] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "米利克萨",
+			["source"] = "翼虫首领尼诺洛克",
 		},
-		[260700] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "女巫马拉迪",
-		},
-		[201754] = {
+		[287469] = {
 			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "野兽",
-		},
-		[265168] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "拉米·曼寇",
-		},
-		[272055] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "鲨鱼饵",
-		},
-		[25771] = {
-			["school"] = 2,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Igniubi-凤凰之神",
-		},
-		[257407] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "莱赞",
+			["source"] = "弗里达·铁吼",
 		},
-		[260701] = {
+		[121173] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "女巫布里亚",
+			["source"] = "克尔格西高阶卫士",
 		},
 		[284399] = {
 			["school"] = 4,
@@ -11427,12 +11431,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "科古斯狱长",
 		},
-		[264234] = {
+		[184709] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "蛋",
+			["source"] = "掘强的黑牛-血色十字军",
 		},
 		[197277] = {
 			["school"] = 2,
@@ -11442,13 +11446,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "圣沐-格瑞姆巴托",
 		},
-		[276212] = {
-			["school"] = 4,
+		[268024] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "商业大亨拉兹敦克",
+			["source"] = "塞塔里斯之心",
 		},
 		[299241] = {
 			["school"] = 8,
@@ -11457,33 +11462,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "耐诺·万坠",
 		},
-		[185763] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "冫柠檬丶-盖斯",
-		},
-		[259711] = {
+		[30153] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "监狱守卫",
+			["source"] = "恶魔卫士",
 		},
-		[289963] = {
-			["school"] = 16,
-			["type"] = "BUFF",
+		[290030] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "未知目标",
+			["source"] = "库尔提拉斯火炮",
+		},
+		[184707] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "掘强的黑牛-血色十字军",
 		},
 		[46153] = {
 			["school"] = 64,
@@ -11517,19 +11515,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "缚灵者戈拉亚",
 		},
-		[191587] = {
+		[260698] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "圣弗朗西斯科-冰霜之刃",
-		},
-		[257883] = {
-			["school"] = 16,
-			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "哈达尔·黑渊",
+			["source"] = "女巫索林娜",
+		},
+		[266237] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "征服者阿卡阿里",
 		},
 		[265468] = {
 			["school"] = 32,
@@ -11539,14 +11541,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "血誓污染者",
 		},
-		[272046] = {
-			["school"] = 8,
+		[255835] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "鲨鱼饵",
+			["source"] = "女祭司阿伦扎",
 		},
 		[30505] = {
 			["school"] = 32,
@@ -11556,15 +11558,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "高阶术士奈瑟库斯",
 		},
-		[285427] = {
-			["school"] = 32,
+		[264957] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "原始摧心魔",
+			["source"] = "未知目标",
 		},
 		[273657] = {
 			["school"] = 1,
@@ -11573,12 +11573,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "亡触奴隶主",
 		},
-		[265391] = {
-			["school"] = 1,
+		[260696] = {
+			["school"] = 32,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "宴会招待员",
+			["source"] = "女巫马拉迪",
 		},
 		[30633] = {
 			["school"] = 8,
@@ -11591,13 +11593,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "战争使者沃姆罗格",
 		},
-		[257410] = {
+		[285428] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "自然之使徒-雷斧堡垒",
+			["source"] = "曼赛罗伊·弗雷菲斯",
 		},
 		[273658] = {
 			["school"] = 32,
@@ -11622,13 +11624,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "瘟疫蟾蜍",
 		},
-		[289523] = {
+		[246152] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "花灬柳斋-死亡之翼",
+			["source"] = "诗乃-燃烧平原",
 		},
 		[263424] = {
 			["school"] = 1,
@@ -11645,14 +11647,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "谄媚海妖",
 		},
-		[185175] = {
+		[285041] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "邪铁召唤者",
+			["source"] = "瘟疫蟾蜍",
 		},
 		[289524] = {
 			["school"] = 1,
@@ -11662,21 +11664,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "天梭-阿比迪斯",
 		},
-		[290036] = {
-			["school"] = 16,
+		[263425] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "吉安娜·普罗德摩尔",
+			["source"] = "阿德里斯",
 		},
-		[121165] = {
-			["school"] = 4,
+		[287757] = {
+			["school"] = 8,
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "哈飒克觅火者",
+			["source"] = "大工匠梅卡托克",
 		},
 		[270590] = {
 			["school"] = 1,
@@ -11687,36 +11688,38 @@ EncounterDetailsDB = {
 			},
 			["source"] = "攻城恐魔",
 		},
-		[285431] = {
+		[131521] = {
 			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "堕落的祝踏岚",
+		},
+		[287386] = {
+			["school"] = 4,
+			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "群居的空灵爪牙",
+			["source"] = "曼赛罗伊·弗雷菲斯",
 		},
-		[113746] = {
+		[270481] = {
+			["school"] = 36,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "恶魔暴君",
+		},
+		[16856] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "小白老了-黑暗虚空",
-		},
-		[118297] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "原始火元素",
-		},
-		[196206] = {
-			["school"] = 32,
-			["token"] = {
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "影月术士",
+			["source"] = "碎手角斗士",
 		},
 		[289526] = {
 			["school"] = 16,
@@ -11725,14 +11728,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "国际搬砖公司-罗宁",
 		},
-		[34914] = {
-			["school"] = 32,
+		[288221] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "风雨潇潇-格瑞姆巴托",
+			["source"] = "未引爆的军火",
 		},
 		[265986] = {
 			["school"] = 1,
@@ -11743,12 +11746,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "能量核心",
 		},
-		[5308] = {
+		[257871] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "掘强的黑牛-血色十字军",
+			["source"] = "铁潮冒险家",
 		},
 		[131522] = {
 			["school"] = 32,
@@ -11757,22 +11760,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "堕落的祝踏岚",
 		},
-		[121190] = {
+		[267522] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "乔里船长",
+		},
+		[30979] = {
+			["school"] = 4,
+			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "魁麟守护者",
-		},
-		[282406] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "火花机器人",
 		},
 		[36175] = {
 			["school"] = 1,
@@ -11782,13 +11782,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "末日预言者达尔莉安",
 		},
-		[282916] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[272699] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "惊悚者法索乌",
+			["source"] = "疯狂的孵化者",
 		},
 		[267523] = {
 			["school"] = 1,
@@ -11808,27 +11807,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "机甲驾驶员",
 		},
-		[305393] = {
+		[111723] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "白金拳手",
+			["source"] = "莱公",
 		},
-		[1079] = {
+		[256390] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "一代枭熊-血环",
+			["source"] = "地道追猎者",
 		},
-		[298229] = {
-			["school"] = 40,
+		[120167] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "冈克",
+			["source"] = "势不可挡哈伊岩",
 		},
 		[201633] = {
 			["school"] = 2,
@@ -11838,32 +11839,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "大地之墙图腾",
 		},
-		[107122] = {
-			["school"] = 1,
+		[116942] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
+			["source"] = "受诅者魔封",
 		},
-		[269369] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[195072] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "绝版籹紫",
+		},
+		[287995] = {
+			["school"] = 16,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "提扎拉",
-		},
-		[281854] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Rikii",
+			["source"] = "凯瑟琳修女",
 		},
 		[288507] = {
 			["school"] = 16,
@@ -11880,28 +11880,33 @@ EncounterDetailsDB = {
 			},
 			["source"] = "提拉宋·萨瑟利尔",
 		},
-		[282135] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "贡克的化身",
-		},
-		[86392] = {
-			["school"] = 1,
+		[282077] = {
+			["school"] = 2,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "请怜惜娇花-凯尔萨斯",
+			["source"] = "暗铸十字军",
 		},
-		[288394] = {
-			["school"] = 4,
+		[260741] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "女巫布里亚",
+		},
+		[260685] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "未引爆的军火",
+			["source"] = "长者莉娅克萨",
 		},
 		[121447] = {
 			["school"] = 4,
@@ -11928,29 +11933,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "孢子召唤师赞查",
 		},
-		[31458] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[269456] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "维克戈斯",
+		},
+		[269686] = {
+			["school"] = 40,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "坦普卢斯",
 		},
-		[267841] = {
-			["school"] = 8,
+		[287877] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "唤风者菲伊",
-		},
-		[304256] = {
-			["school"] = 1,
-			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "霍弗",
+			["source"] = "自爆绵羊",
 		},
 		[205473] = {
 			["school"] = 16,
@@ -11960,14 +11966,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灬观澜灬-耐普图隆",
 		},
-		[289924] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[288388] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "邦桑迪",
+			["source"] = "复生之魂",
 		},
 		[199844] = {
 			["school"] = 16,
@@ -11993,90 +11999,57 @@ EncounterDetailsDB = {
 			},
 			["source"] = "月之淚-红龙军团",
 		},
-		[276229] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "王牌轰炸机",
-		},
-		[256137] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "艾泽里特足球炸弹",
-		},
-		[283394] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "大工匠梅卡托克",
-		},
-		[262287] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "风险投资公司灼天者",
-		},
-		[228597] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "灬观澜灬-耐普图隆",
-		},
-		[257608] = {
+		[259975] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "泥沙女王",
 		},
-		[30146] = {
+		[46155] = {
 			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "虚空雨落-雷斧堡垒",
-		},
-		[259720] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "孢子召唤师赞查",
-		},
-		[74846] = {
-			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "乌比斯将军",
+			["source"] = "塞林·火心",
 		},
-		[111725] = {
+		[116970] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "石魁麟",
+		},
+		[256551] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "莱公",
+			["source"] = "锯齿鲨",
 		},
-		[75007] = {
+		[115827] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "铸炉之主索朗格斯",
+			["source"] = "青玉守护者",
+		},
+		[8936] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "魔族小德-卡德罗斯",
 		},
 		[268936] = {
 			["school"] = 1,
@@ -12085,6 +12058,51 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "达萨大王",
+		},
+		[259720] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "孢子召唤师赞查",
+		},
+		[268896] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "斯托颂勋爵",
+		},
+		[20271] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "圣沐-格瑞姆巴托",
+		},
+		[287490] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "未知目标",
+		},
+		[35008] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "巨钳鲁克玛尔",
 		},
 		[284420] = {
 			["school"] = 4,
@@ -12110,38 +12128,39 @@ EncounterDetailsDB = {
 			},
 			["source"] = "莱赞",
 		},
-		[267533] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "乔里船长",
-		},
-		[267890] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-		},
-		[282886] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "海洋符文",
-		},
-		[212423] = {
+		[106352] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "复生的潜伏者",
+			["source"] = "雪流大师",
+		},
+		[270277] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "商业大亨拉兹敦克",
+		},
+		[284933] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "拉斯塔哈大王",
+		},
+		[233272] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "格罗斯",
 		},
 		[265487] = {
 			["school"] = 32,
@@ -12159,15 +12178,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "王牌轰炸机",
 		},
-		[107120] = {
+		[123496] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "指挥官瑞魔克",
+			["source"] = "碧空翔龙",
 		},
 		[255372] = {
 			["school"] = 1,
@@ -12176,38 +12194,37 @@ EncounterDetailsDB = {
 			},
 			["source"] = "莱赞",
 		},
-		[256577] = {
+		[39019] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "亚兹玛",
-		},
-		[285177] = {
-			["school"] = 16,
-			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "预言者斯克瑞斯",
+		},
+		[256039] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "科古斯狱长",
+		},
+		[209862] = {
+			["school"] = 4,
+			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "吉安娜·普罗德摩尔",
 		},
-		[150784] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-		},
-		[260829] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[283565] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "追踪导弹",
+			["source"] = "仁慈侏儒4.U.型",
 		},
 		[273677] = {
 			["school"] = 32,
@@ -12216,22 +12233,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灾厄妖术师",
 		},
-		[267385] = {
-			["school"] = 32,
+		[286232] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "触须",
+			["source"] = "这个也不错-丽丽（四川）",
 		},
-		[281413] = {
+		[116038] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "莫可微-奥达曼",
+			["source"] = "红玉守护者",
 		},
 		[255373] = {
 			["school"] = 1,
@@ -12242,34 +12257,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "莱赞",
 		},
-		[256477] = {
-			["school"] = 8,
+		[281413] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "锯齿鲨",
+			["source"] = "莫可微-奥达曼",
 		},
-		[35951] = {
-			["school"] = 32,
+		[115010] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "小型暗影裂缝",
-		},
-		[268203] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "亡触奴隶主",
-		},
-		[90361] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "阿七",
+			["source"] = "未知目标",
 		},
 		[291946] = {
 			["school"] = 1,
@@ -12281,17 +12282,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "狂犬K.U.-J.0.",
 		},
-		[46191] = {
-			["school"] = 4,
+		[90361] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "阿七",
+		},
+		[212564] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "折磨宝珠",
+		},
+		[184265] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "艾尔蕾丝",
+			["source"] = "阿克蒙德",
 		},
 		[107121] = {
 			["school"] = 1,
@@ -12310,39 +12323,36 @@ EncounterDetailsDB = {
 			},
 			["source"] = "喷毒盘蛇",
 		},
-		[188950] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "亵渎",
-		},
-		[260923] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "女巫索林娜",
-		},
-		[286646] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "大工匠梅卡托克",
-		},
-		[269399] = {
+		[278637] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "低语者沃尔兹斯",
+			["source"] = "血虱",
+		},
+		[284614] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "亚拉特的堡垒",
+		},
+		[162264] = {
+			["school"] = 127,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "绝版籹紫",
+		},
+		[282215] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "飞行的猿猴驭者",
 		},
 		[273681] = {
 			["school"] = 1,
@@ -12377,13 +12387,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "门努的治疗图腾",
 		},
-		[202314] = {
-			["school"] = 1,
+		[271711] = {
+			["school"] = 8,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "未知目标",
+			["source"] = "圣沐-格瑞姆巴托",
 		},
 		[290570] = {
 			["school"] = 1,
@@ -12395,48 +12405,51 @@ EncounterDetailsDB = {
 			},
 			["source"] = "帕库的化身",
 		},
-		[286988] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[284941] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "曼赛罗伊·弗雷菲斯",
-		},
-		[156096] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "黑手",
+			["source"] = "丰灵",
 		},
-		[123655] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[285453] = {
+			["school"] = 32,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "势不可挡哈伊岩",
+			["source"] = "乌纳特",
 		},
-		[289162] = {
+		[158221] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "最近瘾特别大-阿尔萨斯",
+		},
+		[192504] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "狂怒幻影",
+			["source"] = "提拉宋·萨瑟利尔",
 		},
-		[286989] = {
-			["school"] = 4,
+		[284942] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "曼赛罗伊·弗雷菲斯",
+			["source"] = "丰灵",
 		},
 		[285454] = {
 			["school"] = 8,
@@ -12465,12 +12478,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "惊悚者法索乌",
 		},
-		[111728] = {
+		[284943] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "莱公",
+			["source"] = "丰灵",
 		},
 		[250259] = {
 			["school"] = 8,
@@ -12480,45 +12494,45 @@ EncounterDetailsDB = {
 			},
 			["source"] = "沃卡尔",
 		},
-		[206019] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "纠缠腐蚀",
-		},
-		[193455] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "诗乃-燃烧平原",
-		},
-		[257168] = {
-			["school"] = 64,
+		[156401] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "铁潮掠夺者",
+			["source"] = "黑石铸造厂",
 		},
-		[148022] = {
-			["school"] = 16,
+		[290573] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "灬观澜灬-耐普图隆",
+			["source"] = "贡克的化身",
 		},
-		[291930] = {
+		[52042] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "治疗之泉图腾",
+		},
+		[267367] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "废料压缩块",
+			["source"] = "机械化维和者",
+		},
+		[228287] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "最近瘾特别大-阿尔萨斯",
 		},
 		[286480] = {
 			["school"] = 8,
@@ -12529,13 +12543,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "火花机器人",
 		},
-		[240446] = {
-			["school"] = 4,
+		[107589] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "格里昂纳",
 		},
 		[267034] = {
 			["school"] = 32,
@@ -12563,36 +12576,36 @@ EncounterDetailsDB = {
 			},
 			["source"] = "深须国王",
 		},
-		[251839] = {
-			["school"] = 1,
+		[31991] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "背叛者门努",
+		},
+		[47585] = {
+			["school"] = 32,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "骑驴的大老黑-奥拉基尔",
-		},
-		[197333] = {
-			["school"] = 1,
-			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "科达娜·邪歌",
+			["source"] = "牧年-迦拉克隆",
 		},
-		[44271] = {
-			["school"] = 1,
+		[178741] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "贾拉克萨斯",
+			["source"] = "爆橙",
 		},
-		[186123] = {
-			["school"] = 32,
+		[263778] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "阿克蒙德",
+			["source"] = "阿斯匹克斯",
 		},
 		[264477] = {
 			["school"] = 48,
@@ -12639,66 +12652,71 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女巫索林娜",
 		},
-		[285460] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[257426] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "首席机械师闪流",
+			["source"] = "铁潮执行者",
 		},
-		[260570] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-		[270108] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-		},
-		[189491] = {
+		[287797] = {
 			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "安纳塞隆",
+			["source"] = "大工匠梅卡托克",
 		},
-		[107270] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "最近瘾特别大-阿尔萨斯",
-		},
-		[150753] = {
-			["school"] = 1,
+		[268061] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "守奴人库鲁斯托",
+			["source"] = "瘟疫博士",
 		},
-		[85288] = {
+		[280661] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "吸吸机器人",
+		},
+		[298571] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "掘强的黑牛-血色十字军",
+			["source"] = "机轮车",
 		},
-		[261265] = {
+		[212800] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "绝版籹紫",
+		},
+		[191685] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "圣弗朗西斯科-冰霜之刃",
+		},
+		[272668] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "女巫布里亚",
+			["source"] = "燃烧的灵魂",
 		},
 		[259474] = {
 			["school"] = 4,
@@ -12716,28 +12734,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "锯齿鲨",
 		},
-		[111129] = {
+		[30494] = {
 			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "蠕动的小软泥怪",
+		},
+		[272669] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "古·穿云",
+			["source"] = "燃烧的灵魂",
 		},
-		[260242] = {
+		[285472] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "月之淚-红龙军团",
-		},
-		[150038] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "玛格莫拉图斯",
+			["source"] = "Ifyou",
 		},
 		[105845] = {
 			["school"] = 4,
@@ -12747,12 +12766,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "丑恶的融合怪",
 		},
-		[191949] = {
-			["school"] = 32,
+		[287608] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "提拉宋·萨瑟利尔",
+			["source"] = "长号一-基尔加丹",
 		},
 		[261266] = {
 			["school"] = 1,
@@ -12771,23 +12790,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "萨尔",
 		},
-		[283626] = {
-			["school"] = 2,
+		[268278] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "祝圣信徒",
+			["source"] = "维克雷斯夫人",
 		},
-		[286026] = {
+		[44320] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "黄金之魂",
+			["source"] = "邪能水晶",
 		},
 		[270624] = {
 			["school"] = 1,
@@ -12798,13 +12815,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "束缚恐魔",
 		},
-		[162243] = {
+		[256405] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "绝版籹紫",
+			["source"] = "托萨克",
 		},
 		[288024] = {
 			["school"] = 1,
@@ -12814,12 +12833,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "骑驴的大老黑-奥拉基尔",
 		},
-		[188614] = {
+		[153679] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "守奴人库鲁斯托",
 		},
 		[2649] = {
 			["school"] = 1,
@@ -12837,60 +12860,52 @@ EncounterDetailsDB = {
 			},
 			["source"] = "吉布尔的化身",
 		},
-		[259732] = {
-			["school"] = 40,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "孢子召唤师赞查",
-		},
-		[297262] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "戈巴马克国王",
-		},
-		[197422] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "科达娜·邪歌",
-		},
-		[39006] = {
-			["school"] = 4,
+		[31467] = {
+			["school"] = 64,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "天怒预言者苏克拉底",
+			["source"] = "时空领主德亚",
 		},
-		[105846] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "丑恶的融合怪",
-		},
-		[36512] = {
+		[260280] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "天怒预言者苏克拉底",
+			["source"] = "商业大亨拉兹敦克",
+		},
+		[195109] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "积怨织雷者",
+		},
+		[286672] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "惩戒幻影",
+		},
+		[258709] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+		},
+		[152837] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "火焰投石",
 		},
 		[193717] = {
 			["school"] = 64,
@@ -12900,10 +12915,10 @@ EncounterDetailsDB = {
 			},
 			["source"] = "积怨夫人",
 		},
-		[285468] = {
-			["school"] = 4,
+		[283421] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "仁慈侏儒4.U.型",
 		},
@@ -12924,14 +12939,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "惊悚者法索乌",
 		},
-		[193209] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[184867] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "阿什高姆",
+			["source"] = "阿克蒙德",
 		},
 		[283422] = {
 			["school"] = 1,
@@ -12953,19 +12966,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "灵魂汲取图腾",
 		},
-		[270117] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "天梭-阿比迪斯",
-		},
-		[197064] = {
+		[284446] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
+			["source"] = "邦桑迪",
+		},
+		[262513] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "风险投资公司灼天者",
 		},
 		[267047] = {
 			["school"] = 1,
@@ -12974,31 +12991,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "沙鳞突击者",
 		},
-		[38824] = {
-			["school"] = 4,
+		[27634] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "熵能之眼",
+			["source"] = "贾拉克萨斯",
 		},
-		[76303] = {
-			["school"] = 1,
+		[106372] = {
+			["school"] = 34,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "达加·燃影者",
+			["source"] = "奥卓克希昂",
 		},
-		[150011] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[150759] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "锻造大师戈杜哈",
+			["source"] = "守奴人库鲁斯托",
 		},
 		[265001] = {
 			["school"] = 16,
@@ -13032,39 +13049,36 @@ EncounterDetailsDB = {
 			},
 			["source"] = "惊悚者法索乌",
 		},
-		[291613] = {
-			["school"] = 4,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "R-21/X型空中单位",
-		},
-		[269282] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "卡罗蜜-伊利丹",
-		},
-		[284449] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "弗里达·铁吼",
-		},
-		[298473] = {
+		[265002] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "未知目标",
+			["source"] = "贪食的拉尔",
+		},
+		[268865] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "武器测试员",
+		},
+		[272167] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "灾怨蝇",
+		},
+		[75664] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "埃鲁达克",
 		},
 		[269097] = {
 			["school"] = 32,
@@ -13074,12 +13088,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "斯托颂勋爵",
 		},
-		[271656] = {
-			["school"] = 1,
+		[106871] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ifyou",
+			["source"] = "狂之煞",
 		},
 		[38163] = {
 			["school"] = 8,
@@ -13088,58 +13102,63 @@ EncounterDetailsDB = {
 			},
 			["source"] = "夸格米拉",
 		},
-		[282915] = {
+		[268586] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "达萨大王",
+		},
+		[39016] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "末日预言者达尔莉安",
+		},
+		[298897] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "崔克茜·击电",
+		},
+		[284451] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "活动炸弹",
+		},
+		[30508] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "高阶术士奈瑟库斯",
+		},
+		[265005] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "惊悚者法索乌",
+			["source"] = "贪食的拉尔",
 		},
-		[284453] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "活动炸弹",
-		},
-		[32055] = {
+		[271658] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "夸格米拉",
-		},
-		[190394] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "阿克蒙德",
-		},
-		[268587] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "达萨大王",
-		},
-		[156107] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "黑手",
-		},
-		[105848] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "密封装甲板",
+			["source"] = "Rikii",
 		},
 		[75271] = {
 			["school"] = 1,
@@ -13155,31 +13174,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "不稳定的炉渣",
 		},
-		[156497] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "黑石铸造厂",
-		},
-		[302384] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[152835] = {
+			["school"] = 4,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "步行震击者X1型",
+			["source"] = "火焰投石",
 		},
-		[268077] = {
+		[27578] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "女巫索林娜",
+			["source"] = "督军沙拉利斯",
+		},
+		[257946] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "诗乃-燃烧平原",
 		},
 		[268589] = {
 			["school"] = 1,
@@ -13188,23 +13206,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "达萨大王",
 		},
-		[74551] = {
+		[15232] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "艾尔蕾丝",
+		},
+		[193210] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "暮光捕火者",
-		},
-		[106872] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "狂之煞",
+			["source"] = "阿什高姆",
 		},
 		[282407] = {
 			["school"] = 32,
@@ -13221,40 +13237,44 @@ EncounterDetailsDB = {
 			},
 			["source"] = "达萨大王",
 		},
-		[76715] = {
+		[288693] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "被折磨的幽魂",
+		},
+		[105479] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "暮光欺诈者",
+			["source"] = "腐蚀之触",
 		},
-		[285020] = {
-			["school"] = 1,
+		[282408] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "白金拳手",
+			["source"] = "火花机器人",
 		},
-		[284455] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[119922] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-		},
-		[268591] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "达萨大王",
+			["source"] = "力冠三军库乌艾",
 		},
 		[128238] = {
 			["school"] = 1,
@@ -13283,13 +13303,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "活动炸弹",
 		},
-		[208052] = {
+		[91776] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Rikii",
+			["source"] = "腐臭跳跃者",
 		},
 		[269104] = {
 			["school"] = 32,
@@ -13300,12 +13319,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "觉醒虚空",
 		},
-		[297283] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[226510] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
 		},
 		[190397] = {
@@ -13316,22 +13335,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "黑暗导管",
 		},
-		[268619] = {
+		[285592] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "牧年-迦拉克隆",
-		},
-		[129262] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "杰翰",
+			["source"] = "惩戒幻影",
+		},
+		[58506] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "石头守卫斯托克顿",
 		},
 		[265523] = {
 			["school"] = 32,
@@ -13341,24 +13359,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "血誓污染者",
 		},
-		[282411] = {
-			["school"] = 8,
+		[266035] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "棘刺助祭",
+		},
+		[30739] = {
+			["school"] = 1,
+			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "阿昆达的化身",
-		},
-		[297257] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "戈巴马克国王",
+			["source"] = "酋长卡加斯·刃拳",
 		},
 		[281388] = {
 			["school"] = 1,
@@ -13367,40 +13380,39 @@ EncounterDetailsDB = {
 			},
 			["source"] = "艾什凡炮手",
 		},
-		[288041] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "大工匠梅卡托克",
-		},
-		[202680] = {
+		[283947] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "瑟芬崔斯克",
+			["source"] = "烈焰喷射",
 		},
-		[111735] = {
+		[284459] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "焦油",
+			["source"] = "弗里达·铁吼",
 		},
-		[260508] = {
+		[115829] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "紫晶守护者",
+		},
+		[128239] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "魂缚巨像",
+			["source"] = "格尔桑捷刃兵",
 		},
 		[285995] = {
 			["school"] = 1,
@@ -13410,11 +13422,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "丰灵",
 		},
-		[282413] = {
-			["school"] = 32,
+		[201657] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "失坠天神-影之哀伤",
 		},
 		[297254] = {
 			["school"] = 1,
@@ -13425,14 +13438,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "戈巴马克国王",
 		},
-		[257544] = {
+		[103846] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "地怒者",
+			["source"] = "莫卓克",
 		},
 		[145109] = {
 			["school"] = 8,
@@ -13441,23 +13454,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "魔族小德-卡德罗斯",
 		},
-		[150807] = {
+		[30485] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "野蛮的卫兵",
+		},
+		[23600] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "被俘的矿工",
-		},
-		[274738] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "萨神-卡拉赞",
+			["source"] = "督军沙拉利斯",
 		},
 		[291626] = {
 			["school"] = 8,
@@ -13501,13 +13514,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "巨钳鲁克玛尔",
 		},
-		[74634] = {
-			["school"] = 1,
+		[145110] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "乌比斯将军",
+			["source"] = "Swineborn-格瑞姆巴托",
 		},
 		[182212] = {
 			["school"] = 1,
@@ -13517,30 +13529,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "邪铁召唤者",
 		},
-		[301351] = {
-			["school"] = 1,
+		[186562] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "HK-8型空中压制单位",
+			["source"] = "恐惧猎犬",
 		},
-		[44199] = {
-			["school"] = 4,
+		[85384] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "掘强的黑牛-血色十字军",
+		},
+		[46227] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "凤凰",
-		},
-		[285152] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "仁慈侏儒4.U.型",
+			["source"] = "督军沙拉利斯",
 		},
 		[268088] = {
 			["school"] = 1,
@@ -13558,20 +13569,18 @@ EncounterDetailsDB = {
 			},
 			["source"] = "女祭司德莉希亚",
 		},
-		[44198] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "凤凰",
-		},
-		[52174] = {
-			["school"] = 1,
+		[36119] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "自由的瑟雷凯斯",
+		},
+		[273718] = {
+			["school"] = 64,
+			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Boomerfly-海克泰尔",
 		},
 		[198589] = {
 			["school"] = 1,
@@ -13588,14 +13597,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "萨神-卡拉赞",
 		},
-		[283143] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[302555] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "万磁臂",
+			["source"] = "艾泽拉斯守护者",
 		},
 		[288048] = {
 			["school"] = 1,
@@ -13612,40 +13619,33 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[282589] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "代言人扎克萨奇",
-		},
-		[283551] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "欧米茄破坏者",
-		},
-		[273720] = {
+		[44264] = {
 			["school"] = 64,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "重型军火",
 		},
-		[156888] = {
-			["school"] = 4,
+		[106401] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "黑石铸造厂",
+			["source"] = "格里昂纳",
+		},
+		[283955] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "弗里达·铁吼",
+		},
+		[292264] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "欧米茄破坏者",
 		},
 		[297261] = {
 			["school"] = 1,
@@ -13663,23 +13663,32 @@ EncounterDetailsDB = {
 			},
 			["source"] = "魂缚巨像",
 		},
-		[75569] = {
+		[297822] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "萨尔",
+		},
+		[300526] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "无面腐蚀者",
+			["source"] = "克熙尔剜心者",
 		},
-		[48792] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "圣弗朗西斯科-冰霜之刃",
-		},
+	},
+	["emotes"] = {
+		{
+			["boss"] = "维克戈斯",
+		}, -- [1]
+		{
+			["boss"] = "哈达尔·黑渊",
+		}, -- [2]
+		{
+			["boss"] = "恐怖船长洛克伍德",
+		}, -- [3]
 	},
 }

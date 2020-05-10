@@ -156,12 +156,12 @@ WindDungeonHelperDB = {
 		["十里扬州路 - 亡语者"] = {
 			["modules"] = {
 				["AvoidableDamage"] = {
-					["rank"] = {
-						["custom_worst"] = "你是猪吧",
-					},
 					["notification"] = {
 						["threshold"] = 70,
 						["unit"] = "asia",
+					},
+					["rank"] = {
+						["custom_worst"] = "你是猪吧",
 					},
 				},
 				["LFGGroupInfo"] = {

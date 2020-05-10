@@ -1,6 +1,9 @@
 
 KalielsTrackerDB = {
 	["char"] = {
+		["十里扬州路 - 亡语者"] = {
+			["collapsed"] = true,
+		},
 		["风起春城暮 - 亡语者"] = {
 			["collapsed"] = true,
 		},
@@ -16,16 +19,16 @@ KalielsTrackerDB = {
 	["profiles"] = {
 		["Default"] = {
 			["hdrBtnColorShare"] = true,
-			["xOffset"] = -1256,
-			["yOffset"] = -14,
+			["xOffset"] = -77,
+			["menuWowheadURL"] = false,
+			["yOffset"] = -250,
 			["filterAuto"] = {
 				"zone", -- [1]
 			},
 			["tooltipShowID"] = false,
 			["addonTomTom"] = true,
 			["colorDifficulty"] = true,
-			["collapseInInstance"] = true,
-			["menuWowheadURL"] = false,
+			["maxHeight"] = 396,
 			["addonPetTracker"] = true,
 		},
 	},

@@ -44,15 +44,16 @@ TargetNameplateIndicatorDB = {
 					["anchorPoint"] = "CENTER",
 					["texture"] = "Interface\\AddOns\\TargetNameplateIndicator\\Textures\\Q_GreenTarget",
 				},
+				["friendly"] = {
+					["anchorPoint"] = "CENTER",
+					["texture"] = "Interface\\AddOns\\TargetNameplateIndicator\\Textures\\Q_GreenTarget",
+				},
 				["hostile"] = {
 					["anchorPoint"] = "CENTER",
 					["texturePoint"] = "CENTER",
 					["texture"] = "Interface\\AddOns\\TargetNameplateIndicator\\Textures\\Q_RedTarget",
 				},
-				["friendly"] = {
-					["anchorPoint"] = "CENTER",
-					["texture"] = "Interface\\AddOns\\TargetNameplateIndicator\\Textures\\Q_GreenTarget",
-				},
+				["enable"] = false,
 			},
 			["mouseover"] = {
 				["self"] = {

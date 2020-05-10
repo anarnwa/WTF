@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 126,
 	["lastSanitation"] = 3,
-	["session"] = 109,
 	["errors"] = {
 		{
 			["message"] = "Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: LevelUpDisplay:SetPoint.",
@@ -21,8 +21,8 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NPCScan\\NPCScan.toc",
-			["time"] = "2020/05/09 22:06:20",
 			["session"] = 104,
+			["time"] = "2020/05/09 22:06:20",
 			["counter"] = 4,
 		}, -- [3]
 		{
@@ -32,5 +32,20 @@ BugGrabberDB = {
 			["session"] = 109,
 			["counter"] = 2,
 		}, -- [4]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'Not_Ready_Yet' 尝试调用保护功能 'UNKNOWN()'。",
+			["time"] = "2020/05/10 13:00:59",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SendChatMessage'\n[string \"@Interface\\AddOns\\Not_Ready_Yet\\Not_Ready_Yet-8.3.0.lua\"]:397: in function <Interface\\AddOns\\Not_Ready_Yet\\Not_Ready_Yet.lua:396>\n[string \"=[C]\"]: in function `pcall'\n[string \"@Interface\\AddOns\\Not_Ready_Yet\\Not_Ready_Yet-8.3.0.lua\"]:395: in function `Print'\n[string \"@Interface\\AddOns\\Not_Ready_Yet\\Not_Ready_Yet-8.3.0.lua\"]:464: in function `?'\n[string \"@Interface\\AddOns\\BugSack\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ack\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BugSack\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ack\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\BugSack\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\Not_Ready_Yet\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\Not_Ready_Yet\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 115,
+			["counter"] = 1,
+		}, -- [5]
+		{
+			["message"] = "C stack overflow",
+			["time"] = "2020/05/10 14:12:27",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n OnLeave = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1157\n BottomLeft = LFGListSearchPanelScrollFrameButton1BottomLeft {\n }\n OnMouseUp = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1132\n OnMouseDown = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1117\n SetBackdropBorderColor = <function> defined =[C]:-1\n MiddleLeft = LFGListSearchPanelScrollFrameButton1MiddleLeft {\n }\n OnEnable = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1146\n TopMiddle = LFGListSearchPanelScrollFrameButton1TopMiddle {\n }\n OnShow = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1141\n tooltip = false\n Icon = <unnamed> {\n }\n Text = LFGListSearchPanelScrollFrameButton1Text {\n }\n BottomMiddle = LFGListSearchPanelScrollFrameButton1BottomMiddle {\n }\n OnEnter = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1150\n TopLeft = LFGListSearchPanelScrollFrameButton1TopLeft {\n }\n SetTextures = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1105\n TopRight = LFGListSearchPanelScrollFrameButton1TopRight {\n }\n MiddleRight = LFGListSearchPanelScrollFrameButton1MiddleRight {\n }\n MiddleMiddle = LFGListSearchPanelScrollFrameButton1MiddleMiddle {\n }\n SetBackdropColor = <function> defined =[C]:-1\n pixelBorders = <table> {\n }\n BottomRight = LFGListSearchPanelScrollFrameButton1BottomRight {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n OnLeave = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1157\n BottomLeft = LFGListSearchPanelScrollFrameButton1BottomLeft {\n }\n OnMouseUp = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1132\n OnMouseDown = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1117\n SetBackdropBorderColor = <function> defined =[C]:-1\n MiddleLeft = LFGListSearchPanelScrollFrameButton1MiddleLeft {\n }\n OnEnable = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1146\n TopMiddle = LFGListSearchPanelScrollFrameButton1TopMiddle {\n }\n OnShow = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1141\n tooltip = false\n Icon = <unnamed> {\n }\n Text = LFGListSearchPanelScrollFrameButton1Text {\n }\n BottomMiddle = LFGListSearchPanelScrollFrameButton1BottomMiddle {\n }\n OnEnter = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1150\n TopLeft = LFGListSearchPanelScrollFrameButton1TopLeft {\n }\n SetTextures = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1105\n TopRight = LFGListSearchPanelScrollFrameButton1TopRight {\n }\n MiddleRight = LFGListSearchPanelScrollFrameButton1MiddleRight {\n }\n MiddleMiddle = LFGListSearchPanelScrollFrameButton1MiddleMiddle {\n }\n SetBackdropColor = <function> defined =[C]:-1\n pixelBorders = <table> {\n }\n BottomRight = LFGListSearchPanelScrollFrameButton1BottomRight {\n }\n}\n = <function> defined =[C]:-1\n = <function> defined @Interface\\AddOns\\AddOnSkins\\Core\\API.lua:547\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n...\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetEnabled'\n[string \"@Interface\\FrameXML\\LFGList.lua\"]:2090: in function <Interface\\FrameXML\\LFGList.lua:2078>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `LFGListSearchEntry_Update'\n[string \"@Interface\\FrameXML\\LFGList.lua\"]:2233: in function <Interface\\FrameXML\\LFGList.lua:2229>",
+			["session"] = 122,
+			["counter"] = 5,
+		}, -- [6]
 	},
 }

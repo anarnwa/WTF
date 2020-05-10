@@ -1,5 +1,27 @@
 
 ExplosiveOrbsLog = {
+	[388] = {
+		["Player-2124-0836E3DA"] = {
+			["target"] = 3,
+			["hit"] = 1,
+		},
+		["Player-921-03CB9BC9"] = {
+			["target"] = 4,
+			["hit"] = 1,
+		},
+		["Player-2124-03BD8CBE"] = {
+			["target"] = 19,
+			["hit"] = 13,
+		},
+		["Player-1515-04628317"] = {
+			["target"] = 21,
+			["hit"] = 19,
+		},
+		["Player-857-02E153C3"] = {
+			["target"] = 4,
+			["hit"] = 1,
+		},
+	},
 	[410] = {
 		["Player-2124-0836E3DA"] = {
 			["target"] = 3,
@@ -13,13 +35,13 @@ ExplosiveOrbsLog = {
 			["target"] = 23,
 			["hit"] = 17,
 		},
+		["Player-1515-04628317"] = {
+			["target"] = 38,
+			["hit"] = 29,
+		},
 		["Player-857-02E153C3"] = {
 			["target"] = 15,
 			["hit"] = 9,
-		},
-		["Player-1515-04628317"] = {
-			["hit"] = 29,
-			["target"] = 38,
 		},
 	},
 	[411] = {
@@ -30,35 +52,13 @@ ExplosiveOrbsLog = {
 			["target"] = 2,
 			["hit"] = 2,
 		},
-		["Player-857-02E153C3"] = {
-			["target"] = 1,
-			["hit"] = 1,
-		},
 		["Player-1515-04628317"] = {
 			["target"] = 2,
 			["hit"] = 1,
 		},
-	},
-	[388] = {
-		["Player-2124-0836E3DA"] = {
-			["target"] = 3,
-			["hit"] = 1,
-		},
-		["Player-921-03CB9BC9"] = {
-			["target"] = 4,
-			["hit"] = 1,
-		},
-		["Player-2124-03BD8CBE"] = {
-			["hit"] = 13,
-			["target"] = 19,
-		},
 		["Player-857-02E153C3"] = {
-			["target"] = 4,
+			["target"] = 1,
 			["hit"] = 1,
-		},
-		["Player-1515-04628317"] = {
-			["target"] = 21,
-			["hit"] = 19,
 		},
 	},
 	[412] = {
@@ -67,37 +67,20 @@ ExplosiveOrbsLog = {
 			["hit"] = 2,
 		},
 		["Player-921-03CB9BC9"] = {
-			["hit"] = 5,
 			["target"] = 8,
+			["hit"] = 5,
 		},
 		["Player-1515-04628317"] = {
-			["hit"] = 9,
 			["target"] = 12,
-		},
-		["Player-857-02E153C3"] = {
-			["target"] = 2,
-			["hit"] = 1,
+			["hit"] = 9,
 		},
 		["Player-2124-03BD8CBE"] = {
 			["target"] = 10,
 			["hit"] = 8,
 		},
-	},
-	[389] = {
-		["Player-921-03CB9BC9"] = {
-			["target"] = 2,
-		},
-		["Player-2124-03BD8CBE"] = {
-			["hit"] = 13,
-			["target"] = 13,
-		},
 		["Player-857-02E153C3"] = {
-			["hit"] = 2,
-			["target"] = 4,
-		},
-		["Player-1515-04628317"] = {
-			["hit"] = 7,
-			["target"] = 8,
+			["target"] = 2,
+			["hit"] = 1,
 		},
 	},
 	[413] = {
@@ -113,13 +96,34 @@ ExplosiveOrbsLog = {
 			["target"] = 31,
 			["hit"] = 19,
 		},
+		["Player-1515-04628317"] = {
+			["target"] = 103,
+			["hit"] = 83,
+		},
 		["Player-2124-03BD8CBE"] = {
 			["target"] = 96,
 			["hit"] = 78,
 		},
+	},
+	[400] = {
+		["Player-2124-0836E3DA"] = {
+			["target"] = 3,
+		},
+		["Player-921-03CB9BC9"] = {
+			["target"] = 3,
+			["hit"] = 3,
+		},
+		["Player-2124-03BD8CBE"] = {
+			["target"] = 15,
+			["hit"] = 12,
+		},
 		["Player-1515-04628317"] = {
-			["target"] = 103,
-			["hit"] = 83,
+			["target"] = 9,
+			["hit"] = 8,
+		},
+		["Player-857-02E153C3"] = {
+			["target"] = 1,
+			["hit"] = 1,
 		},
 	},
 	[399] = {
@@ -132,37 +136,33 @@ ExplosiveOrbsLog = {
 			["hit"] = 0,
 		},
 		["Player-1515-04628317"] = {
-			["hit"] = 10,
 			["target"] = 13,
+			["hit"] = 10,
+		},
+		["Player-2124-03BD8CBE"] = {
+			["target"] = 14,
+			["hit"] = 13,
 		},
 		["Player-857-02E153C3"] = {
 			["target"] = 4,
 			["hit"] = 4,
 		},
-		["Player-2124-03BD8CBE"] = {
-			["hit"] = 13,
-			["target"] = 14,
-		},
 	},
-	[400] = {
-		["Player-2124-0836E3DA"] = {
-			["target"] = 3,
-		},
+	[389] = {
 		["Player-921-03CB9BC9"] = {
-			["hit"] = 3,
-			["target"] = 3,
+			["target"] = 2,
 		},
 		["Player-2124-03BD8CBE"] = {
-			["target"] = 15,
-			["hit"] = 12,
-		},
-		["Player-857-02E153C3"] = {
-			["target"] = 1,
-			["hit"] = 1,
+			["target"] = 13,
+			["hit"] = 13,
 		},
 		["Player-1515-04628317"] = {
-			["hit"] = 8,
-			["target"] = 9,
+			["target"] = 8,
+			["hit"] = 7,
+		},
+		["Player-857-02E153C3"] = {
+			["target"] = 4,
+			["hit"] = 2,
 		},
 	},
 }

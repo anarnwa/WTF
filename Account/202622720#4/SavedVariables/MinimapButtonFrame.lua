@@ -32,8 +32,8 @@ MBFDB = {
 			["MBF_FrameLocation"] = {
 				nil, -- [1]
 				"RIGHT", -- [2]
-				-221.4652862548828, -- [3]
-				241.4794769287109, -- [4]
+				-198.4649810791016, -- [3]
+				252.4795913696289, -- [4]
 			},
 			["customChildren"] = {
 				"MinimapButtonFrameDragButton", -- [1]
