@@ -6,14 +6,14 @@ FishingBuddy_Player = {
 	},
 	["TotalTimeFishing"] = 1,
 	["Settings"] = {
-		["FishingPetBuddies"] = -1,
 		["TotalTimeFishing"] = 1,
+		["FishingPetBuddies"] = -1,
 	},
 	["WasWearing"] = {
 	},
-	["Outfit"] = {
-	},
+	["Version"] = 19500,
 	["WatcherLocation"] = {
 	},
-	["Version"] = 19500,
+	["Outfit"] = {
+	},
 }

@@ -2,6 +2,10 @@ VER 3 000000000000003C "." "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,nodead,exists][]艾泽拉斯之心精华
 END
+VER 3 0000000000000041 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 自然之愈;  [@mouseover,exists,mod:ctrl] 自然之愈; [@mouseover,exists,mod:shift] 自然之愈
+END
 VER 3 000000000000003F "sp" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [@mouseover,exists,nodead][]13
@@ -44,6 +48,9 @@ VER 3 000000000000003E "粘液位置" "INV_MISC_QUESTIONMARK"
 /way 45.7 24.11
 /way 54.9 48.7
 /way 71.71 25.7
+END
+VER 3 0000000000000040 "额外按钮" "INV_MISC_QUESTIONMARK"
+/click ExtraActionButton1
 END
 VER 3 0000000000000019 "鼠标指向" "INV_MISC_QUESTIONMARK"
 @cursor     鼠标位置 

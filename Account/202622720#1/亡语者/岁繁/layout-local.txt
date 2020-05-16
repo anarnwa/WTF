@@ -13,13 +13,6 @@ X: 0
 Y: 128
 W: 200
 H: 50
-Frame: DetailsWelcomeWindow
-FrameLevel: 1
-Anchor: CENTER
-X: -206
-Y: 1
-W: 612
-H: 315
 Frame: BagSync_MinimapButton
 FrameLevel: 3
 Anchor: TOPRIGHT

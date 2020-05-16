@@ -1,6 +1,9 @@
 
 HandyNotes_VisionsOfNZothDB = {
 	["profileKeys"] = {
+		["我会消失 - 亡语者"] = "Default",
+		["我会招宝宝 - 亡语者"] = "Default",
+		["弄妆梳洗迟 - 亡语者"] = "Default",
 		["十里扬州路 - 亡语者"] = "Default",
 		["风起春城暮 - 亡语者"] = "Default",
 	},

@@ -14,21 +14,19 @@ FishingBuddy_Player = {
 		["UseTuskarrSpear"] = true,
 		["WatchCurrentZone"] = true,
 		["WatchElapsedTime"] = true,
-		["STVTimer"] = true,
+		["EnhanceFishingSounds"] = true,
 		["UseBladeboneHook"] = true,
 		["EnhancePools"] = true,
 		["TurnOnSound"] = true,
-		["EnhanceFishingSounds"] = true,
-		["EasyLures"] = true,
+		["STVTimer"] = true,
 		["DrinkHeavily"] = false,
+		["EasyLures"] = true,
 		["ContestSupport"] = true,
 		["FishingPetBuddies"] = -3,
 	},
 	["WasWearing"] = {
 	},
 	["Version"] = 19500,
-	["Outfit"] = {
-	},
 	["WatcherLocation"] = {
 		["grp_point"] = "TOPLEFT",
 		["solo_y"] = -54,
@@ -42,5 +40,7 @@ FishingBuddy_Player = {
 		["solo_point"] = "TOPLEFT",
 		["raid_y"] = -54,
 		["raid_scale"] = 1,
+	},
+	["Outfit"] = {
 	},
 }

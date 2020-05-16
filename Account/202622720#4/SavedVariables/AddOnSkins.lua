@@ -1,12 +1,17 @@
 
 AddOnSkinsDB = {
 	["profileKeys"] = {
+		["我会消失 - 亡语者"] = "Default",
+		["我会招宝宝 - 亡语者"] = "Default",
+		["弄妆梳洗迟 - 亡语者"] = "Default",
 		["十里扬州路 - 亡语者"] = "Default",
 		["风起春城暮 - 亡语者"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["Blizzard_Collections"] = false,
+			["Blizzard_Calendar"] = false,
+			["Blizzard_AuctionHouseUI"] = false,
 			["Blizzard_Communities"] = false,
 			["PremadeGroupsFilter"] = false,
 			["DBMFont"] = "伤害数字",
@@ -19,8 +24,8 @@ AddOnSkinsDB = {
 			},
 			["Blizzard_WarboardUI"] = false,
 			["Blizzard_BindingUI"] = false,
+			["Blizzard_IslandsQueueUI"] = false,
 			["Bartender4"] = false,
-			["Blizzard_Calendar"] = false,
 		},
 	},
 }

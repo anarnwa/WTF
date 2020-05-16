@@ -15,27 +15,27 @@ WindDungeonHelperDB = {
 		["斜月藏海雾 - 亡语者"] = "斜月藏海雾 - 亡语者",
 		["弄妆梳洗迟 - 古尔丹"] = "弄妆梳洗迟 - 古尔丹",
 		["我会大跳你呢 - 亡语者"] = "我会大跳你呢 - 亡语者",
-		["Believe - 古尔丹"] = "Believe - 古尔丹",
+		["Funerals - 亡语者"] = "Funerals - 亡语者",
 		["高楼鼓角悲 - 亡语者"] = "高楼鼓角悲 - 亡语者",
-		["Weeping - 亡语者"] = "Weeping - 亡语者",
+		["Cleaner - 亡语者"] = "Cleaner - 亡语者",
 		["她的眼眶里 - 古尔丹"] = "她的眼眶里 - 古尔丹",
 		["我会变成狼 - 亡语者"] = "我会变成狼 - 亡语者",
-		["Cleaner - 亡语者"] = "Cleaner - 亡语者",
+		["Weeping - 亡语者"] = "Weeping - 亡语者",
 		["弄妆梳洗迟 - 死亡之翼"] = "弄妆梳洗迟 - 死亡之翼",
 		["Dremel - 亡语者"] = "Dremel - 亡语者",
 		["我找不到了 - 亡语者"] = "我找不到了 - 亡语者",
 		["我喝了假酒 - 亡语者"] = "我喝了假酒 - 亡语者",
 		["十里扬州路 - 亡语者"] = "十里扬州路 - 亡语者",
 		["我会招宝宝 - 亡语者"] = "我会招宝宝 - 亡语者",
-		["风起春城暮 - 亡语者"] = "风起春城暮 - 亡语者",
+		["白白净净啥 - 古尔丹"] = "白白净净啥 - 古尔丹",
 		["十里扬州路 - 古尔丹"] = "十里扬州路 - 古尔丹",
 		["我会招恶魔 - 亡语者"] = "我会招恶魔 - 亡语者",
-		["白白净净啥 - 古尔丹"] = "白白净净啥 - 古尔丹",
+		["风起春城暮 - 亡语者"] = "风起春城暮 - 亡语者",
 		["Believer - 古尔丹"] = "Believer - 古尔丹",
 		["不不尾王 - 古尔丹"] = "不不尾王 - 古尔丹",
 		["懒起画蛾眉 - 古尔丹"] = "懒起画蛾眉 - 古尔丹",
 		["十里扬州路 - 安苏"] = "十里扬州路 - 安苏",
-		["Funerals - 亡语者"] = "Funerals - 亡语者",
+		["Believe - 古尔丹"] = "Believe - 古尔丹",
 	},
 	["profiles"] = {
 		["维维尔 - 亡语者"] = {
@@ -88,8 +88,8 @@ WindDungeonHelperDB = {
 		},
 		["我会飞你会吗 - 亡语者"] = {
 			["modules"] = {
-				["EnemyProgress"] = {
-					["enable"] = true,
+				["LFGGroupInfo"] = {
+					["enable"] = false,
 				},
 				["AvoidableDamage"] = {
 					["enable"] = false,
@@ -100,8 +100,8 @@ WindDungeonHelperDB = {
 						["worst"] = true,
 					},
 				},
-				["LFGGroupInfo"] = {
-					["enable"] = false,
+				["EnemyProgress"] = {
+					["enable"] = true,
 				},
 			},
 		},
@@ -123,11 +123,11 @@ WindDungeonHelperDB = {
 		},
 		["我会大跳你呢 - 亡语者"] = {
 		},
-		["Believe - 古尔丹"] = {
+		["Funerals - 亡语者"] = {
 		},
 		["高楼鼓角悲 - 亡语者"] = {
 		},
-		["Weeping - 亡语者"] = {
+		["Cleaner - 亡语者"] = {
 		},
 		["她的眼眶里 - 古尔丹"] = {
 			["modules"] = {
@@ -143,7 +143,7 @@ WindDungeonHelperDB = {
 				},
 			},
 		},
-		["Cleaner - 亡语者"] = {
+		["Weeping - 亡语者"] = {
 		},
 		["弄妆梳洗迟 - 死亡之翼"] = {
 		},
@@ -158,6 +158,7 @@ WindDungeonHelperDB = {
 				["AvoidableDamage"] = {
 					["notification"] = {
 						["threshold"] = 70,
+						["enable"] = false,
 						["unit"] = "asia",
 					},
 					["rank"] = {
@@ -171,26 +172,27 @@ WindDungeonHelperDB = {
 		},
 		["我会招宝宝 - 亡语者"] = {
 		},
-		["风起春城暮 - 亡语者"] = {
-			["modules"] = {
-				["LFGGroupInfo"] = {
-					["enable"] = false,
-				},
-				["AvoidableDamage"] = {
-					["notification"] = {
-						["unit"] = "asia",
-					},
-				},
-				["EnemyProgress"] = {
-					["enable"] = true,
-				},
-			},
+		["白白净净啥 - 古尔丹"] = {
 		},
 		["十里扬州路 - 古尔丹"] = {
 		},
 		["我会招恶魔 - 亡语者"] = {
 		},
-		["白白净净啥 - 古尔丹"] = {
+		["风起春城暮 - 亡语者"] = {
+			["modules"] = {
+				["EnemyProgress"] = {
+					["enable"] = true,
+				},
+				["AvoidableDamage"] = {
+					["notification"] = {
+						["enable"] = false,
+						["unit"] = "asia",
+					},
+				},
+				["LFGGroupInfo"] = {
+					["enable"] = false,
+				},
+			},
 		},
 		["Believer - 古尔丹"] = {
 		},
@@ -210,7 +212,7 @@ WindDungeonHelperDB = {
 		},
 		["十里扬州路 - 安苏"] = {
 		},
-		["Funerals - 亡语者"] = {
+		["Believe - 古尔丹"] = {
 		},
 	},
 }

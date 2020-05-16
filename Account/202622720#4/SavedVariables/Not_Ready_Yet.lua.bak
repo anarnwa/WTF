@@ -1,6 +1,10 @@
 
 Not_Ready_Yet_DB = {
 	["class"] = {
+		["HUNTER"] = {
+			{
+			}, -- [1]
+		},
 		["DEMONHUNTER"] = {
 			{
 			}, -- [1]
@@ -15,6 +19,10 @@ Not_Ready_Yet_DB = {
 				[183752] = "瓦解",
 				[202719] = "奥术洪流",
 			}, -- [2]
+		},
+		["MAGE"] = {
+			{
+			}, -- [1]
 		},
 		["DRUID"] = {
 			{
@@ -34,43 +42,50 @@ Not_Ready_Yet_DB = {
 				[102558] = "化身：乌索克的守护者",
 				[2908] = "安抚",
 				[22842] = "狂暴回复",
-				[2782] = "清除腐蚀",
 				[106839] = "迎头痛击",
+				[2782] = "清除腐蚀",
 				[22812] = "树皮术",
 				[99] = "夺魂咆哮",
 				[61336] = "生存本能",
 			}, -- [3]
 			{
 				[740] = "宁静",
-				[102342] = "铁木树皮",
+				[2908] = "安抚",
 				[20484] = "复生",
 				[132469] = "台风",
-				[102793] = "乌索尔旋风",
-				[2908] = "安抚",
-				[88423] = "自然之愈",
 				[29166] = "激活",
+				[102342] = "铁木树皮",
+				[88423] = "自然之愈",
+				[102793] = "乌索尔旋风",
 			}, -- [4]
+		},
+		["ROGUE"] = {
+			[2] = {
+			},
 		},
 	},
 	["global"] = {
 		["mincd"] = 2,
 		["failedenable"] = true,
 		["CD"] = 5,
-		["readychannel"] = "PRINT",
+		["readyenable"] = true,
 		["enable"] = true,
-		["FaILEDreport"] = "{SpellName} 释放失败 CD {CD} 秒",
 		["SUCCEEDEDreport"] = "已施放{SpellName}",
-		["succeededchannel"] = "PRINT",
-		["interruptchannel"] = "SMARTRAID",
-		["succeededenable"] = true,
+		["readychannel"] = "PRINT",
+		["FaILEDreport"] = "{SpellName} 释放失败 CD {CD} 秒",
+		["interruptchannel"] = "PRINT",
+		["readyreport"] = "{SpellName} 已就绪",
 		["interruptenable"] = true,
 		["channel"] = "PRINT",
-		["readyenable"] = true,
-		["maxcd"] = 2,
+		["succeededchannel"] = "PRINT",
+		["succeededenable"] = true,
 		["failedchannel"] = "PRINT",
-		["readyreport"] = "{SpellName} 已就绪",
+		["maxcd"] = 2,
 	},
 	["profileKeys"] = {
+		["我会消失 - 亡语者"] = "我会消失 - 亡语者",
+		["我会招宝宝 - 亡语者"] = "我会招宝宝 - 亡语者",
+		["弄妆梳洗迟 - 亡语者"] = "弄妆梳洗迟 - 亡语者",
 		["十里扬州路 - 亡语者"] = "十里扬州路 - 亡语者",
 		["风起春城暮 - 亡语者"] = "风起春城暮 - 亡语者",
 	},

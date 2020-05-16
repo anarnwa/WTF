@@ -3,6 +3,7 @@ alaBaseData = {
 	["xBtn"] = {
 		["scale"] = 1,
 		["posEx"] = "BELOW_EDITBOX",
+		["_version"] = 1.04,
 		["pos"] = {
 			"TOPLEFT", -- [1]
 			"ChatFrame1EditBox", -- [2]

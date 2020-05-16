@@ -492,6 +492,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
+	["expert"] = false,
 	["t1c1f0"] = {
 		["enabled"] = false,
 		["tanks"] = {
@@ -574,6 +575,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
+	["moveable"] = false,
 	["t1c3f2"] = {
 		["enabled"] = true,
 		["tanks"] = {

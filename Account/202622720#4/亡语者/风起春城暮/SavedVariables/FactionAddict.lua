@@ -27,156 +27,158 @@ FactionAddictConfig = {
 FactionAddictLogVersion = 1
 FactionAddictLogData = {
 	{
-		["date"] = "Saturday 5/9",
-		["rows"] = 1,
+		["date"] = "Thursday 5/14",
+		["rows"] = 4,
 	}, -- [1]
 	{
-		["date"] = "Thursday 5/7",
+		["date"] = "Wednesday 5/13",
 		["rows"] = 2,
 	}, -- [2]
 	{
-		["date"] = "Monday 5/6",
+		["date"] = "Saturday 5/9",
 		["rows"] = 1,
 	}, -- [3]
 	{
-		["date"] = "Sunday 5/5",
-		["rows"] = 1,
+		["date"] = "Thursday 5/7",
+		["rows"] = 2,
 	}, -- [4]
 	{
-		["date"] = "Wednesday 3/6",
+		["date"] = "Monday 5/6",
 		["rows"] = 1,
 	}, -- [5]
 	{
-		["date"] = "Tuesday 3/5",
+		["date"] = "Sunday 5/5",
 		["rows"] = 1,
 	}, -- [6]
 	{
-		["date"] = "Sunday 3/3",
+		["date"] = "Wednesday 3/6",
 		["rows"] = 1,
 	}, -- [7]
 	{
-		["date"] = "Wednesday 2/27",
-		["rows"] = 3,
+		["date"] = "Tuesday 3/5",
+		["rows"] = 1,
 	}, -- [8]
 	{
-		["date"] = "Tuesday 2/26",
+		["date"] = "Sunday 3/3",
 		["rows"] = 1,
 	}, -- [9]
 	{
-		["date"] = "Monday 2/25",
-		["rows"] = 1,
+		["date"] = "Wednesday 2/27",
+		["rows"] = 3,
 	}, -- [10]
 	{
-		["date"] = "Sunday 2/17",
+		["date"] = "Tuesday 2/26",
 		["rows"] = 1,
 	}, -- [11]
 	{
-		["date"] = "Saturday 2/16",
+		["date"] = "Monday 2/25",
 		["rows"] = 1,
 	}, -- [12]
 	{
-		["date"] = "Saturday 2/2",
+		["date"] = "Sunday 2/17",
 		["rows"] = 1,
 	}, -- [13]
 	{
-		["date"] = "Saturday 1/19",
+		["date"] = "Saturday 2/16",
 		["rows"] = 1,
 	}, -- [14]
 	{
+		["date"] = "Saturday 2/2",
+		["rows"] = 1,
+	}, -- [15]
+	{
+		["date"] = "Saturday 1/19",
+		["rows"] = 1,
+	}, -- [16]
+	{
 		["date"] = "Thursday 1/17",
 		["rows"] = 3,
-	}, -- [15]
+	}, -- [17]
 	{
 		["date"] = "Wednesday 1/16",
 		["rows"] = 4,
-	}, -- [16]
+	}, -- [18]
 	{
 		["date"] = "Tuesday 1/15",
 		["rows"] = 1,
-	}, -- [17]
-	{
-		["date"] = "Tuesday 12/25",
-		["rows"] = 1,
-	}, -- [18]
-	{
-		["date"] = "Monday 12/24",
-		["rows"] = 3,
 	}, -- [19]
 	{
-		["date"] = "Sunday 12/23",
+		["date"] = "Tuesday 12/25",
 		["rows"] = 1,
 	}, -- [20]
 }
 FactionAddictLogEntries = {
 	{
-		["奥丹姆联军"] = 750,
+		["守望者"] = 300,
+		["堕夜精灵"] = 1850,
+		["荣耀战团"] = 3000,
+		["瓦拉加尔"] = 2300,
 	}, -- [1]
+	{
+		["守望者"] = 1200,
+		["堕夜精灵"] = 8350,
+	}, -- [2]
+	{
+		["奥丹姆联军"] = 750,
+	}, -- [3]
 	{
 		["荣耀战团"] = 3600,
 		["莱加尼"] = 1700,
-	}, -- [2]
-	{
-		["普罗德摩尔海军部"] = 375,
-	}, -- [3]
-	{
-		["普罗德摩尔海军部"] = 225,
 	}, -- [4]
 	{
-		["第七军团"] = 300,
+		["普罗德摩尔海军部"] = 375,
 	}, -- [5]
 	{
-		["普罗德摩尔海军部"] = 75,
+		["普罗德摩尔海军部"] = 225,
 	}, -- [6]
 	{
-		["第七军团"] = 150,
+		["第七军团"] = 300,
 	}, -- [7]
+	{
+		["普罗德摩尔海军部"] = 75,
+	}, -- [8]
+	{
+		["第七军团"] = 150,
+	}, -- [9]
 	{
 		["时光守护者"] = 1737,
 		["塞纳里奥远征队"] = 210,
 		["沙塔尔"] = 75,
-	}, -- [8]
-	{
-		["星界财团"] = 2053,
-	}, -- [9]
-	{
-		["普罗德摩尔海军部"] = 510,
 	}, -- [10]
 	{
-		["艾泽拉斯的勇士"] = 425,
+		["星界财团"] = 2053,
 	}, -- [11]
 	{
-		["普罗德摩尔海军部"] = 125,
+		["普罗德摩尔海军部"] = 510,
 	}, -- [12]
 	{
-		["普罗德摩尔海军部"] = 610,
+		["艾泽拉斯的勇士"] = 425,
 	}, -- [13]
 	{
-		["普罗德摩尔海军部"] = 450,
+		["普罗德摩尔海军部"] = 125,
 	}, -- [14]
+	{
+		["普罗德摩尔海军部"] = 610,
+	}, -- [15]
+	{
+		["普罗德摩尔海军部"] = 450,
+	}, -- [16]
 	{
 		["第七军团"] = 10,
 		["正义的大榴莲"] = 3500,
 		["普罗德摩尔海军部"] = 1410,
-	}, -- [15]
+	}, -- [17]
 	{
 		["始祖龟求知者"] = 410,
 		["正义的大榴莲"] = 17750,
 		["艾泽拉斯的勇士"] = 1000,
 		["普罗德摩尔海军部"] = 8840,
-	}, -- [16]
-	{
-		["正义的大榴莲"] = 2375,
-	}, -- [17]
-	{
-		["正义的大榴莲"] = 500,
 	}, -- [18]
 	{
-		["龙眠联军"] = 325,
-		["正义的大榴莲"] = 375,
-		["肯瑞托"] = 780,
+		["正义的大榴莲"] = 2375,
 	}, -- [19]
 	{
-		["正义的大榴莲"] = 375,
+		["正义的大榴莲"] = 500,
 	}, -- [20]
 }
 FactionAddictConfigIsInactive = {
@@ -251,23 +253,23 @@ FactionAddictConfigIsInactive = {
 	[1515] = false,
 	[2098] = false,
 	[349] = false,
-	[1900] = false,
+	[1135] = false,
 	[1015] = false,
 	[1352] = false,
 	[1134] = false,
 	[54] = false,
-	[2135] = false,
-	[889] = false,
-	[1135] = false,
 	[729] = false,
+	[889] = false,
+	[1900] = false,
+	[2135] = false,
 	[509] = false,
-	[2391] = false,
-	[72] = false,
+	[68] = false,
+	[2264] = false,
 	[76] = false,
 	[2265] = false,
 	[1073] = false,
 	[1388] = false,
-	[730] = false,
+	[92] = false,
 	[1520] = false,
 	[1738] = false,
 	[2099] = false,
@@ -293,29 +295,29 @@ FactionAddictConfigIsInactive = {
 	[1710] = false,
 	[1717] = false,
 	[1271] = false,
-	[2417] = false,
-	[1847] = false,
+	[1850] = false,
+	[1337] = false,
 	[1718] = false,
 	[1272] = false,
-	[2157] = false,
-	[2162] = false,
+	[1975] = false,
+	[2417] = false,
 	[989] = false,
 	[1273] = false,
-	[1337] = false,
+	[2156] = false,
 	[2415] = false,
-	[1975] = false,
-	[1085] = false,
-	[2158] = false,
+	[2157] = false,
+	[2162] = false,
+	[1848] = false,
 	[1341] = false,
-	[2159] = false,
+	[990] = false,
 	[1275] = false,
-	[1849] = false,
+	[2160] = false,
 	[576] = false,
 	[2161] = false,
 	[1276] = false,
-	[1850] = false,
+	[1085] = false,
 	[2165] = false,
-	[369] = false,
+	[2163] = false,
 	[1277] = false,
 	[2164] = false,
 	[577] = false,
@@ -326,27 +328,27 @@ FactionAddictConfigIsInactive = {
 	[270] = false,
 	[1279] = false,
 	[69] = false,
-	[2045] = false,
-	[1216] = false,
 	[81] = false,
+	[1216] = false,
+	[1280] = false,
 	[2170] = false,
 	[1711] = false,
 	[93] = false,
 	[1281] = false,
-	[1090] = false,
 	[1345] = false,
-	[1280] = false,
+	[1090] = false,
+	[2045] = false,
 	[1282] = false,
 	[1091] = false,
 	[1690] = false,
 	[1984] = false,
 	[1283] = false,
-	[2163] = false,
+	[369] = false,
 	[1156] = false,
-	[990] = false,
-	[1848] = false,
-	[2160] = false,
-	[2156] = false,
+	[2159] = false,
+	[2158] = false,
+	[1849] = false,
+	[1847] = false,
 	[1731] = false,
 	[1682] = false,
 	[1859] = false,
@@ -358,11 +360,11 @@ FactionAddictConfigIsInactive = {
 	[1733] = false,
 	[2018] = false,
 	[1708] = false,
-	[92] = false,
+	[730] = false,
 	[1989] = false,
-	[2264] = false,
+	[72] = false,
 	[933] = false,
-	[68] = false,
+	[2391] = false,
 	[1735] = false,
 	[2097] = false,
 	[1098] = false,

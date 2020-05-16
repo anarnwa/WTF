@@ -1,3 +1,0 @@
-
-EasyObliterate_IgnoreList = {
-}

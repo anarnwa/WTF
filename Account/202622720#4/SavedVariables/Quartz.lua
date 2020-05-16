@@ -30,8 +30,6 @@ Quartz3DB = {
 				},
 			},
 		},
-		["EnemyCasts"] = {
-		},
 		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -42,6 +40,8 @@ Quartz3DB = {
 					["x"] = 678.137268066406,
 				},
 			},
+		},
+		["EnemyCasts"] = {
 		},
 		["GCD"] = {
 		},
@@ -71,9 +71,9 @@ Quartz3DB = {
 				},
 			},
 		},
-		["Range"] = {
-		},
 		["Mirror"] = {
+		},
+		["Range"] = {
 		},
 		["Latency"] = {
 		},
@@ -120,7 +120,7 @@ Quartz3DB = {
 		["弄妆梳洗迟 - 古尔丹"] = "Default",
 		["Nect - 亡语者"] = "Default",
 		["我会大跳你呢 - 亡语者"] = "Default",
-		["Believe - 古尔丹"] = "Default",
+		["Funerals - 亡语者"] = "Default",
 		["高楼鼓角悲 - 亡语者"] = "Default",
 		["Cleaner - 亡语者"] = "Default",
 		["去玩儿我 - 亡语者"] = "Default",
@@ -130,26 +130,26 @@ Quartz3DB = {
 		["我会变成狼 - 亡语者"] = "Default",
 		["我看不见我 - 亡语者"] = "Default",
 		["弄妆梳洗迟 - 死亡之翼"] = "Default",
-		["Weeping - 亡语者"] = "Default",
-		["向我撒花 - 亡语者"] = "Default",
-		["我会招宝宝 - 亡语者"] = "Default",
-		["我看见你了哦 - 亡语者"] = "Default",
-		["Dremel - 亡语者"] = "Default",
-		["呜呜人人 - 古尔丹"] = "Default",
-		["Adsfrf - 瓦里安"] = "Default",
-		["十里扬州路 - 古尔丹"] = "Default",
 		["我会飞你会吗 - 亡语者"] = "Default",
+		["向我撒花 - 亡语者"] = "Default",
+		["十里扬州路 - 古尔丹"] = "Default",
+		["我看见你了哦 - 亡语者"] = "Default",
+		["Adsfrf - 瓦里安"] = "Default",
+		["呜呜人人 - 古尔丹"] = "Default",
+		["Dremel - 亡语者"] = "Default",
+		["我会招宝宝 - 亡语者"] = "Default",
+		["Weeping - 亡语者"] = "Default",
 		["Believer - 古尔丹"] = "Default",
 		["不不尾王 - 古尔丹"] = "Default",
 		["懒起画蛾眉 - 古尔丹"] = "Default",
 		["十里扬州路 - 安苏"] = "Default",
-		["Funerals - 亡语者"] = "Default",
+		["Believe - 古尔丹"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
-				["Buff"] = false,
 				["Focus"] = false,
+				["Buff"] = false,
 			},
 		},
 		["术士"] = {

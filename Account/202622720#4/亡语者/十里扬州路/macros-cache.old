@@ -6,6 +6,10 @@ VER 3 0100000000000003 "打断" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,harm,nodead][]瓦解
 END
+VER 3 0100000000000009 "打断2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@focus,exists][]瓦解
+END
 VER 3 0100000000000005 "沉默" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@cursor]沉默咒符

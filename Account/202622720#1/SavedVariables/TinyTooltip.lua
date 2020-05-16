@@ -45,137 +45,32 @@ BigTipDB = {
 		},
 		["statusbarPosition"] = "bottom",
 		["statusbarOffsetX"] = 0,
-		["bodyFontSize"] = "default",
-		["bodyFontFlag"] = "default",
-		["bodyFont"] = "default",
-		["borderCorner"] = "default",
-		["statusbarTexture"] = "Interface\\AddOns\\TinyTooltip\\texture\\StatusBar",
-		["headerFontSize"] = "default",
-		["skinMoreFrames"] = true,
-		["statusbarHeight"] = 4,
 		["alwaysShowIdInfo"] = true,
-		["headerFontFlag"] = "default",
-		["statusbarText"] = false,
-		["statusbarColor"] = "auto",
-		["statusbarFontFlag"] = "THINOUTLINE",
+		["bodyFontSize"] = "default",
 		["statusbarOffsetY"] = 0,
+		["statusbarFontFlag"] = "THINOUTLINE",
+		["borderCorner"] = "default",
+		["statusbarColor"] = "auto",
+		["statusbarText"] = false,
+		["statusbarHeight"] = 4,
+		["skinMoreFrames"] = true,
+		["headerFontFlag"] = "default",
+		["headerFontSize"] = "default",
+		["statusbarTexture"] = "Interface\\AddOns\\TinyTooltip\\texture\\StatusBar",
+		["bodyFont"] = "default",
+		["bodyFontFlag"] = "default",
 	},
 	["version"] = 2.6,
 	["variables"] = {
 	},
 	["item"] = {
-		["showItemIcon"] = false,
 		["coloredItemBorder"] = true,
+		["showItemIcon"] = false,
 	},
 	["quest"] = {
 		["coloredQuestBorder"] = true,
 	},
 	["unit"] = {
-		["npc"] = {
-			["elements"] = {
-				{
-					"raidIcon", -- [1]
-					"classIcon", -- [2]
-					"questIcon", -- [3]
-					"name", -- [4]
-				}, -- [1]
-				{
-					"levelValue", -- [1]
-					"classifBoss", -- [2]
-					"classifElite", -- [3]
-					"classifRare", -- [4]
-					"creature", -- [5]
-					"reactionName", -- [6]
-					"moveSpeed", -- [7]
-				}, -- [2]
-				["creature"] = {
-					["enable"] = true,
-					["color"] = "selection",
-					["wildcard"] = "%s",
-					["filter"] = "none",
-				},
-				["classifElite"] = {
-					["enable"] = true,
-					["color"] = "ffff33",
-					["wildcard"] = "(%s)",
-					["filter"] = "none",
-				},
-				["npcTitle"] = {
-					["enable"] = true,
-					["color"] = "99e8e8",
-					["wildcard"] = "<%s>",
-					["filter"] = "none",
-				},
-				["questIcon"] = {
-					["enable"] = true,
-					["filter"] = "none",
-				},
-				["classifBoss"] = {
-					["enable"] = true,
-					["color"] = "ff0000",
-					["wildcard"] = "(%s)",
-					["filter"] = "none",
-				},
-				["moveSpeed"] = {
-					["enable"] = false,
-					["color"] = "e8e7a8",
-					["wildcard"] = "%d%%",
-					["filter"] = "none",
-				},
-				["reactionName"] = {
-					["enable"] = true,
-					["color"] = "33ffff",
-					["wildcard"] = "<%s>",
-					["filter"] = "reaction6",
-				},
-				["factionBig"] = {
-					["enable"] = false,
-					["filter"] = "none",
-				},
-				["name"] = {
-					["enable"] = true,
-					["color"] = "default",
-					["wildcard"] = "%s",
-					["filter"] = "none",
-				},
-				["classifRare"] = {
-					["enable"] = true,
-					["color"] = "ffaaff",
-					["wildcard"] = "(%s)",
-					["filter"] = "none",
-				},
-				["raidIcon"] = {
-					["enable"] = true,
-					["filter"] = "none",
-				},
-				["levelValue"] = {
-					["enable"] = true,
-					["color"] = "level",
-					["wildcard"] = "%s",
-					["filter"] = "none",
-				},
-				["classIcon"] = {
-					["enable"] = false,
-					["filter"] = "none",
-				},
-			},
-			["coloredBorder"] = "reaction",
-			["anchor"] = {
-				["returnOnUnitFrame"] = false,
-				["position"] = "inherit",
-				["hiddenInCombat"] = false,
-				["cp"] = "BOTTOM",
-				["p"] = "BOTTOMRIGHT",
-				["returnInCombat"] = false,
-			},
-			["showTarget"] = true,
-			["background"] = {
-				["colorfunc"] = "default",
-				["alpha"] = 0.9,
-			},
-			["showTargetBy"] = true,
-			["grayForDead"] = false,
-		},
 		["player"] = {
 			["elements"] = {
 				{
@@ -312,25 +207,17 @@ BigTipDB = {
 					["wildcard"] = "(%s)",
 					["filter"] = "none",
 				},
-				["className"] = {
+				["factionIcon"] = {
 					["enable"] = true,
-					["color"] = "ffffff",
-					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
 				["factionBig"] = {
 					["enable"] = true,
 					["filter"] = "none",
 				},
-				["guildName"] = {
+				["className"] = {
 					["enable"] = true,
-					["color"] = "ff00ff",
-					["wildcard"] = "<%s>",
-					["filter"] = "none",
-				},
-				["name"] = {
-					["enable"] = true,
-					["color"] = "class",
+					["color"] = "ffffff",
 					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
@@ -340,8 +227,16 @@ BigTipDB = {
 					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
-				["factionIcon"] = {
+				["name"] = {
 					["enable"] = true,
+					["color"] = "class",
+					["wildcard"] = "%s",
+					["filter"] = "none",
+				},
+				["guildName"] = {
+					["enable"] = true,
+					["color"] = "ff00ff",
+					["wildcard"] = "<%s>",
 					["filter"] = "none",
 				},
 				["classIcon"] = {
@@ -349,9 +244,114 @@ BigTipDB = {
 					["filter"] = "none",
 				},
 			},
-			["showTarget"] = true,
-			["coloredBorder"] = "class",
 			["showModel"] = true,
+			["showTargetBy"] = true,
+			["coloredBorder"] = "class",
+			["showTarget"] = true,
+			["background"] = {
+				["colorfunc"] = "class",
+				["alpha"] = 0.9,
+			},
+			["anchor"] = {
+				["returnOnUnitFrame"] = false,
+				["position"] = "inherit",
+				["hiddenInCombat"] = false,
+				["cp"] = "BOTTOM",
+				["p"] = "BOTTOMRIGHT",
+				["returnInCombat"] = false,
+			},
+			["grayForDead"] = false,
+		},
+		["npc"] = {
+			["coloredBorder"] = "reaction",
+			["elements"] = {
+				{
+					"raidIcon", -- [1]
+					"classIcon", -- [2]
+					"questIcon", -- [3]
+					"name", -- [4]
+				}, -- [1]
+				{
+					"levelValue", -- [1]
+					"classifBoss", -- [2]
+					"classifElite", -- [3]
+					"classifRare", -- [4]
+					"creature", -- [5]
+					"reactionName", -- [6]
+					"moveSpeed", -- [7]
+				}, -- [2]
+				["creature"] = {
+					["enable"] = true,
+					["color"] = "selection",
+					["wildcard"] = "%s",
+					["filter"] = "none",
+				},
+				["classifElite"] = {
+					["enable"] = true,
+					["color"] = "ffff33",
+					["wildcard"] = "(%s)",
+					["filter"] = "none",
+				},
+				["npcTitle"] = {
+					["enable"] = true,
+					["color"] = "99e8e8",
+					["wildcard"] = "<%s>",
+					["filter"] = "none",
+				},
+				["questIcon"] = {
+					["enable"] = true,
+					["filter"] = "none",
+				},
+				["classifBoss"] = {
+					["enable"] = true,
+					["color"] = "ff0000",
+					["wildcard"] = "(%s)",
+					["filter"] = "none",
+				},
+				["moveSpeed"] = {
+					["enable"] = false,
+					["color"] = "e8e7a8",
+					["wildcard"] = "%d%%",
+					["filter"] = "none",
+				},
+				["reactionName"] = {
+					["enable"] = true,
+					["color"] = "33ffff",
+					["wildcard"] = "<%s>",
+					["filter"] = "reaction6",
+				},
+				["factionBig"] = {
+					["enable"] = false,
+					["filter"] = "none",
+				},
+				["name"] = {
+					["enable"] = true,
+					["color"] = "default",
+					["wildcard"] = "%s",
+					["filter"] = "none",
+				},
+				["classifRare"] = {
+					["enable"] = true,
+					["color"] = "ffaaff",
+					["wildcard"] = "(%s)",
+					["filter"] = "none",
+				},
+				["raidIcon"] = {
+					["enable"] = true,
+					["filter"] = "none",
+				},
+				["levelValue"] = {
+					["enable"] = true,
+					["color"] = "level",
+					["wildcard"] = "%s",
+					["filter"] = "none",
+				},
+				["classIcon"] = {
+					["enable"] = false,
+					["filter"] = "none",
+				},
+			},
+			["showTarget"] = true,
 			["anchor"] = {
 				["returnOnUnitFrame"] = false,
 				["position"] = "inherit",
@@ -361,7 +361,7 @@ BigTipDB = {
 				["returnInCombat"] = false,
 			},
 			["background"] = {
-				["colorfunc"] = "class",
+				["colorfunc"] = "default",
 				["alpha"] = 0.9,
 			},
 			["showTargetBy"] = true,

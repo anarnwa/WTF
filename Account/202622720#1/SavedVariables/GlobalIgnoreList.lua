@@ -14,39 +14,28 @@ GlobalIgnoreDB = {
 	},
 	["typeList"] = {
 	},
-	["revision"] = 1,
+	["invertSpam"] = false,
 	["openWithFriends"] = true,
 	["skipPrivate"] = true,
-	["asknote"] = true,
-	["delList"] = {
-	},
+	["sameserver"] = true,
+	["autoUpdate"] = true,
 	["autoCount"] = 3,
-	["skipParty"] = false,
+	["autoTime"] = 600,
 	["ignoreList"] = {
 	},
 	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 	},
-	["filterList"] = {
-		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
-		"[item=19019]", -- [2]
-		"([contains=.c0m] or [contains=.c.0.m] or [contains=,com] or ([contains=.com] and ([contains=code] or [contains=usd] or [contains=+15]))", -- [3]
-		"([contains=░] or [contains=▒] or [contains=▓] or [contains=█]) and ([contains=wts] or [contains=sell] or [contains=gold] or [contains=share]))", -- [4]
-		"([contains=deliver] or [contains=delivery] or [contains=gold] or [contains=delievery] or [contains=sale]) and ([contains=.com] or [contains=,com] or [contains=c0m])", -- [5]
-		"([contains=wts] or [contains=sell]) and [contains=share] and ([contains=account] or [contains=acc]))", -- [6]
-		"(([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])", -- [7]
-		"[community]", -- [8]
-		"[contains=WTS] or [contains=WTB]", -- [9]
-		"[nonlatin]", -- [10]
+	["dateList"] = {
 	},
-	["sameserver"] = true,
+	["delList"] = {
+	},
 	["attachFriends"] = true,
-	["notes"] = {
-	},
+	["revision"] = 1,
 	["expList"] = {
 	},
-	["skipGuild"] = true,
+	["skipParty"] = false,
 	["chatmsg"] = true,
 	["filterTotal"] = 0,
 	["defexpire"] = 0,
@@ -62,8 +51,7 @@ GlobalIgnoreDB = {
 		"Filter WTS", -- [9]
 		"Filter Chinese/Korean/Japanese", -- [10]
 	},
-	["syncInfo"] = {
-	},
+	["spamFilter"] = true,
 	["filterActive"] = {
 		true, -- [1]
 		true, -- [2]
@@ -76,11 +64,23 @@ GlobalIgnoreDB = {
 		false, -- [9]
 		false, -- [10]
 	},
-	["spamFilter"] = true,
-	["dateList"] = {
+	["asknote"] = true,
+	["syncInfo"] = {
 	},
-	["autoTime"] = 600,
-	["autoUpdate"] = true,
+	["skipGuild"] = true,
+	["notes"] = {
+	},
 	["samefaction"] = true,
-	["invertSpam"] = false,
+	["filterList"] = {
+		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
+		"[item=19019]", -- [2]
+		"([contains=.c0m] or [contains=.c.0.m] or [contains=,com] or ([contains=.com] and ([contains=code] or [contains=usd] or [contains=+15]))", -- [3]
+		"([contains=░] or [contains=▒] or [contains=▓] or [contains=█]) and ([contains=wts] or [contains=sell] or [contains=gold] or [contains=share]))", -- [4]
+		"([contains=deliver] or [contains=delivery] or [contains=gold] or [contains=delievery] or [contains=sale]) and ([contains=.com] or [contains=,com] or [contains=c0m])", -- [5]
+		"([contains=wts] or [contains=sell]) and [contains=share] and ([contains=account] or [contains=acc]))", -- [6]
+		"(([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])", -- [7]
+		"[community]", -- [8]
+		"[contains=WTS] or [contains=WTB]", -- [9]
+		"[nonlatin]", -- [10]
+	},
 }

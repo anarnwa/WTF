@@ -5,20 +5,20 @@ MBFDB = {
 		["风起春城暮 - 亡语者"] = "Default",
 		["Ouse - 亡语者"] = "Default",
 		["我会大跳你呢 - 亡语者"] = "Default",
-		["她的眼眶里 - 古尔丹"] = "Default",
 		["落月复西斜 - 亡语者"] = "Default",
+		["她的眼眶里 - 古尔丹"] = "Default",
 		["我会变成狼 - 亡语者"] = "Default",
 		["Weeping - 亡语者"] = "Default",
-		["我会飞你会吗 - 亡语者"] = "Default",
+		["我喝了假酒 - 亡语者"] = "Default",
 		["我会招宝宝 - 亡语者"] = "Default",
 		["弄妆梳洗迟 - 亡语者"] = "Default",
-		["我喝了假酒 - 亡语者"] = "Default",
+		["我会飞你会吗 - 亡语者"] = "Default",
 		["十里扬州路 - 亡语者"] = "Default",
 		["我会招恶魔 - 亡语者"] = "Default",
 		["Cleaner - 亡语者"] = "Default",
-		["Dremel - 亡语者"] = "Default",
-		["Mubbh - 亡语者"] = "Default",
 		["我会消失 - 亡语者"] = "Default",
+		["Mubbh - 亡语者"] = "Default",
+		["Dremel - 亡语者"] = "Default",
 		["Believer - 古尔丹"] = "Default",
 		["朝飞暮卷 - 亡语者"] = "Default",
 		["懒起画蛾眉 - 古尔丹"] = "Default",
@@ -32,8 +32,8 @@ MBFDB = {
 			["MBF_FrameLocation"] = {
 				nil, -- [1]
 				"RIGHT", -- [2]
-				-198.4649810791016, -- [3]
-				252.4795913696289, -- [4]
+				-207.4633483886719, -- [3]
+				244.4797668457031, -- [4]
 			},
 			["customChildren"] = {
 				"MinimapButtonFrameDragButton", -- [1]
@@ -71,6 +71,7 @@ MBFDB = {
 				"LibDBIcon10_BugSack", -- [33]
 				"Narci_MinimapButton", -- [34]
 				"LibDBIcon10_IPMythicTimer", -- [35]
+				"LibDBIcon10_Decursive", -- [36]
 			},
 		},
 	},

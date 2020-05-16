@@ -14,6 +14,10 @@ VER 3 0100000000000005 "沉默" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@cursor]沉默咒符
 END
+VER 3 010000000000000A "炸弹" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:6/2]幽魂炸弹;[]伊利丹之握
+END
 VER 3 0100000000000004 "烈焰" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@cursor]烈焰咒符

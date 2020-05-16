@@ -1,5 +1,7 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+	},
 	["encounter_spells"] = {
 		[284760] = {
 			["school"] = 1,
@@ -130,12 +132,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "野生小鬼",
 		},
-		[285125] = {
-			["school"] = 16,
+		[285382] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "拉米纳利亚",
+			["source"] = "充能风暴",
 		},
 		[284262] = {
 			["school"] = 1,
@@ -155,15 +158,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "凯瑟琳修女",
 		},
-		[285342] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[287169] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "充能风暴",
+			["source"] = "凯瑟琳修女",
 		},
 		[284121] = {
 			["school"] = 8,
@@ -229,14 +230,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "凯瑟琳修女",
 		},
-		[290437] = {
-			["school"] = 16,
+		[285350] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "拉米纳利亚",
 		},
@@ -272,22 +272,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "潜鱼贝洛阿",
 		},
-		[117514] = {
+		[117506] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "不灭之影",
+			["source"] = "永影之提安",
 		},
-		[288205] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[284362] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "凯瑟琳修女",
+			["source"] = "约瑟夫修士",
 		},
 		[284361] = {
 			["school"] = 1,
@@ -304,12 +302,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "谄媚海妖",
 		},
-		[90361] = {
-			["school"] = 8,
+		[117514] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "哈提",
+			["source"] = "不灭之影",
 		},
 		[108446] = {
 			["school"] = 32,
@@ -319,19 +319,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "祖瑞尔玛乌",
 		},
-		[285118] = {
+		[288205] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "拉米纳利亚",
+			["source"] = "凯瑟琳修女",
 		},
-		[285017] = {
+		[284997] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "拉米纳利亚",
 		},
@@ -352,13 +353,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "深渊之忿",
 		},
-		[289482] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "潜鱼贝洛阿",
-		},
 		[284316] = {
 			["school"] = 16,
 			["token"] = {
@@ -366,6 +360,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "约瑟夫修士",
+		},
+		[289482] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "潜鱼贝洛阿",
 		},
 		[286563] = {
 			["school"] = 1,
@@ -384,29 +385,28 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[284997] = {
+		[285017] = {
 			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "拉米纳利亚",
-		},
-		[284362] = {
-			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "约瑟夫修士",
+			["source"] = "拉米纳利亚",
 		},
-		[117506] = {
+		[285118] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "永影之提安",
+			["source"] = "拉米纳利亚",
+		},
+		[90361] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "哈提",
 		},
 		[288696] = {
 			["school"] = 1,
@@ -422,33 +422,33 @@ EncounterDetailsDB = {
 			},
 			["source"] = "约瑟夫修士",
 		},
-		[285350] = {
-			["school"] = 8,
+		[290437] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "拉米纳利亚",
-		},
-		[287169] = {
-			["school"] = 8,
-			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "凯瑟琳修女",
+			["source"] = "拉米纳利亚",
 		},
-		[285382] = {
+		[285342] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "充能风暴",
 		},
-	},
-	["emotes"] = {
+		[285125] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "拉米纳利亚",
+		},
 	},
 }

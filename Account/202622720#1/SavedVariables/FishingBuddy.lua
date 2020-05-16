@@ -10,12 +10,12 @@ FishingBuddy_Info = {
 	["FishingHoles"] = {
 	},
 	["Version"] = 19500,
-	["FishInfo2"] = 0,
+	["KnownZones"] = {
+	},
 	["SubZones"] = {
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
 	},
-	["KnownZones"] = {
-	},
+	["FishInfo2"] = 0,
 }

@@ -47,13 +47,13 @@ RematchSettings = {
 		},
 		["Script"] = {
 		},
-		["Types"] = {
+		["Moveset"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
-		["Strong"] = {
+		["Similar"] = {
 		},
 		["Sources"] = {
 		},
@@ -61,16 +61,20 @@ RematchSettings = {
 		},
 		["Rarity"] = {
 		},
-		["Similar"] = {
+		["Strong"] = {
 		},
-		["Level"] = {
+		["Collected"] = {
 		},
-		["Tough"] = {
+		["Favorite"] = {
 		},
-		["Moveset"] = {
+		["Types"] = {
 		},
 	},
+	["SelectedTab"] = 1,
 	["JournalPanel"] = 1,
+	["CollapsedOptHeaders"] = {
+	},
+	["PreferredMode"] = 1,
 	["alptconfig"] = {
 		["rematchEx"] = {
 			["useGroupMenu"] = true,
@@ -163,22 +167,18 @@ RematchSettings = {
 		["defaultTeam"] = {
 		},
 	},
-	["CollapsedOptHeaders"] = {
-	},
-	["LevelingQueue"] = {
-	},
-	["PreferredMode"] = 1,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
-	["SpecialSlots"] = {
+	["LevelingQueue"] = {
 	},
 	["CornerPos"] = "BOTTOMLEFT",
 	["QueueSanctuary"] = {
 	},
-	["CustomScaleValue"] = 100,
+	["SpecialSlots"] = {
+	},
 	["YPos"] = 129.9999694824219,
-	["SelectedTab"] = 1,
+	["CustomScaleValue"] = 100,
 	["PetNotes"] = {
 	},
 }

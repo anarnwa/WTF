@@ -466,3 +466,17 @@ DBM-Party-Shadowlands: enabled
 Plater: enabled
 ipmythictimer: enabled
 !KalielsTracker: enabled
+YaMedia: enabled
+LibSharedMedia-3.0: enabled
+DBM-Archaeology: enabled
+DBM-ChamberOfAspects: enabled
+DBM-CountPack-Overwatch: enabled
+DBM-SoundEventsPack: enabled
+DBM-Ulduar: enabled
+DBM-TimelessIsle: enabled
+DBM-Icecrown: enabled
+DBM-Coliseum: enabled
+DBM-Onyxia: enabled
+DBM-EyeOfEternity: enabled
+DBM-Naxx: enabled
+DBM-VoA: enabled

@@ -49,18 +49,18 @@ BigTipDB = {
 		["statusbarOffsetX"] = 0,
 		["statusbarHeight"] = 4,
 		["bodyFontSize"] = "default",
-		["bodyFontFlag"] = "default",
-		["bodyFont"] = "default",
+		["alwaysShowIdInfo"] = true,
+		["statusbarFontFlag"] = "THINOUTLINE",
 		["statusbarOffsetY"] = 0,
-		["statusbarTexture"] = "Interface\\AddOns\\TinyTooltip\\texture\\StatusBar",
-		["headerFontSize"] = "default",
+		["statusbarColor"] = "auto",
+		["borderCorner"] = "default",
 		["statusbarText"] = false,
 		["skinMoreFrames"] = true,
 		["headerFontFlag"] = "default",
-		["borderCorner"] = "default",
-		["statusbarColor"] = "auto",
-		["statusbarFontFlag"] = "THINOUTLINE",
-		["alwaysShowIdInfo"] = true,
+		["headerFontSize"] = "default",
+		["statusbarTexture"] = "Interface\\AddOns\\TinyTooltip\\texture\\StatusBar",
+		["bodyFont"] = "default",
+		["bodyFontFlag"] = "default",
 	},
 	["version"] = 2.6,
 	["variables"] = {
@@ -221,10 +221,8 @@ BigTipDB = {
 					["wildcard"] = "<%s>",
 					["filter"] = "none",
 				},
-				["className"] = {
+				["factionIcon"] = {
 					["enable"] = true,
-					["color"] = "ffffff",
-					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
 				["name"] = {
@@ -233,8 +231,10 @@ BigTipDB = {
 					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
-				["factionIcon"] = {
+				["className"] = {
 					["enable"] = true,
+					["color"] = "ffffff",
+					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
 				["classIcon"] = {
@@ -245,6 +245,11 @@ BigTipDB = {
 			["showModel"] = true,
 			["showTargetBy"] = true,
 			["coloredBorder"] = "class",
+			["showTarget"] = true,
+			["background"] = {
+				["colorfunc"] = "class",
+				["alpha"] = 0.9,
+			},
 			["anchor"] = {
 				["returnOnUnitFrame"] = false,
 				["position"] = "inherit",
@@ -253,14 +258,10 @@ BigTipDB = {
 				["p"] = "BOTTOMRIGHT",
 				["returnInCombat"] = true,
 			},
-			["background"] = {
-				["colorfunc"] = "class",
-				["alpha"] = 0.9,
-			},
-			["showTarget"] = true,
 			["grayForDead"] = true,
 		},
 		["npc"] = {
+			["coloredBorder"] = "reaction",
 			["elements"] = {
 				{
 					"raidIcon", -- [1]
@@ -344,7 +345,7 @@ BigTipDB = {
 					["filter"] = "none",
 				},
 			},
-			["coloredBorder"] = "reaction",
+			["showTarget"] = true,
 			["anchor"] = {
 				["returnOnUnitFrame"] = false,
 				["position"] = "inherit",
@@ -353,7 +354,6 @@ BigTipDB = {
 				["p"] = "BOTTOMRIGHT",
 				["returnInCombat"] = true,
 			},
-			["showTarget"] = true,
 			["background"] = {
 				["colorfunc"] = "default",
 				["alpha"] = 0.9,

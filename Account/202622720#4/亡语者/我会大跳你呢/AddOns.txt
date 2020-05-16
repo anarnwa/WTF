@@ -480,3 +480,9 @@ DBM-Party-Shadowlands: enabled
 Plater: enabled
 ipmythictimer: enabled
 !KalielsTracker: enabled
+YaMedia: enabled
+LibSharedMedia-3.0: enabled
+DBM-Archaeology: enabled
+DBM-CountPack-Overwatch: enabled
+DBM-SoundEventsPack: enabled
+DBM-TimelessIsle: enabled
