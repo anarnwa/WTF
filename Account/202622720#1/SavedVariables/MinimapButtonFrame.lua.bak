@@ -31,6 +31,9 @@ MBFDB = {
 				"LibDBIcon10_BugSack", -- [15]
 				"LibDBIcon10_Details", -- [16]
 				"LibDBIcon10_InstanceAchievementTracker", -- [17]
+				"LibDBIcon10_IPMythicTimer", -- [18]
+				"LibDBIcon10_SavedInstances", -- [19]
+				"LibDBIcon10_DetailsStreamer", -- [20]
 			},
 		},
 	},

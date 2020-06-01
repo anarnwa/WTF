@@ -18,13 +18,15 @@ FishingBuddy_Player = {
 		["UseBladeboneHook"] = true,
 		["EnhancePools"] = true,
 		["TurnOnSound"] = true,
-		["STVTimer"] = true,
-		["ContestSupport"] = true,
-		["EasyLures"] = true,
-		["DrinkHeavily"] = false,
 		["EnhanceFishingSounds"] = true,
+		["ContestSupport"] = true,
+		["DrinkHeavily"] = false,
+		["EasyLures"] = true,
+		["STVTimer"] = true,
 	},
 	["WasWearing"] = {
+	},
+	["Outfit"] = {
 	},
 	["WatcherLocation"] = {
 		["grp_point"] = "TOPLEFT",
@@ -39,8 +41,6 @@ FishingBuddy_Player = {
 		["solo_point"] = "TOPLEFT",
 		["raid_y"] = -54,
 		["grp_y"] = -54,
-	},
-	["Outfit"] = {
 	},
 	["Version"] = 19500,
 }

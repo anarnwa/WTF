@@ -1,6 +1,7 @@
 
 BagSyncDB = {
-	["forceDBReset§"] = 2,
+	["blacklist§"] = {
+	},
 	["亡语者"] = {
 		["岁繁"] = {
 			["bag"] = {
@@ -48,8 +49,6 @@ BagSyncDB = {
 			["faction"] = "Horde",
 			["professions"] = {
 			},
-			["currency"] = {
-			},
 			["equip"] = {
 				"122248::::::::::::1:5805:::", -- [1]
 				"122359::::::::::::1:583:::", -- [2]
@@ -63,6 +62,8 @@ BagSyncDB = {
 				"122362::::::::::::1:583:::", -- [10]
 				"122262::::::::::::1:5805:::", -- [11]
 				"122353::::::::::::1:5805:::", -- [12]
+			},
+			["currency"] = {
 			},
 			["mailbox"] = {
 			},
@@ -89,52 +90,51 @@ BagSyncDB = {
 		["enableRealmShortName"] = false,
 		["enableTooltips"] = true,
 		["enableShowUniqueItemsTotals"] = true,
-		["enableTooltipGreenCheck"] = true,
-		["enableBNetAccountItems"] = false,
+		["enableLoginVersionInfo"] = true,
+		["showGuildCurrentCharacter"] = false,
 		["showTotal"] = true,
 		["colors"] = {
 			["total"] = {
-				["r"] = 0.9568627450980393,
-				["g"] = 0.6431372549019608,
 				["b"] = 0.3764705882352941,
+				["g"] = 0.6431372549019608,
+				["r"] = 0.9568627450980393,
 			},
 			["guild"] = {
-				["r"] = 0.396078431372549,
-				["g"] = 0.7215686274509804,
 				["b"] = 0.7529411764705882,
+				["g"] = 0.7215686274509804,
+				["r"] = 0.396078431372549,
 			},
 			["cross"] = {
-				["r"] = 1,
-				["g"] = 0.4901960784313725,
 				["b"] = 0.0392156862745098,
-			},
-			["bnet"] = {
-				["r"] = 0.207843137254902,
-				["g"] = 0.5333333333333333,
-				["b"] = 1,
-			},
-			["first"] = {
-				["r"] = 0.5019607843137255,
-				["g"] = 1,
-				["b"] = 0,
+				["g"] = 0.4901960784313725,
+				["r"] = 1,
 			},
 			["itemid"] = {
-				["r"] = 0.3215686274509804,
-				["g"] = 0.8274509803921568,
 				["b"] = 0.5254901960784314,
+				["g"] = 0.8274509803921568,
+				["r"] = 0.3215686274509804,
+			},
+			["first"] = {
+				["b"] = 0,
+				["g"] = 1,
+				["r"] = 0.5019607843137255,
+			},
+			["bnet"] = {
+				["b"] = 1,
+				["g"] = 0.5333333333333333,
+				["r"] = 0.207843137254902,
 			},
 			["second"] = {
-				["r"] = 1,
-				["g"] = 1,
 				["b"] = 1,
+				["g"] = 1,
+				["r"] = 1,
 			},
 		},
 		["enableRealmAstrickName"] = false,
-		["showGuildCurrentCharacter"] = false,
-		["enableLoginVersionInfo"] = true,
+		["enableBNetAccountItems"] = false,
+		["enableTooltipGreenCheck"] = true,
 		["enableTooltipSeperator"] = true,
 		["enableRealmIDTags"] = true,
 	},
-	["blacklist§"] = {
-	},
+	["forceDBReset§"] = 2,
 }

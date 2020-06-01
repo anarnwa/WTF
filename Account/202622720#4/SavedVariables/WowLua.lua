@@ -16,7 +16,7 @@ WowLua_DB = {
 		{
 			["untitled"] = true,
 			["name"] = "Untitled 3",
-			["content"] = "MainMenuBar:SetMovable(false)\nMainMenuBar:EnableMouse(false)",
+			["content"] = "UninviteUnit()",
 		}, -- [3]
 	},
 	["untitled"] = 4,

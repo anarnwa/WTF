@@ -7,11 +7,11 @@ AchievementTrackerOptions = {
 	["greyOutCompletedAchievements"] = false,
 	["announceTrackedAchievements"] = false,
 	["announceToRaidWarning"] = true,
-	["onlyTrackMissingAchievements"] = false,
+	["toggleSound"] = false,
 	["enableAddon"] = true,
 	["hideCompletedAchievements"] = false,
 	["trackAchievementsInBlizzardUI"] = false,
-	["toggleSound"] = false,
+	["onlyTrackMissingAchievements"] = false,
 }
 AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1]
@@ -24,4 +24,9 @@ AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [8]
 	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [9]
 	"16/5/2020 11:14 [DEBUG] Showing Minimap Icon", -- [10]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11]
+	"0/0/1999 -1:-1 [DEBUG] Version: 2.77.0", -- [12]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [13]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [14]
+	"29/5/2020 19:33 [DEBUG] Showing Minimap Icon", -- [15]
 }

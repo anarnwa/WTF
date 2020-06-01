@@ -2,6 +2,10 @@ VER 3 000000000000003C "." "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,nodead,exists][]艾泽拉斯之心精华
 END
+VER 3 0000000000000041 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 自然之愈;  [@mouseover,exists,mod:ctrl] 自然之愈; [@mouseover,exists,mod:shift] 自然之愈
+END
 VER 3 000000000000003F "sp" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [@mouseover,exists,nodead][]13

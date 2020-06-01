@@ -5,7 +5,7 @@ GrailDatabase = {
 			["QUEST"] = {
 			},
 		},
-		["delayEventsHandled"] = true,
 		["delayEvents"] = true,
+		["delayEventsHandled"] = true,
 	},
 }

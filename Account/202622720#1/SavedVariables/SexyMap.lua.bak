@@ -4,10 +4,10 @@ SexyMap2DB = {
 		["core"] = {
 			["clamp"] = true,
 			["lock"] = false,
+			["rightClickToConfig"] = true,
+			["autoZoom"] = 5,
 			["shape"] = "Interface\\AddOns\\SexyMap\\shapes\\circle.tga",
 			["northTag"] = true,
-			["autoZoom"] = 5,
-			["rightClickToConfig"] = true,
 		},
 		["coordinates"] = {
 			["enabled"] = false,
@@ -17,10 +17,14 @@ SexyMap2DB = {
 			["borderColor"] = {
 			},
 			["xOffset"] = 0,
-			["updateRate"] = 1,
 			["backgroundColor"] = {
 			},
+			["updateRate"] = 1,
 			["yOffset"] = 10,
+		},
+		["ping"] = {
+			["showPing"] = true,
+			["showAt"] = "map",
 		},
 		["movers"] = {
 			["enabled"] = false,
@@ -28,39 +32,21 @@ SexyMap2DB = {
 			},
 			["lock"] = false,
 		},
-		["buttons"] = {
-			["radius"] = 10,
-			["lockDragging"] = false,
-			["allowDragging"] = true,
-			["visibilitySettings"] = {
-				["MinimapZoomIn"] = "never",
-				["MinimapZoneTextButton"] = "always",
-				["MiniMapMailFrame"] = "always",
-				["QueueStatusMinimapButton"] = "always",
-				["GarrisonLandingPageMinimapButton"] = "always",
-				["TimeManagerClockButton"] = "always",
-				["MinimapZoomOut"] = "never",
-				["MiniMapWorldMapButton"] = "never",
-			},
-			["dragPositions"] = {
-			},
-			["controlVisibility"] = true,
-		},
 		["clock"] = {
 			["bgColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["font"] = "默认",
 			["fontColor"] = {
 			},
 			["borderColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["xOffset"] = 0,
 			["yOffset"] = 0,
@@ -119,25 +105,39 @@ SexyMap2DB = {
 		["zonetext"] = {
 			["bgColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["font"] = "默认",
 			["fontColor"] = {
 			},
 			["borderColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["xOffset"] = 0,
 			["yOffset"] = 0,
 		},
-		["ping"] = {
-			["showPing"] = true,
-			["showAt"] = "map",
+		["buttons"] = {
+			["radius"] = 10,
+			["lockDragging"] = false,
+			["allowDragging"] = true,
+			["visibilitySettings"] = {
+				["MinimapZoomIn"] = "never",
+				["MinimapZoneTextButton"] = "always",
+				["MiniMapWorldMapButton"] = "never",
+				["QueueStatusMinimapButton"] = "always",
+				["GarrisonLandingPageMinimapButton"] = "always",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "always",
+			},
+			["dragPositions"] = {
+			},
+			["controlVisibility"] = true,
 		},
 	},
 	["presets"] = {
@@ -149,10 +149,10 @@ SexyMap82 = {
 			["core"] = {
 				["clamp"] = true,
 				["lock"] = false,
+				["rightClickToConfig"] = true,
+				["autoZoom"] = 5,
 				["shape"] = "Interface\\AddOns\\SexyMap\\shapes\\circle.tga",
 				["northTag"] = true,
-				["autoZoom"] = 5,
-				["rightClickToConfig"] = true,
 			},
 			["coordinates"] = {
 				["enabled"] = false,
@@ -162,10 +162,14 @@ SexyMap82 = {
 				["borderColor"] = {
 				},
 				["xOffset"] = 0,
-				["updateRate"] = 1,
 				["backgroundColor"] = {
 				},
+				["updateRate"] = 1,
 				["yOffset"] = 10,
+			},
+			["ping"] = {
+				["showPing"] = true,
+				["showAt"] = "map",
 			},
 			["movers"] = {
 				["enabled"] = false,
@@ -173,39 +177,21 @@ SexyMap82 = {
 				},
 				["lock"] = false,
 			},
-			["buttons"] = {
-				["radius"] = 10,
-				["lockDragging"] = false,
-				["allowDragging"] = true,
-				["visibilitySettings"] = {
-					["MinimapZoomIn"] = "never",
-					["MinimapZoneTextButton"] = "always",
-					["MiniMapMailFrame"] = "always",
-					["QueueStatusMinimapButton"] = "always",
-					["GarrisonLandingPageMinimapButton"] = "always",
-					["TimeManagerClockButton"] = "always",
-					["MinimapZoomOut"] = "never",
-					["MiniMapWorldMapButton"] = "never",
-				},
-				["dragPositions"] = {
-				},
-				["controlVisibility"] = true,
-			},
 			["clock"] = {
 				["bgColor"] = {
 					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
 					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
 				},
 				["font"] = "默认",
 				["fontColor"] = {
 				},
 				["borderColor"] = {
 					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
 					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
 				},
 				["xOffset"] = 0,
 				["yOffset"] = 0,
@@ -264,25 +250,39 @@ SexyMap82 = {
 			["zonetext"] = {
 				["bgColor"] = {
 					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
 					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
 				},
 				["font"] = "默认",
 				["fontColor"] = {
 				},
 				["borderColor"] = {
 					["a"] = 1,
-					["b"] = 0,
-					["g"] = 0,
 					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
 				},
 				["xOffset"] = 0,
 				["yOffset"] = 0,
 			},
-			["ping"] = {
-				["showPing"] = true,
-				["showAt"] = "map",
+			["buttons"] = {
+				["radius"] = 10,
+				["lockDragging"] = false,
+				["allowDragging"] = true,
+				["visibilitySettings"] = {
+					["MinimapZoomIn"] = "never",
+					["MinimapZoneTextButton"] = "always",
+					["MiniMapWorldMapButton"] = "never",
+					["QueueStatusMinimapButton"] = "always",
+					["GarrisonLandingPageMinimapButton"] = "always",
+					["MinimapZoomOut"] = "never",
+					["MiniMapMailFrame"] = "always",
+					["TimeManagerClockButton"] = "always",
+				},
+				["dragPositions"] = {
+				},
+				["controlVisibility"] = true,
 			},
 		},
 		["presets"] = {

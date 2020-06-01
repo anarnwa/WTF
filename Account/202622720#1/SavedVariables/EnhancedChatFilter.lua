@@ -22,8 +22,8 @@ ecfDB = {
 	},
 	["totalBlackWordsFiltered"] = 0,
 	["lesserBlackWordThreshold"] = 3,
-	["blackWordFilterGroup"] = false,
 	["lootCurrencyFilterList"] = {
 	},
+	["blackWordFilterGroup"] = false,
 	["advancedConfig"] = false,
 }

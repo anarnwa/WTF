@@ -41,10 +41,8 @@ VER 3 010000000000000D "激活" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000015 "猫愈" "INV_MISC_QUESTIONMARK"
 #showtooltip 愈合
-/cast [mod:alt]愈合
 /console autounshift 0
-/施放 [help]愈合; [@targettarget,help,exists]愈合
-/施放 [@player] 愈合
+/施放 [@mouseover,help,nodead][]愈合;
 /console autounshift 1
 END
 VER 3 0100000000000005 "猫驱" "INV_MISC_QUESTIONMARK"

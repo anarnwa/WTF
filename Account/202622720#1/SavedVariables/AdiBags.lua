@@ -1,9 +1,9 @@
 
 AdiBagsDB = {
 	["namespaces"] = {
-		["MoneyFrame"] = {
+		["ZoneItems"] = {
 		},
-		["ItemLevel"] = {
+		["MoneyFrame"] = {
 		},
 		["FilterOverride"] = {
 			["profiles"] = {
@@ -14,27 +14,27 @@ AdiBagsDB = {
 		},
 		["ItemCategory"] = {
 		},
-		["Battle Pet Items"] = {
+		["DataSource"] = {
 		},
 		["NewItem"] = {
 		},
-		["DataSource"] = {
+		["Fishing Items"] = {
 		},
 		["AdiBags_TooltipInfo"] = {
 		},
-		["CurrencyFrame"] = {
+		["Equipment"] = {
 		},
 		["Archaeology"] = {
 		},
 		["ItemSets"] = {
 		},
-		["Equipment"] = {
+		["CurrencyFrame"] = {
 		},
-		["Fishing Items"] = {
+		["Battle Pet Items"] = {
 		},
 		["Junk"] = {
 		},
-		["ZoneItems"] = {
+		["ItemLevel"] = {
 		},
 	},
 	["profileKeys"] = {

@@ -4,7 +4,7 @@ ChatDyeing = {
 		["orealm"] = "亡语者",
 		["oname"] = "岁繁",
 		["oclass"] = "MONK",
-		["times"] = "10 May 2020",
+		["times"] = "16 May 2020",
 	},
 	["十里扬州路-亡语者"] = {
 		["orealm"] = "亡语者",

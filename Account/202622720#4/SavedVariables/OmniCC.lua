@@ -1,16 +1,17 @@
 
 OmniCCDB = {
+	["global"] = {
+		["addonVersion"] = "8.3.5",
+		["dbVersion"] = 5,
+	},
 	["profileKeys"] = {
 		["我会消失 - 亡语者"] = "默认",
 		["我会招宝宝 - 亡语者"] = "默认",
 		["弄妆梳洗迟 - 亡语者"] = "默认",
 		["我会飞你会吗 - 亡语者"] = "默认",
 		["十里扬州路 - 亡语者"] = "默认",
+		["懒起画蛾眉 - 古尔丹"] = "默认",
 		["风起春城暮 - 亡语者"] = "默认",
-	},
-	["global"] = {
-		["addonVersion"] = "8.3.5",
-		["dbVersion"] = 5,
 	},
 	["profiles"] = {
 		["默认"] = {
@@ -29,22 +30,22 @@ OmniCCDB = {
 			["themes"] = {
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["minutes"] = {
+						["seconds"] = {
 						},
 						["soon"] = {
 						},
-						["seconds"] = {
+						["minutes"] = {
 						},
 					},
 					["enableText"] = false,
 				},
 				["默认"] = {
 					["textStyles"] = {
-						["minutes"] = {
+						["seconds"] = {
 						},
 						["soon"] = {
 						},
-						["seconds"] = {
+						["minutes"] = {
 						},
 					},
 					["fontSize"] = 25,
@@ -57,9 +58,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["groups"] = {
-	},
-	["version"] = "8.2.5",
 	["groupSettings"] = {
 		["base"] = {
 			["styles"] = {
@@ -83,17 +81,20 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["fontSize"] = 25,
-			["minEffectDuration"] = 0,
+			["scaleText"] = true,
+			["yOff"] = 0,
 			["spiralOpacity"] = 1.00999997742474,
 			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.55,
+			["minEffectDuration"] = 0,
 			["mmSSDuration"] = 0,
-			["yOff"] = 0,
-			["scaleText"] = true,
+			["fontSize"] = 25,
 		},
 	},
+	["groups"] = {
+	},
+	["version"] = "8.2.5",
 }

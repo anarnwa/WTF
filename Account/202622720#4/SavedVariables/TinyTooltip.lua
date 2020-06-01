@@ -20,14 +20,18 @@ BigTipDB = {
 		["statusbarFontSize"] = 10,
 		["scale"] = 1,
 		["mask"] = true,
-		["bgfile"] = "rock",
+		["bgfile"] = "Blizzard ChatFrame Background",
 		["headerFont"] = "default",
-		["borderSize"] = 1,
+		["borderSize"] = 16,
 		["borderColor"] = {
 			0.6, -- [1]
 			0.6, -- [2]
 			0.6, -- [3]
 			0.8, -- [4]
+			["a"] = 1,
+			["r"] = 0.5,
+			["g"] = 0.5,
+			["b"] = 0.5,
 		},
 		["anchor"] = {
 			["p"] = "BOTTOMRIGHT",
@@ -44,23 +48,27 @@ BigTipDB = {
 			0, -- [2]
 			0, -- [3]
 			0.7, -- [4]
+			["a"] = 0.9,
+			["r"] = 0,
+			["g"] = 0,
+			["b"] = 0,
 		},
 		["statusbarPosition"] = "bottom",
 		["statusbarOffsetX"] = 0,
-		["statusbarHeight"] = 4,
-		["bodyFontSize"] = "default",
-		["alwaysShowIdInfo"] = true,
-		["statusbarFontFlag"] = "THINOUTLINE",
-		["statusbarOffsetY"] = 0,
-		["statusbarColor"] = "auto",
-		["borderCorner"] = "default",
-		["statusbarText"] = false,
 		["skinMoreFrames"] = true,
-		["headerFontFlag"] = "default",
-		["headerFontSize"] = "default",
-		["statusbarTexture"] = "Interface\\AddOns\\TinyTooltip\\texture\\StatusBar",
-		["bodyFont"] = "default",
+		["bodyFontSize"] = "default",
 		["bodyFontFlag"] = "default",
+		["bodyFont"] = "default",
+		["statusbarOffsetY"] = 0,
+		["statusbarTexture"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["headerFontSize"] = "default",
+		["statusbarText"] = false,
+		["statusbarHeight"] = 4,
+		["headerFontFlag"] = "default",
+		["borderCorner"] = "Blizzard Tooltip",
+		["statusbarColor"] = "auto",
+		["statusbarFontFlag"] = "THINOUTLINE",
+		["alwaysShowIdInfo"] = true,
 	},
 	["version"] = 2.6,
 	["variables"] = {
@@ -221,8 +229,10 @@ BigTipDB = {
 					["wildcard"] = "<%s>",
 					["filter"] = "none",
 				},
-				["factionIcon"] = {
+				["className"] = {
 					["enable"] = true,
+					["color"] = "ffffff",
+					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
 				["name"] = {
@@ -231,10 +241,8 @@ BigTipDB = {
 					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
-				["className"] = {
+				["factionIcon"] = {
 					["enable"] = true,
-					["color"] = "ffffff",
-					["wildcard"] = "%s",
 					["filter"] = "none",
 				},
 				["classIcon"] = {
@@ -261,7 +269,6 @@ BigTipDB = {
 			["grayForDead"] = true,
 		},
 		["npc"] = {
-			["coloredBorder"] = "reaction",
 			["elements"] = {
 				{
 					"raidIcon", -- [1]
@@ -345,7 +352,7 @@ BigTipDB = {
 					["filter"] = "none",
 				},
 			},
-			["showTarget"] = true,
+			["coloredBorder"] = "reaction",
 			["anchor"] = {
 				["returnOnUnitFrame"] = false,
 				["position"] = "inherit",
@@ -354,6 +361,7 @@ BigTipDB = {
 				["p"] = "BOTTOMRIGHT",
 				["returnInCombat"] = true,
 			},
+			["showTarget"] = true,
 			["background"] = {
 				["colorfunc"] = "default",
 				["alpha"] = 0.9,

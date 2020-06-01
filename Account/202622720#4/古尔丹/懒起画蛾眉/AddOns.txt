@@ -403,3 +403,4 @@ DBM-EternalPalace: enabled
 DBM-CrucibleofStorms: enabled
 DungeonWatchDog: enabled
 MostValuablePlayer: disabled
+WeakAurasArchive: enabled

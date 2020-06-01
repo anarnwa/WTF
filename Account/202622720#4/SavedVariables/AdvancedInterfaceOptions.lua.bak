@@ -1,0 +1,17 @@
+
+AdvancedInterfaceOptionsSaved = {
+	["CustomVars"] = {
+	},
+	["DBVersion"] = 3,
+	["ModifiedCVars"] = {
+	},
+	["CharVars"] = {
+	},
+	["AccountVars"] = {
+		["enableWoWMouse"] = "0",
+		["cameraDistanceMaxZoomFactor"] = "2.5999999046326",
+		["removeChatDelay"] = "0",
+		["chatMouseScroll"] = "1",
+	},
+	["EnforceSettings"] = false,
+}

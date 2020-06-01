@@ -1,20 +1,20 @@
 
 TD_DB_BATTLEPETSCRIPT_GLOBAL = {
+	["profileKeys"] = {
+		["岁繁 - 亡语者"] = "Default",
+	},
 	["global"] = {
+		["version"] = 80100.01,
 		["scripts"] = {
-			["AllInOne"] = {
-			},
-			["FirstEnemy"] = {
+			["Rematch"] = {
 			},
 			["Base"] = {
 			},
-			["Rematch"] = {
+			["FirstEnemy"] = {
+			},
+			["AllInOne"] = {
 			},
 		},
-		["version"] = 80100.01,
-	},
-	["profileKeys"] = {
-		["岁繁 - 亡语者"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

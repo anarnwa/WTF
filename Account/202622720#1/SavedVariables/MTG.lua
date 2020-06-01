@@ -19,7 +19,7 @@ MTGsettingDB = {
 	[170152] = true,
 	[168091] = true,
 	[168095] = true,
-	[170161] = true,
-	[170153] = true,
 	[169202] = true,
+	[170153] = true,
+	[170161] = true,
 }

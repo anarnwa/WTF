@@ -1,11 +1,11 @@
 
 OmniCCDB = {
+	["profileKeys"] = {
+		["岁繁 - 亡语者"] = "默认",
+	},
 	["global"] = {
 		["addonVersion"] = "8.3.5",
 		["dbVersion"] = 5,
-	},
-	["profileKeys"] = {
-		["岁繁 - 亡语者"] = "默认",
 	},
 	["profiles"] = {
 		["默认"] = {
@@ -24,9 +24,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -34,9 +34,9 @@ OmniCCDB = {
 				},
 				["默认"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},

@@ -1,7 +1,6 @@
 
 BagSyncDB = {
-	["blacklist§"] = {
-	},
+	["forceDBReset§"] = 2,
 	["亡语者"] = {
 		["岁繁"] = {
 			["bag"] = {
@@ -49,6 +48,8 @@ BagSyncDB = {
 			["faction"] = "Horde",
 			["professions"] = {
 			},
+			["currency"] = {
+			},
 			["equip"] = {
 				"122248::::::::::::1:5805:::", -- [1]
 				"122359::::::::::::1:583:::", -- [2]
@@ -62,8 +63,6 @@ BagSyncDB = {
 				"122362::::::::::::1:583:::", -- [10]
 				"122262::::::::::::1:5805:::", -- [11]
 				"122353::::::::::::1:5805:::", -- [12]
-			},
-			["currency"] = {
 			},
 			["mailbox"] = {
 			},
@@ -87,54 +86,55 @@ BagSyncDB = {
 		["enableMinimap"] = true,
 		["enableAuction"] = true,
 		["showGuildInGoldTooltip"] = true,
+		["enableRealmShortName"] = false,
+		["enableTooltips"] = true,
+		["enableShowUniqueItemsTotals"] = true,
+		["enableTooltipGreenCheck"] = true,
+		["enableBNetAccountItems"] = false,
+		["showTotal"] = true,
 		["colors"] = {
 			["total"] = {
-				["b"] = 0.3764705882352941,
-				["g"] = 0.6431372549019608,
 				["r"] = 0.9568627450980393,
+				["g"] = 0.6431372549019608,
+				["b"] = 0.3764705882352941,
 			},
 			["guild"] = {
-				["b"] = 0.7529411764705882,
-				["g"] = 0.7215686274509804,
 				["r"] = 0.396078431372549,
+				["g"] = 0.7215686274509804,
+				["b"] = 0.7529411764705882,
 			},
 			["cross"] = {
-				["b"] = 0.0392156862745098,
-				["g"] = 0.4901960784313725,
 				["r"] = 1,
-			},
-			["itemid"] = {
-				["b"] = 0.5254901960784314,
-				["g"] = 0.8274509803921568,
-				["r"] = 0.3215686274509804,
-			},
-			["first"] = {
-				["b"] = 0,
-				["g"] = 1,
-				["r"] = 0.5019607843137255,
+				["g"] = 0.4901960784313725,
+				["b"] = 0.0392156862745098,
 			},
 			["bnet"] = {
-				["b"] = 1,
-				["g"] = 0.5333333333333333,
 				["r"] = 0.207843137254902,
+				["g"] = 0.5333333333333333,
+				["b"] = 1,
+			},
+			["first"] = {
+				["r"] = 0.5019607843137255,
+				["g"] = 1,
+				["b"] = 0,
+			},
+			["itemid"] = {
+				["r"] = 0.3215686274509804,
+				["g"] = 0.8274509803921568,
+				["b"] = 0.5254901960784314,
 			},
 			["second"] = {
-				["b"] = 1,
-				["g"] = 1,
 				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
 			},
 		},
-		["enableTooltips"] = true,
-		["enableRealmShortName"] = false,
-		["enableShowUniqueItemsTotals"] = true,
-		["enableLoginVersionInfo"] = true,
-		["showTotal"] = true,
-		["showGuildCurrentCharacter"] = false,
 		["enableRealmAstrickName"] = false,
-		["enableBNetAccountItems"] = false,
-		["enableTooltipGreenCheck"] = true,
+		["showGuildCurrentCharacter"] = false,
+		["enableLoginVersionInfo"] = true,
 		["enableTooltipSeperator"] = true,
 		["enableRealmIDTags"] = true,
 	},
-	["forceDBReset§"] = 2,
+	["blacklist§"] = {
+	},
 }

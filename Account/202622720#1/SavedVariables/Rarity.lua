@@ -662,12 +662,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Blighted Spore"] = {
+					["False Knucklebump"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Sunscale Hatchling"] = {
+					["Kindleweb Spiderling"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -687,7 +687,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Bloodstone Tunneler"] = {
+					["Deathsting Scorpid"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -702,10 +702,10 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Essence of Pride"] = {
-						["enabled"] = false,
+					["Tiny Crimson Whelpling"] = {
 						["known"] = true,
 						["found"] = true,
+						["enabled"] = false,
 					},
 					["Blackfuse Bombling"] = {
 						["known"] = true,
@@ -722,7 +722,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Darkshore Sentinel"] = {
+					["Instant Arcane Sanctum Security Kit"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -797,14 +797,14 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Fractured Obsidian Claw"] = {
-						["known"] = true,
+					["Deviate Hatchling"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
-					["Seaborne Spore"] = {
-						["known"] = true,
+					["Imbued Jade Fragment"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Adventurous Hopling Pack"] = {
@@ -812,7 +812,7 @@ RarityDB = {
 						["found"] = true,
 						["known"] = true,
 					},
-					["Son of Animus"] = {
+					["Pygmy Direhorn"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
@@ -832,17 +832,17 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Aldrusian Sproutling"] = {
+					["Fractured Obsidian Claw"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Mindlost Bloodfrenzy"] = {
-						["known"] = true,
+					["Dark Whelpling"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
-					["Fragment of Suffering"] = {
+					["Sparkleshell Sandcrawler"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -852,14 +852,14 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pearlescent Glimmershell"] = {
-						["enabled"] = false,
+					["Son of Animus"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
-					["Red Goren Egg"] = {
-						["enabled"] = false,
+					["Mindlost Bloodfrenzy"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Phoenix Hatchling"] = {
@@ -882,14 +882,14 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Crystal of the Void"] = {
-						["enabled"] = false,
+					["Quivering Blob"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
-					["Experiment-In-A-Jar"] = {
-						["known"] = true,
+					["Pearlescent Glimmershell"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Arachnoid Skitterbot"] = {
@@ -897,7 +897,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Voidwoven Cat Collar"] = {
+					["Red Goren Egg"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -912,7 +912,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Wayward Spirit"] = {
+					["Time-Locked Box"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -922,7 +922,22 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Eye of Inquisition"] = {
+					["Smelly Gravestone"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Spirit of the Spring"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Lump of Coal"] = {
+						["known"] = true,
+						["found"] = true,
+						["enabled"] = false,
+					},
+					["Fel Lasher"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -932,17 +947,17 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Fragment of Frozen Bone"] = {
+					["Call of the Frozen Blade"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Fel Lasher"] = {
-						["enabled"] = false,
+					["Everburning Treant"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
-					["Ironbound Collar"] = {
+					["Sun Sproutling"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -957,27 +972,12 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Sun Sproutling"] = {
+					["Pair of Tiny Bat Wings"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Stormforged Rune"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Jewel of Maddening Whispers"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Breezy Essence"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Brilliant Phoenix Hawk Feather"] = {
+					["Red-Hot Coal"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -987,9 +987,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Chitterspine Needler"] = {
-						["enabled"] = false,
+					["Breezy Essence"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Putricide's Alchemy Supplies"] = {
@@ -997,7 +997,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Captured Firefly"] = {
+					["Albino Buzzard"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1007,12 +1007,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Cavern Moccasin"] = {
+					["Blighted Spore"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Coral Lashling"] = {
+					["Bronze Proto-Whelp"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1027,17 +1027,17 @@ RarityDB = {
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Satyr Charm"] = {
+					["Captured Firefly"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Thunderscale Whelpling"] = {
+					["Cavern Moccasin"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Mana-Warped Egg"] = {
+					["Cinderweb Egg"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1047,12 +1047,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["False Knucklebump"] = {
-						["enabled"] = false,
+					["Lesser Circle of Binding"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
-					["Playful Frostkin"] = {
+					["Muckbreaths's Bucket"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1062,9 +1062,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Silithid Mini-Tank"] = {
-						["known"] = true,
+					["Shard of Supremus"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Firewing"] = {
@@ -1072,7 +1072,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Twilight Summoning Portal"] = {
+					["Severed Tentacle"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
@@ -1082,19 +1082,19 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Tinder Pup"] = {
+					["Zandalari Anklerender"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Smoldering Treat"] = {
+					["Mischievous Zephyr"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Red Helper Box"] = {
-						["known"] = true,
+					["Young Talbuk"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Jingling Bell"] = {
@@ -1112,7 +1112,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Necrofin Tadpole"] = {
+					["Azure Crane Chick"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1122,27 +1122,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Poro"] = {
+					["Rebellious Imp"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Dripping Strider Egg"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Snowy Panda"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Living Sandling"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Snarly's Bucket"] = {
+					["Uuna's Doll"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1152,22 +1137,22 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
+					["Living Sandling"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Clockwork Rocket Bot"] = {
+						["known"] = true,
+						["found"] = true,
+						["enabled"] = false,
+					},
+					["Octopode Fry"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
 					["Tiny Grimoire"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Skunky Alemental"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Daggertooth Frenzy"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Fossorial Bile Larva"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1177,82 +1162,97 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Octopode Fry"] = {
+					["Fossorial Bile Larva"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Clockwork Rocket Bot"] = {
+					["Daggertooth Frenzy"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
+					},
+					["Smoldering Treat"] = {
 						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Skunky Alemental"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Twilight Summoning Portal"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
 					},
 					["Enchanted Talon of Pa'ku"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Uuna's Doll"] = {
+					["Snarly's Bucket"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Kindleweb Spiderling"] = {
+					["Snowy Panda"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Rebellious Imp"] = {
+					["Dripping Strider Egg"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Azure Crane Chick"] = {
+					["Thunderscale Whelpling"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Deathsting Scorpid"] = {
+					["Poro"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Young Talbuk"] = {
+					["Necrofin Tadpole"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Mischievous Zephyr"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Zandalari Anklerender"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Severed Tentacle"] = {
+					["Red Helper Box"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Shard of Supremus"] = {
+					["Tinder Pup"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Muckbreaths's Bucket"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Lesser Circle of Binding"] = {
+					["Silithid Mini-Tank"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Cinderweb Egg"] = {
+					["Playful Frostkin"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Mana-Warped Egg"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Satyr Charm"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Coral Lashling"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1267,12 +1267,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Bronze Proto-Whelp"] = {
+					["Chitterspine Needler"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Albino Buzzard"] = {
+					["Brilliant Phoenix Hawk Feather"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1282,12 +1282,12 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Red-Hot Coal"] = {
+					["Jewel of Maddening Whispers"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pair of Tiny Bat Wings"] = {
+					["Stormforged Rune"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1302,12 +1302,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Everburning Treant"] = {
-						["known"] = true,
+					["Ironbound Collar"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
-					["Call of the Frozen Blade"] = {
+					["Fragment of Frozen Bone"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1317,27 +1317,27 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Lump of Coal"] = {
-						["known"] = true,
-						["found"] = true,
-						["enabled"] = false,
-					},
-					["Spirit of the Spring"] = {
+					["Eye of Inquisition"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Smelly Gravestone"] = {
+					["Wayward Spirit"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Tiny Crimson Whelpling"] = {
+					["Voidwoven Cat Collar"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
-					["Time-Locked Box"] = {
+					["Experiment-In-A-Jar"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Crystal of the Void"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1352,9 +1352,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Quivering Blob"] = {
-						["known"] = true,
+					["Fragment of Suffering"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Sunfire Kaliri"] = {
@@ -1367,19 +1367,19 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Sparkleshell Sandcrawler"] = {
+					["Darkshore Sentinel"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Dark Whelpling"] = {
-						["enabled"] = false,
+					["Aldrusian Sproutling"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
-					["Instant Arcane Sanctum Security Kit"] = {
-						["enabled"] = false,
+					["Seaborne Spore"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Sunfur Panda"] = {
@@ -1387,17 +1387,17 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pygmy Direhorn"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Imbued Jade Fragment"] = {
+					["Essence of Pride"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Deviate Hatchling"] = {
+					["Bloodstone Tunneler"] = {
+						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Sunscale Hatchling"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1409,7 +1409,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Cloudwing Hippogryph"] = {
+					["Crimson Slavermaw"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1474,7 +1474,7 @@ RarityDB = {
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Reins of the Drake of the North Wind"] = {
+					["Reins of the Drake of the South Wind"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
@@ -1514,7 +1514,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Kaldorei Nightsaber"] = {
+					["Lil' Donkey"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1564,7 +1564,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Captured Umber Nightsaber"] = {
+					["Vibrant Mana Ray"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1649,9 +1649,9 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Captured Kaldorei Nightsaber"] = {
-						["enabled"] = false,
+					["Giant Coldsnout"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Reins of the Onyxian Drake"] = {
@@ -1669,9 +1669,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Reins of the Green Proto-Drake"] = {
-						["known"] = true,
+					["Bloodgorged Hunter"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Vile Fiend"] = {
@@ -1684,15 +1684,15 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Reins of the Crimson Water Strider"] = {
+					["Garn Nighthowl"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Avenging Felcrusher"] = {
-						["enabled"] = false,
+					["Swift White Hawkstrider"] = {
 						["known"] = true,
 						["found"] = true,
+						["enabled"] = false,
 					},
 					["Surf Jelly"] = {
 						["enabled"] = false,
@@ -1700,11 +1700,6 @@ RarityDB = {
 						["found"] = true,
 					},
 					["Bristling Hellboar"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Wild Goretusk"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1729,7 +1724,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Crimson Slavermaw"] = {
+					["Cloudwing Hippogryph"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1744,7 +1739,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Reins of the Drake of the South Wind"] = {
+					["Reins of the Drake of the North Wind"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
@@ -1754,34 +1749,39 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Giant Coldsnout"] = {
-						["known"] = true,
-						["enabled"] = false,
-						["found"] = true,
-					},
-					["Bloodgorged Hunter"] = {
+					["Captured Kaldorei Nightsaber"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Garn Nighthowl"] = {
+					["Reins of the Green Proto-Drake"] = {
+						["known"] = true,
+						["enabled"] = false,
+						["found"] = true,
+					},
+					["Wild Goretusk"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Lil' Donkey"] = {
+					["Kaldorei Nightsaber"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Swift White Hawkstrider"] = {
+					["Reins of the Crimson Water Strider"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
-					["Biletooth Gnasher"] = {
-						["known"] = true,
+					["Avenging Felcrusher"] = {
 						["enabled"] = false,
+						["known"] = true,
+						["found"] = true,
+					},
+					["Mail Muncher"] = {
+						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Craghorn Chasm-Leaper"] = {
@@ -1794,9 +1794,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Vibrant Mana Ray"] = {
-						["enabled"] = false,
+					["Reins of the Blazing Drake"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Tundra Icehoof"] = {
@@ -1804,21 +1804,21 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Reins of the Blazing Drake"] = {
+					["Biletooth Gnasher"] = {
 						["known"] = true,
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Mail Muncher"] = {
+					["Captured Umber Nightsaber"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
 				},
 				["items"] = {
-					["Hardened Shell"] = {
-						["enabled"] = false,
+					["Toy War Machine"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Foul Belly"] = {
@@ -1831,7 +1831,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Kaldorei Light Globe"] = {
+					["Flopping Fish"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -1841,14 +1841,14 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Shard of Archstone"] = {
-						["enabled"] = false,
+					["Crashin' Thrashin' Shredder Controller"] = {
 						["known"] = true,
 						["found"] = true,
-					},
-					["Legion Communication Orb"] = {
 						["enabled"] = false,
+					},
+					["Pineapple Lounge Cushion"] = {
 						["known"] = true,
+						["enabled"] = false,
 						["found"] = true,
 					},
 					["Whiskerwax Candle"] = {
@@ -1906,7 +1906,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Hell-Bent Bracers"] = {
+					["Judgment of Mechagon"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2006,22 +2006,22 @@ RarityDB = {
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Botani Camouflage"] = {
+					["Narassin's Soul Gem"] = {
+						["enabled"] = false,
+						["found"] = true,
+						["known"] = true,
+					},
+					["Hozen Beach Ball"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Chain Pet Leash"] = {
+					["Pandaren Firework Launcher"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Sira's Extra Cloak"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Helpful Wikky's Whistle"] = {
+					["Oomgut Ritual Drum"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2031,7 +2031,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Wisp in a Bottle"] = {
+					["Crashin' Thrashin' Cannon Controller"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2041,7 +2041,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Sightless Eye"] = {
+					["Farwater Conch"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2071,10 +2071,10 @@ RarityDB = {
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Eternal Kiln"] = {
-						["enabled"] = false,
+					["Crashin' Thrashin' Flyer Controller"] = {
 						["known"] = true,
 						["found"] = true,
+						["enabled"] = false,
 					},
 					["Shirakess Warning Sign"] = {
 						["enabled"] = false,
@@ -2116,10 +2116,10 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Disposable Winter Veil Suits"] = {
+					["Pilfered Sweeper"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
 					["Coldrage's Cooler"] = {
 						["enabled"] = false,
@@ -2146,10 +2146,10 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Crashin' Thrashin' Flyer Controller"] = {
+					["Legion Communication Orb"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
 					["Faintly Glowing Flagon of Mead"] = {
 						["enabled"] = false,
@@ -2161,9 +2161,9 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pineapple Lounge Cushion"] = {
-						["known"] = true,
+					["Shard of Archstone"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
 					["Red Conservatory Scroll"] = {
@@ -2176,22 +2176,22 @@ RarityDB = {
 						["enabled"] = false,
 						["found"] = true,
 					},
-					["Toy War Machine"] = {
-						["known"] = true,
+					["Hardened Shell"] = {
 						["enabled"] = false,
+						["known"] = true,
 						["found"] = true,
 					},
-					["Narassin's Soul Gem"] = {
+					["Botani Camouflage"] = {
 						["enabled"] = false,
-						["found"] = true,
 						["known"] = true,
+						["found"] = true,
 					},
 					["Bottled Tornado"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Hozen Beach Ball"] = {
+					["Chain Pet Leash"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2206,7 +2206,7 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Twiddle Twirler: Sentinel's Glaive"] = {
+					["Hell-Bent Bracers"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2221,12 +2221,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Pandaren Firework Launcher"] = {
+					["Sira's Extra Cloak"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Oomgut Ritual Drum"] = {
+					["Helpful Wikky's Whistle"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2241,12 +2241,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Judgment of Mechagon"] = {
+					["Don Carlos' Famous Hat"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Crashin' Thrashin' Cannon Controller"] = {
+					["Wisp in a Bottle"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2256,12 +2256,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Farwater Conch"] = {
+					["Sightless Eye"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Flopping Fish"] = {
+					["Kaldorei Light Globe"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2276,12 +2276,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Battle Horn"] = {
+					["Eternal Kiln"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Holy Lightsphere"] = {
+					["Battle Horn"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -2291,17 +2291,17 @@ RarityDB = {
 						["found"] = true,
 						["enabled"] = false,
 					},
-					["Pilfered Sweeper"] = {
+					["Disposable Winter Veil Suits"] = {
+						["known"] = true,
+						["found"] = true,
+						["enabled"] = false,
+					},
+					["Twiddle Twirler: Sentinel's Glaive"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
 					},
-					["Unusual Compass"] = {
-						["enabled"] = false,
-						["known"] = true,
-						["found"] = true,
-					},
-					["Crashin' Thrashin' Shredder Controller"] = {
+					["Blight Boar Microphone"] = {
 						["known"] = true,
 						["found"] = true,
 						["enabled"] = false,
@@ -2321,12 +2321,12 @@ RarityDB = {
 						["known"] = true,
 						["found"] = true,
 					},
-					["Blight Boar Microphone"] = {
+					["Unusual Compass"] = {
+						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
-						["enabled"] = false,
 					},
-					["Don Carlos' Famous Hat"] = {
+					["Holy Lightsphere"] = {
 						["enabled"] = false,
 						["known"] = true,
 						["found"] = true,
@@ -3530,35 +3530,35 @@ RarityDB = {
 				[1479] = "营救贝恩",
 				[997] = "提瑞斯法林地",
 				[998] = "幽暗城",
-				[1556] = "海加尔峰",
+				[1465] = "血色大厅",
 				[1555] = "风暴要塞",
 				[1554] = "毒蛇神殿",
 				[1553] = "时光之穴",
 				[1552] = "时光之穴",
 				[1549] = "魔古山宝库",
-				[1548] = "魔古山宝库",
+				[1469] = "奥格瑞玛的幻象",
 				[1547] = "魔古山宝库",
 				[1546] = "魔古山宫殿",
 				[1545] = "魔古山宫殿",
-				[1544] = "魔古山宫殿",
+				[1471] = "翡翠梦境之路",
 				[1490] = "麦卡贡",
 				[1542] = "起源大厅",
 				[1491] = "麦卡贡",
 				[1541] = "起源大厅",
 				[1540] = "起源大厅",
-				[1531] = "渣客城",
+				[1473] = "心之秘室",
 				[1493] = "麦卡贡",
 				[1523] = "Solesa Naksu [DNT]",
 				[1494] = "麦卡贡",
-				[1521] = "卡拉赞墓穴",
+				[1009] = "阿图阿曼",
 				[1004] = "诸王之眠",
 				[1519] = "永恒王宫",
 				[1517] = "永恒王宫",
 				[1515] = "永恒王宫",
 				[1497] = "麦卡贡",
-				[1513] = "永恒王宫",
+				[1475] = "翡翠梦境",
 				[1467] = "外域",
-				[1505] = "斯坦索姆",
+				[1521] = "卡拉赞墓穴",
 				[1499] = "",
 				[1244] = "阿拉希高地",
 				[1500] = "",
@@ -3567,27 +3567,27 @@ RarityDB = {
 				[1246] = "诅咒之地",
 				[1502] = "琼花村",
 				[1247] = "提瑞斯法林地",
-				[1475] = "翡翠梦境",
+				[1513] = "永恒王宫",
 				[1248] = "银松森林",
 				[1504] = "纳沙塔尔",
 				[1249] = "西瘟疫之地",
-				[1009] = "阿图阿曼",
+				[1505] = "斯坦索姆",
 				[1250] = "东瘟疫之地",
-				[1473] = "心之秘室",
+				[1531] = "渣客城",
 				[1251] = "希尔斯布莱德丘陵",
 				[1010] = "暴富矿区！！",
 				[1252] = "辛特兰",
-				[1471] = "翡翠梦境之路",
+				[1544] = "魔古山宫殿",
 				[1253] = "丹莫罗",
 				[1011] = "赞达拉",
 				[1254] = "灼热峡谷",
-				[1469] = "奥格瑞玛的幻象",
+				[1548] = "魔古山宝库",
 				[1255] = "燃烧平原",
 				[1012] = "暴风城",
 				[1256] = "艾尔文森林",
 				[1512] = "永恒王宫",
 				[1257] = "逆风小径",
-				[1465] = "血色大厅",
+				[1556] = "海加尔峰",
 			},
 			["lastRevision"] = 697,
 			["accountWideStatistics"] = {
@@ -3662,29 +3662,29 @@ RarityDB = {
 						[14108] = 0,
 						[14110] = 0,
 						[13602] = 0,
-						[5558] = 0,
-						[13600] = 0,
+						[13617] = 0,
 						[4657] = 0,
 						[4658] = 0,
+						[13374] = 0,
 						[13612] = 0,
 						[13614] = 0,
 						[13616] = 0,
 						[13618] = 0,
 						[14130] = 0,
-						[13373] = 0,
-						[13364] = 0,
-						[14136] = 0,
 						[14138] = 0,
-						[12118] = 0,
-						[5557] = 0,
 						[13379] = 0,
+						[14136] = 0,
+						[13373] = 0,
+						[11894] = 0,
+						[5557] = 0,
+						[5558] = 0,
 						[5559] = 0,
 						[5560] = 0,
-						[11894] = 0,
-						[10979] = 0,
-						[10977] = 0,
-						[1097] = 0,
 						[5565] = 0,
+						[8183] = 0,
+						[8182] = 0,
+						[8181] = 0,
+						[12118] = 0,
 						[5566] = 0,
 						[5567] = 0,
 						[5568] = 0,
@@ -3697,24 +3697,24 @@ RarityDB = {
 						[5575] = 0,
 						[5576] = 0,
 						[5577] = 0,
-						[7924] = 0,
-						[7923] = 0,
+						[8179] = 0,
+						[8178] = 0,
 						[11893] = 0,
 						[11895] = 0,
 						[4074] = 0,
 						[13365] = 0,
 						[4075] = 0,
-						[5977] = 0,
-						[9279] = 0,
-						[6989] = 0,
-						[6162] = 0,
+						[14128] = 0,
+						[13620] = 0,
+						[4688] = 0,
+						[8573] = 0,
 						[8570] = 0,
 						[8568] = 0,
 						[9365] = 0,
 						[13372] = 0,
 						[4662] = 0,
 						[4645] = 0,
-						[8624] = 0,
+						[8620] = 0,
 						[8146] = 0,
 						[8147] = 0,
 						[8148] = 0,
@@ -3722,45 +3722,45 @@ RarityDB = {
 						[8150] = 0,
 						[8151] = 0,
 						[8622] = 0,
-						[8153] = 0,
+						[8624] = 0,
 						[8626] = 0,
 						[8628] = 0,
 						[8630] = 0,
-						[8152] = 0,
+						[14089] = 0,
 						[10929] = 0,
 						[10931] = 0,
 						[8638] = 0,
-						[3256] = 0,
+						[3258] = 0,
 						[11957] = 0,
 						[11959] = 0,
 						[13619] = 0,
-						[3258] = 0,
-						[14089] = 0,
-						[8620] = 0,
+						[3256] = 0,
+						[8152] = 0,
+						[8153] = 0,
 						[8168] = 0,
 						[8169] = 0,
 						[8170] = 0,
 						[8171] = 0,
 						[8172] = 0,
-						[8573] = 0,
-						[4688] = 0,
-						[13620] = 0,
-						[14128] = 0,
+						[6162] = 0,
+						[6989] = 0,
+						[9279] = 0,
+						[5977] = 0,
 						[12752] = 0,
-						[8178] = 0,
-						[8179] = 0,
+						[7923] = 0,
+						[7924] = 0,
 						[8180] = 0,
-						[8181] = 0,
-						[8182] = 0,
-						[8183] = 0,
+						[1097] = 0,
+						[10977] = 0,
+						[10979] = 0,
 						[8184] = 0,
 						[8185] = 0,
 						[8186] = 0,
 						[8187] = 0,
-						[13374] = 0,
+						[13364] = 0,
 						[10226] = 0,
 						[10228] = 0,
-						[13617] = 0,
+						[13600] = 0,
 					},
 					["server"] = "亡语者",
 				},

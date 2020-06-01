@@ -14,63 +14,6 @@ GlobalIgnoreDB = {
 	},
 	["typeList"] = {
 	},
-	["invertSpam"] = false,
-	["openWithFriends"] = true,
-	["skipPrivate"] = true,
-	["sameserver"] = true,
-	["autoUpdate"] = true,
-	["autoCount"] = 3,
-	["autoTime"] = 600,
-	["ignoreList"] = {
-	},
-	["trackChanges"] = true,
-	["autoIgnore"] = true,
-	["factionList"] = {
-	},
-	["dateList"] = {
-	},
-	["delList"] = {
-	},
-	["attachFriends"] = true,
-	["revision"] = 1,
-	["expList"] = {
-	},
-	["skipParty"] = false,
-	["chatmsg"] = true,
-	["filterTotal"] = 0,
-	["defexpire"] = 0,
-	["filterDesc"] = {
-		"Filter \"Anal\" Spammers", -- [1]
-		"Filter Thunderfury linking", -- [2]
-		"Filter Gold Spam #1", -- [3]
-		"Filter Gold Spam #2", -- [4]
-		"Filter Gold Spam #3", -- [5]
-		"Filter Gold Spam #4", -- [6]
-		"Filter Guild Recruitment", -- [7]
-		"Filter Community Recruitment", -- [8]
-		"Filter WTS", -- [9]
-		"Filter Chinese/Korean/Japanese", -- [10]
-	},
-	["spamFilter"] = true,
-	["filterActive"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		true, -- [6]
-		false, -- [7]
-		false, -- [8]
-		false, -- [9]
-		false, -- [10]
-	},
-	["asknote"] = true,
-	["syncInfo"] = {
-	},
-	["skipGuild"] = true,
-	["notes"] = {
-	},
-	["samefaction"] = true,
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -83,4 +26,61 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
+	["invertSpam"] = false,
+	["skipPrivate"] = true,
+	["autoTime"] = 600,
+	["notes"] = {
+	},
+	["autoCount"] = 3,
+	["skipGuild"] = true,
+	["ignoreList"] = {
+	},
+	["autoUpdate"] = true,
+	["autoIgnore"] = true,
+	["factionList"] = {
+	},
+	["syncInfo"] = {
+	},
+	["sameserver"] = true,
+	["attachFriends"] = true,
+	["revision"] = 1,
+	["expList"] = {
+	},
+	["skipParty"] = false,
+	["chatmsg"] = true,
+	["filterTotal"] = 0,
+	["dateList"] = {
+	},
+	["filterDesc"] = {
+		"Filter \"Anal\" Spammers", -- [1]
+		"Filter Thunderfury linking", -- [2]
+		"Filter Gold Spam #1", -- [3]
+		"Filter Gold Spam #2", -- [4]
+		"Filter Gold Spam #3", -- [5]
+		"Filter Gold Spam #4", -- [6]
+		"Filter Guild Recruitment", -- [7]
+		"Filter Community Recruitment", -- [8]
+		"Filter WTS", -- [9]
+		"Filter Chinese/Korean/Japanese", -- [10]
+	},
+	["asknote"] = true,
+	["filterActive"] = {
+		true, -- [1]
+		true, -- [2]
+		true, -- [3]
+		true, -- [4]
+		true, -- [5]
+		true, -- [6]
+		false, -- [7]
+		false, -- [8]
+		false, -- [9]
+		false, -- [10]
+	},
+	["spamFilter"] = true,
+	["defexpire"] = 0,
+	["delList"] = {
+	},
+	["trackChanges"] = true,
+	["samefaction"] = true,
+	["openWithFriends"] = true,
 }
